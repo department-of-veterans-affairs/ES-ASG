@@ -1,247 +1,201 @@
-As part of VA’s shift to digital solutions, VA has made a commitment to leverage “API Solutions” as a fundamental approach to solving IT problems. To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA Enterprise Services VA Tenants. Within this document, we define the most important principles of Integration and how it applies to VA and its operating companies. Throughout the document, there will be references as to the tenant, as well as its supporting subcomponents, and how it’s impacted by VA’s people, process, and technology. Below are the brief definitions of people, process, and technology.
+As part of VA’s shift to digital solutions, VA has made a commitment to leverage “API Solutions” as a fundamental approach to solving IT problems.  To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA Enterprise Services VA Tenants.  Within this document, we define the most important principles of Integration and how it applies to VA and its operating companies.  Throughout the document, there will be references as to the tenant, as well as its supporting subcomponents, and how it’s impacted by VA’s people, process, and technology.  Below are the brief definitions of people, process, and technology.
 
-* <span class="underline">People:</span> The roles and responsibilities to build and maintain Integration Solutions.
-* <span class="underline">Process:</span> Methodology and governance to build and maintain Integration Solutions
-* <span class="underline">Technology:</span> Integration platforms and codified assets developed to connect
+* <u>People:</u> The roles and responsibilities to build and maintain Integration Solutions.
+* <u>Process:</u> Methodology and governance to build and maintain Integration Solutions
+* <u>Technology:</u> Integration platforms and codified assets developed to connect
 
-<span class="underline">Technology:</span>
+<u>Technology:</u>
+Integration Solutions can be comprised of different technologies, platforms, and IT components, ranging from API, queue, security, datastores, cloud platform, and other key components on the “Reference Architecture”.   It is important to understand the supporting reference architecture, because Integration Solutions are rarely bundled into a single platform.  Instead, a collection of best of breed technology platforms are leveraged.  Below is Visual Integrator’s Integration Reference Architecture, which maps all the Archicture capabilities into a Reference Architecture diagram, which displays the groupings, relationships, and the integration technology responsibilities. Note, the diagram displays a complete Reference Architecture capturing all possible capabilities, some of which may be prioritized higher for VA or operating companies.  It is important to map which are most important to enable VA and operating companies to produce business solutions.
 
-Integration Solutions can be comprised of different technologies, platforms, and IT components, ranging from API, queue, security, datastores, cloud platform, and other key components on the “Reference Architecture”. It is important to understand the supporting reference architecture, because Integration Solutions are rarely bundled into a single platform. Instead, a collection of best of breed technology platforms are leveraged. Below is Visual Integrator’s Integration Reference Architecture, which maps all the Archicture capabilities into a Reference Architecture diagram, which displays the groupings, relationships, and the integration technology responsibilities. Note, the diagram displays a complete Reference Architecture capturing all possible capabilities, some of which may be prioritized higher for VA or operating companies. It is important to map which are most important to enable VA and operating companies to produce business solutions.
-
-Figure 1: Visual Integrator Reference Architecture
-
-[[File:media/image1.emf|624x394px]]
-
+''Figure 1: Visual Integrator Reference Architecture''
+ 
 ''Reference Architecture Diagram Copyright Visual Integrator Consulting, 2003 - Current''
 
 VA is also committed to building solutions on Microservices (See Tenet: Microservices Architecture) to ensure a modern, loosely coupled, scalable, and flexible.
-
 Some of the key aspects of microservices
-
 * Scalable
-* Flexible &amp; Changeable
+* Flexible & Changeable
 * Adaptable
 * Secure
 * Well-Performing
-* Modernizable
-
+* Modernizable 
 * Re-Usable
 * Patterns
 * Frameworks
 
+ 
+== Tenet #1: Keep Total Cost of Ownership Low ==
 
-
-= Tenet #1: Keep Total Cost of Ownership Low =
-
-There are always multiple approaches to solving problems. In the IT landscape, this could be in the magnitude of 50 different potential approaches to solve a problem, especially when considering the number of solution platforms, programming languages, and vendors with similar or competitive offerings in the marketplace. Rationalizing the “best fit solution” to solving a problem can be challenging, if not downright cumbersome, when there are so many choices. Factoring in human factors such as: strong opinions, level of comfort, curiosity, personal favoritism or biases, can make choosing a solution approach even more challenging. Ultimately, choosing a solution approach should be based what is best for VA, when considering cost and overall benefit or value derived from the selected approach.
-
-For “Integration”, the goal is to build or re-use existing integration assets as an enabler for VA solutions. This includes integration enablement for the individual VA operating companies, as well as for the broader VA enterprise (which is essentially, solutions that traverse across VA operating companies).
-
+There are always multiple approaches to solving problems.  In the IT landscape, this could be in the magnitude of 50 different potential approaches to solve a problem, especially when considering the number of solution platforms, programming languages, and vendors with similar or competitive offerings in the marketplace.  Rationalizing the “best fit solution” to solving a problem can be challenging, if not downright cumbersome, when there are so many choices.   Factoring in human factors such as: strong opinions, level of comfort, curiosity, personal favoritism or biases, can make choosing a solution approach even more challenging.  Ultimately, choosing a solution approach should be based what is best for VA, when considering cost and overall benefit or value derived from the selected approach.
+For “Integration”, the goal is to build or re-use existing integration assets as an enabler for VA solutions.  This includes integration enablement for the individual VA operating companies, as well as for the broader VA enterprise (which is essentially, solutions that traverse across VA operating companies).
 To accomplish this………….
+''Figure 2: Cost of Ownership Curve''
+ 
+There may even be a simpler, less complex implementation approach than the “standard” approach.  However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs.  In other words, what may seem simpler on the surface, may be costlier over long haul.  This especially holds true when measuring factors such as: operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance.
 
-Figure 2: Cost of Ownership Curve
-
-[[File:media/image2.emf|534x280px]]
-
-There may even be a simpler, less complex implementation approach than the “standard” approach. However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs. In other words, what may seem simpler on the surface, may be costlier over long haul. This especially holds true when measuring factors such as: operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance.
-
-Figure 3: TCO through Integration Solutions
-
-[[File:media/image3.emf|624x370px]]
+''Figure 3: TCO through Integration Solutions''
+ 
 
 To maintain low Total Cost of Ownership, the following principles shall apply:
-
 * Leverage the standard Integration platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration
 * Leverage the architecture patterns and approaches established by VA.
 * Leverage the enabling “API Frameworks” established by VA.
 * Bring collaboration and feedback on the standards to the Enterprise Services Governance Council as early as possible so it is considered in the design and rationalization.
-* Leveraging VA standardized “Cloud based platforms” to keep costs low. When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture). Second criteria are to leverage “container-based solutions” so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines. This will help keep the TCO low.
+* Leveraging VA standardized “Cloud based platforms” to keep costs low.  When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture).  Second criteria are to leverage “container-based solutions” so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines.  This will help keep the TCO low.
+''Figure 4: Cloud Rationalization Considerations''
+ 
+== Tenet #2: VA Integration and API Marketplace ==
 
-Figure 4: Cloud Rationalization Considerations
+Information needs to be exchanged.  The concept of a marketplace
 
-[[File:media/image4.emf|308x203px]]
+''Figure 5: API Marketplace and Exchange Concept''
+ 
 
-= Tenet #2: VA Integration and API Marketplace =
-
-Information needs to be exchanged. The concept of a marketplace
-
-Figure 5: API Marketplace and Exchange Concept
-
-[[File:media/image5.emf|624x347px]]
-
-==  ==
-
-== API Exchange and Catalog: ==
-
+=== API Exchange and Catalog: ===
 The API is discoverable, searchable, and easy to find for re-use.
-
-== API Gateway: ==
-
+=== API Gateway: ===
 The routing and brokering mechanism for all API invocations.
-
-== Consumer Types ==
-
+=== Consumer Types ===
 There are diverse types of Consumers of the API, such as System (On Premise, Cloud, SaaS); An Application (Mobile, Portal, Web UI); Trading Partner; Developer (Internal or External).
 
-= Tenet # 3: Microservices Architecture =
-
-“In computing, microservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small building blocks, highly decoupled and focused on doing a small task, facilitating a modular approach to system-building.” (Reference Wikipedia, https://en.wikipedia.org/wiki/Microservices)”
+== Tenet # 3: Microservices Architecture ==
+“In computing, microservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small building blocks, highly decoupled and focused on doing a small task, facilitating a modular approach to system-building.” (Reference Wikipedia, <u>https://en.wikipedia.org/wiki/Microservices</u>)”
 
 The diagram below illustrates the concept of building solutions by “mashing up” independently developed and managed API objects together, to build the foundation and logical componentry of the solution itself.
 
-Figure 6: Microservices Architecture
-
-[[File:media/image6.emf|624x171px]]
+''Figure 6: Microservices Architecture''
+ 
 
 * When discussing the Microservices architecture, “API” and “Microservices” are used synonymous.
-* Engineer API’s into individually deployable and manageable assets. Each API is engineered to be individually deployable as its own package, and not grouped together with other API’s into a package of API’s. A package has only 1 API. This allows the API to be an individual unit of work that can be governed, managed, version controlled, tested at the lowest level of granularity. It provides flexibility to control the API for operations, sustainment, and re-usability.
-* Create an API Catalog/Repository that is a catalyst for re-usability. By managing the microservice individually, they can be published into the API Catalog for API Consumers to discover them. All API Consumers should check API Catalog for existing API’s for re-usability, before developing a new API. (This helps keep the TCO low, as its less IT assets to manage.) If the existing API is a “near fit”, but not an “exact fit”, the API Consumer should consider requesting to the API Provider to make a change to the existing API or create a new API that is an “exact fit”, instead of the API Consumer requesting a net new API engineered from the Provider.
-* Microservices architecture allows for fine grained API’s (or “Services) to be built and composed upon in a “Lego-building block” approach. For example, in the diagram below, the fine-grained services are built as the “Technical Services” that have a specific function encapsulated in each API. The “Business Services” make use of the “Technical Services” by consuming them, and thereby making them highly re-usable. The “Business Services” are consumable by VA Business Processes to orchestrate and manage the business process, thereby making the end to end business process and orchestration of Business Services enabled by API’s. This architecture and solution approach would not be possible without the Microservices Architecture and Service Composition to build solutions.
 
-Figure 7: Service Composition through Microservices
+* Engineer API’s into individually deployable and manageable assets.  Each API is engineered to be individually deployable as its own package, and not grouped together with other API’s into a package of API’s.  A package has only 1 API.  This allows the API to be an individual unit of work that can be governed, managed, version controlled, tested at the lowest level of granularity.  It provides flexibility to control the API for operations, sustainment, and re-usability.
 
-[[File:media/image7.png|418x273px]]
+* Create an API Catalog/Repository that is a catalyst for re-usability.  By managing the microservice individually, they can be published into the API Catalog for API Consumers to discover them.  All API Consumers should check API Catalog for existing API’s for re-usability, before developing a new API. (This helps keep the TCO low, as its less IT assets to manage.)  If the existing API is a “near fit”, but not an “exact fit”, the API Consumer should consider requesting to the API Provider to make a change to the existing API or create a new API that is an “exact fit”, instead of the API Consumer requesting a net new API engineered from the Provider.
 
-* The anti-pattern is to build IT assets into large chunks of componentry, such as big chunks of code, long running orchestrations, API’s that are not separated. This type of architecture can be inflexible, difficult to maintain, challenging to test, prohibit re-usability or composability, and can be inefficient during runtime as well (i.e. deficient performance).
+* Microservices architecture allows for fine grained API’s (or “Services) to be built and composed upon in a “Lego-building block” approach.  For example, in the diagram below, the fine-grained services are built as the “Technical Services” that have a specific function encapsulated in each API.  The “Business Services” make use of the “Technical Services” by consuming them, and thereby making them highly re-usable.  The “Business Services” are consumable by VA Business Processes to orchestrate and manage the business process, thereby making the end to end business process and orchestration of Business Services enabled by API’s.  This architecture and solution approach would not be possible without the Microservices Architecture and Service Composition to build solutions.
 
-Figure 8: Anti-Pattern BLOB
+''Figure 7: Service Composition through Microservices''
+ 
 
-[[File:media/image8.jpeg|229x176px|imagesCAOEIPRH.jpg]]
 
-Figure 9: Example of BLOB Anti-Pattern
+* The anti-pattern is to build IT assets into large chunks of componentry, such as big chunks of code, long running orchestrations, API’s that are not separated.  This type of architecture can be inflexible, difficult to maintain, challenging to test, prohibit re-usability or composability, and can be inefficient during runtime as well (i.e. deficient performance).
+''Figure 8: Anti-Pattern BLOB''
+ 
 
-[[File:media/image9.jpeg|291x300px|bpel]]
 
-* New Applications, User Interfaces, and other User-centric solutions (i.e. Mobile, Portals, Extranets, Intranets) shall be a mash-up of API’s to create the solution. There shall not be integrations or middle-tier IT assets created directly from UI to data sources. Instead, the UI shall consume API’s that provide all the middle-tier logic and data.
+''Figure 9: Example of BLOB Anti-Pattern''
+ 
+
+* New Applications, User Interfaces, and other User-centric solutions (i.e. Mobile, Portals, Extranets, Intranets) shall be a mash-up of API’s to create the solution.  There shall not be integrations or middle-tier IT assets created directly from UI to data sources.  Instead, the UI shall consume API’s that provide all the middle-tier logic and data.
+
 * Design patterns shall leverage a 3-layer approach, like Model-View-Controller with the following responsibilities:
 
-Figure 10: 3-Layer API Architecture
+''Figure 10: 3-Layer API Architecture''
+ 
 
-[[File:media/image10.tmp|390x250px|C:\ceebd07e712fdef7d5657be8ccbce998]]
+<u>Experience:</u> Consumption ready API for User Interface consumers and Trading Partner consumers
+<u>Process:</u> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process.  The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
+<u>System:  </u>The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
 
-<blockquote><span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers
+* The responsibility of each microservice is to perform a small unit of work, with a single responsibility.  That entire responsibility shall be encapsulated in the API itself.
 
-<span class="underline">Process:</span> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
+# API’s can support pretty much any types of data format but predominantly JSON is preferred. Micro service is normally exposed as HTTP(s) service
 
-<span class="underline">System:</span> The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
-</blockquote>
-* The responsibility of each microservice is to perform a small unit of work, with a single responsibility. That entire responsibility shall be encapsulated in the API itself.
-
-* API’s can support pretty much any types of data format but predominantly JSON is preferred. Micro service is normally exposed as HTTP(s) service
-
-
-
-= Tenet #4: Integration Solutions are fundamental to any VA IT initiative =
+ 
+== Tenet #4: Integration Solutions are fundamental to any VA IT initiative ==
 
 The paradigm shifts to allow
+''Figure 11: Anti-Pattern of No Architecture''
+ 
+* Any IT solution that is being built at VA, should leverage “Integration Solutions” early in the project charter, and not at the end of the project initiative.  Integration Solutions should be analyzed upfront, and the possibility of re-usability of existing Integration Solutions should be explored.
 
-Figure 11: Anti-Pattern of No Architecture
+* Contract First Design approach:  The API contract is developed before the API inner logic is developer.  The contract is the skeleton or the shell of the API.  By building the contract first, the API Consumer can leverage the API contract to build their consumption of the API, before the API is ready.  This is helpful because in a microservices solution, the API consumer is dependent on the API to complete the business process.  As represented in the diagram below, the API is modeled before the API is engineered.  This way, the API can be simulated, and solicited feedback and validation with the consuming systems, in parallel while the development team is building the API.
 
-[[File:media/image11.png|491x270px]]
-
-* Any IT solution that is being built at VA, should leverage “Integration Solutions” early in the project charter, and not at the end of the project initiative. Integration Solutions should be analyzed upfront, and the possibility of re-usability of existing Integration Solutions should be explored.
-* Contract First Design approach: The API contract is developed before the API inner logic is developer. The contract is the skeleton or the shell of the API. By building the contract first, the API Consumer can leverage the API contract to build their consumption of the API, before the API is ready. This is helpful because in a microservices solution, the API consumer is dependent on the API to complete the business process. As represented in the diagram below, the API is modeled before the API is engineered. This way, the API can be simulated, and solicited feedback and validation with the consuming systems, in parallel while the development team is building the API.
-
-Figure 12: API Contract First Design Illustration
-
-[[File:media/image12.png|482x412px]]
-
-<blockquote>There are 2 standards for API contracts. 1) Swagger and 2) RAML.
-
+''Figure 12: API Contract First Design Illustration''
+ 
+There are 2 standards for API contracts.  1) Swagger and 2) RAML.
 A single RAML file can define more than one API but it's recommended to group related API’s together into a RAML file. So, all product related API’s can be developed in single product.raml and all customer related API’s can be implemented in customer.raml
-</blockquote>
-= <br />
-Tenet #5: Architecture drives Integration Solutions =
+==  
+Tenet #5: Architecture drives Integration Solutions ==
 
 Architecting the API tends to much more complex then engineering or developing the API.
-
 Archicture considerations on the API include:
 
 * Security: The ability of the API to be trusted that data is not being exposed to the wrong stakeholders or entities.
+
 * Performance: The ability of the API to meet its SLA’s
+
 * Transaction Management: The ability to ensure the data will reach its destination.
+
 * Scalability: The ability to add volume onto the solution or to add more functionality onto the solution without having to re-design or re-engineer it.
+
 * Flexibility: The ability to change the solution without having to re-design or re-engineer it.
+
 
 Some of the more specific design patterns to leverage include:
 
-* <span class="underline">Canonical:</span> Universal data model that represents the business process, through a data object. Acts as a mediation point between Provider and Consumer data mappings. All Provider systems map to the Canonical, all Target systems map from the Canonical, and Provider and Consumer never map directly each other. A loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components.
+# <u>Canonical:</u>  Universal data model that represents the business process, through a data object.  Acts as a mediation point between Provider and Consumer data mappings.  All Provider systems map to the Canonical, all Target systems map from the Canonical, and Provider and Consumer never map directly each other.  A loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components.
+Design should identify and separate components based on volatility and capability, minimizing dependencies
 
-<blockquote>Design should identify and separate components based on volatility and capability, minimizing dependencies
-</blockquote>
-<ul>
-<li><p><span class="underline">Separation of Concerns:</span></p>
-<p>Separation of Concerns provides a logical architecture whereby IT assets (such as API’s, queues, or other architecture components) are separated and categorized for Provider and Consumer, and are connected through an independent mediation component (API, queue, or another). It creates an architecture whereby Provider and Consumer never directly communicate</p></li></ul>
 
-Figure 13: Separation of Concerns Architecture
 
-[[File:media/image13.emf|408x147px]]
+* <u>Separation of Concerns:</u>
+Separation of Concerns provides a logical architecture whereby IT assets (such as API’s, queues, or other architecture components) are separated and categorized for Provider and Consumer, and are connected through an independent mediation component (API, queue, or another).  It creates an architecture whereby Provider and Consumer never directly communicate
+
+
+
+
+''Figure 13: Separation of Concerns Architecture''
+ 
 
 As part of the Separation of Concerns, the below diagram illustrates how a Provider publishes its API’s to the API Catalog (i.e. “Broker”) which is the mediation point that the Consumer will find or locate the API to be used.
 
-Figure 14: Provider and Consumer Interaction
+''Figure 14: Provider and Consumer Interaction''
+ 
 
-[[File:media/image14.emf|321x243px]]
 
-= Tenet #6: Low Code Solutions: =
+
+ 
+== Tenet #6: Low Code Solutions: ==
 
 With low code solutions, the goal is to keep the TCO low by leveraging as least as possible to build the solution.
 
-* Configuration over custom code. Leverage the configuration based and built-in platform assets before building custom solutions, whether directly in the platform, or outside of it.
+* Configuration over custom code.  Leverage the configuration based and built-in platform assets before building custom solutions, whether directly in the platform, or outside of it.
+
 * Leverage VA Frameworks and SDK’s for re-use
+
 * Where possible, don’t’ recreate business logic in the “Integration Solutions” if its best suited for the data sources and endpoint systems themselves.
+
 * Be efficient with engineering source code, so to keep it simple, easy to understand, knowledge transferable, well commented and documented.
-
-= Overview =
-
-=== Objective ===
-
-The objective of building the Playbook is to create frameworks, which consist of standards, patterns, examples, constraints, and instructions, so that it can be leveraged at Veteran’s Affairs (VA)
-
+ 
+== Overview ==
+==== Objective ====
+The objective of building the Playbook is to create frameworks, which consist of standards, patterns, examples, constraints, and instructions, so that it can be leveraged at Veteran’s Affairs (VA) 
 This approach aligns with the “VA API and Integration Tenants”; the VA Open API pledge, and enables VA to build and manage solutions with ROI.
-
 The purpose of the Playbook can be summarized and categorized as follows:
-
-'''Enables acceleration of Functional Use Cases'''. Functional Use Cases need to be developed and deployed to release product at VA. The framework should provide a mechanism to enable efficient and rapid engineering, testing, deployment, and operations of VA product.
-
-'''Standardizes approaches across projects for easier governance, change management.''' The Playbook shall reference frameworks to allow VA to manage multiple Integration projects, solutions, and associated IT assets across VA, VA sub agencies business units, shared applications, etc. For example, the standard allows for making changes to an Integration Asset, and minimize the impacts of that change. Meaning, it should not cause a long SDLC to make the change, because the standards allowed for changes to be incorporated.
-
-'''Enterprise Approach'''. The Playbook has frameworks that allow for multiple VA sub agencies and business units, business processes, shared applications, project teams to work independently and bring their solutions together in an enterprise management, without conflicts, without misunderstandings, and enables a solution path for local and enterprise level conventions.
-
-'''Operations.''' The framework shall enable efficient and streamlined operations and sustainment of the Integration Solutions. For example, for “Naming Conventions Framework”, an Integration Administrator shall be able to view API’s across projects in a single webpage screen and easily understand which API’s are associated with which projects and business processes. Furthermore, it provides aesthetics of having an easily understood and interpretable set of IT assets to manage
-
-'''Allows for collaboration amongst organizations and people working on Integration Solutions.''' VA has multiple shared applications, sub agencies and business units, and parallel projects. People working on these efforts need to be speaking the same language and collaborate within or across project teams. Creating the standards allows for the people to collaborate more quickly, not spend time discussing syntax and naming standards since its already established, and allow for meaningful handover or collaboration across people within or across project teams.
-
-'''Simplicity and Pit of Success.''' Ensure simplicity and allow users to fall into the “Pit of Success” easily and without major effort (Reference: https://english.stackexchange.com/questions/77535/what-does-falling-into-the-pit-of-success-mean). Make the frameworks easy to use, easy to adopt, and easy to change over time.
-
+'''Enables acceleration of Functional Use Cases'''.  Functional Use Cases need to be developed and deployed to release product at VA.  The framework should provide a mechanism to enable efficient and rapid engineering, testing, deployment, and operations of VA product.
+'''Standardizes approaches across projects for easier governance, change management.'''  The Playbook shall reference frameworks to allow VA to manage multiple Integration projects, solutions, and associated IT assets across VA, VA sub agencies business units, shared applications, etc.  For example, the standard allows for making changes to an Integration Asset, and minimize the impacts of that change.  Meaning, it should not cause a long SDLC to make the change, because the standards allowed for changes to be incorporated.
+'''Enterprise Approach'''.  The Playbook has frameworks that allow for multiple VA sub agencies and business units, business processes, shared applications, project teams to work independently and bring their solutions together in an enterprise management, without conflicts, without misunderstandings, and enables a solution path for local and enterprise level conventions.
+'''Operations.''' The framework shall enable efficient and streamlined operations and sustainment of the Integration Solutions. For example, for “Naming Conventions Framework”, an Integration Administrator shall be able to view API’s across projects in a single webpage screen and easily understand which API’s are associated with which projects and business processes.   Furthermore, it provides aesthetics of having an easily understood and interpretable set of IT assets to manage
+'''Allows for collaboration amongst organizations and people working on Integration Solutions.''' VA has multiple shared applications, sub agencies and business units, and parallel projects.  People working on these efforts need to be speaking the same language and collaborate within or across project teams.  Creating the standards allows for the people to collaborate more quickly, not spend time discussing syntax and naming standards since its already established, and allow for meaningful handover or collaboration across people within or across project teams.
+'''Simplicity and Pit of Success.''' Ensure simplicity and allow users to fall into the “Pit of Success” easily and without major effort (Reference: <u>https://english.stackexchange.com/questions/77535/what-does-falling-into-the-pit-of-success-mean</u>).  Make the frameworks easy to use, easy to adopt, and easy to change over time.
 '''Extensibility'''. The framework can be expanded to include additional VA IT assets (databases, queues), platforms (MuleSoft, Kong, CA Layer 7), technologies (Mobile).
-
-'''Automation.''' By creating a standard practice and discipline, automation tools can be applied to review quality, automate build/deploy/release, search/replace, and more. With the adoption of DevOps approaches, the frameworks shall align with such.
-
-'''Consistency'''. By making solutions consistent across projects, business processes, and operating companies, it becomes repeatable and lowers the time effort associated with building and operating solutions; provides clarity where there could be ambiguity;
-
+'''Automation.''' By creating a standard practice and discipline, automation tools can be applied to review quality, automate build/deploy/release, search/replace, and more.  With the adoption of DevOps approaches, the frameworks shall align with such.
+'''Consistency'''.  By making solutions consistent across projects, business processes, and operating companies, it becomes repeatable and lowers the time effort associated with building and operating solutions; provides clarity where there could be ambiguity; 
 '''Re-Usable:''' The frameworks are re-usable within projects, across projects, across business process, and across operating companies.
+'''Discoverable''':  The frameworks allow for IT assets to be located with ease.  For example, the Naming Conventions improve the overall consumer experience in finding API’s in the API Marketplace.
+'''Runtime Performance enabled:''' The framework provides for efficient runtime performance, tuning, and a foundation for near real time Integration Assets. 
 
-'''Discoverable''': The frameworks allow for IT assets to be located with ease. For example, the Naming Conventions improve the overall consumer experience in finding API’s in the API Marketplace.
+''Figure 1: Framework Enablement''
+ 
+==== Scope ====
+When building a framework, it’s important to note the type of assets that are included and constitute the framework itself.  A framework is composed of a collection of documentation, sample/examples, reference implementations, collaboration, knowledge sharing, reviews and feedback, change management, enforcement.
 
-'''Runtime Performance enabled:''' The framework provides for efficient runtime performance, tuning, and a foundation for near real time Integration Assets.
+''Figure 2: What is a VA Framework''
+ 
 
-
-
-Figure : Framework Enablement
-
-[[File:media/image15.emf|624x261px]]
-
-=== Scope ===
-
-When building a framework, it’s important to note the type of assets that are included and constitute the framework itself. A framework is composed of a collection of documentation, sample/examples, reference implementations, collaboration, knowledge sharing, reviews and feedback, change management, enforcement.
-
-Figure : What is a VA Framework
-
-[[File:media/image16.emf|469x239px]]
 
 More specifically, frameworks include:
-
 * The herein documentation blueprint, which leveraged both existing and additional content from Best Practice repository.
 * Examples and samples throughout that are specific and configured for VA.
 * Collaboration and input with additional VA team members
@@ -250,62 +204,36 @@ More specifically, frameworks include:
 
 Frameworks are composed of any of the following artifacts:
 
-* <span class="underline">Pattern:</span> An approach for the framework that should be repeated.
-* <span class="underline">Standard:</span> A model of what the framework includes and its normalcy. Common approaches for solving problems. Systems and business processes shall communicate and share information via a common mechanism. The mechanism will be the operational approach, and approaches different from the standard will not be leveraged.
-* <span class="underline">Example:</span> Sample code and configurations.
-* <span class="underline">Constraint:</span> Limitations on what is excluded from the Framework.
-* <span class="underline">Instruction:</span> Procedures and Steps to take to implement the framework or associated practices.
+* <u>Pattern:</u> An approach for the framework that should be repeated.
+* <u>Standard:</u>  A model of what the framework includes and its normalcy.  Common approaches for solving problems.  Systems and business processes shall communicate and share information via a common mechanism.  The mechanism will be the operational approach, and approaches different from the standard will not be leveraged.
+* <u>Example:</u> Sample code and configurations.  
+* <u>Constraint:</u>  Limitations on what is excluded from the Framework.
+* <u>Instruction:</u>  Procedures and Steps to take to implement the framework or associated practices.
+''Figure 3: Framework Taxonomy''
+ 
+==== Approach ====
+Below is a diagram illustrating the approach to designing, development, and most importantly adoption of the framework into project teams.  It includes the governance for reviews and feedback to ensure quality and applicability of the framework.
+''Figure 4: Framework Approach''
+ 
 
-Figure : Framework Taxonomy
-
-[[File:media/image17.emf|624x423px]]
-
-=== Approach ===
-
-Below is a diagram illustrating the approach to designing, development, and most importantly adoption of the framework into project teams. It includes the governance for reviews and feedback to ensure quality and applicability of the framework.
-
-Figure : Framework Approach
-
-[[File:media/image18.emf|624x272px]]
-
-=== Framework Risks ===
-
+==== Framework Risks ====
 Below is a list of risks associated with Frameworks, their likelihood, impact, and mitigation techniques to avoid or overcome the risk impacts.
+''Figure 5: Framework Risks Analysis''
 
-Figure : Framework Risks Analysis
-
-{|
-! ID
-! Risk Description
-! Likelihood
-! Impact
-! Mitigation
+{| border=1
+ || ID || Risk Description || Likelihood || Impact || Mitigation
 |-
-| R1
-| Differing Viewpoints amongst VA Stakeholders
-| Medium
-| Medium
-|
-# Collaboration with key VA stakeholders during framework design and development.
+ || R1 || Differing Viewpoints amongst VA Stakeholders || Medium || Medium || # Collaboration with key VA stakeholders during framework design and development.
 # Review process with key VA stakeholders during design and development.
 # Continuous feedback from project teams applying framework for updates and improvements.
 |-
-| R2
-| Framework achieves Enterprise Level goals and meets needs of local projects (Operating Companies)
-| Medium
-| High
-|
-# Framework adoption Knowledge Sharing with VA project and operating company teams
+ || R2 || Framework achieves Enterprise Level goals and meets needs of local projects (Operating Companies) || Medium || High || # Framework adoption Knowledge Sharing with VA project and operating company teams
 # Employ Review processes to capture any issues
 # Framework Repudiation write-up at the project or operating company level.
 |-
-| R3
-| Adherence to Framework standards.
-| Medium
-| High
-|
-# Periodic Audits of shared application projects.
+ || R3 || Adherence to Framework standards. || Medium || High || # Periodic Audits of shared application projects.
 # Feedback, Collaboration, and Quality Control sessions with operating companies.
 # Ensure the Framework is clear, consistent, and allows for Pit of Success.
+|-
 |}
 
