@@ -1,81 +1,93 @@
  Volume in drive C is Local Disk
  Volume Serial Number is D079-03A9
 
- Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section (Baseline Wiki)
+ Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section (Baseline)
 
-ASG_API Playbook_01.00 Introduction_Section_01.01_Initial Draft.docx
-ASG_API Playbook_01.00 Introduction_Section_01.02_SME Review {Paul Marshall}.docx
+07/25/2018  03:56 PM         1,843,769 ASG_API Playbook_01.00 Introduction_Section_01.01_Initial Draft.docx
+07/30/2018  12:24 PM         1,854,406 ASG_API Playbook_01.00 Introduction_Section_01.02_SME Review {Paul Marshall}.docx
                2 File(s)      3,698,175 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\02.01 ASG_API Playbook_Development Lifecycle_Section (Baseline)
 
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.01_Initial Draft.docx
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.02_SME Review.docx
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.03_SME Review Resolved.docx
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.04_V2 Draft.docx
-               4 File(s)        560,440 bytes
+07/27/2018  01:14 PM           139,997 ASG_API Playbook_02.01 Development Lifecycle_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM           113,088 ASG_API Playbook_02.01 Development Lifecycle_Section_01.02_SME Review.docx
+07/27/2018  01:14 PM           194,267 ASG_API Playbook_02.01 Development Lifecycle_Section_01.03_SME Review Resolved.docx
+07/27/2018  01:14 PM           113,088 ASG_API Playbook_02.01 Development Lifecycle_Section_01.04_V2 Draft.docx
+07/27/2018  01:14 PM           113,088 ASG_API Playbook_02.01 Development Lifecycle_Section_01.05_Standards Review {paul marshall}.docx
+               5 File(s)        673,528 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\02.02 ASG_API Playbook_Industry Standards_Section (Baseline)
 
-ASG_API Playbook_02.02 Industry Standards_HL7_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM           348,669 ASG_API Playbook_02.02 Industry Standards_HL7_Section_01.01_Initial Draft.docx
                1 File(s)        348,669 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\03.00 ASG_API Playbook_API Layer_Section (Baseline)
 
-ASG_API Playbook_03.00 API Layer_Section_01.01_Initial Draft.docx
+07/25/2018  11:38 AM           353,091 ASG_API Playbook_03.00 API Layer_Section_01.01_Initial Draft.docx
                1 File(s)        353,091 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\04.00 ASG_API Playbook_API Contracts_Section (Baseline)
 
-ASG_API Playbook_04.00 API Contracts_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM         1,402,263 ASG_API Playbook_04.00 API Contracts_Section_01.01_Initial Draft.docx
                1 File(s)      1,402,263 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\05.01 ASG_API Playbook_Naming Standards_Section (Baseline)
 
-ASG_API Playbook_05.01 Naming Standards_Section_01.01_Initial Draft.docx
-ASG_API Playbook_05.01 Naming Standards_Section_01.02_SME Review {MaxGirin}.docx
+07/27/2018  01:14 PM            46,958 ASG_API Playbook_05.01 Naming Standards_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM            59,575 ASG_API Playbook_05.01 Naming Standards_Section_01.02_SME Review {MaxGirin}.docx
                2 File(s)        106,533 bytes
+
+ Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\05.04 ASG_API Playbook_Objects and Methods_Section (Baseline)
+
+07/31/2018  02:01 PM            30,152 ASG_API Playbook_05.04 Objects and Methods_Section_01.01_Initial Draft {max girin}.docx
+               1 File(s)         30,152 bytes
+
+ Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\05.05 ASG_API Playbook_Middleware Artifacts_Section (Baseline)
+
+07/31/2018  01:03 PM            49,454 ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}.docx
+               1 File(s)         49,454 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\06.00 ASG_API Playbook_Configuration Management_Section (Baseline)
 
-ASG_API Playbook_06.00 Configuration Management_Section_01.01_Initial Draft.docx
-ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review.docx
+07/27/2018  01:14 PM           352,640 ASG_API Playbook_06.00 Configuration Management_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM           360,633 ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review.docx
                2 File(s)        713,273 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\07.00 ASG_API Playbook_Unit Testing_Section (Baseline)
 
-ASG_API Playbook_07.00 Unit Testing_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM         1,764,320 ASG_API Playbook_07.00 Unit Testing_Section_01.01_Initial Draft.docx
                1 File(s)      1,764,320 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\09.01 ASG_API Playbook_Exception Handling Approach_Section (Baseline)
 
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.01_Initial Draft.docx
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.02_SME Review.docx
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.03_SME Review.docx
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.04_SME Review Resolved.docx
-               4 File(s)      7,257,876 bytes
+07/27/2018  01:14 PM           467,684 ASG_API Playbook_09.01 Exception Handling Approach_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM           188,378 ASG_API Playbook_09.01 Exception Handling Approach_Section_01.02_SME Review.docx
+07/27/2018  01:14 PM           188,470 ASG_API Playbook_09.01 Exception Handling Approach_Section_01.03_SME Review.docx
+07/27/2018  01:14 PM         6,413,344 ASG_API Playbook_09.01 Exception Handling Approach_Section_01.04_SME Review Resolved.docx
+07/27/2018  01:14 PM         6,413,344 ASG_API Playbook_09.01 Exception Handling Approach_Section_01.05_Standards Review {paul marshall}.docx
+               5 File(s)     13,671,220 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\10.00 ASG_API Playbook_Baseline Logging_Section (Baseline)
 
-ASG_API Playbook_10.00 Baseline Logging_Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM         4,351,062 ASG_API Playbook_10.00 Baseline Logging_Section_01.01_Initial Draft.docx
                1 File(s)      4,351,062 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\11.00 ASG_API Playbook_Baseline API Security_Section (Baseline)
 
-ASG_API Playbook_11.00 Baseline Security_Section_01.01_Initial Draft.docx
+07/25/2018  11:38 AM            14,931 ASG_API Playbook_11.00 Baseline Security_Section_01.01_Initial Draft.docx
                1 File(s)         14,931 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\12.03 ASG_API Playbook_Reuse Guidelines_Section (Baseline)
 
-ASG_API Playbook_12.03 Reusability Section_01.01_Initial Draft.docx
-ASG_API Playbook_12.03 Reusability Section_01.02_SME Review {MaxGirin}.docx
+07/25/2018  11:38 AM           193,060 ASG_API Playbook_12.03 Reusability Section_01.01_Initial Draft.docx
+07/27/2018  01:14 PM           202,735 ASG_API Playbook_12.03 Reusability Section_01.02_SME Review {MaxGirin}.docx
                2 File(s)        395,795 bytes
 
  Directory of C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\13.00 ASG_API Playbook_API Documentation Blueprint_Section (Baseline)
 
-ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft.docx
+07/25/2018  11:38 AM            93,981 ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft.docx
                1 File(s)         93,981 bytes
 
      Total Files Listed:
-              23 File(s)     21,060,409 bytes
-               0 Dir(s)  120,618,532,864 bytes free
+              27 File(s)     27,666,447 bytes
+               0 Dir(s)  122,344,288,256 bytes free
