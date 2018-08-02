@@ -53,8 +53,7 @@ To accomplish this, the VA will follow approaches that invest in architecture an
 
 Figure 2: Cost of Ownership Curve
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/
-image2.png|534x280px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image2.png|534x280px]]
 
 At times, there may be a simpler, less complex implementation approach than the “standard API” approach, which seem faster or even less costly. However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs. In other words, what may seem simpler on the surface, may be costlier over long haul. This especially holds true when measuring factors such as operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance. The most common issue is building a point-to-point or 1-off solution that is costlier of the long haul to manage, maintain, and support—hence, a higher Total Cost of Ownership.
 
@@ -138,11 +137,11 @@ Figure 7: Service Composition through Microservices
 
 Figure 8: Anti-Pattern BLOB
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image8.jpeg|229x176px|imagesCAOEIPRH.jpg]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image8.jpg|229x176px]]
 
 Figure 9: Example of BLOB Anti-Pattern
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image9.jpeg|291x300px|bpel]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image9.jpg|291x300px]]
 
 * New Applications, User Interfaces, and other User-centric solutions (i.e. Mobile, Portals, Extranets, Intranets) shall be a mash-up of APIs to create the solution. There shall not be integrations or middle-tier IT assets created directly from UI to data sources. Instead, the UI shall consume APIs that provide all the middle-tier logic and data.
 * Design patterns shall leverage a 3-layer approach, like Model-View-Controller with the following responsibilities:
