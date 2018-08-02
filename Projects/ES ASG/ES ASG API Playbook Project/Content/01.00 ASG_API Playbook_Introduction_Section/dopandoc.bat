@@ -1,2 +1,2 @@
-pandoc -f docx -t mediawiki -o "ASG_API Playbook_01.00 Introduction_Section_01.01_Initial Draft.mediawiki" "ASG_API Playbook_01.00 Introduction_Section_01.01_Initial Draft.docx"
+pandoc -f docx -t mediawiki -o "ASG_API Playbook_01.03 Introduction Section_01.04_Publication Review {Paul}.mediawiki" "ASG_API Playbook_01.03 Introduction Section_01.04_Publication Review {Paul}.docx"
 pause
