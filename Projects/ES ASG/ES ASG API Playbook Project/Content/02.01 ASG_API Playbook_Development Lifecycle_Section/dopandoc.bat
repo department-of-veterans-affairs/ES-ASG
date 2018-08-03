@@ -1,4 +1,4 @@
-set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/02.01%%20ASG_API%%20Playbook_Development%%20Lifecycle_Section/media/"
+set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/02.01%%20ASG_API%%20Playbook_Development%%20Lifecycle_Section/media/"
 rmdir media
 
 rem get the last .docx file
