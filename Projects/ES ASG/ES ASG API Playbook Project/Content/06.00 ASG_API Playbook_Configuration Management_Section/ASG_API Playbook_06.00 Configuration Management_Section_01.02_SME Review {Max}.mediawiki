@@ -1,0 +1,451 @@
+API Developer Playbook Blueprint Documentation
+
+Maps to Framework Set #1
+
+[[File:.//media/image1.jpeg|228x228px|Department of Veterans Affairs official seal]]
+
+Document Version Draft 01.00.03
+
+Revision History
+
+{|
+| Date
+| Version
+| Description
+| Author
+|-
+|
+
+|
+
+|
+
+|
+
+|}
+
+Table of Contents
+
+[[#configuration-management|1. Configuration Management 1]]
+
+[[#api-configuration-management|1.1. API Configuration Management 1]]
+
+[[#configuration-management-in-the-cloud|1.1.1. Configuration Management in the Cloud 1]]
+
+[[#configuration-management-software-tools|1.1.2. Configuration Management Software Tools 1]]
+
+[[#future-of-configuration-management-software|1.1.3. Future of Configuration Management Software 2]]
+
+[[#changes-to-restful-apis|1.2. Changes to RESTful APIs 2]]
+
+[[#when-to-version|1.3. When to Version 3]]
+
+[[#versioning-guidelines|1.4. Versioning Guidelines 3]]
+
+[[#uri-versioning|1.4.1. URI Versioning 3]]
+
+[[#media-type-versioning|1.4.2. Media Type Versioning 4]]
+
+[[#http-request-accept-examples|1.4.2.1. HTTP Request Accept Examples: 4]]
+
+[[#http-response-content-type-examples|1.4.2.2. HTTP Response Content-Type Examples: 4]]
+
+[[#summary|1.4.3. Summary 5]]
+
+[[#github|1.5. GitHub 6]]
+
+[[#the-git-command-line|1.5.1. The GIT Command Line 6]]
+
+[[#github-branching-and-merging|1.5.2. GitHub Branching and Merging 6]]
+
+[[#github-branching|1.5.3. GitHub Branching 6]]
+
+[[#github-branching-and-related-command-lines|1.5.3.1. GitHub Branching and Related Command Lines 7]]
+
+[[#github-merging|1.5.4. GitHub Merging 7]]
+
+[[#github-merging-and-related-command-lines|1.5.4.1. GitHub Merging and Related Command Lines 8]]
+
+[[#resolving-github-merging-conflicts|1.5.4.2. Resolving GitHub Merging Conflicts 8]]
+
+[[#github-integration|1.5.5. GitHub Integration 9]]
+
+[[#testing|1.5.5.1. Testing 9]]
+
+[[#code-quality|1.5.5.2. Code Quality 9]]
+
+[[#code-review|1.5.5.3. Code Review 9]]
+
+[[#continuous-integration|1.5.5.4. Continuous Integration 9]]
+
+[[#dependency-management|1.5.5.5. Dependency Management 9]]
+
+[[#deployment|1.5.5.6. Ddeployment 10]]
+
+[[#references|2. References 11]]
+
+[[#acronym|3. Acronym 11]]
+
+
+
+Table of Tables
+
+[[#_Toc515341204|Table 1: Reference Table 11]]
+
+[[#_Toc517969177|Table 2: Acronym Table 11]]
+
+'''Table of Figures'''
+
+= Configuration Management =
+
+The section of the document is dedicated to the generic topic of Configuration Management, albeit with a more detailed discussion of Configuration Management topics. DevOps, which is a set of tools, processes and procedures that modern software development teams put in place to ensure that source code is deployed in a stable and repeatable way, will not be discussed in this section.
+
+So, for the purposed of this section, the definition of API Configuration Management is the set of practices aiming to manage the '''runtime state''' of the software applications'''.'''
+
+== API Configuration Management ==
+
+Applications typically consists of one or more databases, web servers, application servers, reverse proxies, load balancers, and other moving parts that need work together at runtime to implement a working system.
+
+Environment configuration management is the process of describing the ways in which all these inputs, typically referred to artifacts, interact and how they leverage the underlying infrastructure. Specifically, it addresses the installation, configuration and execution of configuration items on servers.
+
+Traditional configuration management required the writing of items such as scripts, hand-maintain files listing technical endpoints, port numbers, and namespaces etc. The laborious nature of this process resulted in the increased complexity of a system as well as the configuration management process itself.
+
+Increased infrastructure configuration automation evolved because of the needs of processes such as artifact versioning, environment changes and the need for coordination between developers and system engineers.
+
+=== Configuration Management in the Cloud ===
+
+The cloud facilitated the migration of server infrastructure from on-premise to the cloud and while the inherent complexities of running an on-premise infrastructure decreased, new problems arose as well.
+
+Cloud technologies have enabled teams to deploy software to a multitude of servers concurrently to satisfy the demands of modern software usage. Managing many servers requires automation on a different scale with a more systematic approach.
+
+This is where an '''API-driven''' approach to configuration management can help.
+
+Rather than installing and launching scripts individually on each node, a centralized configuration management server could control all the nodes programmatically and drastically reduce the workload of the team’s system administrators.
+
+=== Configuration Management Software Tools ===
+
+New configuration management software tools have gradually been introduced in the last decade to address the growing needs of automated configuration management. Following is a high-level overview of existing configuration management tools.
+
+* '''Ansible'''
+
+<blockquote>Ansible, also open source and built in Python. It was created in reaction to the relative complexity of Puppet and Chef, and attempts to offer a simpler, more elegant alternative, with a shorter learning curve. Ansible is based on an agentless architecture, meaning that no agent is required to run on each infrastructure node, which leads to less complexity and less load on the network. Ansible modules, referred to as units of work, can be written with a variety of scripting languages like Python, Perl or Ruby. Ansible lets users define playbooks in YAML for often used system descriptions.
+</blockquote>
+* '''Puppet'''
+
+<blockquote>It is built in Ruby but offers its own JSON-like declarative language to create ‘manifests’, the modules in which configuration items are described, using high-level concepts like users, services and packages. Puppet is “Model driven”, which means that not much programming is usually required. This makes Puppet more desirable for system engineers with little experience in programming.
+</blockquote>
+* '''Chef'''
+
+<blockquote>Is generally developer-friendly and very popular with teams already using Ruby. It lets developers write ‘cookbooks’ in Ruby and stores the resulting instructions in PostgreSQL.
+</blockquote>
+* '''SaltStack'''
+
+<blockquote>It is built in Python and open sourced in 2011. SaltStack focuses on low-latency architecture and fault tolerance. It features a decentralized setup, small messaging payloads, no single point of failure, and parallel execution of commands for optimal performance.
+</blockquote>
+=== Future of Configuration Management Software ===
+
+While the configuration management technological landscape has greatly matured, the consensus that things will keep evolving in the future. urrent mainstream solutions are often viewed as too complicated, unforgiving and difficult to maintain. One alternative to the classic configuration management approach is the emerging immutable container infrastructure. Docker is an example of this evolving technology.
+
+Whereas regular configuration management aims to define and manage state at run time, containerized applications require that all the configuration be defined at build time. The resulting portable containers can then be moved from one host to the next without any changes in state. These states can then be saved in Docker images and used later to re-spawn a new instance of the complete environment. Images therefore offer an alternative means of configuration management, arguably superior to runtime configuration management.
+
+== Changes to RESTful APIs ==
+
+The following is a paraphrased excerpt from an interview with Roy Fielding and his discussions involving RESTful API changes over time.
+
+https://www.infoq.com/articles/roy-fielding-on-versioning
+
+<blockquote>Anticipating change is one of the central themes of REST. It makes sense that experienced developers are going to think about the ways that their API might change in the future, and to think that versioning the interface is paving the way for those changes. That led to a never-ending debate about where and how-to version the API.
+</blockquote>
+Reality regarding services APIs is that contracts between services and service consumers are bound to change. API Contract versioning facilitates the rolling out of new service features that involve contract changes and at the same time provide backward compatibility for service consumers that are still using prior API versions. Plan for contract versioning from the very start of the design effort, even though the current thinking is that is versioning will not be needed, because eventually it most likely will.
+
+== When to Version ==
+
+APIs only need to be up-versioned when a breaking change is made. Breaking changes include:
+
+* A change in the format of the response data for one or more calls
+* A change in the response type (i.e. changing an integer to a float)
+* Removing any part of the API.
+
+Breaking changes should always result in a change to the major version number for an API or content response type.
+
+Non-breaking changes, such as adding new endpoints or new response parameters, do not require a change to the major version number. However, it can be helpful to track the minor versions of APIs when changes are made to support customers who may be receiving cached versions of data or may be experiencing other API issues.
+
+== Versioning Guidelines ==
+
+There is substantial documentation on the web regarding RESTful versioning. This document will detail '''two''' options that for the most part have been overwhelmingly referenced in these various discussions, more so then what seems to be less viable options:
+
+* URI Versioning – version the URI space using version indicators
+* Media Type Versioning – version the Representation of the Resource
+
+Pros and cons of each option will be noted.
+
+=== URI Versioning ===
+
+The first recommendation addresses how to handle versioning if the development community views the URL as the most important facet which make the URL the center of the versioning efforts. Developers who are familiar with versioning with WS-* Web services tend to be more comfortable with changing the URL when versions change.
+
+Like most other problems with REST, a common flawed approach to API versioning stems from misunderstanding of the URI. This popular way simply adds a version number as a segment in the resource identifiers
+
+Adding, removing, reordering, and renaming fields constitutes a breaking change for a client which philosophically is a departure from REST. Creating a new version in this scenario, changes the URL structure. The resource object version for 1.0 and 2.0 looks like this:
+
+* http://www. mycompany.com/myapp /resource1.0
+* http://www. mycompany.com/myapp /resource2.0
+
+In the above examples it is most likely the behavior of the resource that changes and not the actual resource. In other words, it is the contract that changed. The two identifiers are used to access the same resource. This is the most common argument why this approach is somewhat problematic but it is simple and will never break any cache constraints. But there is one scenario when the version in the URL somewhat makes sense. That is when the resource changes and it each individual version must be accessible
+
+By convention, the default value for format is json. Examples:
+
+* Request the resource as XML: http://www. mycompany.com/app/1.0/resource ?format=xml
+* Request the resource as JSON: http://www. mycompany.com/app/1.0/resource ?format=json
+
+Some developers tend to prefer versioning by URL which allows them to determine which version of the service is in use at a glance. From a purest standpoint the URI in REST should represent the resource structure only. It could be argued that a version is not a resource but an attribute of the resource.
+
+=== Media Type Versioning  ===
+
+The REST API would make use of custom vendor Multipurpose Internet Mail Extensions or MIME media types instead of generic media types such as application/json. It is these media types that are going to be versioned instead of the URIs. The media type versioning philosophy makes use of the MIME sub type of vnd which is vendor-specific. The Internet Assigned Numbers Authority (IANA) is the official authority for the standardization and publication of these vendor classifications.
+
+If the API is to be used internally only, the vnd MINE type should not be an issue. If an external presence is desired, thought should be given with registering it with the IANA This is a standard way for sharing out-of-band information with potential clients.
+
+==== HTTP Request Accept Examples: ====
+
+* '''Accept''': application/vnd. mycompany.myapp.resource-v1+json
+
+<blockquote>or using a v=1 qualifier:
+</blockquote>
+* '''Accept''': application/vnd. mycompany.myapp.resource+json;v=1
+
+==== HTTP Response Content-Type Examples: ====
+
+* '''Content-Type''': application/vnd. mycompany.v1+json
+
+What is important to understand here is that the client makes no assumptions about the structure of the response beyond what is defined in the media type. Therefore, generic media types are not ideal as they do not provide enough semantic information and force the client to use additional hints to process the actual representation of the resource.
+
+The Accept header in the request tells the server the content types that the client is expecting in the response body.
+
+Content negotiation preserves clean set of URLs but there is still the task of having to deal with the complexity of serving different versions of content somewhere. This burden tends to be moved up the stack to the API controller infrastructure which become responsible for figuring out which version of a resource to send. The result tends to be a more complex API as clients must know which headers to specify before requesting a resource.
+
+=== Summary ===
+
+If the responsible development community is more RESTful architecturally minded and aware, REST API versioning should be accommodated by using version data representations in the MIME types in the HTTP Application Accepts. If development community views the URL as the most important facet then changing the URL there when versions change.
+
+Both mechanisms are valid. You need to know your consumer to know which path to follow. In general, working in an enterprises minded environment tends to point developers towards REST versioning using the MIME philosophy.
+
+== GitHub ==
+
+Git and GitHub are not the same thing. Git by itself, is a distributed revision control and software configuration management (SCM) system. GitHub is a web-based software as a service for software development projects that uses Git
+
+GitHub is a publicly available, free service which requires all code, unless there is a paid account, be available in the public domain. GitHub currently hosts the source code for numerous open source projects. An in-depth discussion on the pros and cons of Git compared to centralized source code control systems will not be a part of this discussion as Git and GitHub is the VA’s recommended SCM alternative.
+
+=== The GIT Command Line ===
+
+There are a lot of different ways to use Git. There are the original command-line tools, and there are many graphical user interfaces of varying capabilities. The command line is the only place where all Git commands can be executed. Most of the GUIs (e.g. Bit Bucket) implement only a subset of Git functionality for simplicity and the choice of a graphical client is a matter of personal taste. For purposes of clarity only GIT command lines features will be discussed in this section of the document.
+
+=== GitHub Branching and Merging ===
+
+It can be argued that Git changed the way developers think of merging and branching. From the classic CVS/Subversion world where merging/branching has always been considered a bit daunting and something you only do when it was necessary.
+
+With Git, merging and branching actions are simple, and they are considered one of the core parts of a daily development workflow, for example, in the world of CVS/Subversion, branching and merging is treated as an advanced concept, while in Git they are considered basic concepts.
+
+This section of the document will cover GitHub Branching and Merging commands at a somewhat low level using Git command lines as part of the discussion. A detailed philosophical discussion of Branching and Merging is better left to the configuration management strategies of individual development teams.
+
+=== GitHub Branching ===
+
+Software development generally occurs using multiple branches in parallel. For example, a software artifact may be under development/modification by multiple developers on different branches.
+
+Typically, there are multiple types of branches utilizing various naming conventions:
+
+* '''Master Branch -''' Publicly released production-ready code.
+* '''Release Branch -''' Branches that are being prepared for deployment. but still internal to the deployment effort.
+* '''Project Branches''' - Branches in development for pre-release projects, such as partner deployments. Branched that are at a lower level then a Release Branch artifact.
+* '''Development Branch''': Branches that contain in-progress artifacts that are being worked by development staff.
+
+These branches are arranged in a liner sequence where the Development Branch migrates to the Project Branch and so on upwards. This linear sequence simplifies the ''merge/release strategy'' (i.e. Develop to Project to Release to Master)
+
+The ''merge/release strategy'' alluded to above means that when code is ready to be moved up the branch food chain a &quot;forwards merge&quot; along the direction of this chain is performed. Conversely a &quot;backwards merges&quot; are performed on a regular basis to bring changes (e.g. hotfixes) from the higher level branched back down to the lower level branches. Backwards merges can happen any time, but should be regularly scheduled.
+
+Choosing where to branch off from and target a pull request depends on an assessment of three factors: how urgent the fix/feature is, how risky (in terms of introducing other bugs) the required changes are, and how long it will take to develop. A good heuristic is to see how urgent the code that is being committed versus how risky or potentially breaking it is:
+
+==== GitHub Branching and Related Command Lines ====
+
+Simply stated a branch is required when a feature hosted in the high-level branch must be modified and/or added. A branch which will host the development of the new feature, must be created from an upper level branch, which is typically the Master. This section will focus solely on the branch creation process only. Subsequent process flow commands such as commits and check-ins are not part of this discussion. The following are typical steps used in creating and removing a branch:
+
+# Creating a new branch:
+
+<blockquote>Execute the Git '''''branch''''' &lt;new branch name'''&gt;''' followed by Git '''''checkout''''' &lt;new branch name'''''&gt;.''''' These two commands can be combined into one by using the checkout command with the -b switch - git '''''checkout -b''''' &lt;new branch name'''&gt;.'''
+</blockquote>
+<ol start="2" style="list-style-type: decimal;">
+<li><p>Removing a branch</p></li></ol>
+
+<blockquote>Branches are typical removed after their contents have been merged to a higher-level branch and is good practice. Execute the Git branch command with the -d switch - Git '''''branch -d''''' &lt;branch name'''&gt;.'''
+</blockquote>
+=== GitHub Merging  ===
+
+GIT merging facilitates consolidates the migration of a forked branch or branches back to a common branch. The Git '''''merge''''' command accomplishes this task.
+
+The current branch will be updated to reflect the merge, but the target branch will be completely unaffected. GIT '''''merge''''' is often used in conjunction with Git '''''checkout''''' for selecting the current branch and Git '''''branch -d''''' for deleting the merged branch target branch
+
+Typically, Git '''''merge''''' is used to combine two branches. The following examples will focus on this branch merging pattern. Git '''''merge''''' takes two commit pointers, usually the branch tips which are the last commit or most recent commit on a branch, and will find a common base commit between them. Once Git finds a common base commit it will create a new &quot;merge commit&quot; that combines the changes of each queued merge commit sequence
+
+Here is the scenario: a branch containing a new feature that is based off the master branch. This feature branch needs to be merged back into the Master Branch. Invoking this command will merge the specified branch feature into the current branch, which in this case is Master. Git will determine the merge algorithm automatically.
+
+==== GitHub Merging and Related Command Lines ====
+
+Before performing a merge, there are several preparation steps needed to ensure the merge is performed correctly.
+
+# Confirm the receiving branch of the merge:
+
+<blockquote>Execute Git '''''status''''' to ensure that HEAD (think of the HEAD as the &quot;current branch&quot;) is pointing to the correct merge-receiving branch. If needed, execute Git '''''checkout''''' &lt;receiving branch&gt; to switch to the receiving branch. In this case execute git '''''checkout''''' '''''master'''''
+</blockquote>
+<ol start="2" style="list-style-type: decimal;">
+<li><p>Fetch latest remote commits:</p></li></ol>
+
+<blockquote>Insure that the receiving branch and the merging branch are up-to-date with the latest remote changes. Pull the latest remote commits by executing Git '''''fetch'''''. Execute Git '''''pull''''' once the fetch is completed to ensure the master branch has the latest updates
+</blockquote>
+<ol start="3" style="list-style-type: decimal;">
+<li><p>Perform the merge:</p></li></ol>
+
+<blockquote>Once steps 1 and 2 have been taken place, a merge can be initiated by executing Git '''''merge''''' &lt;branch name&gt; where &lt;branch name&gt; is the name of the branch that will be merged into the receiving branch which in this scenario is Master.
+</blockquote>
+==== Resolving GitHub Merging Conflicts ====
+
+If the two branches both changed the same part of the same file, Git won't be able to determine which version to use. When this a situation occurs, it stops right before the merge commit so the conflict can be resolved manually. When a merge conflict is encountered, running the Git '''''status''''' command shows which files need to be resolved.
+
+=== GitHub Integration ===
+
+There are numerous products that integrate with the GitHub Platform. The following GitHub Market Place Link list in more many integrating products: https://github.com/marketplace.
+
+The following is a small sub set by grouped by product functionality.
+
+==== Testing ====
+
+* TestQuality
+
+<blockquote>TestQuality's GitHub Test Management extends Github to provide powerful and modern test plan management helping developers and testers create, run, coordinate and monitor software testing tasks.
+</blockquote>
+==== Code Quality  ====
+
+* Sider
+
+<blockquote>Sider supports over 20 analysis tools to empower development teams by increasing code review efficiency and quality. It also offers quick and simple extended functionality with custom tools to tailor-fit your team, enabling them to save time and improve the development process.
+</blockquote>
+==== Code Review  ====
+
+* AccessLint
+
+<blockquote>AccessLint brings automated web accessibility testing into the development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live.
+</blockquote>
+==== Continuous Integration ====
+
+* Jenkins
+
+<blockquote>With the help of the Git plugin Jenkins can easily pull source code from any Git repository that the Jenkins build node can access. The GitHub plugin extends upon that integration further by providing improved bi-directional integration with GitHub. Allowing the setting up of a Service Hook which will hit the Jenkins instance every time a change is pushed to GitHub.
+</blockquote>
+==== Dependency Management ====
+
+* Dependabot
+
+<blockquote>Dependabot helps to keep Ruby, JavaScript, Python, PHP, Elixir, Rust, Java and .NET dependencies up to date. Every day, Dependabot checks the dependency files for outdated or insecure requirements and opens individual pull requests for any it finds. Review the PRs, merge them, and get to work on the latest, most secure releases
+</blockquote>
+==== Deployment ====
+
+* Codefresh
+
+<blockquote>Codefresh is designed specifically for teams deploying containers to production. Move fast and deploy with confidence thanks to:
+</blockquote>
+* Docker Optimized CI
+* Kubernetes Optimized CD
+* Insanely fast build flow optimized for Docker
+* Easy Image Management from an embedded registry
+* Quick Setup and Powerful Pipelines
+* Streamlined deployment to Kubernetes, Swarm, ECS, and more.
+
+= References =
+
+<span id="_Toc515341204" class="anchor"></span>Table 1: Reference Table
+
+{|
+! Ref. ID
+! Reference Name
+! Reference
+! Definition
+|-
+| R1
+| FHIR Standard
+| http://www.fhir.org/
+|
+
+|-
+| R2
+| HTTPS Standard
+| https://https.cio.gov/everything/
+| All web traffic shall be HTTPS and none shall be HTTP
+|-
+|
+
+|
+
+|
+
+|
+
+|-
+|
+
+|
+
+|
+
+|
+
+|}
+
+= Acronym =
+
+<span id="_Toc517969177" class="anchor"></span>Table 2: Acronym Table
+
+{|
+! Acronym
+! Elaboration
+! Definition
+|-
+| API
+| Application Programming Interface
+| A computer function that performs a logical operation on rules or data.
+|-
+| SDK
+| Software Development Kit
+| A collection of software modules and assets that allows a consumer to apply the modules for runtime functionality.
+|-
+| ROI
+| Return on Investment
+| The benefit or payoff received from investing cost into an initiative
+|-
+| RAML
+| RESTful API Modeling Language
+| A language and approach to building API soft contracts the describe and specify API design details.
+|-
+| JSON
+| Javascript Object Notation
+|
+
+|-
+| SOAP
+| Simple Object Access Protocol
+| Is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks
+|-
+| XML
+| Xtensible Markup Language
+|
+
+|-
+| FHIR
+| Fast Health Care Interoperability Resource
+| Is a standard describing data formats and elements (known as &quot;resources&quot;) and an application programming interface (API) for exchanging electronic health records
+|-
+|
+
+|
+
+|
+
+|}
+
