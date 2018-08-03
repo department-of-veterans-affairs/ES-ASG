@@ -7,12 +7,12 @@ rem convert to docx to mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
 rem Fix up image URLs
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'"
-powershell -Command "(gc '%aFile%.mediawiki') -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding "UTF8"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'" -encoding "UTF8"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'" -encoding "UTF8"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'" -encoding "UTF8"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'" -encoding "UTF8"
+powershell -Command "(gc '%aFile%.mediawiki') -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding "UTF8"
 
 rem housekeeping and move Wiki for publishing
 del *.bak
