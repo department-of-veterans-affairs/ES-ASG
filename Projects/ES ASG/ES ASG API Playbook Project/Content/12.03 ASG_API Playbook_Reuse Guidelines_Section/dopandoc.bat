@@ -3,7 +3,7 @@ for /R %%f in (*.docx) do set aFile=%%~nf
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
 for /R %%f in (*.docx) do (
-	uedit64 "%aFile%.mediawiki" /m,e="C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section\fixURL.mac"
+	uedit64 "%aFile%.mediawiki" /m,e="C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\12.03 ASG_API Playbook_Reuse Guidelines_Section\fixURL.mac"
 )
 
 del *.bak
