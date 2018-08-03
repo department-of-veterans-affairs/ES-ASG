@@ -1,14 +1,12 @@
-As part of VA’s shift to digital solutions, VA has made a commitment to leverage “API Solutions” as a fundamental approach to solving IT problems. To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA API Tenants. Within this document, we define the most important principles of Integration and how they apply to VA context. Throughout the document, there will be references to the VA API tenants, as well as their supporting subcomponents, and how they’re impacted by VA’s people, process, and technology. Below are the brief definitions of people, process, and technology.
+As part of VA’s shift to digital solutions, VA has made a commitment to leverage “API Solutions” as a fundamental approach to solving IT problems. To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA API Tenants. Within this document, we define the most important principles of Integration and how they apply to VA context. Throughout the document, there will be references as The tenants, as well as their supporting subcomponents, and how they’re impacted by VA’s people, process, and technology. Below are the brief definitions of people, process, and technology.
 
 * <span class="underline">People:</span> The roles and responsibilities to build and maintain Integration Solutions.
 * <span class="underline">Process:</span> Methodology and governance to build and maintain Integration Solutions
 * <span class="underline">Technology:</span> Integration platforms and codified assets developed to connect
 
-The API Developer Playbook currently is focused on “Technology” and the associated accelerating “Processes”. Future versions will include more standards around “People” and more “Process”.
-
 <span class="underline">Technology:</span>
 
-API Solutions can be comprised of different technologies, platforms, and IT components, ranging from API, queue, security, datastores, cloud platform, and other key components on the typical “Microservices Reference Architecture.” It is important to understand the supporting reference architecture, because API Solutions are rarely bundled into a single platform, as well as API solutions have supporting capability needs from other architecture components (for example: queuing, CICD, Caching, etc.) Instead, a collection of best-of-breed technology platforms are leveraged. Below is Visual Integrator’s Integrator’s Reference Architecture, which maps all the archicture capabilities into a Reference Architecture diagram, displaying the groupings, relationships, and the API and supporting integration technology responsibilities. Note, the diagram displays a complete Reference Architecture capturing all possible capabilities, some of which may be prioritized higher for VA teams. It is important to map which are most important to enable the VA to produce agency and business solutions.
+Integration Solutions can be comprised of different technologies, platforms, and IT components, ranging from API, queue, security, datastores, cloud platform, and other key components on the “Reference Architecture.” It is important to understand the supporting reference architecture, because Integration Solutions are rarely bundled into a single platform. Instead, a collection of best-of-breed technology platforms are leveraged. Below is Visual Integrator’s Integration Reference Architecture, which maps all the Archicture capabilities into a Reference Architecture diagram, which displays the groupings, relationships, and the integration technology responsibilities. Note, the diagram displays a complete Reference Architecture capturing all possible capabilities, some of which may be prioritized higher for VA or operating companies. It is important to map which are most important to enable the VA produce business solutions.
 
 Figure 1: Visual Integrator Reference Architecture
 
@@ -16,11 +14,10 @@ Figure 1: Visual Integrator Reference Architecture
 
 ''Reference Architecture Diagram Copyright Visual Integrator Consulting, 2003 - Current''
 
-VA is committed to building solutions on API’s to ensure a modern, loosely coupled, scalable, and flexible approach to building applications and data sharing.
+VA is also committed to building solutions on Microservices (See Tenet: Microservices Architecture) to ensure a modern, loosely coupled, scalable, and flexible.
 
-Some of the key aspects of API’s include:
+Some of the key aspects of microservices:
 
-* 
 * Scalable
 * Flexible &amp; Changeable
 * Adaptable
@@ -32,66 +29,47 @@ Some of the key aspects of API’s include:
 * Patterns
 * Frameworks
 
-To accomplish, the Developer Playbook has an overview of the key API tenants, so that developers understand the vision, purpose, and approach towards leveraging API based solutions.
 
-The VA API tenants include:
-
-# Keep Total Cost of Ownership Low
-# Leverage the VA API Marketplace (Portal and Catalog)
-# Follow a Microservices Architecture
-# API Solutions are fundamental to any VA Solution
-# Archicture drives VA Solutions
-# Follow Low Code approaches
 
 = Tenet #1: Keep Total Cost of Ownership Low =
 
 There are always multiple approaches to solving problems. In the IT landscape, this could be in the magnitude of 50 different potential approaches to solve a problem, especially when considering the number of solution platforms, programming languages, and vendors with similar or competitive offerings in the marketplace. Rationalizing the “best fit solution” to solving a problem can be challenging, if not downright cumbersome, when there are so many choices. Factoring in human factors such as strong opinions, level of comfort, curiosity, personal favoritism or biases, can make choosing a solution approach even more challenging. Ultimately, choosing a solution approach should be based on what is best for VA, when considering cost and overall benefit or value derived from the selected approach.
 
-For API the goal is to build or re-use existing integration assets as an enabler for solutions across the entire VA Enterprise.
+For “Integration,” the goal is to build or re-use existing integration assets as an enabler for solutions across the entire VA Enterprise.
 
-To accomplish this, the VA will follow approaches that invest in architecture and supporting frameworks that can be re-used across API Use Cases and solutions. Such frameworks and approaches are documented in this API Playbook, and of course require an upfront investment to reap the benefits downstream. As illustrated in the graphic, creating the API Playbook, which includes foundational architecture and enabling frameworks, allows for the VA to have the blueprints for building new functionality and leveraging re-usable assets, ultimately making the solutions operational and deriving value for the long haul.
+To accomplish this………….
 
 Figure 2: Cost of Ownership Curve
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image2.png|534x280px]]
 
-At times, there may be a simpler, less complex implementation approach than the “standard API” approach, which seem faster or even less costly. However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs. In other words, what may seem simpler on the surface, may be costlier over long haul. This especially holds true when measuring factors such as operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance. The most common issue is building a point-to-point or 1-off solution that is costlier of the long haul to manage, maintain, and support—hence, a higher Total Cost of Ownership.
+There may even be a simpler, less complex implementation approach than the “standard” approach. However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs. In other words, what may seem simpler on the surface, may be costlier over long haul. This especially holds true when measuring factors such as operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance.
 
-Figure 3: TCO through API based Solutions
+Figure 3: TCO through Integration Solutions
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image3.png|624x370px]]
 
 To maintain low Total Cost of Ownership, the following principles shall apply:
 
-<ul>
-<li><p>Leverage the standard API platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration</p></li>
-<li><p>Leverage the architecture patterns and approaches established by VA.</p></li>
-<li><p>Leverage the enabling “API Frameworks” established by VA.</p></li>
-<li><p>Bring collaboration and feedback on the standards to the Enterprise Services API Governance Council as early as possible so it is considered in the design and rationalization. If the scope is broader than VA ES, then the Enterprise Services API Governance Council shall consult with other VA groups and teams to establish the proper solution approach.</p></li>
-<li><p>Leveraging VA standardized “Cloud based platforms” to keep costs low. When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture). Second criterion is to leverage “container-based solutions” so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines. This will help keep the TCO low.</p>
-<p>Below is a diagram illustration the considerations when rationalizing the cloud approach, and which cloud deployment architecture is appropriate (SaaS; PaaS; IaaS).</p></li></ul>
+* Leverage the standard Integration platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration
+* Leverage the architecture patterns and approaches established by VA.
+* Leverage the enabling “API Frameworks” established by VA.
+* Bring collaboration and feedback on the standards to the Enterprise Services Governance Council as early as possible so it is considered in the design and rationalization.
+* Leveraging VA standardized “Cloud based platforms” to keep costs low. When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture). Second criterion is to leverage “container-based solutions” so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines. This will help keep the TCO low.
 
 Figure 4: Cloud Rationalization Considerations
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image4.png|308x203px]]
 
+= Tenet #2: VA Integration and API Marketplace =
 
-
-= Tenet #2: Leverage the VA API Marketplace =
-
-The concept of a marketplace is important to promote re-usability. It will allow API Consumers have a single place to “shop for API’s”: find, discover, browse, and ultimately consume (i.e. “buy”) usage of API’s.
+Information needs to be exchanged. The concept of a marketplace
 
 Figure 5: API Marketplace and Exchange Concept
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image5.png|624x347px]]
 
 ==  ==
-
-The Guiding principles of the VA API Marketplace includes:
-
-== API Portal: ==
-
-Providers and Consumers can interact through a common site. Consumers can onboard, test
 
 == API Exchange and Catalog: ==
 
@@ -105,14 +83,6 @@ The routing and brokering mechanism for all API invocations.
 
 There are diverse types of Consumers of the API, such as System (On Premise, Cloud, SaaS); An Application (Mobile, Portal, Web UI); Trading Partner; Developer (Internal or External).
 
-== API Change Management ==
-
-Manage API versions, onboarding, off-boarding, deprecation multiple concurrent versions
-
-Analytics:
-
-Visibility into the API performance, statistics, and trends
-
 = Tenet # 3: Microservices Architecture =
 
 “Microservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small building blocks, highly decoupled and focused on doing a small task, facilitating a modular approach to system-building.” (Reference Wikipedia, https://en.wikipedia.org/wiki/Microservices)”
@@ -123,11 +93,10 @@ Figure 6: Microservices Architecture
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image6.png|624x171px]]
 
-The key principles of a Microservices architecture includes:
-
+* When discussing the microservices architecture, the terms “API” and “Microservices” are used synonymous.
 * Engineer APIs into individually deployable and manageable assets. Each API is engineered to be individually deployable as its own package, and not grouped together with other APIs into a package of APIs. A package has only 1 API. This allows the API to be an individual unit of work that can be governed, managed, version controlled, and tested at the lowest level of granularity. It provides flexibility to control the API for operations, sustainment, and re-usability.
-* Create an API Catalog (i.e. a Repository) that is a catalyst for re-usability. By managing the microservices individually, they can be published into the API Catalog for API Consumers to discover them. All API Consumers should check the API Catalog for existing APIs for re-usability, before developing a new API. This helps keep the TCO low, as it results in fewer IT assets to manage. If an existing API is a “near fit,” but not an “exact fit,” the API Consumer should consider requesting the API Provider make a change to the existing API to create an updated version of the API that is an “exact fit,” instead of the API Consumer requesting a new API.
-* Microservices architecture allows for fine grained APIs (i.e. Services) to be built and composed upon in a component building-block approach. For example, in the diagram below, the fine-grained services are built as the “Technical Services” that have a specific function encapsulated in each API. The “Business Services” make use of the “Technical Services” by consuming them, and thereby making them highly re-usable. The “Business Services” are consumable by VA Business Processes to orchestrate (i.e. process in a sequential workflow process) and manage the business process, thereby making the end-to-end business process and orchestration of Business Services enabled by APIs. This architecture and solution approach would not be possible without the Microservices Architecture and Service Composition to build solutions.
+* Create an API Catalog (i.e a Repository) that is a catalyst for re-usability. By managing the microservices individually, they can be published into the API Catalog for API Consumers to discover them. All API Consumers should check the API Catalog for existing APIs for re-usability, before developing a new API. This helps keep the TCO low, as it results in fewer IT assets to manage. If an existing API is a “near fit,” but not an “exact fit,” the API Consumer should consider requesting the API Provider make a change to the existing API to create a new version of the API that is an “exact fit,” instead of the API Consumer requesting a new API.
+* Microservices architecture allows for fine grained APIs (i.e. Services) to be built and composed upon in a component building-block approach. For example, in the diagram below, the fine-grained services are built as the “Technical Services” that have a specific function encapsulated in each API. The “Business Services” make use of the “Technical Services” by consuming them, and thereby making them highly re-usable. The “Business Services” are consumable by VA Business Processes to orchestrate and manage the business process, thereby making the end-to-end business process and orchestration of Business Services enabled by APIs. This architecture and solution approach would not be possible without the Microservices Architecture and Service Composition to build solutions.
 
 Figure 7: Service Composition through Microservices
 
@@ -162,17 +131,15 @@ Figure 10: 3-Layer API Architecture
 
 
 
-= Tenet #4: API Solutions are fundamental to any VA IT initiative =
+= Tenet #4: Integration Solutions are fundamental to any VA IT initiative =
 
-The paradigm shifts to allow API solutions as the foundation of any IT solution. Whether it’s a new application, mobile solution, a new data sharing service, an analytics platform, a new business process model (BPM) or workflow, such solutions should be built onto an API layer as the foundation. Without such, VA teams run the risk of building 1-off solutions, which quickly become unmaintainable, often referred to as spaghetti or hairball. Additionally, the solutions should leverage the blueprints and frameworks from this API Developer Playbook, so that there is a single approach to doing core technical approaches. For example, a common and re-usable approach to logging, error handling, authentication, and more.
+The paradigm shifts to allow
 
 Figure 11: Anti-Pattern of No Architecture
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image11.png|491x270px]]
 
-Some of the core principles to leveraging API solutions and architecture into all VA IT solutions includes:
-
-* Any IT solution that is being built at VA should leverage API Solutions early in the project charter, and not at the end of the project initiative. Integration Solutions should be analyzed upfront, and the possibility of re-usability of existing Integration Solutions should be explored.
+* Any IT solution that is being built at VA should leverage “Integration Solutions” early in the project charter, and not at the end of the project initiative. Integration Solutions should be analyzed upfront, and the possibility of re-usability of existing Integration Solutions should be explored.
 * Contract First Design approach: The API contract is developed before the API inner logic is developed. The contract is the skeleton or the shell of the API. By building the contract first, the API Consumer can leverage the API contract to build their consumption of the API, before the API is ready. This is helpful because in a microservices solution, the API consumer is dependent on the API to complete the business process. As represented in the diagram below, the API is modeled before the API is engineered. This way, the API can be simulated, and solicit feedback and validation with the consuming systems in parallel with the development team building the API.
 
 Figure 12: API Contract First Design Illustration
@@ -181,10 +148,10 @@ Figure 12: API Contract First Design Illustration
 
 <blockquote>There are 2 standards for API contracts. 1) Swagger and 2) RAML.
 
-A single RAML file can define more than one API but its recommended to group related APIs together into a single RAML file. For example, all product related APIs can be developed in single product. raml and all customer related APIs can be implemented in customer.raml
+A single RAML file can define more than one API but its recommended to group related APIs together into a single RAML file. For example, all product related APIs can be developed in single product.raml and all customer related APIs can be implemented in customer.raml
 </blockquote>
 = <br />
-Tenet #5: Architecture drives API Solutions =
+Tenet #5: Architecture drives Integration Solutions =
 
 Architecting the API tends to much more complex then engineering or developing the API.
 
@@ -198,13 +165,13 @@ Archicture considerations on the API include:
 
 Some of the more specific design patterns to leverage include:
 
-* <span class="underline">Canonical:</span> Universal data model that represents the business process, through a data object. The Canonical acts as a mediation point between Provider and Consumer data mappings. All Provider systems map to the Canonical, all Target systems map from the Canonical, and Provider and Consumer never map directly each other. A loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components.
+* <span class="underline">Canonical:</span> Universal data model that represents the business process, through a data object. Acts as a mediation point between Provider and Consumer data mappings. All Provider systems map to the Canonical, all Target systems map from the Canonical, and Provider and Consumer never map directly each other. A loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components.
 
 <blockquote>Design should identify and separate components based on volatility and capability, minimizing dependencies
 </blockquote>
 <ul>
 <li><p><span class="underline">Separation of Concerns:</span></p>
-<p>Separation of Concerns provides a logical architecture whereby IT assets (e.g. APIs, queues, or other architecture components) are separated and categorized for Provider and Consumer and are connected through an independent mediation component (e.g. API, queue, or another). It creates an architecture whereby Provider and Consumer never directly communicate.</p></li></ul>
+<p>Separation of Concerns provides a logical architecture whereby IT assets (e.g. APIs, queues, or other architecture components) are separated and categorized for Provider and Consumer, and are connected through an independent mediation component (e.g. API, queue, or another). It creates an architecture whereby Provider and Consumer never directly communicate.</p></li></ul>
 
 Figure 13: Separation of Concerns Architecture
 
