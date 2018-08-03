@@ -1,15 +1,20 @@
+
+rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
 
+rem convert to docx to mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
+rem run the macro to clean up image references
 for /R %%f in (*.docx) do (
 	uedit64 "%aFile%.mediawiki" /m,e="C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section\fixURL.mac"
 )
 
+rem housekeeping
 del *.bak
-
 copy "%aFile%.mediawiki" "C:\GitHub\ES-ASG.wiki"
 
+rem convert all image files to .png
 cd media
 for /R %%f in (*.emf) do (
 	magick %%~nf.emf %%~nf.png
@@ -30,6 +35,8 @@ for /R %%f in (*.tmp) do (
 for /R %%f in (*.gif) do (
 	magick %%~nf.gif %%~nf.png
 )
+
+rem push to GitHub Repo
 
 git add -f --all
 git commit -m "Publish"
