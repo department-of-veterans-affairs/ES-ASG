@@ -23,16 +23,24 @@ VA is committed to building solutions on API’s to ensure a modern, loosely cou
 Some of the key aspects of API’s include:
 
 * 
-* Scalable
-* Flexible &amp; Changeable
-* Adaptable
-* Secure
-* Well-Performing
-* Modernizable
 
-* Re-Usable
-* Patterns
-* Frameworks
+• Scalable
+
+• Flexible &amp; Changeable
+
+• Adaptable
+
+• Secure
+
+• Well-Performing
+
+• Modernizable
+
+• Re-Usable
+
+• Patterns
+
+• Frameworks
 
 To accomplish, the Developer Playbook has an overview of the key API tenants, so that developers understand the vision, purpose, and approach towards leveraging API based solutions.
 
