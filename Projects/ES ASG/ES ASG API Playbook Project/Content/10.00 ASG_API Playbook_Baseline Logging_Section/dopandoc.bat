@@ -1,4 +1,4 @@
-set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/09.01%%20ASG_API%%20Playbook_Exception%%20Handling%%20Approach_Section/media/"
+set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/10.00%%20ASG_API%%20Playbook_Baseline%%20Logging_Section/media/"
 
 rmdir media
 
