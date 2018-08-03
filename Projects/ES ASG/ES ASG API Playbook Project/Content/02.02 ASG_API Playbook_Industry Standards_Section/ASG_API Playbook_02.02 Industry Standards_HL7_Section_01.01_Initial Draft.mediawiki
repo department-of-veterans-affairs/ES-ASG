@@ -2,7 +2,7 @@
 
 Maps to Framework Set #1
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
 
 Document Version Draft 01.00.03
 
