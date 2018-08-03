@@ -6,7 +6,7 @@ for /R %%f in (*.docx) do (
 	uedit64 "%aFile%.mediawiki" /m,e="C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section\fixURL.mac"
 )
 
-nx
+del *.bak
 
 cd media
 for /R %%f in (*.emf) do (
