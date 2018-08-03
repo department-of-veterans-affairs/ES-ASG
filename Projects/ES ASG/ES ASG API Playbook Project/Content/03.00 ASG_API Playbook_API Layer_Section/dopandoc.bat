@@ -1,4 +1,6 @@
-set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES ASG API Playbook Project/Content/02.01 ASG_API Playbook_Development Lifecycle_Section/media/"
+set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/02.02%%20ASG_API%%20Playbook_Industry%%20Standards_Section/media/"
+
+rmdir media
 
 rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
