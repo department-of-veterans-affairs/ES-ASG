@@ -25,7 +25,7 @@ for /R %%f in (*.gif) do (
 	magick %%~nf.gif %%~nf.png
 )
 
-git add .
+git add -f --all
 git commit -m "Publish"
 git push --all
 
