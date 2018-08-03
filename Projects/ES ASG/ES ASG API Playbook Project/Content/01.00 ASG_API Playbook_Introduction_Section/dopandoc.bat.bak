@@ -1,4 +1,4 @@
-set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/"
+set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/"
 
 rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
@@ -7,6 +7,11 @@ rem convert to docx to mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
 rem Fix up image URLs
+
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '[\u2019\u2018]', 'X' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '[\u201C\u201D]', 'X' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+
+
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
