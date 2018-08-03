@@ -1,0 +1,469 @@
+﻿API Developer Playbook Blueprint Documentation
+
+Maps to Framework Set #1
+
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
+
+Document Version Draft 01.00.03
+
+Revision History
+
+{|
+| Date
+| Version
+| Description
+| Author
+|-
+|
+
+|
+
+|
+
+|
+
+|}
+
+Table of Contents
+
+[[#industry-standards|1. Industry Standards 1]]
+
+[[#hl7|1.1. HL7 1]]
+
+[[#health-level-seven-international|1.1.1. Health Level Seven International 1]]
+
+[[#fhir|1.2. FHIR 2]]
+
+[[#fhir-overview|1.2.1. FHIR Overview 2]]
+
+[[#fhir-release-3-web-site-content|1.2.2. FHIR Release 3 Web Site Content 2]]
+
+[[#fhir-restful-api|1.2.3. FHIR RESTful API 3]]
+
+[[#fhir-restful-api-service-base-url|1.2.3.1. FHIR RESTful API Service Base URL 3]]
+
+[[#restful-api-url-common-interactions|1.2.3.2. RESTful API URL Common Interactions 5]]
+
+[[#url-fhir-resources|1.2.4. URL FHIR Resources 7]]
+
+[[#argonaut|1.3. Argonaut 8]]
+
+[[#argonaut-data-query-implementation-guide|1.3.1.1. Argonaut Data Query Implementation Guide 8]]
+
+[[#argonaut-provider-directory-guide|1.3.1.2. Argonaut Provider Directory Guide 8]]
+
+Table of Tables
+
+[[#_Toc517969175|Table 1: Instance Level Interactions Table 4]]
+
+[[#_Hlk520288093|Table 2: Type Level Interactions Table 4]]
+
+[[#_Toc520358498|Table 3: Whole System Interactions Table 4]]
+
+[[#_Toc520358499|Table 4: Base Operations -All Resource Types) Table 5]]
+
+[[#_Toc520358500|Table 5: Base Operations (All resource types) 5]]
+
+'''Table of Figures'''
+
+'''No table of figures entries found.'''
+
+= Industry Standards =
+
+== HL7 ==
+
+Health Level-7 or HL7 refers to a set of international standards for transfer of clinical and administrative data between software applications used by various healthcare providers. These standards focus on Layer 7 which is the application layer in the Open Systems Interconnection (OSI) model. The HL7 standards are produced by Health Level Seven International, an international standards organization, and are adopted by other standards issuing bodies such as American National Standards Institute and International Organization for Standardization.
+
+Hospitals and other healthcare provider organizations typically have many disparate computer systems used for capabilities ranging from as billing records to patient tracking. These systems should have the capability to communicate with defined interfaces when new information is received, or when the retrieval of information is desired. Currently this data sharing capability doesn’t exist universally for all providers.
+
+=== Health Level Seven International ===
+
+Founded in 1987, Health Level Seven International (HL7) is a not-for-profit, ANSI-accredited standard developing organization dedicated to providing a comprehensive framework and related standards for the exchange, integration, sharing, and retrieval of electronic health information that supports clinical practice and the management, delivery and evaluation of health services.
+
+== FHIR ==
+
+Fast Healthcare Interoperability Resources (FHIR) is an interoperability standard for electronic exchange of healthcare information. FHIR was developed by Health Level Seven International (HL7) that develops and provides frameworks and standards for the sharing, integration and retrieval of clinical health data and other electronic health information.
+
+=== FHIR Overview ===
+
+Healthcare records are increasingly becoming digitized. As patients traverse the healthcare ecosystem, their electronic health records must be available, discoverable, and understandable. HL7 has, for years, been addressing these challenges by producing healthcare data exchange and information modeling standards. FHIR is a new specification based on emerging industry technologies plus lessons learned through the successes and challenges gained through defining and implementing various versions of the HL7 Reference Information Model (RIM), and Clinical Document Architecture (CDA). FHIR can be used as a stand-alone data exchange standard, but can and will also be used in partnership with existing widely used standards.
+
+FHIR has built-in mechanisms for traceability to the HL7 RIM and other important content models. This ensures alignment to HL7's previously defined patterns and best practices without requiring the implementer to have intimate knowledge of the RIM or any of the latest HL7 version’s (v3) derivations
+
+=== FHIR Release 3 Web Site Content ===
+
+The following FHR related sections contains content that was obtained by inspecting the following FHIR Release 3 Web Site Pages:
+
+* Section 0 Welcome to FHIR -&gt; https://www.hl7.org/fhir/
+* Section 1.0 Full Table of Contents -&gt; https://www.hl7.org/fhir/toc.html
+* Section 1.2 Resource Index -&gt; https://www.hl7.org/fhir/resourcelist.html
+* Section 1.5 Defined RESTful API Operations
+
+* https://www.hl7.org/fhir/operationslist.html
+
+<ul>
+<li><p>The Table of Contents facilitates traversing to the following pages:</p>
+<ul>
+<li><p>Section 2.1 Conformance -&gt;https://www.hl7.org/fhir/conformance-rules.html)</p></li>
+<li><blockquote><p>Section 2.11 FHIR Overview -&gt; https://www.hl7.org/fhir/overview.html</p></blockquote></li>
+<li><blockquote><p>Section 2.21.0 RESTful AP -&gt; https://www.hl7.org/fhir/http.html</p></blockquote></li>
+<li><blockquote><p>Section 2.21.1 Search -&gt; https://www.hl7.org/fhir/search.html</p></blockquote></li>
+<li><p>Section 2.21.2 _filter Parameter -&gt; https://www.hl7.org/fhir/search_filter.html</p></li>
+<li><p>Section 2.21.3 Defined Search Parameters</p></li></ul>
+</li></ul>
+
+<blockquote>-&gt;
+</blockquote>
+<ul>
+<li><blockquote><p>[[ASG_API_Playbook_Industry%20Standards_HL7_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|https://www.hl7.org/fhir/searchparameter-registry.html]]Section 2.22.0 Extended Operations on the RESTful API</p></blockquote></li></ul>
+
+<blockquote>-&gt; [https://www.hl7.org/fhir/operations.html%232.22.0 https://www.hl7.org/fhir/operations.html#2.22.0]
+</blockquote>
+Some section content was modified to fit within the look and feel of the rest of this document’s sections. Other section content was extracted as is but this approach was used it was annotated appropriately.
+
+It is important to note that the FHIR Release 3 Web site contains a tremendous of content. Only the content that was deemed necessary and appropriate was included in this document.
+
+=== FHIR RESTful API ===
+
+The content in this section is an excerpt with some modifications from Section 2.21.0 RESTful AP of the FHIR Release 3 Web Site (https://www.hl7.org/fhir/http.html).
+
+FHIR is described as a 'RESTful' specification based on common industry level use of the term REST. In practice, FHIR only supports Level 2 of the REST Maturity model (a 3-level model of restful maturity that was developed by Leonard Richardson) as part of the core specification.
+
+Because FHIR is a standard, it relies on the standardization of resource structures and interfaces. This may be considered a violation of REST principles but is key to ensuring consistent interoperability across diverse systems.
+
+Each &quot;resource type&quot; has the same set of interactions defined that can be used to manage the resources in a highly granular fashion. Applications claiming conformance to this framework claim to be conformant to &quot;RESTful FHIR&quot;. Refer to Conformance which is detailed in section 2.1 Conformance of the FHIR Release 3 Web Site (https://www.hl7.org/fhir/conformance-rules.html).
+
+Note that in this RESTful framework, transactions are performed directly on the server resource using an HTTP request/response. The API does not directly address security.
+
+The API describes the FHIR resources as a set of operations (known as &quot;interactions&quot;) on resources where individual resource instances are managed in collections by their type. Servers can choose which of these interactions are made available and which resource types they support. Servers SHALL provide a Capability Statement that specifies which interactions and resources are supported.
+
+==== FHIR RESTful API Service Base URL  ====
+
+The Service Base URL is the address where all the resources defined by this interface are found. The Service Base URL takes the simplest form of:
+
+* http(s)://server{/path}
+
+The path portion is optional, and does not include a trailing slash. Each resource type defined in this specification has a manager (or &quot;entity set&quot;) that lives at the address /[type] where the [type] is the name of the resource type:
+
+* http(s)://server{/path}/[type]
+
+For example, the resource manager for the type Patient will live at:
+
+* https://server/path/Patient
+
+All the logical interactions are defined relative to the service root URL. This means that if the address of any one FHIR resource on a system is known, the address of other resources may be determined.
+
+The followings table are a combination of various tables detailed in Section 2.21.0 RESTful AP (https://www.hl7.org/fhir/http.html). The tables define instance level, type level and whole system interaction verbs (read, update etc.) along with their corresponding interaction descriptions, URL Path and the HTTP verb.
+
+<span id="_Toc517969175" class="anchor"></span>'''Table''' '''1: Instance Level Interactions Table'''
+
+{|
+! '''Instance Level Interactions'''
+|-
+| '''Instance Level'''
+| '''Interactions'''
+| '''Path'''
+| '''HTTP Verb'''
+|-
+| read
+| Read the current state of a resource identified by id
+| /[type]/[id]
+| GET
+|-
+| vread
+| Read the state of a specific version of the resource identified by vid
+| /[type]/[id]/_history/[vid]
+| GET
+|-
+| update
+| Update an existing resource by its id (or create it if it is new)
+| /[type]/[id]
+| PUT
+|-
+| patch
+| Update an existing resource by posting a set of partial changes to it
+| /[type]/[id]
+| PATCH
+|-
+| delete
+| Delete a resource
+| /[type]/[id]
+| DELETE
+|-
+| history
+| Retrieve the change history for a particular resource
+| /[type]/[id]/_history
+| GET
+|}
+
+<span id="_Hlk520288093" class="anchor"></span>'''Table''' '''2: Type Level Interactions Table'''
+
+{|
+! '''Type Level Interactions'''
+|-
+| '''Instance Level'''
+| '''Interactions'''
+| '''Path'''
+| '''HTTP Verb'''
+|-
+| create
+| Create a new resource with a server assigned id
+| /[type]
+| POST
+|-
+| search
+| Search the resource type based on some filter criteria
+| /[type]?
+| GET
+|-
+| search
+| Search the resource type based on some filter criteria
+|
+/[type]?
+
+/[type]/_search?
+|
+GET
+
+POST
+|-
+| history
+| Retrieve the change history for a particular resource type
+| /[type]/[id]/_history
+| GET
+|}
+
+<span id="_Toc520358498" class="anchor"></span>'''Table''' '''3: Whole System Interactions Table'''
+
+{|
+! '''Whole System Interactions'''
+|-
+| '''Instance Level'''
+| '''Interactions'''
+| '''Path'''
+| '''HTTP Verb'''
+|-
+| capabilities
+| Get a capability statement for the system
+| /metadata
+| GET
+|-
+| batch/transaction
+| Update, create or delete a set of resources in a single interaction
+| /
+| POST
+|-
+| history-all
+| Retrieve the change history for all resources
+| /_history
+| GET
+|-
+| search
+| Search across all resource types based on some filter criteria
+|
+/[type]?
+
+/[type]/search?
+|
+GET
+
+POST
+|}
+
+==== RESTful API URL Common Interactions ====
+
+The RESTful API defines a set of common interactions (read, update, search, etc.) performed on a repository of typed resources. For further information concerning how operations are defined and invoked, see Section 2.22.0 Extended Operations on the RESTful API
+
+([https://www.hl7.org/fhir/operations.html%232.22.0 https://www.hl7.org/fhir/operations.html#2.22.0]).
+
+This is a full list of the operations defined by this specification extracted from Section 1.5 Defined RESTful API Operations (https://www.hl7.org/fhir/operationslist.html).
+
+<span id="_Toc520358499" class="anchor"></span>'''Table''' '''4: Base Operations -All Resource Types''') '''Table'''
+
+{|
+! '''Base Operations (All resource types''')
+|-
+| Validate a resource
+| [base]/[Resource]/$validate | [base]/[Resource]/[id]/$validate
+|-
+| Access a list of profiles, tags, and security labels
+| [base]/$meta | [base]/[Resource]/$meta | [base]/[Resource]/[id]/$meta
+|-
+| Add profiles, tags, and security labels to a resource
+| [base]/[Resource]/[id]/$meta-add
+|-
+| Delete profiles, tags, and security labels for a resource
+| [base]/[Resource]/[id]/$meta-delete
+|}
+
+<span id="_Toc520358500" class="anchor"></span>'''Table''' '''5: Base Operations (All resource types''')
+
+{|
+! '''Base Operations (All resource types''')
+|-
+| Apply
+| [base]/ActivityDefinition/[id]/$apply
+|-
+| Data Requirements
+| [base]/ActivityDefinition/[id]/$data-requirements
+|-
+| Fetch a subset of the CapabilityStatement resource
+| [base]/CapabilityStatement/$subset | [base]/CapabilityStatement/[id]/$subset
+|-
+| Test if a server implements a client's required operations
+| [base]/CapabilityStatement/$implements | [base]/CapabilityStatement/[id]/$implements
+|-
+| Test if a server implements a client's required operations
+| [base]/CapabilityStatement/$conforms
+|-
+| Concept Look Up &amp; Decomposition
+| [base]/CodeSystem/$lookup
+|-
+| Subsumption Testing
+| [base]/CodeSystem/$subsumes | [base]/CodeSystem/[id]/$subsumes
+|-
+| Code Composition based on supplied properties
+| [base]/CodeSystem/$compose | [base]/CodeSystem/[id]/$compose
+|-
+| Generate a Document
+| [base]/Composition/$document | [base]/Composition/[id]/$document
+|-
+| Concept Translation
+| [base]/ConceptMap/$translate | [base]/ConceptMap/[id]/$translate
+|-
+| Closure Table Maintenance
+| [base]/$closure
+|-
+| Fetch Encounter Record
+| [base]/Encounter/[id]/$everything
+|-
+| Data Requirements
+| [base]/$data-requirements | [base]/Library/[id]/$data-requirements
+|-
+| Find a functional list
+| [base]/List/$find
+|-
+| Evaluate Measure
+| [base]/Measure/$evaluate-measure | [base]/Measure/[id]/$evaluate-measure
+|-
+| Data Requirements
+| [base]/Measure/[id]/$data-requirements
+|-
+| Process Message
+| [base]/$process-message
+|-
+| Observation Statistics
+| [base]/Observation/$stats
+|-
+| Last N Observations Query
+| [base]/Observation/$lastn
+|-
+| Find patient matches using MPI based logic
+| [base]/Patient/$match
+|-
+| Fetch Patient Record
+| [base]/Patient/$everything | [base]/Patient/[id]/$everything
+|-
+| Apply
+| [base]/PlanDefinition/[id]/$apply
+|-
+| Data Requirements
+| [base]/PlanDefinition/[id]/$data-requirements
+|-
+| Populate Questionnaire
+| [base]/Questionnaire/$populate | [base]/Questionnaire/[id]/$populate
+|-
+| Generate HTML for Questionnaire
+| [base]/Questionnaire/$populatehtml | [base]/Questionnaire/[id]/$populatehtml
+|-
+| Generate a link to a Questionnaire completion webpage
+| [base]/Questionnaire/$populatelink | [base]/Questionnaire/[id]/$populatelink
+|-
+| Evaluate
+| [base]/ServiceDefinition/[id]/$evaluate
+|-
+| Data Requirements
+| [base]/ServiceDefinition/[id]/$data-requirements
+|-
+| Build Questionnaire
+| [base]/StructureDefinition/$questionnaire | [base]/StructureDefinition/[id]/$questionnaire
+|-
+| Model Instance Transformation
+| [base]/StructureMap/$transform | [base]/StructureMap/[id]/$transform
+|-
+| Value Set Expansion
+| [base]/ValueSet/$expand | [base]/ValueSet/[id]/$expand
+|-
+| Value Set based Validation
+| [base]/ValueSet/$validate-code | [base]/ValueSet/[id]/$validate-code
+|-
+|
+
+|
+
+|}
+
+=== URL FHIR Resources ===
+
+FHIR is comprised of Resources. All exchangeable content is defined as a resource. Resources all share the following set of characteristics:
+
+* A common way to define and represent them, building them from data types that define common reusable patterns of elements
+* A common set of metadata
+* A human readable part
+
+The FHIR specification defines a set of resources, and an infrastructure for handling resources. To use FHIR to create solutions for integration requirements, implementers must map their problems to resources and their content.
+
+The resources are classified into 6 sections:
+
+* '''Clinical:'''
+
+<blockquote>The content of a clinical record
+</blockquote>
+* '''Identification:'''
+
+<blockquote>Supporting entities involved in the care process
+</blockquote>
+* '''Workflow:'''
+
+<blockquote>Manage the healthcare process
+</blockquote>
+* '''Financial:'''
+
+<blockquote>Resources that support the billing and payment parts of FHIR
+</blockquote>
+* '''Conformance:'''
+
+<blockquote>Resources use to manage specification, development and testing of FHIR solutions
+</blockquote>
+* '''Infrastructure:'''
+
+<blockquote>General functionality, and resources for internal FHIR requirements
+</blockquote>
+For a detailed list and description of FHIR Resources defined in the FHIR specification refer to Section 1.2 Resource Index (https://www.hl7.org/fhir/resourcelist.html).
+
+== Argonaut ==
+
+The following Argonaut content was extracted from the Argonaut Wiki home page pointed to by this URL -&gt; http://argonautwiki.hl7.org/index.php?title=Main_Page
+
+The Argonaut Project is a private sector initiative to advance industry adoption of modern, open interoperability standards. The purpose of the Argonaut Project is to rapidly develop a first-generation Fast Health Care Interoperability Resource (FHIR)-based API and Core Data Services specification to enable expanded information sharing for electronic health records and other health information technology based on Internet standards and architectural patterns and styles.
+
+==== Argonaut Data Query Implementation Guide ====
+
+The Argonaut Data Query Implementation Guide is based upon the core FHIR Draft Standard for Trial Use (DSTU2) API and it documents:
+
+* Security and Authorization
+* Data element query of the Office of the National Coordinator for Health Information Technology (ONC) Common Clinical Data Set
+* Document query of static documents
+
+The URL for the Data Query Implementation Guide Version 1.00 is:
+
+[[ASG_API_Playbook_Industry%20Standards_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|http://www.fhir.org/guides/argonaut/r2]]/
+
+==== Argonaut Provider Directory Guide ====
+
+The Argonaut project Provider Directory Guide is based upon the core FHIR STU3 API and contains the foundation for a robust provider directory. It describes the use cases and search expectations for finding a practitioner or organization. It outlines the key data elements for any provider directory and basic query guidance.
+
+The URL for the Provider Directory Guide Version 1.0.0 is:
+
+http://www.fhir.org/guides/argonaut/pd/
+
