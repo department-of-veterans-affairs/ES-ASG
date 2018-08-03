@@ -1,38 +1,4 @@
-﻿= Contents =
-
-[[#introduction|Introduction 1]]
-
-[[#tenet-1-keep-total-cost-of-ownership-low|Tenet #1: Keep Total Cost of Ownership Low 3]]
-
-[[#_Toc521077873|Tenet #2: Leverage the VA API Marketplace 6]]
-
-[[#api-portal|API Portal: 7]]
-
-[[#api-exchange-and-catalog|API Exchange and Catalog: 7]]
-
-[[#api-gateway|API Gateway: 7]]
-
-[[#consumer-types|Consumer Types 7]]
-
-[[#api-change-management|API Change Management 7]]
-
-[[#tenet-3-microservices-architecture|Tenet # 3: Microservices Architecture 7]]
-
-[[#tenet-4-api-solutions-are-fundamental-to-any-va-it-initiative|Tenet #4: API Solutions are fundamental to any VA IT initiative 11]]
-
-[[#tenet-5-architecture-drives-api-solutions|Tenet #5: Architecture drives API Solutions 13]]
-
-[[#tenet-6-low-code-solutions|Tenet #6: Low Code Solutions: 15]]
-
-[[#overview|Overview 16]]
-
-[[#objective|Objective 16]]
-
-[[#scope|Scope 17]]
-
-[[#approach|Approach 19]]
-
-[[#framework-risks|Framework Risks 20]]
+﻿__TOC__=  =
 
 = Introduction =
 
@@ -377,4 +343,5 @@ Figure 5: Framework Risks Analysis
 # Feedback, Collaboration, and Quality Control sessions with operating companies.
 # Ensure the Framework is clear, consistent, and allows for Pit of Success.
 |}
+
 

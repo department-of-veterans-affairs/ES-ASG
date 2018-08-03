@@ -8,6 +8,11 @@ for /R %%f in (*.docx) do set aFile=%%~nf
 rem convert to docx to mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
+rem "!" + (Get-Content $path | Out-String) | Set-Content $path
+
+rem Add TOC
+powershell -Command "'__TOC__' + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+
 rem Fix up image URLs
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
