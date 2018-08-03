@@ -7,12 +7,17 @@ rem convert to docx to mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
 rem Fix up image URLs
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding "BigEndianUnicode"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'" -encoding "BigEndianUnicode"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'" -encoding "BigEndianUnicode"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'" -encoding "BigEndianUnicode"
-powershell -Command "(gc '%aFile%.mediawiki') -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'" -encoding "BigEndianUnicode"
-powershell -Command "(gc '%aFile%.mediawiki') -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding "BigEndianUnicode"
+
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '[\u2019\u2018]', 'X' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '[\u201C\u201D]', 'X' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+
+
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem housekeeping and move Wiki for publishing
 del *.bak
