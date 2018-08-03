@@ -1,6 +1,6 @@
 rmdir media
 
-pandoc --extract-media ./ -t mediawiki -o "ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review {Max}.mediawiki" "ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review {Max}.docx"
+pandoc --extract-media ./ -t mediawiki -o "ASG_API Playbook_12.03 Reusability Section_01.02_SME Review {MaxGirin}.mediawiki" "ASG_API Playbook_12.03 Reusability Section_01.02_SME Review {MaxGirin}.docx"
 
 cd media
 for /R %%f in (*.emf) do (
