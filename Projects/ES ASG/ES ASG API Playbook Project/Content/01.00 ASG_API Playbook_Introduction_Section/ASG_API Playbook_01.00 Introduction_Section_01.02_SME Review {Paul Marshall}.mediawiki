@@ -1,4 +1,4 @@
-﻿As part of VAâ€™s shift to digital solutions, VA has made a commitment to leverage â€œAPI Solutionsâ€ as a fundamental approach to solving IT problems. To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA API Tenants. Within this document, we define the most important principles of Integration and how they apply to VA context. Throughout the document, there will be references as The tenants, as well as their supporting subcomponents, and how theyâ€™re impacted by VAâ€™s people, process, and technology. Below are the brief definitions of people, process, and technology.
+As part of VA???s shift to digital solutions, VA has made a commitment to leverage ???API Solutions??? as a fundamental approach to solving IT problems. To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA API Tenants. Within this document, we define the most important principles of Integration and how they apply to VA context. Throughout the document, there will be references as The tenants, as well as their supporting subcomponents, and how they???re impacted by VA???s people, process, and technology. Below are the brief definitions of people, process, and technology.
 
 * <span class="underline">People:</span> The roles and responsibilities to build and maintain Integration Solutions.
 * <span class="underline">Process:</span> Methodology and governance to build and maintain Integration Solutions
@@ -6,7 +6,7 @@
 
 <span class="underline">Technology:</span>
 
-Integration Solutions can be comprised of different technologies, platforms, and IT components, ranging from API, queue, security, datastores, cloud platform, and other key components on the â€œReference Architecture.â€ It is important to understand the supporting reference architecture, because Integration Solutions are rarely bundled into a single platform. Instead, a collection of best-of-breed technology platforms are leveraged. Below is Visual Integratorâ€™s Integration Reference Architecture, which maps all the Archicture capabilities into a Reference Architecture diagram, which displays the groupings, relationships, and the integration technology responsibilities. Note, the diagram displays a complete Reference Architecture capturing all possible capabilities, some of which may be prioritized higher for VA or operating companies. It is important to map which are most important to enable the VA produce business solutions.
+Integration Solutions can be comprised of different technologies, platforms, and IT components, ranging from API, queue, security, datastores, cloud platform, and other key components on the ???Reference Architecture.??? It is important to understand the supporting reference architecture, because Integration Solutions are rarely bundled into a single platform. Instead, a collection of best-of-breed technology platforms are leveraged. Below is Visual Integrator???s Integration Reference Architecture, which maps all the Archicture capabilities into a Reference Architecture diagram, which displays the groupings, relationships, and the integration technology responsibilities. Note, the diagram displays a complete Reference Architecture capturing all possible capabilities, some of which may be prioritized higher for VA or operating companies. It is important to map which are most important to enable the VA produce business solutions.
 
 Figure 1: Visual Integrator Reference Architecture
 
@@ -33,17 +33,17 @@ Some of the key aspects of microservices:
 
 = Tenet #1: Keep Total Cost of Ownership Low =
 
-There are always multiple approaches to solving problems. In the IT landscape, this could be in the magnitude of 50 different potential approaches to solve a problem, especially when considering the number of solution platforms, programming languages, and vendors with similar or competitive offerings in the marketplace. Rationalizing the â€œbest fit solutionâ€ to solving a problem can be challenging, if not downright cumbersome, when there are so many choices. Factoring in human factors such as strong opinions, level of comfort, curiosity, personal favoritism or biases, can make choosing a solution approach even more challenging. Ultimately, choosing a solution approach should be based on what is best for VA, when considering cost and overall benefit or value derived from the selected approach.
+There are always multiple approaches to solving problems. In the IT landscape, this could be in the magnitude of 50 different potential approaches to solve a problem, especially when considering the number of solution platforms, programming languages, and vendors with similar or competitive offerings in the marketplace. Rationalizing the ???best fit solution??? to solving a problem can be challenging, if not downright cumbersome, when there are so many choices. Factoring in human factors such as strong opinions, level of comfort, curiosity, personal favoritism or biases, can make choosing a solution approach even more challenging. Ultimately, choosing a solution approach should be based on what is best for VA, when considering cost and overall benefit or value derived from the selected approach.
 
-For â€œIntegration,â€ the goal is to build or re-use existing integration assets as an enabler for solutions across the entire VA Enterprise.
+For ???Integration,??? the goal is to build or re-use existing integration assets as an enabler for solutions across the entire VA Enterprise.
 
-To accomplish thisâ€¦â€¦â€¦â€¦.
+To accomplish this????????????.
 
 Figure 2: Cost of Ownership Curve
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES0ASG/ES0ASG0API0Playbook0Project/Content/12.030ASG_API0Playbook_Reuse0Guidelines_Section/media/image2.png|534x280px]]
 
-There may even be a simpler, less complex implementation approach than the â€œstandardâ€ approach. However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs. In other words, what may seem simpler on the surface, may be costlier over long haul. This especially holds true when measuring factors such as operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance.
+There may even be a simpler, less complex implementation approach than the ???standard??? approach. However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs. In other words, what may seem simpler on the surface, may be costlier over long haul. This especially holds true when measuring factors such as operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance.
 
 Figure 3: TCO through Integration Solutions
 
@@ -53,9 +53,9 @@ To maintain low Total Cost of Ownership, the following principles shall apply:
 
 * Leverage the standard Integration platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration
 * Leverage the architecture patterns and approaches established by VA.
-* Leverage the enabling â€œAPI Frameworksâ€ established by VA.
+* Leverage the enabling ???API Frameworks??? established by VA.
 * Bring collaboration and feedback on the standards to the Enterprise Services Governance Council as early as possible so it is considered in the design and rationalization.
-* Leveraging VA standardized â€œCloud based platformsâ€ to keep costs low. When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture). Second criterion is to leverage â€œcontainer-based solutionsâ€ so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines. This will help keep the TCO low.
+* Leveraging VA standardized ???Cloud based platforms??? to keep costs low. When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture). Second criterion is to leverage ???container-based solutions??? so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines. This will help keep the TCO low.
 
 Figure 4: Cloud Rationalization Considerations
 
@@ -85,18 +85,18 @@ There are diverse types of Consumers of the API, such as System (On Premise, Clo
 
 = Tenet # 3: Microservices Architecture =
 
-â€œMicroservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small building blocks, highly decoupled and focused on doing a small task, facilitating a modular approach to system-building.â€ (Reference Wikipedia, https://en.wikipedia.org/wiki/Microservices)â€
+???Microservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small building blocks, highly decoupled and focused on doing a small task, facilitating a modular approach to system-building.??? (Reference Wikipedia, https://en.wikipedia.org/wiki/Microservices)???
 
-The diagram below illustrates the concept of building solutions by â€œmashing upâ€ independently developed and managed API objects together, to build the foundation and logical componentry of the solution itself.
+The diagram below illustrates the concept of building solutions by ???mashing up??? independently developed and managed API objects together, to build the foundation and logical componentry of the solution itself.
 
 Figure 6: Microservices Architecture
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES0ASG/ES0ASG0API0Playbook0Project/Content/12.030ASG_API0Playbook_Reuse0Guidelines_Section/media/image6.png|624x171px]]
 
-* When discussing the microservices architecture, the terms â€œAPIâ€ and â€œMicroservicesâ€ are used synonymous.
+* When discussing the microservices architecture, the terms ???API??? and ???Microservices??? are used synonymous.
 * Engineer APIs into individually deployable and manageable assets. Each API is engineered to be individually deployable as its own package, and not grouped together with other APIs into a package of APIs. A package has only 1 API. This allows the API to be an individual unit of work that can be governed, managed, version controlled, and tested at the lowest level of granularity. It provides flexibility to control the API for operations, sustainment, and re-usability.
-* Create an API Catalog (i.e a Repository) that is a catalyst for re-usability. By managing the microservices individually, they can be published into the API Catalog for API Consumers to discover them. All API Consumers should check the API Catalog for existing APIs for re-usability, before developing a new API. This helps keep the TCO low, as it results in fewer IT assets to manage. If an existing API is a â€œnear fit,â€ but not an â€œexact fit,â€ the API Consumer should consider requesting the API Provider make a change to the existing API to create a new version of the API that is an â€œexact fit,â€ instead of the API Consumer requesting a new API.
-* Microservices architecture allows for fine grained APIs (i.e. Services) to be built and composed upon in a component building-block approach. For example, in the diagram below, the fine-grained services are built as the â€œTechnical Servicesâ€ that have a specific function encapsulated in each API. The â€œBusiness Servicesâ€ make use of the â€œTechnical Servicesâ€ by consuming them, and thereby making them highly re-usable. The â€œBusiness Servicesâ€ are consumable by VA Business Processes to orchestrate and manage the business process, thereby making the end-to-end business process and orchestration of Business Services enabled by APIs. This architecture and solution approach would not be possible without the Microservices Architecture and Service Composition to build solutions.
+* Create an API Catalog (i.e a Repository) that is a catalyst for re-usability. By managing the microservices individually, they can be published into the API Catalog for API Consumers to discover them. All API Consumers should check the API Catalog for existing APIs for re-usability, before developing a new API. This helps keep the TCO low, as it results in fewer IT assets to manage. If an existing API is a ???near fit,??? but not an ???exact fit,??? the API Consumer should consider requesting the API Provider make a change to the existing API to create a new version of the API that is an ???exact fit,??? instead of the API Consumer requesting a new API.
+* Microservices architecture allows for fine grained APIs (i.e. Services) to be built and composed upon in a component building-block approach. For example, in the diagram below, the fine-grained services are built as the ???Technical Services??? that have a specific function encapsulated in each API. The ???Business Services??? make use of the ???Technical Services??? by consuming them, and thereby making them highly re-usable. The ???Business Services??? are consumable by VA Business Processes to orchestrate and manage the business process, thereby making the end-to-end business process and orchestration of Business Services enabled by APIs. This architecture and solution approach would not be possible without the Microservices Architecture and Service Composition to build solutions.
 
 Figure 7: Service Composition through Microservices
 
@@ -121,7 +121,7 @@ Figure 10: 3-Layer API Architecture
 
 <blockquote><span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers.
 
-<span class="underline">Process:</span> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do thisâ€¦), filtering (Only show available orders), and more.
+<span class="underline">Process:</span> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this???), filtering (Only show available orders), and more.
 
 <span class="underline">System:</span> The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
 </blockquote>
@@ -139,7 +139,7 @@ Figure 11: Anti-Pattern of No Architecture
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES0ASG/ES0ASG0API0Playbook0Project/Content/12.030ASG_API0Playbook_Reuse0Guidelines_Section/media/image11.png|491x270px]]
 
-* Any IT solution that is being built at VA should leverage â€œIntegration Solutionsâ€ early in the project charter, and not at the end of the project initiative. Integration Solutions should be analyzed upfront, and the possibility of re-usability of existing Integration Solutions should be explored.
+* Any IT solution that is being built at VA should leverage ???Integration Solutions??? early in the project charter, and not at the end of the project initiative. Integration Solutions should be analyzed upfront, and the possibility of re-usability of existing Integration Solutions should be explored.
 * Contract First Design approach: The API contract is developed before the API inner logic is developed. The contract is the skeleton or the shell of the API. By building the contract first, the API Consumer can leverage the API contract to build their consumption of the API, before the API is ready. This is helpful because in a microservices solution, the API consumer is dependent on the API to complete the business process. As represented in the diagram below, the API is modeled before the API is engineered. This way, the API can be simulated, and solicit feedback and validation with the consuming systems in parallel with the development team building the API.
 
 Figure 12: API Contract First Design Illustration
@@ -189,7 +189,7 @@ With low-code solutions, the goal is to keep the TCO low by leveraging as-least-
 
 * Configuration over custom code. Leverage the configuration based and built-in platform assets before building custom solutions, whether directly in the platform, or outside of it.
 * Leverage VA Frameworks and SDKs for re-use
-* Where possible, donâ€™t recreate business logic in the Integration Solutions if its best suited for the data sources and endpoint systems themselves.
+* Where possible, don???t recreate business logic in the Integration Solutions if its best suited for the data sources and endpoint systems themselves.
 * Be efficient with engineering source code, to keep it simple, easy-to-understand, knowledge transferable, well commented and documented.
 
 = Overview =
@@ -212,7 +212,7 @@ The purpose of the Playbook can be summarized and categorized as follows:
 
 '''Allows for collaboration among organizations and people working on Integration Solutions.''' VA has multiple shared applications, business units, and parallel projects. People working on these efforts need to be speaking the same language (i.e. using the same lexicon) and be able to collaborate within or across project teams. Creating the standards allows for the people to collaborate more quickly, and not waste time discussing syntax and naming standards since they are already established. This facilitates meaningful handover and collaboration across people within or across project teams.
 
-'''Simplicity and Pit of Success.''' Ensure simplicity and allow users to fall into the â€œPit of Successâ€ easily and without major effort (Reference: https://english.stackexchange.com/questions/77535/what-does-falling-into-the-pit-of-success-mean). Make the frameworks easy to use, easy to adopt, and easy to change over time.
+'''Simplicity and Pit of Success.''' Ensure simplicity and allow users to fall into the ???Pit of Success??? easily and without major effort (Reference: https://english.stackexchange.com/questions/77535/what-does-falling-into-the-pit-of-success-mean). Make the frameworks easy to use, easy to adopt, and easy to change over time.
 
 '''Extensibility'''. The framework can be expanded to include additional VA IT assets (e.g. databases, queues), platforms (e.g. MuleSoft, Kong, CA Layer 7), technologies (e.g. Mobile).
 
@@ -234,7 +234,7 @@ Figure 1: Framework Enablement
 
 === Scope ===
 
-When building a framework, itâ€™s important to note the type of assets that are included and constitute the framework itself. A framework is composed of a collection of documentation, sample/examples, reference implementations, collaboration, knowledge sharing, reviews and feedback, change management, enforcement.
+When building a framework, it???s important to note the type of assets that are included and constitute the framework itself. A framework is composed of a collection of documentation, sample/examples, reference implementations, collaboration, knowledge sharing, reviews and feedback, change management, enforcement.
 
 Figure 2: What is a VA Framework
 
