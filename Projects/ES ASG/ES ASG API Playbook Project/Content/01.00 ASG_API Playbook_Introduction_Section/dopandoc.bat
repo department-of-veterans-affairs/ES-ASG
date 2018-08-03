@@ -1,4 +1,4 @@
-set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES ASG/ES ASG API Playbook Project/Content/01.00 ASG_API Playbook_Introduction_Section/media/"
+set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES`%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/"
 
 rmdir media
 
@@ -14,7 +14,7 @@ powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpeg', '
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace 'File:.//media/', [uri]::EscapeDataString(%aImage%) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem housekeeping and move Wiki for publishing
 del *.bak
