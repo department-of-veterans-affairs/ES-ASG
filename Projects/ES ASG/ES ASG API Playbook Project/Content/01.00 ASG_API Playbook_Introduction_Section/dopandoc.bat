@@ -8,6 +8,8 @@ for /R %%f in (*.docx) do (
 
 del *.bak
 
+copy "%aFile%.mediawiki" "C:\GitHub\ES-ASG.wiki"
+
 cd media
 for /R %%f in (*.emf) do (
 	magick %%~nf.emf %%~nf.png
@@ -28,6 +30,12 @@ for /R %%f in (*.tmp) do (
 for /R %%f in (*.gif) do (
 	magick %%~nf.gif %%~nf.png
 )
+
+git add -f --all
+git commit -m "Publish"
+git push --all
+
+cd "C:\GitHub\ES-ASG.wiki"
 
 git add -f --all
 git commit -m "Publish"
