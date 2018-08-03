@@ -6,9 +6,16 @@ rem convert to docx to mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
 rem run the macro to clean up image references
-for /R %%f in (*.docx) do (
-	uedit64 "%aFile%.mediawiki" /m,e="C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section\fixURL.mac"
-)
+rem for /R %%f in (*.docx) do (
+rem 	uedit64 "%aFile%.mediawiki" /m,e="C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section\fixURL.mac"
+rem )
+
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'"
+powershell -Command "(gc '%aFile%.mediawiki') -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'"
+powershell -Command "(gc '%aFile%.mediawiki') -replace 'File:.//media/', 'https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/' | Out-File '%aFile%.mediawiki'"
 
 rem housekeeping
 del *.bak
