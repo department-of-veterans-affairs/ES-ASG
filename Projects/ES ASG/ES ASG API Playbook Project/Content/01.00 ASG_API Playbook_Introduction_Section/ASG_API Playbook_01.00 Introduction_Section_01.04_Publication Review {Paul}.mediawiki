@@ -35,7 +35,7 @@ Some of the key aspects of API’s include:
 
 To accomplish, the Developer Playbook has an overview of the key API tenants, so that developers understand the vision, purpose, and approach towards leveraging API based solutions.
 
-The VA API tenants include:
+== The VA API tenants include: ==
 
 # Keep Total Cost of Ownership Low
 # Leverage the VA API Marketplace (Portal and Catalog)
@@ -114,7 +114,7 @@ Analytics:
 
 Visibility into the API performance, statistics, and trends
 
-= Tenet # 3: Microservices Architecture =
+= Tenet #3: Microservices Architecture =
 
 “Microservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small building blocks, highly decoupled and focused on doing a small task, facilitating a modular approach to system-building.” (Reference Wikipedia, https://en.wikipedia.org/wiki/Microservices)”
 
