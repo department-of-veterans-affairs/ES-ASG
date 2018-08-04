@@ -225,7 +225,7 @@ With low-code solutions, the goal is to keep the TCO low by leveraging as-least-
 
 = Overview =
 
-=== Objective ===
+== Objective ==
 
 The objective of building the Playbook is to create frameworks, which consist of standards, patterns, examples, constraints, and instructions, so that it can be leveraged across the VA Enterprise.
 
@@ -263,7 +263,7 @@ Figure 1: Framework Enablement
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image15.png|624x261px]]
 
-=== Scope ===
+== Scope ==
 
 When building a framework, it’s important to note the type of assets that are included and constitute the framework itself. A framework is composed of a collection of documentation, sample/examples, reference implementations, collaboration, knowledge sharing, reviews and feedback, change management, enforcement.
 
@@ -291,7 +291,7 @@ Figure 3: Framework Taxonomy
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image17.png|624x423px]]
 
-=== Approach ===
+== Approach ==
 
 Below is a diagram illustrating the approach to designing, development, and most importantly adoption of the framework into project teams. It includes the governance for reviews and feedback to ensure quality and applicability of the framework.
 
@@ -299,7 +299,7 @@ Figure 4: Framework Approach
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image18.png|624x272px]]
 
-=== Framework Risks ===
+== Framework Risks ==
 
 Below is a list of risks associated with Frameworks, their likelihood, impact, and mitigation techniques to avoid or overcome the risk impacts.
 
