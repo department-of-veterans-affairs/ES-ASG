@@ -1,4 +1,4 @@
-﻿Wiki contents can be viewed at:
+﻿Wiki source contents can be viewed at:
 https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section
 __TOC__
 = Introduction =
@@ -341,6 +341,7 @@ Figure 5: Framework Risks Analysis
 # Feedback, Collaboration, and Quality Control sessions with operating companies.
 # Ensure the Framework is clear, consistent, and allows for Pit of Success.
 |}
+
 
 
 
