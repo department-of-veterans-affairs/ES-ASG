@@ -11,7 +11,7 @@ pandoc --strip-empty-paragraphs --extract-media ./ -t mediawiki -o "%aFile%.medi
 rem "!" + (Get-Content $path | Out-String) | Set-Content $path
 
 rem Add TOC
-powershell -Command "'__TOC__' + (65 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'__TOC__' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8

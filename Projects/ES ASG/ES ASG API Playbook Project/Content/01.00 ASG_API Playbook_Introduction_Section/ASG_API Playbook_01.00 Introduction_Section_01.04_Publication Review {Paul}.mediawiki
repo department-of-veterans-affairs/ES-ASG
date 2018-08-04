@@ -1,4 +1,5 @@
-﻿__TOC__A= Introduction =
+﻿__TOC__
+= Introduction =
 
 As part of VA’s shift to digital solutions, VA has made a commitment to leverage “API Solutions” as a fundamental approach to solving IT problems. To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA API Tenants. Within this document, we define the most important principles of Integration and how they apply to VA context. Throughout the document, there will be references to the VA API tenants, as well as their supporting subcomponents, and how they’re impacted by VA’s people, process, and technology. Below are the brief definitions of people, process, and technology.
 
