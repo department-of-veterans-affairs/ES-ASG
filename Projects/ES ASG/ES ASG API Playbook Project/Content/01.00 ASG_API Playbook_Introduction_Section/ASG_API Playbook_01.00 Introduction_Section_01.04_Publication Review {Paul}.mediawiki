@@ -35,7 +35,7 @@ Some of the key aspects of API’s include:
 
 To accomplish, the Developer Playbook has an overview of the key API tenants, so that developers understand the vision, purpose, and approach towards leveraging API based solutions.
 
-== The VA API tenants include: ==
+== The VA API tenants include ==
 
 # Keep Total Cost of Ownership Low
 # Leverage the VA API Marketplace (Portal and Catalog)
@@ -88,15 +88,15 @@ Figure 5: API Marketplace and Exchange Concept
 
 The Guiding principles of the VA API Marketplace includes:
 
-== API Portal: ==
+== API Portal ==
 
 Providers and Consumers can interact through a common site. Consumers can onboard, test
 
-== API Exchange and Catalog: ==
+== API Exchange and Catalog ==
 
 The API is discoverable, searchable, and easy to find for re-use.
 
-== API Gateway: ==
+== API Gateway ==
 
 The routing and brokering mechanism for all API invocations.
 
@@ -108,7 +108,7 @@ There are diverse types of Consumers of the API, such as System (On Premise, Clo
 
 Manage API versions, onboarding, off-boarding, deprecation multiple concurrent versions
 
-Analytics:
+Analytics
 
 Visibility into the API performance, statistics, and trends
 
