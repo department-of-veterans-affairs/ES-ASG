@@ -5,12 +5,12 @@ rmdir media
 rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
 
-rem convert to docx to mediawiki and extract images
+rem convert .docx to .mediawiki and extract images
 pandoc --strip-empty-paragraphs --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
 rem "!" + (Get-Content $path | Out-String) | Set-Content $path
 
-rem Add TOC
+rem Add TOC to the beginning of the file
 powershell -Command "'__TOC__' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs
