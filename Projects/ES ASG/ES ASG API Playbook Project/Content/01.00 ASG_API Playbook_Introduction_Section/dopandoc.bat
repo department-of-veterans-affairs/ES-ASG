@@ -3,6 +3,8 @@ rem pandoc (converts .docx to .mediawiki)
 rem magick (converts images extracted from pandoc into .png)
 rem Repo department-of-veterans-affairs/ES-ASG must be located at C:\GitHub\ES-ASG
 rem Repo department-of-veterans-affairs/ES-ASG.wiki must be located at C:\GitHub\ES-ASG.wiki
+rem GitHub Desktop will install git command line
+
 rem Recommend to synch Repo's before starting
 
 rem Get the URL from GitHub using a browser.  This is in the /media folder of each Section.  Replace /blob/ with /raw/ and replace all %20 with %%20 (for Powershell below)
