@@ -7,8 +7,9 @@ rem GitHub Desktop will install git command line
 
 rem Recommend to synch Repo's before starting
 
-rem Get the URL from GitHub using a browser.  This is in the /media folder of each Section.  Replace /blob/ with /raw/ and replace all %20 with %%20 (for Powershell below)
-set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section/media/"
+rem Get the URL from GitHub using a browser.  This is in the /media folder of each Section.  Replace /blob/ with /raw/ and replace all %%20 with %%%20 (for Powershell below)
+set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%%20ASG/ES%%%20ASG%%%20API%%%20Playbook%%%20Project/Content/01.00%%%20ASG_API%%%20Playbook_Introduction_Section/media/"
+set aRepo="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section"
 
 rmdir media
 
@@ -17,6 +18,8 @@ for /R %%f in (*.docx) do set aFile=%%~nf
 
 rem convert .docx to .mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
+
+powershell -Command "'%aRepo%' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Add TOC to the beginning of the file
 powershell -Command "'__TOC__' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
