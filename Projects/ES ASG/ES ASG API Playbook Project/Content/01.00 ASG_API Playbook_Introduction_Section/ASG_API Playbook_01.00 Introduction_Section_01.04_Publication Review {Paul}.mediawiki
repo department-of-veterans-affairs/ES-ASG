@@ -86,8 +86,6 @@ Figure 5: API Marketplace and Exchange Concept
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image5.png|624x347px]]
 
-==  ==
-
 The Guiding principles of the VA API Marketplace includes:
 
 == API Portal: ==
