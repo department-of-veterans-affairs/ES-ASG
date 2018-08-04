@@ -14,12 +14,14 @@ rem Add TOC to the beginning of the file
 powershell -Command "'__TOC__' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpeg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.jpg', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.gif', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.tmp', '.png' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+rem powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem housekeeping and move Wiki for publishing
 del *.bak
