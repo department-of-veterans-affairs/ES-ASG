@@ -182,8 +182,7 @@ Figure 12: API Contract First Design Illustration
 
 A single RAML file can define more than one API but its recommended to group related APIs together into a single RAML file. For example, all product related APIs can be developed in single product. raml and all customer related APIs can be implemented in customer.raml
 </blockquote>
-= <br />
-Tenet #5: Architecture drives API Solutions =
+= Tenet #5: Architecture drives API Solutions =
 
 Architecting the API tends to much more complex then engineering or developing the API.
 
