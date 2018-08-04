@@ -6,7 +6,7 @@ rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
 
 rem convert .docx to .mediawiki and extract images
-pandoc --strip-empty-paragraphs --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
+pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
 rem "!" + (Get-Content $path | Out-String) | Set-Content $path
 

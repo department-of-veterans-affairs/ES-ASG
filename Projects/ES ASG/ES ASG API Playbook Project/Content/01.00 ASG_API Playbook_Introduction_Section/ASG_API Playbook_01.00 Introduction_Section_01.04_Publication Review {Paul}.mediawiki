@@ -76,6 +76,8 @@ Figure 4: Cloud Rationalization Considerations
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image4.png|308x203px]]
 
+
+
 = Tenet #2: Leverage the VA API Marketplace =
 
 The concept of a marketplace is important to promote re-usability. It will allow API Consumers have a single place to “shop for API’s”: find, discover, browse, and ultimately consume (i.e. “buy”) usage of API’s.
@@ -158,6 +160,8 @@ Figure 10: 3-Layer API Architecture
 * The responsibility of each microservice is to perform a small unit of work, with a single responsibility. That entire responsibility shall be encapsulated in the API itself.
 
 * APIs can support a plethora of data formats but predominantly JSON is preferred. Micro service is normally exposed as HTTP(s) service.
+
+
 
 = Tenet #4: API Solutions are fundamental to any VA IT initiative =
 
@@ -255,6 +259,8 @@ The purpose of the Playbook can be summarized and categorized as follows:
 '''Discoverable''': The frameworks allow for IT assets to be located with ease. For example, the Naming Conventions improve the overall consumer experience in finding APIs in the API Marketplace.
 
 '''Runtime Performance enabled:''' The framework provides for efficient runtime performance, tuning, and a foundation for near real time Integration Assets.
+
+
 
 Figure 1: Framework Enablement
 
