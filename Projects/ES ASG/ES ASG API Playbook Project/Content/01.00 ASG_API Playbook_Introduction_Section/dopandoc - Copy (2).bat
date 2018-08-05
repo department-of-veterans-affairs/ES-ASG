@@ -8,8 +8,18 @@ rem GitHub Desktop will install git command line
 rem Recommend to synch Repo's before starting
 
 rem Get the URL from GitHub using a browser.  This is in the /media folder of each Section.  Replace /blob/ with /raw/ and replace all %%20 with %%20 (for Powershell below)
-set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section/media/"
-set aRepo="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section"
+rem set aRepo="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section"
+rem set aRoot="01.00 ASG_API Playbook_Introduction_Section"
+rem echo !!!!!! %aRoot%
+rem set aRoot=%aRoot%:' '='*'
+rem echo @@@@@%aRoot%
+rem pause
+
+set str=01.00 ASG_API Playbook_Introduction_Section
+set word='X'
+set str=%str: =%word%%
+echo.%str%
+pause
 
 rmdir media
 
@@ -26,7 +36,7 @@ rem Insert URL of content source
 powershell -Command "'<a href=' + (39 -as [char]) + '%aRepo%' + (39 -as [char]) + '>Wiki source content can be found here.</a>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', ('%aRepo%' + '/media/') | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem housekeeping and move Wiki for publishing
 del *.bak
