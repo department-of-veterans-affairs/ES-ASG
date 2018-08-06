@@ -1,4 +1,6 @@
-﻿= 2. Standards =
+﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section'>Wiki source content can be found here.</a>
+__TOC__
+= 2. Standards =
 
 == 2.1 API Development Lifecycle ==
 
@@ -161,4 +163,6 @@ Following the above API development guidelines, below are the key stages of the 
 </blockquote>
 # Resolve defects identified by others.
 # Redeploy the APIs with fixed defects across environments.
+
+
 
