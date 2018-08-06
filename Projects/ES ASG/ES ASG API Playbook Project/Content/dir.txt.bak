@@ -1,0 +1,28 @@
+08/05/2018  09:38 PM    <DIR>          01.00 ASG_API Playbook_Introduction_Section
+08/03/2018  03:06 PM    <DIR>          02.01 ASG_API Playbook_Development Lifecycle_Section
+08/03/2018  03:08 PM    <DIR>          02.02 ASG_API Playbook_Industry Standards_Section
+08/03/2018  03:12 PM    <DIR>          03.00 ASG_API Playbook_API Layer_Section
+08/03/2018  03:18 PM    <DIR>          04.00 ASG_API Playbook_API Contracts_Section
+08/03/2018  03:27 PM    <DIR>          05.01 ASG_API Playbook_Naming Standards_Section
+08/05/2018  08:54 PM    <DIR>          05.02 ASG_API Playbook_Environment Properties_Section
+08/05/2018  08:54 PM    <DIR>          05.03 ASG_API Playbook_Configuration Parameters_Section
+08/05/2018  08:55 PM    <DIR>          05.04 ASG_API Playbook_Objects and Methods_Section
+08/05/2018  08:55 PM    <DIR>          05.05 ASG_API Playbook_Middleware Artifacts_Section
+08/03/2018  03:32 PM    <DIR>          06.00 ASG_API Playbook_Configuration Management_Section
+08/03/2018  03:41 PM    <DIR>          07.00 ASG_API Playbook_Unit Testing_Section
+08/05/2018  08:56 PM    <DIR>          08.00 ASG_API Playbook_Developer Setup_Section
+08/03/2018  03:44 PM    <DIR>          09.01 ASG_API Playbook_Exception Handling Approach_Section
+08/05/2018  08:57 PM    <DIR>          09.02 ASG_API Playbook_Global Exceptions_Section
+08/05/2018  08:57 PM    <DIR>          09.03 ASG_API Playbook_API Level Exceptions_Section
+08/05/2018  08:57 PM    <DIR>          09.04 ASG_API Playbook_Middleware Level Exceptions_Section
+08/05/2018  08:57 PM    <DIR>          09.05 ASG_API Playbook_Message Process Failures and Retries_Section
+08/05/2018  08:57 PM    <DIR>          09.06 ASG_API Playbook_Exception Logging_Section
+08/05/2018  08:57 PM    <DIR>          09.07 ASG_API Playbook_Notification and Alerting_Section
+08/05/2018  08:58 PM    <DIR>          09.08 ASG_API Playbook_Integration with Queing_Section
+08/03/2018  03:47 PM    <DIR>          10.00 ASG_API Playbook_Baseline Logging_Section
+08/03/2018  03:52 PM    <DIR>          11.00 ASG_API Playbook_Baseline API Security_Section
+08/05/2018  08:58 PM    <DIR>          12.01 ASG_API Playbook_What is a Re-Usable Artifact_Section
+08/05/2018  08:58 PM    <DIR>          12.02 ASG_API Playbook_How to Create Shared Components_Section
+08/03/2018  12:45 PM    <DIR>          12.03 ASG_API Playbook_Reuse Guidelines_Section
+08/05/2018  08:59 PM    <DIR>          12.04 ASG_API Playbook_Deploying Shared Components_Section
+08/05/2018  10:00 PM    <DIR>          13.00 ASG_API Playbook_API Documentation Blueprint_Section

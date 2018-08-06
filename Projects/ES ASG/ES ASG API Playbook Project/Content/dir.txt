@@ -1,41 +1,28 @@
-ASG_API Playbook_01.00 Introduction_Section_01.01_Initial Draft.docx
-ASG_API Playbook_01.00 Introduction_Section_01.02_SME Review {Paul Marshall}.docx
-
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.01_Initial Draft.docx
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.02_SME Review.docx
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.03_SME Review Resolved.docx
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.04_V2 Draft.docx
-ASG_API Playbook_02.01 Development Lifecycle_Section_01.05_Standards Review {paul marshall}.docx
-
-ASG_API Playbook_02.02 Industry Standards_HL7_Section_01.01_Initial Draft.docx
-
-ASG_API Playbook_03.00 API Layer_Section_01.01_Initial Draft.docx
-
-ASG_API Playbook_04.00 API Contracts_Section_01.01_Initial Draft.docx
-
-ASG_API Playbook_05.01 Naming Standards_Section_01.01_Initial Draft.docx
-ASG_API Playbook_05.01 Naming Standards_Section_01.02_SME Review {MaxGirin}.docx
-
-ASG_API Playbook_05.04 Objects and Methods_Section_01.01_Initial Draft {max girin}.docx
-
-ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}.docx
-
-ASG_API Playbook_06.00 Configuration Management_Section_01.01_Initial Draft.docx
-ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review.docx
-
-ASG_API Playbook_07.00 Unit Testing_Section_01.01_Initial Draft.docx
-
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.01_Initial Draft.docx
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.02_SME Review.docx
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.03_SME Review.docx
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.04_SME Review Resolved.docx
-ASG_API Playbook_09.01 Exception Handling Approach_Section_01.05_Standards Review {paul marshall}.docx
-
-ASG_API Playbook_10.00 Baseline Logging_Section_01.01_Initial Draft.docx
-
-ASG_API Playbook_11.00 Baseline Security_Section_01.01_Initial Draft.docx
-
-ASG_API Playbook_12.03 Reusability Section_01.01_Initial Draft.docx
-ASG_API Playbook_12.03 Reusability Section_01.02_SME Review {MaxGirin}.docx
-
-ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft.docx
+01.00 ASG_API Playbook_Introduction_Section
+02.01 ASG_API Playbook_Development Lifecycle_Section
+02.02 ASG_API Playbook_Industry Standards_Section
+03.00 ASG_API Playbook_API Layer_Section
+04.00 ASG_API Playbook_API Contracts_Section
+05.01 ASG_API Playbook_Naming Standards_Section
+05.02 ASG_API Playbook_Environment Properties_Section
+05.03 ASG_API Playbook_Configuration Parameters_Section
+05.04 ASG_API Playbook_Objects and Methods_Section
+05.05 ASG_API Playbook_Middleware Artifacts_Section
+06.00 ASG_API Playbook_Configuration Management_Section
+07.00 ASG_API Playbook_Unit Testing_Section
+08.00 ASG_API Playbook_Developer Setup_Section
+09.01 ASG_API Playbook_Exception Handling Approach_Section
+09.02 ASG_API Playbook_Global Exceptions_Section
+09.03 ASG_API Playbook_API Level Exceptions_Section
+09.04 ASG_API Playbook_Middleware Level Exceptions_Section
+09.05 ASG_API Playbook_Message Process Failures and Retries_Section
+09.06 ASG_API Playbook_Exception Logging_Section
+09.07 ASG_API Playbook_Notification and Alerting_Section
+09.08 ASG_API Playbook_Integration with Queing_Section
+10.00 ASG_API Playbook_Baseline Logging_Section
+11.00 ASG_API Playbook_Baseline API Security_Section
+12.01 ASG_API Playbook_What is a Re-Usable Artifact_Section
+12.02 ASG_API Playbook_How to Create Shared Components_Section
+12.03 ASG_API Playbook_Reuse Guidelines_Section
+12.04 ASG_API Playbook_Deploying Shared Components_Section
+13.00 ASG_API Playbook_API Documentation Blueprint_Section
