@@ -1,5 +1,5 @@
 rem gets current directory folder name
-cd %CD%
+cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section"
 set aFolder=%CD:~69%
 
 rem Dependencies

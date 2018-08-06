@@ -1,5 +1,4 @@
 rem gets current directory folder name
-cd %CD%
 set aFolder=%CD:~69%
 
 rem Dependencies
@@ -19,7 +18,7 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 set aRepo=%aRoot%!aFolder: =%%20!
 set aImage="%aRepo%/media/"
 
-rmdir media /s /q
+rmdir media
 
 rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
