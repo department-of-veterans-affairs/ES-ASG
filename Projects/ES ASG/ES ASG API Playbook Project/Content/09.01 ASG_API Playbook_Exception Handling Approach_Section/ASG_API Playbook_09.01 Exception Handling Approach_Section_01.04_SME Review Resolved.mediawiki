@@ -1,4 +1,6 @@
-﻿API Developer Playbook Blueprint Documentation
+﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling%20Approach_Section'>Wiki source content can be found here.</a>
+__TOC__
+API Developer Playbook Blueprint Documentation
 
 Maps to Framework Set #1
 
@@ -656,4 +658,6 @@ Applications can issue an HTTP POST to send a message to IBM MQ, or an HTTP DELE
 A detailed discussion of the RESTful/WebSphere MQ functionality can be found on the using following URL:
 
 https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.0.0/com.ibm.mq.dev.doc/q130940_.html
+
+
 
