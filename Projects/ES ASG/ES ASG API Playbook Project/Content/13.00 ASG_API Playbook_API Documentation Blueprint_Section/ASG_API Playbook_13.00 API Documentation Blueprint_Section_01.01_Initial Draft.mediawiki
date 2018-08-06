@@ -1,4 +1,6 @@
-﻿The intent is for this document to be inserted into Section 13 of the Developer Playbook.
+﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/13.00%20ASG_API%20Playbook_API%20Documentation%20Blueprint_Section'>Wiki source content can be found here.</a>
+__TOC__
+The intent is for this document to be inserted into Section 13 of the Developer Playbook.
 
 = Documentation Blueprint Overview =
 
@@ -710,4 +712,6 @@ A validation schema in a form of an asset used to validate (or describe) a messa
 '''URI template'''
 
 A compact sequence of characters for describing a range of Uniform Resource Identifiers through variable expansion, see RFC 6570.
+
+
 
