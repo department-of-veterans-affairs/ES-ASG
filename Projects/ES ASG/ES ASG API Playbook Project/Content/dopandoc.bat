@@ -1,25 +1,23 @@
+rem gets current directory folder name
+set aFolder=%CD:~69%
+
 rem Dependencies
 rem pandoc (converts .docx to .mediawiki)
 rem magick (converts images extracted from pandoc into .png)
 rem Repo department-of-veterans-affairs/ES-ASG must be located at C:\GitHub\ES-ASG
 rem Repo department-of-veterans-affairs/ES-ASG.wiki must be located at C:\GitHub\ES-ASG.wiki
 rem GitHub Desktop will install git command line
-rem Powershell is used to perform replacements
 
 rem Recommend to synch Repo's before starting
 
-rem gets current directory folder name, e.g. 02.01 ASG_API Playbook_Development Lifecycle_Section
-set aFolder=%CD:~69%
+rem Get the URL from GitHub using a browser.  This is in the /media folder of each Section.  Replace /blob/ with /raw/ and replace all %%20 with %%20 (for Powershell below)
+rem set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section/media/"
 
-rem This is the root folder
 set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
-
-rem This sets the aRep and aImage vars
 SETLOCAL ENABLEDELAYEDEXPANSION
 set aRepo=%aRoot%!aFolder: =%%20!
 set aImage="%aRepo%/media/"
 
-rem Delete any existing media files
 rmdir media
 
 rem get the last .docx file
