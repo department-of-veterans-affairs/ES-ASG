@@ -11,25 +11,13 @@ rem Get the URL from GitHub using a browser.  This is in the /media folder of ea
 rem set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section/media/"
 
 set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
-
 SETLOCAL ENABLEDELAYEDEXPANSION
-
 set aFolder=01.00 ASG_API Playbook_Introduction_Section
 set aRepo=%aRoot%!aFolder: =%%20!
-echo.%aRepo%
-
 set aImage="%aRepo%/media/"
 
-echo.%aRepo%
-echo.%aImage%
-
-
-
-set aRepo=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section
-set aImage="%aRepo%/media/"
-
-
-
+rem set aRepo=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section
+rem set aImage="%aRepo%/media/"
 
 rmdir media
 
