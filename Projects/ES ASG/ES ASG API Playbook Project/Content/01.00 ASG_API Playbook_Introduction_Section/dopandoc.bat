@@ -1,3 +1,5 @@
+set aFolder=%CD:~69%
+
 rem Dependencies
 rem pandoc (converts .docx to .mediawiki)
 rem magick (converts images extracted from pandoc into .png)
@@ -12,7 +14,6 @@ rem set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/mas
 
 set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
 SETLOCAL ENABLEDELAYEDEXPANSION
-set aFolder=01.00 ASG_API Playbook_Introduction_Section
 set aRepo=%aRoot%!aFolder: =%%20!
 set aImage="%aRepo%/media/"
 
