@@ -1,4 +1,6 @@
-﻿API Developer Playbook Blueprint Documentation
+﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section'>Wiki source content can be found here.</a>
+__TOC__
+API Developer Playbook Blueprint Documentation
 
 Maps to Framework Set #1
 
@@ -526,4 +528,6 @@ Key Features:
 * Monitor pages for their response time; ideal for apps.
 * Effortless configuration; select your log file and run GoAccess.
 * Understand your website visitor data in real-time.
+
+
 
