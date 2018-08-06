@@ -19,7 +19,7 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 set aRepo=%aRoot%!aFolder: =%%20!
 set aImage="%aRepo%/media/"
 
-rmdir media
+rmdir media /s /q
 
 rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
