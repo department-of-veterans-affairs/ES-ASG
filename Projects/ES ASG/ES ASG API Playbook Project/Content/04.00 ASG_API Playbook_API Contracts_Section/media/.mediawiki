@@ -2,6 +2,10 @@
 __TOC__
 <a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section\media'>Wiki source content can be found here.</a>
 __TOC__
+<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section\media'>Wiki source content can be found here.</a>
+__TOC__
+
+
 
 
 
