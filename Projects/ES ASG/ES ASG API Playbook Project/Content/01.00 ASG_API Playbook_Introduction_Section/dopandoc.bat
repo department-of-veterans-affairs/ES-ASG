@@ -1,3 +1,4 @@
+rem gets current directory folder name
 set aFolder=%CD:~69%
 
 rem Dependencies
@@ -16,9 +17,6 @@ set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Pr
 SETLOCAL ENABLEDELAYEDEXPANSION
 set aRepo=%aRoot%!aFolder: =%%20!
 set aImage="%aRepo%/media/"
-
-rem set aRepo=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section
-rem set aImage="%aRepo%/media/"
 
 rmdir media
 
