@@ -1,4 +1,5 @@
 rem gets current directory folder name
+cd %CD%
 set aFolder=%CD:~69%
 
 rem Dependencies
