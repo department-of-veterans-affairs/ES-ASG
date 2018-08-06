@@ -1,108 +1,6 @@
 ﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling%20Approach_Section'>Wiki source content can be found here.</a>
 __TOC__
-API Developer Playbook Blueprint Documentation
 
-Maps to Framework Set #1
-
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling%20Approach_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
-
-Document Version Draft 01.00.04
-
-Revision History
-
-{|
-| Date
-| Version
-| Description
-| Author
-|-
-|
-
-|
-
-|
-
-|
-
-|}
-
-Table of Contents
-
-[[#exception-handling|1. Exception Handling 1]]
-
-[[#exception-handling-approach|1.1. Exception Handling Approach 1]]
-
-[[#http-response-message-header-configuration|1.1.1. HTTP Response Message Header Configuration 1]]
-
-[[#http-status-line|1.1.1.1. HTTP Status Line 1]]
-
-[[#http-response-headers|1.1.1.2. HTTP Response Headers 2]]
-
-[[#http-response-message-body|1.1.1.3. HTTP Response Message Body 2]]
-
-[[#http-response-message-body-guidelines-for-restful-services|1.1.2. HTTP Response Message Body Guidelines for RESTful Services 2]]
-
-[[#enterprise-shared-services-fault-model|1.1.2.1. Enterprise Shared Services Fault Model 4]]
-
-[[#transactional-exception-processing|1.2. Transactional Exception Processing 5]]
-
-[[#bankaccount-use-case|1.2.1. BankAccount Use Case 5]]
-
-[[#bankaccounts-use-case|1.2.2. BankAccounts Use Case 6]]
-
-[[#non-transactional-exception-processing|1.3. Non-Transactional Exception Processing 7]]
-
-[[#global-exception-guidelines|1.4. Global Exception Guidelines 8]]
-
-[[#legacy-access-level-exceptions|1.4.1. Legacy Access Level Exceptions 8]]
-
-[[#middleware-level-exception|1.4.2. Middleware-Level Exception 9]]
-
-[[#api-level-exception-guidelines|1.4.3. API Level Exception Guidelines 9]]
-
-[[#message-process-failure-and-retries|1.5. Message Process Failure and Retries 10]]
-
-[[#transient-process-failures-message-retries|1.5.1. Transient Process Failures Message Retries 10]]
-
-[[#transient-process-failure-simple-retry|1.5.1.1. Transient Process Failure Simple Retry 10]]
-
-[[#transient-process-failure-dynamic-retry|1.5.1.2. Transient Process Failure Dynamic Retry 10]]
-
-[[#handling-message-failures|1.5.2. Handling Message Failures 11]]
-
-[[#central-exception-message-handling|1.5.2.1. Central Exception Message Handling 11]]
-
-[[#local-level-exception-message-handling|1.5.2.2. Local Level Exception Message Handling 11]]
-
-[[#exception-logging-guidelines|1.6. Exception Logging Guidelines 12]]
-
-[[#enterprise-shared-services-logging-model|1.6.1. Enterprise Shared Services Logging Model 12]]
-
-[[#notification-and-alerting-guidelines|1.7. Notification and Alerting Guidelines 16]]
-
-[[#asynchronous-errorfault-message-channel|1.7.1. Asynchronous Error/Fault Message Channel 16]]
-
-[[#integration-with-queuing|1.8. Integration with Queuing 17]]
-
-[[#restful-integration-websphere-mq-messaging-system|1.8.1. RESTful Integration WebSphere MQ Messaging System 17]]
-
-Table of Tables
-
-[[#_Toc517969175|Table 1: ESS Fault Description Table 4]]
-
-[[#_Toc518056019|Table 2: ESS Logging Description Table 13]]
-
-'''Table of Figures'''
-
-[[#_Toc367789949|Figure 1 ESS Fault Model 4]]
-
-[[#_Toc517969179|Figure 2 ESS Fault Example 5]]
-
-[[#_Toc517969180|Figure 3 Multi Level Processing Stack 8]]
-
-[[#_Toc518056025|Figure 4 ESS Logging Model 12]]
-
-[[#_Toc518056026|Figure 5 Logging Example 15]]
 
 = Exception Handling  =
 
@@ -192,11 +90,11 @@ This document contains XML based messaging guidelines that were defined for SOAP
 
 ==== Enterprise Shared Services Fault Model ====
 
-<span id="_Toc367789949" class="anchor"></span>Figure 1 ESS Fault Model
+Figure 1 ESS Fault Model
 
 The format and encoding of faults varies with the protocol and transport, but the meaning of the following information will be consistent across all interfaces.
 
-<span id="_Toc517969175" class="anchor"></span>Table 1: ESS Fault Description Table
+Table 1: ESS Fault Description Table
 
 {|
 ! '''Element'''
@@ -241,7 +139,7 @@ Must be populated if fault is triggered by another fault. Is not populated if fa
 
 The following example contains a minimized set of HTTP Response Message Header name-value pair parameters. The JSON response is contained in the HTTP Response Message body.
 
-<span id="_Toc517969179" class="anchor"></span>Figure 2 ESS Fault Example
+Figure 2 ESS Fault Example
 
 {
 
@@ -329,7 +227,7 @@ The following diagram depicts the Multi-Level Processing Stack that will be used
 
 Additionally, this section will describe service orchestration and how multiple layers of service calls can affect the handling of exceptions and management of faults.
 
-<span id="_Toc517969180" class="anchor"></span>Figure 3 Multi Level Processing Stack
+Figure 3 Multi Level Processing Stack
 
 === Legacy Access Level Exceptions ===
 
@@ -415,9 +313,9 @@ This document contains XML based logging guidelines that were defined for SOAP s
 
 === Enterprise Shared Services Logging Model ===
 
-<span id="_Toc518056025" class="anchor"></span>Figure 4 ESS Logging Model
+Figure 4 ESS Logging Model
 
-<span id="_Toc518056019" class="anchor"></span>Table 2: ESS Logging Description Table
+Table 2: ESS Logging Description Table
 
 {|
 ! Element
@@ -569,7 +467,7 @@ or equivalent
 | Detailed information on the state of the execution of service code package when the error occurred.
 |}
 
-<span id="_Toc518056026" class="anchor"></span>Figure 5 Logging Example
+Figure 5 Logging Example
 
 Some elements in this figure are truncated for readability.
 
