@@ -1,4 +1,6 @@
-﻿[[#api-naming-convention|API Naming Convention 3]]
+﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section'>Wiki source content can be found here.</a>
+__TOC__
+[[#api-naming-convention|API Naming Convention 3]]
 
 [[#objective|Objective 3]]
 
@@ -643,4 +645,6 @@ Naming conventions can include additional API or integration assets that need a 
 * Naming support assets (certificates, cache stores, queues, etc.)
 * Naming Test Cases in Testing Tools or Unit Test Cases in platform tools.
 * Adding additional API contracts, such as OpenAPI Swagger and associated naming conventions.
+
+
 
