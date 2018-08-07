@@ -73,4 +73,3 @@ git add -f --all
 git commit -m "Publish"
 git push --all
 
-pause
