@@ -1,20 +1,127 @@
 ﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling%20Approach_Section'>Wiki source content can be found here.</a>
 __TOC__
+API Developer Playbook Blueprint Documentation
 
+Maps to Framework Set #1
+
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling%20Approach_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
+
+Document Version Draft 01.00.04
+
+Revision History
+
+{|
+| Date
+| Version
+| Description
+| Author
+|-
+|
+
+|
+
+|
+
+|
+
+|}
+
+Table of Contents
+
+[[#section|1. Exception Handling 1]]
+
+[[#exception-handling-approach|1.1. Exception Handling Approach 1]]
+
+[[#http-response-message-header-configuration|1.1.1. HTTP Response Message Header Configuration 1]]
+
+[[#http-status-line|1.1.1.1. HTTP Status Line 1]]
+
+[[#http-response-headers|1.1.1.2. HTTP Response Headers 2]]
+
+[[#http-response-message-body|1.1.1.3. HTTP Response Message Body 2]]
+
+[[#http-response-message-body-guidelines-for-restful-services|1.1.2. HTTP Response Message Body Guidelines for RESTful Services 2]]
+
+[[#enterprise-shared-services-fault-model|1.1.2.1. Enterprise Shared Services Fault Model 4]]
+
+[[#transactional-exception-processing|1.2. Transactional Exception Processing 5]]
+
+[[#bankaccount-use-case|1.2.1. BankAccount Use Case 5]]
+
+[[#bankaccounts-use-case|1.2.2. BankAccounts Use Case 6]]
+
+[[#non-transactional-exception-processing|1.3. Non-Transactional Exception Processing 7]]
+
+[[#global-exception-guidelines|1.4. Global Exception Guidelines 8]]
+
+[[#legacy-access-level-exceptions|1.4.1. Legacy Access Level Exceptions 8]]
+
+[[#middleware-level-exception|1.4.2. Middleware-Level Exception 9]]
+
+[[#api-level-exception-guidelines|1.4.3. API Level Exception Guidelines 9]]
+
+[[#message-process-failure-and-retries|1.5. Message Process Failure and Retries 10]]
+
+[[#transient-process-failures-message-retries|1.5.1. Transient Process Failures Message Retries 10]]
+
+[[#transient-process-failure-simple-retry|1.5.1.1. Transient Process Failure Simple Retry 10]]
+
+[[#transient-process-failure-dynamic-retry|1.5.1.2. Transient Process Failure Dynamic Retry 10]]
+
+[[#handling-message-failures|1.5.2. Handling Message Failures 11]]
+
+[[#central-exception-message-handling|1.5.2.1. Central Exception Message Handling 11]]
+
+[[#local-level-exception-message-handling|1.5.2.2. Local Level Exception Message Handling 11]]
+
+[[#exception-logging-guidelines|1.6. Exception Logging Guidelines 12]]
+
+[[#enterprise-shared-services-logging-model|1.6.1. Enterprise Shared Services Logging Model 12]]
+
+[[#notification-and-alerting-guidelines|1.7. Notification and Alerting Guidelines 16]]
+
+[[#asynchronous-errorfault-message-channel|1.7.1. Asynchronous Error/Fault Message Channel 16]]
+
+[[#integration-with-queuing|1.8. Integration with Queuing 17]]
+
+[[#restful-integration-websphere-mq-messaging-system|1.8.1. RESTful Integration WebSphere MQ Messaging System 17]]
+
+Table of Tables
+
+[[#_Toc517969175|Table 1: ESS Fault Description Table 4]]
+
+[[#_Toc518056019|Table 2: ESS Logging Description Table 13]]
+
+'''Table of Figures'''
+
+[[#_Toc367789949|Figure 1 ESS Fault Model 4]]
+
+[[#_Toc517969179|Figure 2 ESS Fault Example 5]]
+
+[[#_Toc517969180|Figure 3 Multi Level Processing Stack 8]]
+
+[[#_Toc518056025|Figure 4 ESS Logging Model 12]]
+
+[[#_Toc518056026|Figure 5 Logging Example 15]]
+
+=  =
+
+* 
+* 
 
 = Exception Handling  =
 
 The SOA web service interfacing style of SOAP tends to be centered around operations that are usually use-case specific and specialized. In contrast, RESTful is centered around business/data entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations.
 
-This section of the document will focus on RESTful error handling although SOAP error handling may be included in a latter iteration. Based on the longer length of time that SOAP based web service development time been active at the VA versus RESTful, is reasonable to assume that the percentage of SOAP versus RESTful tilts heavily on the side of SOAP.
+This section of the document will focus on RESTful error handling although SOAP error handling may be included in a latter iteration.
 
 == Exception Handling Approach ==
 
 RESTful APIs should define the functional, business view and abstract from implementation aspects. Success and error responses are a vital part to define how an API is used correctly.
 
-Therefore, defining all success and service specific error responses in an API specification is required. Both are part of the interface definition and provide important information for service clients to handle standard as well as non-standard situations.
+efining all success and service specific error responses in an API specification is required. Both are part of the interface definition and provide important information for service clients.
 
-API designers should also think about error handling guidelines that should be art of the associated online API documentation. It provides information and handling guidance on application-specific errors and should be refere2nced as part of the API specification. This can reduce service support tasks and contribute to service client and provider performance.
+API designers should also error handling guidelines that should be art of the associated online API documentation. provides information and handling guidance on application-specific errors and should be referenced as part of the API specification. This can reduc service support tasksand and provider performance.
 
 Restful APIs are typically based on the HTTP protocol for connecting their clients. To this end, the following sections detail HTTP Response Message population guidelines
 
@@ -68,13 +175,13 @@ When returning a 500 Internal Server Error, '''only''' the minimum data necessar
 
 References were made above to the Response Message Body JSON payloads. This section details a standardized layout that will facilitate the creation of JSON payload.
 
-The Enterprise Shared Services (ESS) Exception Handling Guidelines document, is pointed to by this imbedded document:
+The Enterprise Shared Services (ESS) Exception Handling Guidelines document is pointed to by this imbedded document:
 
-This document contains XML based messaging guidelines that were defined for SOAP services. From a consistency perspective, continuing these guidelines for RESTful based services would be beneficial.
+This document contains XML based messaging guidelines that were defined for SOAP services. From a consistency perspective, continuing these guidelines for would be beneficial.
 
 VA APIs should use the Status Code which best reflects the result of each API call. A complete list can be found at https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml, or a more friendly list at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status.
 
-While there is no prohibition for use of any HTTP Status Code, there are those which are more and those which are less useful. 200 OK is a ubiquitous code and its use is strongly encouraged. 203 Non-Authoritative Information is rarely used and only appropriate when it exactly describes the response and is useful to the consumer. Among the recommended Status Codes are:
+While there is no prohibition for use of any HTTP Status Code, there are those which are more and those which are less useful. 200 OK is a ubiquitous code and its use is strongly encouraged. 203 Non-Authoritative Information is rarely used and only appropriate when it exactly describes the response and is useful to the consumer.
 
 * 200 OK – When the call was successful.
 * 400 Bad Request – When the call failed because the request contained incomplete or invalid data. Should be paired with meaningful instructions in the HTTP Response Message Body.
@@ -90,11 +197,11 @@ This document contains XML based messaging guidelines that were defined for SOAP
 
 ==== Enterprise Shared Services Fault Model ====
 
-Figure 1 ESS Fault Model
+<span id="_Toc367789949" class="anchor"></span>Figure 1 ESS Fault Model
 
 The format and encoding of faults varies with the protocol and transport, but the meaning of the following information will be consistent across all interfaces.
 
-Table 1: ESS Fault Description Table
+<span id="_Toc517969175" class="anchor"></span>Table 1: ESS Fault Description Table
 
 {|
 ! '''Element'''
@@ -139,7 +246,7 @@ Must be populated if fault is triggered by another fault. Is not populated if fa
 
 The following example contains a minimized set of HTTP Response Message Header name-value pair parameters. The JSON response is contained in the HTTP Response Message body.
 
-Figure 2 ESS Fault Example
+<span id="_Toc517969179" class="anchor"></span>Figure 2 ESS Fault Example
 
 {
 
@@ -169,9 +276,9 @@ Figure 2 ESS Fault Example
 
 == Transactional Exception Processing  ==
 
-Consider the following use case and how to implement it using a RESTful service philosophy, keeping in mind to not comprise the state of conceptual RESTful model. The RESTful model is predicated on correctly representing the state related transition(s) of the RESTful resource. The processing of Exceptions should include not only notifying the end client of errors but just as important, ensuring that the state of the resource is not negatively impacted by the error scenario.
+Consider the following use case and how to implement it using a service philosophy, keeping in mind to not comprise the state of conceptual model. The model is predicated on correctly representing the state related transition(s) of the resource. The processing of xceptions should include not only notifying the end client of errors but just as important, ensuring that the state of the resource is not negatively impacted by the error scenario.
 
-The use case is updating multiple resources. For example, the transfer of $100 from one customers bank account into another customer’s bank account. The actual detailed transactional semantics of this use case will not be detailed in this section as these details are better served by their inclusion in a section that discusses transactional behaviors using a RESTful service or services.
+The use case is updating multiple resources. For example, the transfer of $100 from one customers bank account into another customer’s bank account. The actual detailed transactional semantics of this use case will not be detailed in this section as these details are better served by their inclusion in a section that discusses transactional behaviors using a service or services.
 
 An Exception Processing discussion for this scenario will need some assumptions made as to the makeup of the RESTful services needed to implement this scenario. There are potentially many RESTful service solutions that this use case, but two will be discussed in this section. These proposals may not be the most reasonable or elegant solution, but the point is to detail the Exception Processing of each. It should be noted here that the use cases and subsequent RESTful interactions that can be applied to a domain object such as a Bank Account can be created using elegant restful principles such as ''Hypermedia As The Engine Of Application State'' (HATEOAS).
 
@@ -227,7 +334,7 @@ The following diagram depicts the Multi-Level Processing Stack that will be used
 
 Additionally, this section will describe service orchestration and how multiple layers of service calls can affect the handling of exceptions and management of faults.
 
-Figure 3 Multi Level Processing Stack
+<span id="_Toc517969180" class="anchor"></span>Figure 3 Multi Level Processing Stack
 
 === Legacy Access Level Exceptions ===
 
@@ -313,9 +420,9 @@ This document contains XML based logging guidelines that were defined for SOAP s
 
 === Enterprise Shared Services Logging Model ===
 
-Figure 4 ESS Logging Model
+<span id="_Toc518056025" class="anchor"></span>Figure 4 ESS Logging Model
 
-Table 2: ESS Logging Description Table
+<span id="_Toc518056019" class="anchor"></span>Table 2: ESS Logging Description Table
 
 {|
 ! Element
@@ -467,7 +574,7 @@ or equivalent
 | Detailed information on the state of the execution of service code package when the error occurred.
 |}
 
-Figure 5 Logging Example
+<span id="_Toc518056026" class="anchor"></span>Figure 5 Logging Example
 
 Some elements in this figure are truncated for readability.
 
@@ -545,7 +652,7 @@ The Error/Fault Message Channel will provide the capability for the services tha
 </blockquote>
 == Integration with Queuing ==
 
-This section will give an overview of a RESTful service that will integrate with a message Queue Messaging system such as IBM’s WebSphere MQ. WebSphere MQ is the current on-premise supported message system in the VA and because of this the IBM supplied functionality will be used to detail RESTful service that will integrate with a message Queue Messaging system functionality. It should be noted that that the IBM solution is obviously not vendor agnostic, but Queue Messaging systems are always vendor specific so solution involving queueing can’t be agnostic.
+This section will give an overview of a service that will integrate with a message Queue Messaging system such as IBM’s WebSphere MQ. WebSphere MQ is the current on-premise supported message system in the VA and because of this the IBM supplied functionality will be used to detail RESTful that will integrate with a message Queue Messaging system functionality. It should be noted that that the IBM solution is obviously not vendor agnostic, but Queue Messaging systems are always vendor specific so solution involving queueing can’t be agnostic.
 
 === RESTful Integration WebSphere MQ Messaging System ===
 
