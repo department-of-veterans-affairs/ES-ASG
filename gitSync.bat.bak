@@ -1,4 +1,5 @@
 echo *** C:\GitHub\ES-ASG\gitSync.bat v20180807a
+cd "C:\GitHub\ES-ASG"
 echo %CD%
 git pull
 git add --all
