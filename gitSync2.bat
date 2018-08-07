@@ -3,5 +3,5 @@ echo %CD%
 git pull
 git add --all
 git commit -m "Publish"
-git push --all
-pause
+rem git push --all
+rem pause
