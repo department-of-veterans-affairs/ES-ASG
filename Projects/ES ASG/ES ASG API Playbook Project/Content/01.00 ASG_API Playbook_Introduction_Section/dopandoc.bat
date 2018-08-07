@@ -1,5 +1,4 @@
 rem gets current directory folder name
-cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\01.00 ASG_API Playbook_Introduction_Section"
 set aFolder=%CD:~69%
 
 rem Dependencies
@@ -74,3 +73,4 @@ git add -f --all
 git commit -m "Publish"
 git push --all
 
+pause

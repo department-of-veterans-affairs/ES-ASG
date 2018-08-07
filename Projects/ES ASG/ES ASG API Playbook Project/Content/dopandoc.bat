@@ -1,5 +1,4 @@
 rem gets current directory folder name
-cd %CD%
 set aFolder=%CD:~69%
 
 rem Dependencies
@@ -74,3 +73,4 @@ git add -f --all
 git commit -m "Publish"
 git push --all
 
+pause
