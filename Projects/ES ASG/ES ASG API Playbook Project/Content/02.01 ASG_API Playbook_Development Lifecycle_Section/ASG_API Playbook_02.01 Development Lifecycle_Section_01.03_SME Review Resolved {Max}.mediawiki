@@ -14,7 +14,7 @@ There are multiple API development methodologies used by various vendor platform
 
 '''Example Methodology – Waterfall'''
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content//media/image1.png|458x343px|Image result for waterfall development methodology]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image1.png|458x343px|Image result for waterfall development methodology]]
 
 Traditional methodology applied to any general software development is to plan, design, develop, test, and deploy a software component or platform, following a basic waterfall approach to all phases of the development lifecycle. However, there are many flaws with this traditional lifecycle approach to development, especially when focusing on microservice and API development. The key flaws identified with the traditional, waterfall, development lifecycle, are:
 
@@ -109,7 +109,7 @@ Once an API is published, an API developer should ask the API consumers to provi
 
 Following the above API development guidelines, below are the key stages of the API development. As an API developer, follow the above guidelines and make sure to complete all stages in the below lifecycle.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content//media/image2.png]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image2.png]]
 
 # '''Design Phase''' includes the following:
 #* Analyze existing API requirements created by business stakeholders and your target API consumers.
