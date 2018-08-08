@@ -1,4 +1,6 @@
-﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.04%20ASG_API%20Playbook_Objects%20and%20Methods_Section'>Wiki source content can be found here.</a>
+﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES0ASG/ES0ASG0API0Playbook0Project/Content/01.000ASG_API0Playbook_Introduction_Section>Wiki source content can be found here.</a>
 __TOC__
 [[#api-naming-convention|API Naming Convention 2]]
 
@@ -56,6 +58,8 @@ Object instances in Mule applications should follow Java-based object naming con
 All custom methods in a Mule application should follow Java method naming convention. For example, getCustomerName or deleteCustomerRecord.
 
 Finally, it is worth mentioning that Mule also supports scripting languages to script routines and operations inside custom policies or Dataweave transformations. There are choices of a scripting language of choice, with Groovy being the mostly commonly used scripting language in Mule. As Groovy follows Java naming convention, all Java object and method naming conventions should be closely following inside Groovy scripts as well. Python and Ruby are other scripting languages that can be used in Mule, but they are not as widely used as Groovy.
+
+
 
 
 
