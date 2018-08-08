@@ -19,8 +19,9 @@ set aRootTree=https://github.com/department-of-veterans-affairs/ES-ASG/tree/mast
 SETLOCAL ENABLEDELAYEDEXPANSION
 rem set aRepo=%aRootTree%!aFolder: =%%20!
 rem set aImage=%aRepo%media/
-set aRepo=%aRootTree%!%aFolder%: =%%20!
-set aImage=%aRepo%!media/
+set aRepo=%aRootTree%!aFolder: =%%20!
+set aImage=%aRootRaw%!aFolder: =%%20!
+set aImage=%aImage%!/media/
 
 rmdir media /s /q
 
