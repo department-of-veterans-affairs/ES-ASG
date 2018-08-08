@@ -101,7 +101,7 @@ Can create a configuration parameter for each target Mulesoft environment and de
 
 Mule 4 has ability to define global properties. As a developer, you can use the &lt;global-property&gt; element to set a placeholder value from within your Mule configuration, such as from within another Mule configuration file. Example of a definition of a global property is shown below:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image1.png|624x70px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section/media/image1.png|624x70px]]
 
 The properties are managed in mule-app.properties file in Mule 3 and Mule 4, but with the new 4.x release Mulesoft has also provide an ability to manage global properties inside a YAML file. The format of a YAML file allows to structure all properties in a nested tree. For example, instead of the above “smtp.host”, we can now store the same property inside a YAML file like this:
 
