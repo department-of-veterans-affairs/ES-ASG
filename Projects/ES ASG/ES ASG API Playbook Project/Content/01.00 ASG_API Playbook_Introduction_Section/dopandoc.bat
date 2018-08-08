@@ -13,10 +13,12 @@ rem Recommend to synch Repo's before starting
 rem Get the URL from GitHub using a browser.  This is in the /media folder of each Section.  Replace /blob/ with /raw/ and replace all %%20 with %%20 (for Powershell below)
 rem set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section/media/"
 
-set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
+set aRootRaw=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
+set aRootTree=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
+
 SETLOCAL ENABLEDELAYEDEXPANSION
-set aRepo=%aRoot%!aFolder: =%%20!
-set aImage="%aRepo%/media/"
+set aRepo=%aRootTree%!aFolder: =%%20!
+set aImage=%aRootRaw%/media/
 
 echo.!!!!!!! %aRepo%
 echo.!!!!!!! %aImage%
