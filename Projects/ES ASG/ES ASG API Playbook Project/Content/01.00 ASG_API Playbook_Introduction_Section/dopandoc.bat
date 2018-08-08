@@ -20,7 +20,8 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 rem set aRepo=%aRootTree%!aFolder: =%%20!
 rem set aImage=%aRepo%media/
 set aRepo=%aRootTree%!%aFolder%: =%%20!
-set aImage=%aRootTree%!%aFolder%'media/': =%%20!
+set aImage=%aRootTree%!%aFolder%: =%%20!
+set aImage=%aImage%!media/
 
 rmdir media /s /q
 
