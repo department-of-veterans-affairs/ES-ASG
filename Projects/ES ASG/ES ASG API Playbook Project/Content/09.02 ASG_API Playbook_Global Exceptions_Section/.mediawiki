@@ -1,4 +1,6 @@
-﻿<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.02%20ASG_API%20Playbook_Global%20Exceptions_Section'>Wiki source content can be found here.</a>
+﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES0ASG/ES0ASG0API0Playbook0Project/Content/01.000ASG_API0Playbook_Introduction_Section>Wiki source content can be found here.</a>
 __TOC__
 <a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.02%20ASG_API%20Playbook_Global%20Exceptions_Section'>Wiki source content can be found here.</a>
 __TOC__
@@ -6,6 +8,12 @@ __TOC__
 __TOC__
 <a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.02%20ASG_API%20Playbook_Global%20Exceptions_Section'>Wiki source content can be found here.</a>
 __TOC__
+<a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.02%20ASG_API%20Playbook_Global%20Exceptions_Section'>Wiki source content can be found here.</a>
+__TOC__
+
+
+
+
 
 
 
