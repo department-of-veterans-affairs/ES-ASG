@@ -20,9 +20,6 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 set aRepo=%aRootTree%!aFolder: =%%20!
 set aImage=%aRootRaw%/media/
 
-echo.!!!!!!! %aRepo%
-echo.!!!!!!! %aImage%
-pause
 rmdir media /s /q
 
 rem get the last .docx file
