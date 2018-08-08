@@ -2,7 +2,7 @@
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image1.png|612x858px]][[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image4.png|753x941px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image1.png|612x858px]][[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image4.png|753x941px]]
 
 Revision History
 
@@ -315,7 +315,7 @@ Engage your API consumer early, as soon as the requirements are converted into t
 
 Following the above API development guidelines, below are the key stages of the API development. As an API developer, follow the above guidelines and make sure to complete all stages in the below lifecycle.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image5.png]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image5.png]]
 
 <ol style="list-style-type: lower-alpha;">
 <li><p>'''Design Phase''' includes the following:</p>
@@ -455,7 +455,7 @@ Once the contract is drawn up, you can proceed to socialize that contract with t
 
 An example API Developer Portal with some sample APIs is provided below. The screenshot shows REST APIs, SOAP APIs, or HTTP APIs that can be easily discovered by searching for specific term or just listing all that are available.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image6.png|624x349px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image6.png|624x349px]]
 
 Once the API contract is created and published to the API Developer Portal, you can proceed with creating a mock API to be published together with the API contract. Creating a mock allows your API consumers to immediately test out your API operations, without guessing what data is expected to be returned.
 
@@ -508,7 +508,7 @@ Define all API Services to be consumed by your service consumers (e.g., “xyz-d
 
 An example of a service operation is provided below for a RESTful operation:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image7.png|343x167px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image7.png|343x167px]]
 
 Request Requirements
 
@@ -516,7 +516,7 @@ In the request section of the API contract, list all inputs, their data types, w
 
 An example of a request definition in the API contract is provided below:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image8.png|428x208px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image8.png|428x208px]]
 
 Response Requirements
 
@@ -537,7 +537,7 @@ For JSON-based responses, define the following:
 
 Example of a response model for a Swagger sample pet store is provided below:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image9.png|426x211px|Swagger Model]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image9.png|426x211px|Swagger Model]]
 
 Service Security Requirements
 
@@ -545,7 +545,7 @@ Security required for an API can be defined in a form of a Swagger or RAML secur
 
 An example below shows the definition of a Basic Auth security scheme for a given API.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image10.png|550x249px|Image result for raml security schemes]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image10.png|550x249px|Image result for raml security schemes]]
 
 === 4.2.3 Swagger and RAML ===
 
@@ -553,11 +553,11 @@ As stated in Section 4.2.1, both Swagger and RAML are widely used to define API 
 
 An example of an OpenAPI Specification based API contract is provided below:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image11.png|523x322px|Image result for api contract example swagger]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image11.png|523x322px|Image result for api contract example swagger]]
 
 An example RAML contract is provided below:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image12.png|252x373px|Image result for raml for pet store]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image12.png|252x373px|Image result for raml for pet store]]
 
 Both Swagger and RAML are very similar, especially if using YAML to define both. There are some slight differences between the two contract definition languages but they are very minor.
 
@@ -569,17 +569,17 @@ Mulesoft has developed the OAS RAML Converter, which is a NodeJS based tool that
 
 While the command-line utility is based on NodeJS and requires Node to be pre-installed, Mulesoft has also launched a web-based converter, which can be used by passing one API contract in Swagger or RAML format and receiving the same API Contract in a different format:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image13.png|636x552px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image13.png|636x552px]]
 
 Here is a screenshot of the GitHub web page for this Mulesoft converter project:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image14.png|599x575px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image14.png|599x575px]]
 
 == 4.3 MuleSoft Design Center ==
 
 Mulesoft has created an API Design Center (screenshot below), which allows a developer to create an API Contract online, within Anypoint Platform Design Center. The contract is auto-validated online, immediately showing the developer whether they are missing anything or misspelled any keywords. The Design Center also provides auto-suggestions on which appropriate keywords are to be used in each line of the contract, as the developer is typing the contract definition.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image15.png|624x249px|https://docs.mulesoft.com/design-center/v/1.0/_images/designer-resources.png]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image15.png|624x249px|https://docs.mulesoft.com/design-center/v/1.0/_images/designer-resources.png]]
 
 Once the contract is finished and saved, the developer can immediately see the API Console on the right pane, under “API Summary” section, as shown in the above screenshot. This allows the developer to test the API contract by sending a sample request and getting a response back.
 
