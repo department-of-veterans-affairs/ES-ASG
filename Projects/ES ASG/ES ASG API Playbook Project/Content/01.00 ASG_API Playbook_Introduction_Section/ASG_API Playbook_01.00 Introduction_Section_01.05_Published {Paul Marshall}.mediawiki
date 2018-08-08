@@ -18,7 +18,7 @@ API Solutions can be comprised of different technologies, platforms, and IT comp
 
 Figure 1: Visual Integrator Reference Architecture
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image1.png|624x394px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image1.png|624x394px]]
 
 ''Reference Architecture Diagram Copyright Visual Integrator Consulting, 2003 - Current''
 
@@ -57,13 +57,13 @@ To accomplish this, the VA will follow approaches that invest in architecture an
 
 Figure 2: Cost of Ownership Curve
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image2.png|534x280px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image2.png|534x280px]]
 
 At times, there may be a simpler, less complex implementation approach than the “standard API” approach, which seem faster or even less costly. However, alternatives from the standard must be justified to determine if they present long-term lower ownership costs. In other words, what may seem simpler on the surface, may be costlier over long haul. This especially holds true when measuring factors such as operations and sustainment, change management, future solution modernization, scalability, flexibility, and overall governance. The most common issue is building a point-to-point or 1-off solution that is costlier of the long haul to manage, maintain, and support—hence, a higher Total Cost of Ownership.
 
 Figure 3: TCO through API based Solutions
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image3.png|624x370px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image3.png|624x370px]]
 
 To maintain low Total Cost of Ownership, the following principles shall apply:
 
@@ -77,7 +77,7 @@ To maintain low Total Cost of Ownership, the following principles shall apply:
 
 Figure 4: Cloud Rationalization Considerations
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image4.png|308x203px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image4.png|308x203px]]
 
 
 
@@ -87,7 +87,7 @@ The concept of a marketplace is important to promote re-usability. It will allow
 
 Figure 5: API Marketplace and Exchange Concept
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image5.png|624x347px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image5.png|624x347px]]
 
 The Guiding principles of the VA API Marketplace includes:
 
@@ -123,7 +123,7 @@ The diagram below illustrates the concept of building solutions by “mashing up
 
 Figure 6: Microservices Architecture
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image6.png|624x171px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image6.png|624x171px]]
 
 The key principles of a Microservices architecture includes:
 
@@ -133,24 +133,24 @@ The key principles of a Microservices architecture includes:
 
 Figure 7: Service Composition through Microservices
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image7.png|418x273px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image7.png|418x273px]]
 
 * The anti-pattern is to build IT assets into large chunks of componentry, such as big chunks of code, long running orchestrations, and APIs that are not separated. This type of architecture can be inflexible, difficult to maintain, challenging to test, prohibit re-usability or composability, and can be inefficient or deficient during runtime.
 
 Figure 8: Anti-Pattern BLOB
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image8.png|229x176px|imagesCAOEIPRH.png]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image8.png|229x176px|imagesCAOEIPRH.png]]
 
 Figure 9: Example of BLOB Anti-Pattern
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image9.png|291x300px|bpel]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image9.png|291x300px|bpel]]
 
 * New Applications, User Interfaces, and other User-centric solutions (i.e. Mobile, Portals, Extranets, Intranets) shall be a mash-up of APIs to create the solution. There shall not be integrations or middle-tier IT assets created directly from UI to data sources. Instead, the UI shall consume APIs that provide all the middle-tier logic and data.
 * Design patterns shall leverage a 3-layer approach, like Model-View-Controller with the following responsibilities:
 
 Figure 10: 3-Layer API Architecture
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image10.png|390x250px|C:\ceebd07e712fdef7d5657be8ccbce998]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image10.png|390x250px|C:\ceebd07e712fdef7d5657be8ccbce998]]
 
 <blockquote><span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers.
 
@@ -170,7 +170,7 @@ The paradigm shifts to allow API solutions as the foundation of any IT solution.
 
 Figure 11: Anti-Pattern of No Architecture
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image11.png|491x270px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image11.png|491x270px]]
 
 Some of the core principles to leveraging API solutions and architecture into all VA IT solutions includes:
 
@@ -179,7 +179,7 @@ Some of the core principles to leveraging API solutions and architecture into al
 
 Figure 12: API Contract First Design Illustration
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image12.png|482x412px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image12.png|482x412px]]
 
 <blockquote>There are 2 standards for API contracts. 1) Swagger and 2) RAML.
 
@@ -209,13 +209,13 @@ Some of the more specific design patterns to leverage include:
 
 Figure 13: Separation of Concerns Architecture
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image13.png|408x147px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image13.png|408x147px]]
 
 As part of the Separation of Concerns, the below diagram illustrates how a Provider publishes its APIs to the API Catalog (i.e. Broker) which is the mediation point where the Consumer will find or locate the API to be used.
 
 Figure 14: Provider and Consumer Interaction
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image14.png|321x243px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image14.png|321x243px]]
 
 = Tenet #6: Low Code Solutions: =
 
@@ -264,7 +264,7 @@ The purpose of the Playbook can be summarized and categorized as follows:
 
 Figure 1: Framework Enablement
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image15.png|624x261px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image15.png|624x261px]]
 
 == Scope ==
 
@@ -272,7 +272,7 @@ When building a framework, it’s important to note the type of assets that are 
 
 Figure 2: What is a VA Framework
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image16.png|469x239px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image16.png|469x239px]]
 
 More specifically, frameworks include:
 
@@ -292,7 +292,7 @@ Frameworks are composed of any of the following artifacts:
 
 Figure 3: Framework Taxonomy
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image17.png|623x379px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image17.png|623x379px]]
 
 == Approach ==
 
@@ -300,7 +300,7 @@ Below is a diagram illustrating the approach to designing, development, and most
 
 Figure 4: Framework Approach
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Sectionmedia/image18.png|624x272px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image18.png|624x272px]]
 
 == Framework Risks ==
 
