@@ -1,4 +1,5 @@
-﻿<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a>
+﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES0ASG/ES0ASG0API0Playbook0Project/Content/01.000ASG_API0Playbook_Introduction_Section>Wiki source content can be found here.</a>
 __TOC__
 = 2. Standards =
@@ -13,7 +14,7 @@ There are multiple API development methodologies used by various vendor platform
 
 '''Example Methodology – Waterfall'''
 
-[[File:.//media/image1.png|458x343px|Image result for waterfall development methodology]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image1.png|458x343px|Image result for waterfall development methodology]]
 
 Traditional methodology applied to any general software development is to plan, design, develop, test, and deploy a software component or platform, following a basic waterfall approach to all phases of the development lifecycle. However, there are many flaws with this traditional lifecycle approach to development, especially when focusing on microservice and API development. The key flaws identified with the traditional, waterfall, development lifecycle, are:
 
@@ -108,7 +109,7 @@ Once an API is published, an API developer should ask the API consumers to provi
 
 Following the above API development guidelines, below are the key stages of the API development. As an API developer, follow the above guidelines and make sure to complete all stages in the below lifecycle.
 
-[[File:.//media/image2.jpeg]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image2.png]]
 
 # '''Design Phase''' includes the following:
 #* Analyze existing API requirements created by business stakeholders and your target API consumers.
@@ -164,6 +165,7 @@ Following the above API development guidelines, below are the key stages of the 
 </blockquote>
 # Resolve defects identified by others.
 # Redeploy the APIs with fixed defects across environments.
+
 
 
 
