@@ -1,7 +1,7 @@
-﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES0ASG/ES0ASG0API0Playbook0Project/Content/01.000ASG_API0Playbook_Introduction_Section>Wiki source content can be found here.</a>
-__TOC__
+﻿<p><a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a></p>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section>Wiki source content can be found here.</a></p>
+<p>__TOC__</p>
 = INTRODUCTION =
 
 Introducing software reuse at a corporate level represents one of the most promising means of addressing the rising costs that are plaguing the software industry. A series of mechanisms are needed for shortening development cycles and providing reliable software of high quality which will be more maintainable and flexible for future extensions.
@@ -110,11 +110,11 @@ Reuse approach can be of two types:
 * After addition or creation of artifacts in modules, work can be done with the artifacts in the module or on the Artifacts page. When you work with an artifact outside a module, you are working with the ''base'' artifact. Changes to the artifact name, content, and attributes are reflected in all contexts: in the base artifact and in all modules that include the artifact.
 * Creation of links, tags, and comments for artifacts in the context of a module, those contextual elements are applicable and visible only in the module where are they created. For example, in the following module, artifact 374 is linked to artifact 375 and artifact 375 is linked from artifact 374:
 
-<blockquote>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image3.png|553x197px|Sample artifact in a module]]
+<blockquote>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content//media/image3.png|553x197px|Sample artifact in a module]]
 </blockquote>
 * However, the base artifacts 374 and 375 on the Artifacts page, are not linked:
 
-<blockquote>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image4.png|383x75px|Sample base artifacts]]
+<blockquote>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content//media/image4.png|383x75px|Sample base artifacts]]
 </blockquote>
 == Using bi-directional links in a module ==
 
@@ -122,7 +122,7 @@ The user should be able to link one artifact in a module to another artifact in 
 
 If user Include links, tags and comments from base artifacts, an indication must be shown as below:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image5.png|521x124px|screen cap showing blue arrow link from base artifact]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content//media/image5.png|521x124px|screen cap showing blue arrow link from base artifact]]
 
 = GENERAL GUIDELINE: =
 
