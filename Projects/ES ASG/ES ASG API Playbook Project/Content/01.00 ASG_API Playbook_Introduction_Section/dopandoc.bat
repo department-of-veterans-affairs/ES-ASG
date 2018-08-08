@@ -29,6 +29,12 @@ pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 rem Add TOC to the beginning of the file
 powershell -Command "'__TOC__' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
+rem Add Email
+powershell -Command "'<a href='mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov'>Send Feedback to this page Via Email</a>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+
+?rem Add Put Data to Work
+powershell -Command "'<a href='https://department-of-veterans-affairs.github.io/vets-contrib/#/'>Put VA Data to Work</a>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+
 rem Insert URL of content source
 powershell -Command "'<a href=' + (39 -as [char]) + '%aRepo%' + (39 -as [char]) + '>Wiki source content can be found here.</a>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
