@@ -20,7 +20,7 @@ All of the above steps are performed even before you started your actual API ope
 
 Next, let’s assume that you have completed your Planning Sprint and started the actual API implementation to expose relational database CRUD operations via the REST API operations. Now, in the middle of your development, a new requirement is provided by the future API consumer to change the database schema of that relational database. You are forced to update your API contract and implementation of the API operation. Without unit tests that you have already developed, you are not able to validate whether all of your API contract changes are reflected correctly in your developed code. On the contract, if you have unit tests already created if following the TDD, you would just re-run your unit tests after any API contract and code changes. Executing unit tests is fairly quick and efficient way to validate any change you have to make to your RAML or Swagger contract and to the underlying codebase.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image1.png|473x259px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image1.png|473x259px]]
 
 Note: Image created by Naresh Jain, Agile Faqs
 
@@ -44,13 +44,13 @@ The target goal, however, should be unit test coverage of most of your source co
 
 An example unit test coverage report looks like this (using JetBrains IDEA as an integrated development environment for Java development):
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image2.png|418x328px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image2.png|418x328px]]
 
 Unit tests are frequently plugged into automated Continuous Integration (CI) pipeline using Jenkins, Bamboo or TeamCity. The tests are executed during the test stage of the CI pipeline to guarantee that the source code delivered to a given environment is bug-free. Therefore, it is critical to develop your unit tests to cover most of your code to avoid any possibility of code delivered with bugs to QA or Production environments.
 
 A screenshot below shows example Jenkins pipeline stages that execute unit tests, then functional tests, and finally load and security tests as three separate pipeline stages, before final deploy readiness:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image3.png|457x270px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image3.png|457x270px]]
 
 
 
@@ -62,17 +62,17 @@ Mule 4.x reorganizes the MUnit assertions into two groupings, but majority of as
 
 “Mock when” MUnit tool becomes quite useful to mock a response or statement when a specific variable or parameter contains a given value. For example, as an MUnit developer you may want to mock the response when a passed-in parameter equals to a specific value.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image4.png|463x250px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image4.png|463x250px]]
 
 To create a new MUnit test, follow the Mule guidelines documented online for MUnit generation. There is a built-in utility within Anypoint Studio to generate MUnit tests. With previous versions of Anypoint Studio, you would had to manually download and install the MUnit Tools for Mule plugin:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image5.png|401x273px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image5.png|401x273px]]
 
 However, with the new Anypoint Studio 7.x, MUnit already comes pre-bundled with the Studio.
 
 To generate the MUnit flows, simply select a given flow in your code, right-click and select option to generate MUnit flow:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image6.png|525x194px|https://docs.mulesoft.com/munit/v/1.1/_images/right-click-flow.png]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image6.png|525x194px|https://docs.mulesoft.com/munit/v/1.1/_images/right-click-flow.png]]
 
 This will generate a “skeleton” version of the MUnit flow. Next, you would add custom logic and assertions using MUnit tools such as “Assert that”, which is the most frequently using assertion type.
 
@@ -120,11 +120,11 @@ Unit test harness is typically executed as part of the CI pipeline stage called 
 
 After the source code is pulled and compiled on the CI build server, the next stage in the CI pipeline is to execute the unit tests that you have developed as part of your API development lifecycle.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image7.png|502x183px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image7.png|502x183px]]
 
 A Continuous Integration (CI) workflow with a unit test stage is shown below, using Jenkins CI Workflow as an example:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image8.png|594x252px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image8.png|594x252px]]
 
 When the unit test stage is completed, the unit test coverage report is automatically generated as part of the CI stage. That report is available for viewing on the CI Management Console, such as inside Jenkins CI Console. Finally, the Regression and Release stages are executed before the final Deploy and Publish stages. The Continuous Delivery automation can be integrated together with the Continuous Integration, in a single CI/CD workflow. CD portion of the automation workflow is dealing with actual deployment of the source code into a virtual container (e.g., Docker or OpenShift Pod) or onto the “bare metal” server instance if virtualization is not used.
 
