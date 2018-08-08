@@ -69,7 +69,7 @@ For example, “LOG: Log Message Payload” to log the message payload.
 
 A screenshot below shows how the connector names are defined in a sample Mule flow.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content//media/image1.png|513x447px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image1.png|513x447px]]
 
 Mulesoft configuration files follow the following naming convention:
 
