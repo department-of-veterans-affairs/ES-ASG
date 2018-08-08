@@ -1,6 +1,6 @@
 ﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section>Wiki source content can be found here.</a></p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = Table of Contents =
 
@@ -50,7 +50,7 @@ An API-led connectivity approach provides a framework for ordering and structuri
 
 <span id="_Toc519262341" class="anchor"></span>Figure 1: API Layers Concept
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image1.png|594x240px|../../../../../../../../Desktop/Screen%20Shot%202016-05-20%20at%203.3]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20media/image1.png|594x240px|../../../../../../../../Desktop/Screen%20Shot%202016-05-20%20at%203.3]]
 
 == System APIs ==
 
@@ -102,7 +102,7 @@ Typically, the runtime flow of API’s is Experience to Process to System (Top-D
 
 <span id="_Toc519262342" class="anchor"></span>Figure 2: API Layers Invocation
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image2.png|169x249px|C:\e9ff527e5a932326a65acf3c1425dc1f]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20media/image2.png|169x249px|C:\e9ff527e5a932326a65acf3c1425dc1f]]
 
 == API Layer Decision Tree ==
 
@@ -149,7 +149,7 @@ Sometimes referred to as “separation of concerns”. Separate API’s and flow
 
 <span id="_Toc519262343" class="anchor"></span>Figure 3: Separation of Concerns
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image3.png|624x225px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20media/image3.png|624x225px]]
 
 <span class="underline">Leverage the Reliability Pattern as a mediation layer between API Process flows that invoke in each other (i.e. Composite Processes).</span>
 
@@ -157,7 +157,7 @@ By using the using the [https://docs.mulesoft.com/mule-user-guide/v/3.9/reliabil
 
 <span id="_Toc519262344" class="anchor"></span>Figure 4: Reliability Pattern for Loose Coupling
 
-<blockquote>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image4.png|624x143px|A screenshot of a cell phone Description generated with very high confidence]]
+<blockquote>[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20media/image4.png|624x143px|A screenshot of a cell phone Description generated with very high confidence]]
 </blockquote>
 <span class="underline">Source (Provider) and Target (Consumer) data never map data fields directly to each other</span>
 
@@ -165,7 +165,7 @@ Instead, source maps to an enterprise entity data model object (“Canonical”)
 
 <span id="_Toc519262345" class="anchor"></span>Figure 5: Provider/Consumer Separation
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image5.png|368x277px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20media/image5.png|368x277px]]
 
 A well-designed Canonical has the following characteristics:
 
@@ -178,7 +178,7 @@ A well-designed Canonical has the following characteristics:
 
 <span id="_Toc519262346" class="anchor"></span>Figure 6: Canonical Example
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image6.png|143x318px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20media/image6.png|143x318px]]
 
 = Licenses Considerations =
 
