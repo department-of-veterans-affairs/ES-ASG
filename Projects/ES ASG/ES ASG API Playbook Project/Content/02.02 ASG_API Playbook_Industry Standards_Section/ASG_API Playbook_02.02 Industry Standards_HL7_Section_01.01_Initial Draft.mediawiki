@@ -1,12 +1,12 @@
 ﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section>Wiki source content can be found here.</a></p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 API Developer Playbook Blueprint Documentation
 
 Maps to Framework Set #1
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/ =%20media/image1.png|228x228px|Department of Veterans Affairs official seal]]
 
 Document Version Draft 01.00.03
 
