@@ -1,0 +1,72 @@
+﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/11.00%20ASG_API%20Playbook_Baseline%20API%20Security_Section>Wiki source content can be found here.</a></p>
+<p>__TOC__</p>
+= 11. Baseline API Security =
+
+== 11.1 VA Standards ==
+
+== User Identity Authentication Enterprise Design Pattern - https://www.oit.va.gov/library/programs/ts/edp/privacy/UserIdentityAuthentication_V2.pdf ==
+
+== Secure Messaging Enterprise Design Pattern (this is dated) - https://www.oit.va.gov/library/programs/ts/edp/privacy/SecureMessaging_V2.pdf  ==
+
+==  ==
+
+== 11.2 OAuth 2.0 and OpenID Connect Security ==
+
+== Identity and Access Management (IAM) has implemented OAuth 2.0 services to allow API consumers to pass an OAuth token to APIs.  API gateways and API implementers can take advantage of the OAuth validation and session profile services to ensure tokens presented are valid and obtain information about the authenticated user.  An example end to end walkthrough of an OAuth Grant Code implementation using the IAM SSOe OAuth service can be found here (https://vaww.oed.portal.va.gov/sites/vrm/IAM/playbooks/Pages/SSOe/OAuth%20Code%20Grant.aspx). ==
+
+==  ==
+
+== More information can be found at the links below: ==
+
+<ul>
+<li>== Single Sign-On External - https://vaww.oed.portal.va.gov/sites/vrm/IAM/playbooks/Pages/SSOe/SSOe.aspx  ==
+
+<ul>
+<li>== OAuth – https://vaww.oed.portal.va.gov/sites/vrm/IAM/playbooks/Pages/SSOe/OAuth.aspx  ==
+</li></ul>
+</li>
+<li>== Single Sign-On Internal – https://vaww.oed.portal.va.gov/sites/vrm/IAM/playbooks/Pages/SSOi/SSOi.aspx  ==
+
+<ul>
+<li>== OAuth – service coming soon ==
+</li></ul>
+</li></ul>
+
+==  ==
+
+== Note: All integration with Enterprise Services (ES), including IAM, require submission of a Service Request (SR) prior to beginning any work (https://escp.aac.va.gov/). ==
+
+== 11.3 API Security Guidelines and Best Practices ==
+
+OAuth 2.0 Threat Model and Security Considerations (https://tools.ietf.org/html/rfc6819). 
+
+API Security
+
+The Projects when going through intake have to get an App code for the proper tagging of resource in use. The process for intake to create App code triggers the creation of the initial AD objects to include the Site Service and User objects for Distribution lists, Security Groups, and OUs.
+
+The Ability to access the environments is via elevated privileges to the Cloud hosted systems to administer, Manage and access developer tool sets.
+
+The Project must create the proper Security groups that are managed via a Service Now incident ticket, and the application team managing the application.
+
+The procedure to have access to APIs and Development is:
+
+# Must have elevated privileges
+# Must have the token and NEMA
+# Must be enrolled through Clarify (Linux)
+# Use of EPAS to add users to the proper Security groups created at time of intake or with a Service Now incident
+# The users added to the security groups are reduced to the least privilege access to the Role within the API development solution
+# The Cloud Service Providers have other authentication mechanisms and security controls to ensure reduced access for only those roles privileges
+
+The Use of centralized 2 factor access for Git Hub repositories.
+
+# Access account request
+# Access 3<sup>rd</sup> party approver
+# Use of a mobile 2 factor authentication app
+# Log on to the specifically shared GitHub repository
+
+
+
+
+
