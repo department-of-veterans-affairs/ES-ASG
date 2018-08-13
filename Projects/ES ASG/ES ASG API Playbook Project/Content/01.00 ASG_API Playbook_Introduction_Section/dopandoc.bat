@@ -29,6 +29,8 @@ rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
 
 set aFile20=%aFile%: =%%20!
+echo.%aFile20%
+pause
 
 rem convert .docx to .mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
