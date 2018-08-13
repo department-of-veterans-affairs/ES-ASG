@@ -1,4 +1,6 @@
-﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
+This is a modification proposal.
+
+<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -79,7 +81,7 @@ Figure 4: Cloud Rationalization Considerations
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image4.png|308x203px]]
 
-
+How do I see the image when I'm trying to modify this wiki page?
 
 = Tenet #2: Leverage the VA API Marketplace =
 
