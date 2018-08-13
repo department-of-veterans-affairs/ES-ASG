@@ -1,0 +1,18 @@
+It seemed it was happy path testing.  Need different type of defects named.
+
+Document a list of Test Cases and Pass/Fail results.
+
+Point of reference of what is being tested and how its being tested.
+
+Communication from Developer where he thinks the code needs more testing.
+
+Need a better high level description of Unit Testing types and how agnostic vs. munit vs. other platforms
+
+7.2: Do Unit Testing align if a requirement is "testable".
+
+Document that all test cases trace to requirements.
+
+More text to help a non techie understand.
+
+Better explanation of CICD.  The order of operations.  How does it fit into the Unit Test Strategy.
+
