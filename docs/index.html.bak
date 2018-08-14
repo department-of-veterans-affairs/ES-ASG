@@ -2,13 +2,7 @@ ES-ASG Index.html 20180814a
 
 <p>Welcome page.</p>
 
-<<<<<<< HEAD
-<p></p><a href:"https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/docs/ASG_API%20Playbook_01.00%20Introduction_Section_01.05_Published%20%7BPaul%20Marshall%7D.mediawiki">Wiki test</a>
-=======
-<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/blob/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/ASG_API%20Playbook_01.00%20Introduction_Section_01.05_Published%20%7BPaul%20Marshall%7D.mediawiki">Wiki test</a></p>
->>>>>>> f37da91b518c4208bc8c18677f46c24cc748c467
 
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/docs/ASG_API%20Playbook_01.00%20Introduction_Section_01.05_Published%20%7BPaul%20Marshall%7D.mediawiki">test1</a></p>
 
-skylight_api_governance_research_report.md
-
-<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/docs/skylight_api_governance_research_report.md">test2</a></p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/docs/skylight_api_governance_research_report.html">test2</a></p>
