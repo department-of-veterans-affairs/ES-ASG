@@ -1,6 +1,8 @@
 ﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section>Wiki source content can be found here.</a></p>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section/ASG_API Playbook_09.01 Exception Handling_Section_01.06_Tech Review Braunstein.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p>__TOC__</p>
 API Developer Playbook Blueprint Documentation
 
@@ -665,6 +667,8 @@ Applications can issue an HTTP POST to send a message to IBM MQ, or an HTTP DELE
 A detailed discussion of the RESTful/WebSphere MQ functionality can be found on the using following URL:
 
 https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.0.0/com.ibm.mq.dev.doc/q130940_.html
+
+
 
 
 
