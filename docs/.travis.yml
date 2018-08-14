@@ -1,10 +1,11 @@
-language: ruby
-script: "./script/cibuild"
-notifications:
-  email: false
-branches:
-  only:
-    - gh-pages
-    - /.*/
-sudo: false
-cache: bundler
+sudo:          false
+language:      node_js
+node_js:
+  - "node"
+install:       npm install
+script:
+  - npm test
+  - gulp
+cache:
+  directories:
+    - node_modules

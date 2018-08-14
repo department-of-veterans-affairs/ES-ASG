@@ -1,86 +1,66 @@
-# GitHub and Government [![Build Status](https://travis-ci.org/github/government.github.com.svg?branch=gh-pages)](https://travis-ci.org/github/government.github.com)
+# [Start Bootstrap - Scrolling Nav](https://startbootstrap.com/template-overviews/scrolling-nav/)
 
-![screenshot](assets/img/screenshot.png)
+[Scrolling Nav](http://startbootstrap.com/template-overviews/scrolling-nav/) is an unstyled one page starter template with a collapsing, smooth scrolling navigation bar for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-Gather, curate, and feature stories of people using GitHub as part of their open government innovations.
+## Preview
 
-The site is open source (here's all the code!) and is a tool _for_ and _by_ the community.
+[![Scrolling Nav Preview](https://startbootstrap.com/assets/img/templates/scrolling-nav.jpg)](https://blackrockdigital.github.io/startbootstrap-scrolling-nav/)
 
-Submit [issues](https://github.com/github/government.github.com/issues/new) and [pull requests](https://github.com/github/government.github.com/compare/) for stories, site ideas or copy edits.
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-scrolling-nav/)**
 
-### Goals
+## Status
 
-- Share stories of real world experiences using GitHub in open Government
-- Demystify open source terminology
-- Showcase the community using GitHub to promote connections and sharing between individuals and organizations.
-- Make getting started with GitHub easier
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-scrolling-nav/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-scrolling-nav.svg)](https://www.npmjs.com/package/startbootstrap-scrolling-nav)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-scrolling-nav.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-scrolling-nav)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-scrolling-nav?type=dev)
 
-### Under the Hood
+## Download and Installation
 
-This site is made with [Jekyll](http://jekyllrb.com), an open source static site generator. This means the Jekyll program takes the content we want to be on the site and turns them into HTML files ready to be hosted somewhere. Awesomely, GitHub provides free web hosting for repositories, called [GitHub Pages](http://pages.github.com/), and that's how this site is hosted. The content for the site is on a branch named [gh-pages](https://github.com/github/government.github.com/tree/gh-pages).
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/scrolling-nav/)
+* Install via npm: `npm i startbootstrap-scrolling-nav`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav)
 
-## Contributing
+## Usage
 
-#### Fix/Edit Content
+### Basic Usage
 
-If you see an error or a place where content should be updated or improved, just fork this repository to your account, make the change you'd like and then submit a pull request. If you're not able to make the change, file an [issue](https://github.com/github/government.github.com/issues/new).
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-#### Add Organization
+### Advanced Usage
 
-If you know of an [GitHub organization](https://help.github.com/articles/about-organizations/) that should be added to the organization list that generates the matrix of avatars on the [Community](https://government.github.com/community/) page: fork this repository, open the [_data/civic_hackers.yml](_data/civic_hackers.yml), [_data/governments.yml](_data/governments.yml), or[_data/research.yml](_data/research.yml) file and add it to the appropriate section of the list in the format being used. Commit your change and submit a pull request to us!
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
----
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-## To Set up Locally
+## Troubleshooting and Help
 
-You can take all the files of this site and run them just on your computer as if it were live online, only it's just on your machine.
+Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
 
-#### Requirements
+**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
 
-* [Jekyll](http://jekyllrb.com/)
-* [Ruby](https://www.ruby-lang.org/en/)
-* [Git](http://git-scm.com/)
+## Bugs and Issues
 
-_If you have installed [GitHub Desktop](https://desktop.github.com), Git was also installed automatically._
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/scrolling-nav/).
 
-To copy the repository's files from here onto your computer and to view and serve those files locally, at your computer's command line type:
+## About
 
-```bash
-git clone https://github.com/github/government.github.com.git
-cd government.github.com
-script/bootstrap
-script/server
-```
-Open `http://localhost:4000` in your browser
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-## Deploying
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-github.government.com now utilizes a two-repo approach to managing staging and production deployments:
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-- **Production:** [github/government.github.com](https://github.com/github/government.github.com/) (this repository)
-- **Staging:** [government/staging](https://ghe.io/government/staging)
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-For small changes, you can deploy right to production by merging a pull request. For larger changes, push your branch to the staging repo from Terminal. Here's how to setup staging and deploy to it:
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-```
-$ script/stage staging
-```
+## Copyright and License
 
-
-This script will generate the government site (without starting the local server) and prep it for staging. It does this by creating a temporary Git repo within the compiled `_site` directory and force pushing that to a separate remote repo (in this case, https://ghe.io/government/staging).
-
-Pushing to the staging repo requires authenticating with GitHub via Terminal. You'll be asked for a username and password when running `script/stage`. Use your GHE.io username and, since we enforce 2FA, use a [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) as your password.
-
-_Having trouble deploying to a staging server? Delete the entire `_site` directory and try again. Sometimes the temporary Git repository we make in the script can go awry._
-
-When you're done with staging and your pull request has been approved, you can merge your branch. Your changes will be automatically deployed to the production site in a few minutes.
-
-----
-
-#### Triage Issues [![Open Source Helpers](https://www.codetriage.com/github/government.github.com/badges/users.svg)](https://www.codetriage.com/github/government.github.com)
-
-In addition to contributing changes, you can help to triage issues. This can include asking for vital information or requesting formatting changes. If you would like to start triaging issues, one easy way to get started is to [subscribe to government.github.com on CodeTriage](https://www.codetriage.com/github/government.github.com).
-
-----
-
-Don't see what you're looking for? Create an [issue](https://github.com/github/government.github.com/issues/new), we'll do our best to help you out.
+Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/gh-pages/LICENSE) license.
