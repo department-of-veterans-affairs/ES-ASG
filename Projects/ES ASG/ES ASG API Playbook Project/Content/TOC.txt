@@ -28,3 +28,4 @@ https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES
 https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.02%20ASG_API%20Playbook_Global%20Exceptions_Section/.mediawiki 
 https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.03%20ASG_API%20Playbook_API%20Level%20Exceptions_Section/.mediawiki 
 https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.04%20ASG_API%20Playbook_Middleware%20Level%20Exceptions_Section/.mediawiki 
+https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.05%20ASG_API%20Playbook_Message%20Process%20Failures%20and%20Retries_Section/.mediawiki 
