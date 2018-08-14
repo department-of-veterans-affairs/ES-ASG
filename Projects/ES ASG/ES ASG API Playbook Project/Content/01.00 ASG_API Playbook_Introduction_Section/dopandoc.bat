@@ -73,6 +73,10 @@ for /R %%f in (*.gif) do (
 	magick %%~nf.gif %%~nf.png
 )
 
+rem Log to TOC
+cd ..
+echo %aRepo%/%aFile%.mediawiki >> TOC.txt
+
 rem push to GitHub Repo
 
 git add -f --all

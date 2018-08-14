@@ -74,17 +74,17 @@ for /R %%f in (*.gif) do (
 )
 
 rem Log to TOC
-cd ..
+cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 echo %aRepo%/%aFile%.mediawiki >> TOC.txt
 
 rem push to GitHub Repo
 
+cd "C:\GitHub\ES-ASG"
 git add -f --all
 git commit -m "Publish"
 git push --all
 
 cd "C:\GitHub\ES-ASG.wiki"
-
 git add -f --all
 git commit -m "Publish"
 git push --all
