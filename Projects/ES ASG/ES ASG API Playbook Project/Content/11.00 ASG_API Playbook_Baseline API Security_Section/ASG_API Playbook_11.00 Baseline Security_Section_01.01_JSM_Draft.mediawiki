@@ -1,6 +1,8 @@
 ﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/11.00%20ASG_API%20Playbook_Baseline%20API%20Security_Section>Wiki source content can be found here.</a></p>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/11.00%20ASG_API%20Playbook_Baseline%20API%20Security_Section/ASG_API Playbook_11.00 Baseline Security_Section_01.01_JSM_Draft.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p>__TOC__</p>
 = 11. Baseline API Security =
 
@@ -65,6 +67,8 @@ The Use of centralized 2 factor access for Git Hub repositories.
 # Access 3<sup>rd</sup> party approver
 # Use of a mobile 2 factor authentication app
 # Log on to the specifically shared GitHub repository
+
+
 
 
 
