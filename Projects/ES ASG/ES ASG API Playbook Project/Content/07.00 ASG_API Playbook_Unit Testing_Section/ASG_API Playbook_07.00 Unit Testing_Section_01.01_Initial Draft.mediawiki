@@ -1,5 +1,4 @@
-﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section>Wiki source content can be found here.</a></p>
+﻿<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section>Wiki source content can be found here.</a></p>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/ASG_API Playbook_07.00 Unit Testing_Section_01.01_Initial Draft.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -129,7 +128,6 @@ A Continuous Integration (CI) workflow with a unit test stage is shown below, us
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image8.png|594x252px]]
 
 When the unit test stage is completed, the unit test coverage report is automatically generated as part of the CI stage. That report is available for viewing on the CI Management Console, such as inside Jenkins CI Console. Finally, the Regression and Release stages are executed before the final Deploy and Publish stages. The Continuous Delivery automation can be integrated together with the Continuous Integration, in a single CI/CD workflow. CD portion of the automation workflow is dealing with actual deployment of the source code into a virtual container (e.g., Docker or OpenShift Pod) or onto the “bare metal” server instance if virtualization is not used.
-
 
 
 
