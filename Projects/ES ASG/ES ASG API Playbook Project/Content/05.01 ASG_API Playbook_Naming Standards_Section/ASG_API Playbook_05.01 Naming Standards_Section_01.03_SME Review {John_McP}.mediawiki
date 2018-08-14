@@ -1,6 +1,8 @@
 ﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section>Wiki source content can be found here.</a></p>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/ASG_API Playbook_05.01 Naming Standards_Section_01.03_SME Review {John_McP}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p>__TOC__</p>
 
 
@@ -374,6 +376,8 @@ With that said, the naming conventions for the global configuration parameters s
 Mulesoft has many reserved global configuration parameters, which all start with “mule.” in the name of the parameter. For example, “mule.env” is reserved to the name of the Mule environment. In addition, there are other reserved Mule properties that are tied to the application deployed. For example, “app.name” is the name of the application running within the Mule runtime.
 
 In a Mule process flow, a developer can reference these parameters like this: ${mule.env}, by adding a dollar sign “$” and wrapping the parameter name with the curly braces. In Mule Expression Language (MEL) used inside an expression such as inside a DataWeave Transformations control, accessing properties is done with a reserved “#p[]”, where you would place the name of the property inside the square brackets. For example, “#p[‘vet360.db.oracle.host’]”.
+
+
 
 
 
