@@ -75,7 +75,7 @@ for /R %%f in (*.gif) do (
 
 rem Log to TOC
 cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
-powershell -Command "'<p><a href=' + (34 -as [char]) + '%aRepo%' + '/' + '%aFile%.mediawiki' + (34 -as [char]) + '>Edit the Wiki .mediawiki file here.</a></p>' + (13 -as [char]) + (10 -as [char]) | Out-File 'TOC.txt'" -encoding UTF8
+echo %aRepo%/%aFile%.mediawiki >> TOC.txt
 
 rem push to GitHub Repo
 
