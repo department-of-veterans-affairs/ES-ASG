@@ -1,6 +1,8 @@
 ﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section>Wiki source content can be found here.</a></p>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/ASG_API Playbook_02.02 Industry Standards_HL7_Section_01.01_Initial Draft.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p>__TOC__</p>
 API Developer Playbook Blueprint Documentation
 
@@ -470,6 +472,8 @@ The Argonaut project Provider Directory Guide is based upon the core FHIR STU3 A
 The URL for the Provider Directory Guide Version 1.0.0 is:
 
 http://www.fhir.org/guides/argonaut/pd/
+
+
 
 
 
