@@ -25,3 +25,4 @@ https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES
 https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/.mediawiki 
 https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section/ASG_API Playbook_09.01 Exception Handling_Section_01.06_Tech Review Braunstein.mediawiki 
 https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section\media/.mediawiki 
+https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.02%20ASG_API%20Playbook_Global%20Exceptions_Section/.mediawiki 
