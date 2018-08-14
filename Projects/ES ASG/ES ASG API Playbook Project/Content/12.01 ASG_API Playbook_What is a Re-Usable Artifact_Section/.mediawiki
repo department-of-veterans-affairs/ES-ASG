@@ -1,4 +1,9 @@
-﻿<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.01%20ASG_API%20Playbook_What%20is%20a%20Re-Usable%20Artifact_Section>Wiki source content can be found here.</a></p>
+﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.01%20ASG_API%20Playbook_What%20is%20a%20Re-Usable%20Artifact_Section>Wiki source content can be found here.</a></p>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.01%20ASG_API%20Playbook_What%20is%20a%20Re-Usable%20Artifact_Section/.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
+<p>__TOC__</p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.01%20ASG_API%20Playbook_What%20is%20a%20Re-Usable%20Artifact_Section>Wiki source content can be found here.</a></p>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.01%20ASG_API%20Playbook_What%20is%20a%20Re-Usable%20Artifact_Section/.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -58,6 +63,11 @@ __TOC__
 __TOC__
 <a href='https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.01%20ASG_API%20Playbook_What%20is%20a%20Re-Usable%20Artifact_Section'>Wiki source content can be found here.</a>
 __TOC__
+
+
+
+
+
 
 
 

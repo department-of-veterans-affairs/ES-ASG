@@ -36,13 +36,14 @@ powershell -Command "'<p>__TOC__</p>' + (13 -as [char]) + (10 -as [char]) + (gc 
 
 rem Edit .mediawiki and Pull Request
 powershell -Command "'<p><a href=' + (34 -as [char]) + '%aRepo%' + '/' + '%aFile%.mediawiki' + (34 -as [char]) + '>Edit the Wiki .mediawiki file here.</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
-powershell -Command "'<p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Send feedback via email
 powershell -Command "'<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Wiki source content here
 powershell -Command "'<p><a href=' + '%aRepo%' +'>Wiki source content can be found here.</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+
+powershell -Command "'<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' | Out-File '%aFile%.mediawiki'" -encoding UTF8
