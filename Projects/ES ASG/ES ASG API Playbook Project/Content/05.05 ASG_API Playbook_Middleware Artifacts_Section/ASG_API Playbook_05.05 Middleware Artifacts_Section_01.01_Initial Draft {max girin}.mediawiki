@@ -1,5 +1,4 @@
-﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section>Wiki source content can be found here.</a></p>
+﻿<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section>Wiki source content can be found here.</a></p>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
 <p>To provide edited feedback, modify the .mediawiki file at the link below and submit a Pull Request:</p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section/ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -79,7 +78,6 @@ Mulesoft configuration files follow the following naming convention:
 * Words are concatenated with dashes in the file names
 
 For example, “mule-app.propertes” or “pom.xml”.
-
 
 
 
