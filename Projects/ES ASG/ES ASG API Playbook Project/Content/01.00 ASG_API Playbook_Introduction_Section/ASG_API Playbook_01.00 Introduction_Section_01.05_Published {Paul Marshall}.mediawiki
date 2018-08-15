@@ -149,12 +149,18 @@ Figure 9: Example of BLOB Anti-Pattern
 * New Applications, User Interfaces, and other User-centric solutions (i.e. Mobile, Portals, Extranets, Intranets) shall be a mash-up of APIs to create the solution. There shall not be integrations or middle-tier IT assets created directly from UI to data sources. Instead, the UI shall consume APIs that provide all the middle-tier logic and data.
 * Design patterns shall leverage a 3-layer approach, like Model-View-Controller with the following responsibilities:
 
+<blockquote><span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers.
+
+<span class="underline">Process:</span> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
+
+<span class="underline">System:</span> The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
+</blockquote>
 Figure 10: 3-Layer API Architecture
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image10.png|390x250px|C:\ceebd07e712fdef7d5657be8ccbce998]]
 
-<blockquote><span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers.
-</blockquote>
+<span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers.
+
 <span class="underline">Process:</span> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
 
 <span class="underline">System:</span> The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
