@@ -169,6 +169,12 @@ System: The most granular layer that represents interaction with data sources/sy
 
 * APIs can support a plethora of data formats but predominantly JSON is preferred. Micro service is normally exposed as HTTP(s) service.
 
+Experience: Consumption ready API for User Interface consumers and Trading Partner consumers.
+
+Process: Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
+
+System: The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
+
 
 
 = Tenet #4: API Solutions are fundamental to any VA IT initiative =
