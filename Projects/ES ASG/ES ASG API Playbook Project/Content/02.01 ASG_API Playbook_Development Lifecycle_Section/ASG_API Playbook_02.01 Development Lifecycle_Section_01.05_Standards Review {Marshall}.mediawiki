@@ -7,8 +7,6 @@
 
 = Standards =
 
-=  =
-
 == API Development Lifecycle ==
 
 There are multiple API development methodologies used by various vendor platforms and development teams. Example methodologies include:
