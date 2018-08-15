@@ -153,8 +153,8 @@ Figure 10: 3-Layer API Architecture
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image10.png|390x250px|C:\ceebd07e712fdef7d5657be8ccbce998]]
 
-<span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers.
-
+<blockquote><span class="underline">Experience:</span> Consumption ready API for User Interface consumers and Trading Partner consumers.
+</blockquote>
 <span class="underline">Process:</span> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
 
 <span class="underline">System:</span> The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
