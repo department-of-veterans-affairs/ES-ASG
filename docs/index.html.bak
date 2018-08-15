@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>VA-ESG Playbook</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -60,8 +60,10 @@
           <div class="col-lg-8 mx-auto">
             <h2>About this page</h2>
             <p class="lead">
-            A leading influencer in the VA Open API Pledge, ES-ASG creates developer-centric guidance for building critical API Management resources.  Central to this guidance is the API Playbook.
-            We encourage open collaboration and participation by publishing our evolving <a href="https://github.com/department-of-veterans-affairs/ES-ASG/wiki" target="_blank">Wiki pages</a> and encouraging your input.
+            A leading influencer in the VA Open API Pledge, ES-ASG creates developer-centric guidance for building critical API Management resources.
+            Central to this guidance is the API Playbook.
+            We encourage open collaboration and participation as we publish our evolving
+            <a href="https://github.com/department-of-veterans-affairs/ES-ASG/wiki" target="_blank">Wiki pages</a> and welcome your input.
             <p class="lead">How to contribute:</p>
             <ul class="lead"> 
 							<li>Use the email link provided with each Wiki page. Please specify clearly the context of your comment.
