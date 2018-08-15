@@ -46,11 +46,10 @@
     <header class="bg-primary text-white">
       <div class="container text-center">
       	<img src="images/VASeal.jpg" alt="VA Seal" height="250" width="375">
-        <p class="lead"></p>
       </div>
       <div class="container text-center">
-        <h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+        <h1>Welcome to ES-ASG GitHub Pages</h1>
+        <p class="lead">This landing page is a place to share VA Open API related initiates and information.</p>
       </div>
     </header>
 
