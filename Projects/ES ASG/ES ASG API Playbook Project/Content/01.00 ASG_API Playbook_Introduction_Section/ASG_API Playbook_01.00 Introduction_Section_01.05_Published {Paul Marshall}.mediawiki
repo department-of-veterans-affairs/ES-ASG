@@ -158,6 +158,12 @@ Figure 10: 3-Layer API Architecture
 <span class="underline">Process:</span> Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
 
 <span class="underline">System:</span> The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
+
+Experience: Consumption ready API for User Interface consumers and Trading Partner consumers.
+
+Process: Transformations/Translations to and from Canonical; Business Rules; Orchestration of Business Process. The orchestrations may perform data aggregation (split-join), conditional routing (if Region=APAC then do this…), filtering (Only show available orders), and more.
+
+System: The most granular layer that represents interaction with data sources/systems of record and consumer/destinations systems.
 </blockquote>
 * The responsibility of each microservice is to perform a small unit of work, with a single responsibility. That entire responsibility shall be encapsulated in the API itself.
 
