@@ -6024,7 +6024,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #000000 !important;
+  background-color: #007bff !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
