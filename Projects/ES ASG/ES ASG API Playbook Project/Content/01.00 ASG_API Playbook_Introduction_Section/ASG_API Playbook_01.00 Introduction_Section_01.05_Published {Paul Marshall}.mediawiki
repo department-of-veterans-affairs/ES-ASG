@@ -68,15 +68,13 @@ Figure 3: TCO through API based Solutions
 
 To maintain low Total Cost of Ownership, the following principles shall apply:
 
-* Leverage the standard API platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration
-* Leverage the architecture patterns and approaches established by VA.
-* Leverage the enabling “API Frameworks” established by VA.
-
-Bring collaboration and feedback on the standards to the Enterprise Services API Governance Council as early as possible so it is considered in the design and rationalization. If the scope is broader than VA ES, then the Enterprise Services API Governance Council shall consult with other VA groups and teams to establish the proper solution approach.
-
-Leveraging VA standardized “Cloud based platforms” to keep costs low. When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture). Second criterion is to leverage “container-based solutions” so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines. This will help keep the TCO low.
-
-Below is a diagram illustration the considerations when rationalizing the cloud approach, and which cloud deployment architecture is appropriate (SaaS; PaaS; IaaS).
+<ul>
+<li><p>Leverage the standard API platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration</p></li>
+<li><p>Leverage the architecture patterns and approaches established by VA.</p></li>
+<li><p>Leverage the enabling “API Frameworks” established by VA.</p></li>
+<li><p>Bring collaboration and feedback on the standards to the Enterprise Services API Governance Council as early as possible so it is considered in the design and rationalization. If the scope is broader than VA ES, then the Enterprise Services API Governance Council shall consult with other VA groups and teams to establish the proper solution approach.</p></li>
+<li><p>Leveraging VA standardized “Cloud based platforms” to keep costs low. When considering cloud platforms, the preference is to leverage Platform as a Service (PaaS) as the first criteria (See Section on Tenet: Microservices Architecture). Second criterion is to leverage “container-based solutions” so the microservice can be created, deployed, and managed independently from other microservices, Operating Systems, or Virtual Machines. This will help keep the TCO low.</p>
+<p>Below is a diagram illustration the considerations when rationalizing the cloud approach, and which cloud deployment architecture is appropriate (SaaS; PaaS; IaaS).</p></li></ul>
 
 Figure 4: Cloud Rationalization Considerations
 
