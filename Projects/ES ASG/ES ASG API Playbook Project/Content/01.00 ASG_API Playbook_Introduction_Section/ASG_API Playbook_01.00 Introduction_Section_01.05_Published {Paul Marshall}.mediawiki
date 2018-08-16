@@ -68,11 +68,9 @@ Figure 3: TCO through API based Solutions
 
 To maintain low Total Cost of Ownership, the following principles shall apply:
 
-Leverage the standard API platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration
-
-Leverage the architecture patterns and approaches established by VA.
-
-Leverage the enabling “API Frameworks” established by VA.
+* Leverage the standard API platforms, tools, and technologies, selected by VA and justify any exceptions to the standard for consideration
+* Leverage the architecture patterns and approaches established by VA.
+* Leverage the enabling “API Frameworks” established by VA.
 
 Bring collaboration and feedback on the standards to the Enterprise Services API Governance Council as early as possible so it is considered in the design and rationalization. If the scope is broader than VA ES, then the Enterprise Services API Governance Council shall consult with other VA groups and teams to establish the proper solution approach.
 
