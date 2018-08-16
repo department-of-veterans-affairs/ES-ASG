@@ -268,8 +268,8 @@ As a result of our analysis of multiple development lifecycle methodologies, the
 There are two well-established approaches when it comes to API development:
 
 <ol style="list-style-type: decimal;">
-<li><blockquote><p>'''Design First''': Create a well-defined API contract, following Open API or RESTful API Modelling standards, such as Swagger or RAML, from which the code is then developed and tested. Mulesoft platform has been designed specifically with the Design First approach in mind.</p></blockquote></li>
-<li><blockquote><p>'''Code First''': Based on the business plan, API is directly coded, from which the Swagger or RAML API contract is then generated. Certain middleware platforms, such as Boomi, are built around this approach.</p></blockquote></li></ol>
+<li><p>'''Design First''': Create a well-defined API contract, following Open API or RESTful API Modelling standards, such as Swagger or RAML, from which the code is then developed and tested. Mulesoft platform has been designed specifically with the Design First approach in mind.</p></li>
+<li><p>'''Code First''': Based on the business plan, API is directly coded, from which the Swagger or RAML API contract is then generated. Certain middleware platforms, such as Boomi, are built around this approach.</p></li></ol>
 
 The biggest reason to go with the Design First approach is when the API audience are external consumers and partner platforms. In such a case, the API is a key distribution channel that your API consumers can use to consume your services provided, and a solid design plays a key role in your service adoption. The API contract is the cornerstone of the API design, and, as such, can act as the central draft the keeps all of the developers aligned on what your API’s objectives are, and how the API resources are exposed. Identifying bugs and issues with the API architecture and design becomes easier once a formal API contract is documented in a form of Swagger or RAML. Furthermore, mocking an API response becomes as straight-forward as taking the API contract and adding sample data values for each response object and attribute returned back in the API operation responses.
 
@@ -326,16 +326,16 @@ Following the above API development guidelines, below are the key stages of the 
 <li><p>Identify and document key use cases to be supported by this API.</p></li></ul>
 </li></ol>
 
-<blockquote>'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
-</blockquote>
+'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
+
 # Sequence Flow Diagram.
 # RAML or Swagger API Specification for the API.
 
 <ol start="2" style="list-style-type: lower-alpha;">
 <li><p>'''Mock Phase''' includes creating Mock service to provide sample request and response in the service endpoint. The service at this point should be deployed in its initial iteration with mock inputs and outputs, for target users to be able to consume that service to integrate with their end user platforms.</p></li></ol>
 
-<blockquote>'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
-</blockquote>
+'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
+
 # Mock service operations returning sample output for successful service requests, following the RAML or Swagger API contract defined in the Design phase.
 # Mock service operations returning sample error output for negative service requests.
 # Deployment of the mock service.
@@ -343,8 +343,8 @@ Following the above API development guidelines, below are the key stages of the 
 <ol start="3" style="list-style-type: lower-alpha;">
 <li><p>'''Test Phase''' follows the test-driven development approach and requires the developers to produce test cases and steps (required for all services developed). Initial unit and functional tests should also be developed after the API initial iteration has been developed. The tests have to cover use cases identified in the Design phase.</p></li></ol>
 
-<blockquote>'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
-</blockquote>
+'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
+
 # Test Cases and Steps as part of the overall Test Plan. Each Test Case should have traceability to the requirements.
 # Unit tests covering mock API operations (using MUnit, Mocha/Chai, JUnit, etc).
 # Functional tests to test how the APIs are to be consumed (using SoapUI, Postman, or automated Gerkin/Cucumber functional test framework).
@@ -352,8 +352,8 @@ Following the above API development guidelines, below are the key stages of the 
 <ol start="4" style="list-style-type: lower-alpha;">
 <li><p>'''Build Phase''' requires the full development of the API, replacing mock operations with “live” ones, with the complete code review and baseline check-in into the Master branch of the source code repository. At the end of this phase, the “live” API is ready for deployment into non-production environment, with the live operations (not mocks).</p></li></ol>
 
-<blockquote>'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
-</blockquote>
+'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
+
 # Development of the source code.
 # Peer Code Review by the development lead/designated peer.
 # Deployment and validation into non-production environment of the live microservice (no longer mock).
@@ -361,8 +361,8 @@ Following the above API development guidelines, below are the key stages of the 
 <ol start="5" style="list-style-type: lower-alpha;">
 <li><p>'''Publish Phase''' requires publishing the API manually and via the configured CI/CD pipeline (e.g., Cloudbees, Jenkins, etc) to automate deploy and publish process of the API. In this phase, all required dependencies and components for this API have to also be published into the internal dependency management system such as Artifactory.</p></li></ol>
 
-<blockquote>'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
-</blockquote>
+'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
+
 # Externalizing all test data and configurations to support multi-environment deployments.
 # Deployment and validation into non-production environments manually and via the CI/CD pipeline.
 # Execution of all the functional tests in each of the non-production environments (via SoapUI, Postman and/or automated functional test suite such as Cucumber).
@@ -370,8 +370,8 @@ Following the above API development guidelines, below are the key stages of the 
 <ol start="6" style="list-style-type: lower-alpha;">
 <li><p>'''Operate and Engage Phases''' require target API consumers and representatives of the business teams to validate the published services in the QA and UAT environments to provide feedback and identify defects.</p></li></ol>
 
-<blockquote>'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
-</blockquote>
+'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
+
 # Resolve defects identified by others.
 # Redeploy the APIs with fixed defects across environments.
 
