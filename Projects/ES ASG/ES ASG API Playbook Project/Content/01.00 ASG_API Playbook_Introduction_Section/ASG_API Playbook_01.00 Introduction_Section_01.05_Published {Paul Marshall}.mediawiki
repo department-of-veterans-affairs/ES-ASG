@@ -165,8 +165,6 @@ Figure 10: 3-Layer API Architecture
 
 * APIs can support a plethora of data formats but predominantly JSON is preferred. Micro service is normally exposed as HTTP(s) service.
 
-
-
 = Tenet #4: API Solutions are fundamental to any VA IT initiative =
 
 The paradigm shifts to allow API solutions as the foundation of any IT solution. Whether it’s a new application, mobile solution, a new data sharing service, an analytics platform, a new business process model (BPM) or workflow, such solutions should be built onto an API layer as the foundation. Without such, VA teams run the risk of building 1-off solutions, which quickly become unmaintainable, often referred to as spaghetti or hairball. Additionally, the solutions should leverage the blueprints and frameworks from this API Developer Playbook, so that there is a single approach to doing core technical approaches. For example, a common and re-usable approach to logging, error handling, authentication, and more.
@@ -265,7 +263,7 @@ The purpose of the Playbook can be summarized and categorized as follows:
 
 
 
-Figure 1: Framework Enablement
+Figure 15: Framework Enablement
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image16.png|624x261px]]
 
@@ -273,7 +271,7 @@ Figure 1: Framework Enablement
 
 When building a framework, it’s important to note the type of assets that are included and constitute the framework itself. A framework is composed of a collection of documentation, sample/examples, reference implementations, collaboration, knowledge sharing, reviews and feedback, change management, enforcement.
 
-Figure 2: What is a VA Framework
+Figure 16: What is a VA Framework
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image17.png|469x239px]]
 
@@ -293,7 +291,7 @@ Frameworks are composed of any of the following artifacts:
 * <span class="underline">Constraint:</span> Limitations on what is excluded from the Framework.
 * <span class="underline">Instruction:</span> Procedures and Steps to take to implement the framework or associated practices.
 
-Figure 3: Framework Taxonomy
+Figure 17: Framework Taxonomy
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image18.png|623x379px]]
 
@@ -301,7 +299,7 @@ Figure 3: Framework Taxonomy
 
 Below is a diagram illustrating the approach to designing, development, and most importantly adoption of the framework into project teams. It includes the governance for reviews and feedback to ensure quality and applicability of the framework.
 
-Figure 4: Framework Approach
+Figure 18: Framework Approach
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image19.png|624x272px]]
 
@@ -309,7 +307,7 @@ Figure 4: Framework Approach
 
 Below is a list of risks associated with Frameworks, their likelihood, impact, and mitigation techniques to avoid or overcome the risk impacts.
 
-Figure 5: Framework Risks Analysis
+Figure 19: Framework Risks Analysis
 
 {|
 ! ID
