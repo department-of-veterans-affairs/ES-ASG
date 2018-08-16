@@ -182,8 +182,8 @@ Figure 12: API Contract First Design Illustration
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image12.png|482x412px]]
 
-<blockquote>There are 2 standards for API contracts. 1) Swagger and 2) RAML.
-</blockquote>
+There are 2 standards for API contracts. 1) Swagger and 2) RAML.
+
 A single RAML file can define more than one API but its recommended to group related APIs together into a single RAML file. For example, all product related APIs can be developed in single product. raml and all customer related APIs can be implemented in customer.raml
 
 = Tenet #5: Architecture drives API Solutions =
@@ -202,8 +202,8 @@ Some of the more specific design patterns to leverage include:
 
 * <span class="underline">Canonical:</span> Universal data model that represents the business process, through a data object. The Canonical acts as a mediation point between Provider and Consumer data mappings. All Provider systems map to the Canonical, all Target systems map from the Canonical, and Provider and Consumer never map directly each other. A loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components.
 
-<blockquote>Design should identify and separate components based on volatility and capability, minimizing dependencies
-</blockquote>
+Design should identify and separate components based on volatility and capability, minimizing dependencies
+
 <ul>
 <li><p><span class="underline">Separation of Concerns:</span></p>
 <p>Separation of Concerns provides a logical architecture whereby IT assets (e.g. APIs, queues, or other architecture components) are separated and categorized for Provider and Consumer and are connected through an independent mediation component (e.g. API, queue, or another). It creates an architecture whereby Provider and Consumer never directly communicate.</p></li></ul>
