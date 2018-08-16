@@ -76,7 +76,7 @@ for /R %%f in (*.gif) do (
 
 rem Log to TOC
 cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
-echo %aRepo%/%aFile%.mediawiki >> TOC.txt
+echo %aFile% >> TOC.txt
 
 rem push to GitHub Repo
 
