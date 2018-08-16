@@ -133,20 +133,20 @@ New configuration management software tools have gradually been introduced in th
 
 * '''Ansible'''
 
-<blockquote>Ansible, also open source and built in Python. It was created in reaction to the relative complexity of Puppet and Chef, and attempts to offer a simpler, more elegant alternative, with a shorter learning curve. Ansible is based on an agentless architecture, meaning that no agent is required to run on each infrastructure node, which leads to less complexity and less load on the network. Ansible modules, referred to as units of work, can be written with a variety of scripting languages like Python, Perl or Ruby. Ansible lets users define playbooks in YAML for often used system descriptions.
-</blockquote>
+Ansible, also open source and built in Python. It was created in reaction to the relative complexity of Puppet and Chef, and attempts to offer a simpler, more elegant alternative, with a shorter learning curve. Ansible is based on an agentless architecture, meaning that no agent is required to run on each infrastructure node, which leads to less complexity and less load on the network. Ansible modules, referred to as units of work, can be written with a variety of scripting languages like Python, Perl or Ruby. Ansible lets users define playbooks in YAML for often used system descriptions.
+
 * '''Puppet'''
 
-<blockquote>It is built in Ruby but offers its own JSON-like declarative language to create ‘manifests’, the modules in which configuration items are described, using high-level concepts like users, services and packages. Puppet is “Model driven”, which means that not much programming is usually required. This makes Puppet more desirable for system engineers with little experience in programming.
-</blockquote>
+It is built in Ruby but offers its own JSON-like declarative language to create ‘manifests’, the modules in which configuration items are described, using high-level concepts like users, services and packages. Puppet is “Model driven”, which means that not much programming is usually required. This makes Puppet more desirable for system engineers with little experience in programming.
+
 * '''Chef'''
 
-<blockquote>Is generally developer-friendly and very popular with teams already using Ruby. It lets developers write ‘cookbooks’ in Ruby and stores the resulting instructions in PostgreSQL.
-</blockquote>
+Is generally developer-friendly and very popular with teams already using Ruby. It lets developers write ‘cookbooks’ in Ruby and stores the resulting instructions in PostgreSQL.
+
 * '''SaltStack'''
 
-<blockquote>It is built in Python and open sourced in 2011. SaltStack focuses on low-latency architecture and fault tolerance. It features a decentralized setup, small messaging payloads, no single point of failure, and parallel execution of commands for optimal performance.
-</blockquote>
+It is built in Python and open sourced in 2011. SaltStack focuses on low-latency architecture and fault tolerance. It features a decentralized setup, small messaging payloads, no single point of failure, and parallel execution of commands for optimal performance.
+
 === Future of Configuration Management Software ===
 
 While the configuration management technological landscape has greatly matured, the consensus that things will keep evolving in the future. urrent mainstream solutions are often viewed as too complicated, unforgiving and difficult to maintain. One alternative to the classic configuration management approach is the emerging immutable container infrastructure. Docker is an example of this evolving technology.
@@ -159,8 +159,8 @@ The following is a paraphrased excerpt from an interview with Roy Fielding and h
 
 https://www.infoq.com/articles/roy-fielding-on-versioning
 
-<blockquote>Anticipating change is one of the central themes of REST. It makes sense that experienced developers are going to think about the ways that their API might change in the future, and to think that versioning the interface is paving the way for those changes. That led to a never-ending debate about where and how-to version the API.
-</blockquote>
+Anticipating change is one of the central themes of REST. It makes sense that experienced developers are going to think about the ways that their API might change in the future, and to think that versioning the interface is paving the way for those changes. That led to a never-ending debate about where and how-to version the API.
+
 Reality regarding services APIs is that contracts between services and service consumers are bound to change. API Contract versioning facilitates the rolling out of new service features that involve contract changes and at the same time provide backward compatibility for service consumers that are still using prior API versions. Plan for contract versioning from the very start of the design effort, even though the current thinking is that is versioning will not be needed, because eventually it most likely will.
 
 == When to Version ==
@@ -214,8 +214,8 @@ If the API is to be used internally only, the vnd MINE type should not be an iss
 
 * '''Accept''': application/vnd. mycompany.myapp.resource-v1+json
 
-<blockquote>or using a v=1 qualifier:
-</blockquote>
+or using a v=1 qualifier:
+
 * '''Accept''': application/vnd. mycompany.myapp.resource+json;v=1
 
 ==== HTTP Response Content-Type Examples: ====
@@ -275,13 +275,13 @@ Simply stated a branch is required when a feature hosted in the high-level branc
 
 # Creating a new branch:
 
-<blockquote>Execute the Git '''''branch''''' &lt;new branch name'''&gt;''' followed by Git '''''checkout''''' &lt;new branch name'''''&gt;.''''' These two commands can be combined into one by using the checkout command with the -b switch - git '''''checkout -b''''' &lt;new branch name'''&gt;.'''
-</blockquote>
+Execute the Git '''''branch''''' &lt;new branch name'''&gt;''' followed by Git '''''checkout''''' &lt;new branch name'''''&gt;.''''' These two commands can be combined into one by using the checkout command with the -b switch - git '''''checkout -b''''' &lt;new branch name'''&gt;.'''
+
 <ol start="2" style="list-style-type: decimal;">
 <li><p>Removing a branch</p></li></ol>
 
-<blockquote>Branches are typical removed after their contents have been merged to a higher-level branch and is good practice. Execute the Git branch command with the -d switch - Git '''''branch -d''''' &lt;branch name'''&gt;.'''
-</blockquote>
+Branches are typical removed after their contents have been merged to a higher-level branch and is good practice. Execute the Git branch command with the -d switch - Git '''''branch -d''''' &lt;branch name'''&gt;.'''
+
 === GitHub Merging  ===
 
 GIT merging facilitates consolidates the migration of a forked branch or branches back to a common branch. The Git '''''merge''''' command accomplishes this task.
@@ -298,18 +298,18 @@ Before performing a merge, there are several preparation steps needed to ensure 
 
 # Confirm the receiving branch of the merge:
 
-<blockquote>Execute Git '''''status''''' to ensure that HEAD (think of the HEAD as the &quot;current branch&quot;) is pointing to the correct merge-receiving branch. If needed, execute Git '''''checkout''''' &lt;receiving branch&gt; to switch to the receiving branch. In this case execute git '''''checkout''''' '''''master'''''
-</blockquote>
+Execute Git '''''status''''' to ensure that HEAD (think of the HEAD as the &quot;current branch&quot;) is pointing to the correct merge-receiving branch. If needed, execute Git '''''checkout''''' &lt;receiving branch&gt; to switch to the receiving branch. In this case execute git '''''checkout''''' '''''master'''''
+
 <ol start="2" style="list-style-type: decimal;">
 <li><p>Fetch latest remote commits:</p></li></ol>
 
-<blockquote>Insure that the receiving branch and the merging branch are up-to-date with the latest remote changes. Pull the latest remote commits by executing Git '''''fetch'''''. Execute Git '''''pull''''' once the fetch is completed to ensure the master branch has the latest updates
-</blockquote>
+Insure that the receiving branch and the merging branch are up-to-date with the latest remote changes. Pull the latest remote commits by executing Git '''''fetch'''''. Execute Git '''''pull''''' once the fetch is completed to ensure the master branch has the latest updates
+
 <ol start="3" style="list-style-type: decimal;">
 <li><p>Perform the merge:</p></li></ol>
 
-<blockquote>Once steps 1 and 2 have been taken place, a merge can be initiated by executing Git '''''merge''''' &lt;branch name&gt; where &lt;branch name&gt; is the name of the branch that will be merged into the receiving branch which in this scenario is Master.
-</blockquote>
+Once steps 1 and 2 have been taken place, a merge can be initiated by executing Git '''''merge''''' &lt;branch name&gt; where &lt;branch name&gt; is the name of the branch that will be merged into the receiving branch which in this scenario is Master.
+
 ==== Resolving GitHub Merging Conflicts ====
 
 If the two branches both changed the same part of the same file, Git won't be able to determine which version to use. When this a situation occurs, it stops right before the merge commit so the conflict can be resolved manually. When a merge conflict is encountered, running the Git '''''status''''' command shows which files need to be resolved.
@@ -324,38 +324,38 @@ The following is a small sub set by grouped by product functionality.
 
 * TestQuality
 
-<blockquote>TestQuality's GitHub Test Management extends Github to provide powerful and modern test plan management helping developers and testers create, run, coordinate and monitor software testing tasks.
-</blockquote>
+TestQuality's GitHub Test Management extends Github to provide powerful and modern test plan management helping developers and testers create, run, coordinate and monitor software testing tasks.
+
 ==== Code Quality  ====
 
 * Sider
 
-<blockquote>Sider supports over 20 analysis tools to empower development teams by increasing code review efficiency and quality. It also offers quick and simple extended functionality with custom tools to tailor-fit your team, enabling them to save time and improve the development process.
-</blockquote>
+Sider supports over 20 analysis tools to empower development teams by increasing code review efficiency and quality. It also offers quick and simple extended functionality with custom tools to tailor-fit your team, enabling them to save time and improve the development process.
+
 ==== Code Review  ====
 
 * AccessLint
 
-<blockquote>AccessLint brings automated web accessibility testing into the development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live.
-</blockquote>
+AccessLint brings automated web accessibility testing into the development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live.
+
 ==== Continuous Integration ====
 
 * Jenkins
 
-<blockquote>With the help of the Git plugin Jenkins can easily pull source code from any Git repository that the Jenkins build node can access. The GitHub plugin extends upon that integration further by providing improved bi-directional integration with GitHub. Allowing the setting up of a Service Hook which will hit the Jenkins instance every time a change is pushed to GitHub.
-</blockquote>
+With the help of the Git plugin Jenkins can easily pull source code from any Git repository that the Jenkins build node can access. The GitHub plugin extends upon that integration further by providing improved bi-directional integration with GitHub. Allowing the setting up of a Service Hook which will hit the Jenkins instance every time a change is pushed to GitHub.
+
 ==== Dependency Management ====
 
 * Dependabot
 
-<blockquote>Dependabot helps to keep Ruby, JavaScript, Python, PHP, Elixir, Rust, Java and .NET dependencies up to date. Every day, Dependabot checks the dependency files for outdated or insecure requirements and opens individual pull requests for any it finds. Review the PRs, merge them, and get to work on the latest, most secure releases
-</blockquote>
+Dependabot helps to keep Ruby, JavaScript, Python, PHP, Elixir, Rust, Java and .NET dependencies up to date. Every day, Dependabot checks the dependency files for outdated or insecure requirements and opens individual pull requests for any it finds. Review the PRs, merge them, and get to work on the latest, most secure releases
+
 ==== Deployment ====
 
 * Codefresh
 
-<blockquote>Codefresh is designed specifically for teams deploying containers to production. Move fast and deploy with confidence thanks to:
-</blockquote>
+Codefresh is designed specifically for teams deploying containers to production. Move fast and deploy with confidence thanks to:
+
 * Docker Optimized CI
 * Kubernetes Optimized CD
 * Insanely fast build flow optimized for Docker
