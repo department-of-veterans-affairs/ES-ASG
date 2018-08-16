@@ -513,10 +513,10 @@ https://docs.mulesoft.com/anypoint-studio/v/6/using-maven-in-anypoint-studio
 Sub Links include:
 
 <ul>
-<li><blockquote><p>Maven Support in Anypoint Studio</p></blockquote></li>
-<li><blockquote><p>Building a Mule Application with Maven in Studio</p></blockquote></li>
-<li><blockquote><p>Enabling Maven Support for a Studio Project</p></blockquote></li>
-<li><blockquote><p>Importing a Maven Project into Studio</p></blockquote></li></ul>
+<li><p>Maven Support in Anypoint Studio</p></li>
+<li><p>Building a Mule Application with Maven in Studio</p></li>
+<li><p>Enabling Maven Support for a Studio Project</p></li>
+<li><p>Importing a Maven Project into Studio</p></li></ul>
 
 These sub links are detailed below:
 
@@ -524,8 +524,8 @@ These sub links are detailed below:
 
 These pages describe how to enable or disable Maven support for your projects in Anypoint Studio and is pointed to by this URL:
 
-<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio
-</blockquote>
+https://docs.mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio
+
 Topics include:
 
 * Setting Your Maven Preferences
@@ -535,8 +535,8 @@ Topics include:
 
 These pages walk one through creating a Mavenized Mule Application project from scratch. It covers providing the project with unit tests, maintaining its POM file, then building and deploying the project and is pointed to by this URL:
 
-<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-maven-in-studio
-</blockquote>
+https://docs.mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-maven-in-studio
+
 Topics include:
 
 * Prerequisites
@@ -551,8 +551,8 @@ Topics include:
 
 These pages take a Mule project that was already created in Anypoint Studio (i.e. the &quot;mavenization&quot; of a Mule project) and add Maven functionality to it. Maven can make a project more easily shareable with other developers as it takes care of its dependencies and helps automate the project’s build process project and is pointed to by this URL:
 
-<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studio-project
-</blockquote>
+https://docs.mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studio-project
+
 Topics include:
 
 * Mavenizing an Existing Mule Project
@@ -563,8 +563,8 @@ Topics include:
 
 These pages describe a Mule project that was built using Maven outside Anypoint Studio, you can still import it into Studio and continue to work on it with the benefits of the Studio IDE and is pointed to by this URL:
 
-<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/importing-a-maven-project-into-studio
-</blockquote>
+https://docs.mulesoft.com/anypoint-studio/v/6/importing-a-maven-project-into-studio
+
 Topics include:
 
 * Prerequisites
