@@ -86,7 +86,9 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Additional Resources</h2>
-            <p class="lead"><a href="https://github.com/department-of-veterans-affairs/ES-ASG/wiki" target="_blank">Enterprise Services | Architecture Support Group API Playbook for Developers</a></p>
+            <p class="lead"><a href="https://github.com/department-of-veterans-affairs/ES-ASG/wiki" target="_blank">ES-ASG API Playbook for Developers Wiki</a></p>
+            <p class="lead"><a href="https://github.com/department-of-veterans-affairs/ES-ASG/projects/1" target="_blank">ES-ASG API Playbook Kanban</a></p>
+            <p class="lead"><a href="https://github.com/department-of-veterans-affairs/ES-ASG" target="_blank">ES-ASG API Playbook Repo</a>
             <p class="lead"><a href="https://www.oit.va.gov/developer/pledge.cfm" target="_blank">VA Open API Pledge</a></p>
             <p class="lead"><a href="https://department-of-veterans-affairs.github.io/vets-contrib/#/" target="_blank">Put VA Data to Work</a></p>
             <p class="lead"><a href="https://www.data.va.gov/" target="_blank">VA's Open Data Portal</a></p>
