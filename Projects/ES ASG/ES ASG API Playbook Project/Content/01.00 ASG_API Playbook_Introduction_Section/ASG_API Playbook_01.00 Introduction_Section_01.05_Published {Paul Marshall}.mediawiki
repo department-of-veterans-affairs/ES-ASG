@@ -6,7 +6,7 @@
 = Introduction =
 
 As part of VA’s shift to digital solutions, VA has made a commitment to leverage “API Solutions” as a fundamental approach to solving IT problems. To provide the strategic direction of the VA, it is required to define the key visionary aspects, hereby referred to as the VA API Tenants. Within this document, we define the most important principles of Integration and how they apply to VA context. Throughout the document, there will be references to the VA API tenants, as well as their supporting subcomponents, and how they’re impacted by VA’s people, process, and technology. Below are the brief definitions of people, process, and technology.
-
+Comment inserted here.
 * <span class="underline">People:</span> The roles and responsibilities to build and maintain Integration Solutions.
 * <span class="underline">Process:</span> Methodology and governance to build and maintain Integration Solutions
 * <span class="underline">Technology:</span> Integration platforms and codified assets developed to connect
@@ -51,7 +51,7 @@ To accomplish, the Developer Playbook has an overview of the key API tenants, so
 = Tenet #1: Keep Total Cost of Ownership Low =
 
 There are always multiple approaches to solving problems. In the IT landscape, this could be in the magnitude of 50 different potential approaches to solve a problem, especially when considering the number of solution platforms, programming languages, and vendors with similar or competitive offerings in the marketplace. Rationalizing the “best fit solution” to solving a problem can be challenging, if not downright cumbersome, when there are so many choices. Factoring in human factors such as strong opinions, level of comfort, curiosity, personal favoritism or biases, can make choosing a solution approach even more challenging. Ultimately, choosing a solution approach should be based on what is best for VA, when considering cost and overall benefit or value derived from the selected approach.
-
+Comment two inserted here.
 For API the goal is to build or re-use existing integration assets as an enabler for solutions across the entire VA Enterprise.
 
 To accomplish this, the VA will follow approaches that invest in architecture and supporting frameworks that can be re-used across API Use Cases and solutions. Such frameworks and approaches are documented in this API Playbook, and of course require an upfront investment to reap the benefits downstream. As illustrated in the graphic, creating the API Playbook, which includes foundational architecture and enabling frameworks, allows for the VA to have the blueprints for building new functionality and leveraging re-usable assets, ultimately making the solutions operational and deriving value for the long haul.
@@ -97,7 +97,7 @@ The Guiding principles of the VA API Marketplace includes:
 Providers and Consumers can interact through a common site. Consumers can onboard, test
 
 == API Exchange and Catalog ==
-
+Comment three inserted here.
 The API is discoverable, searchable, and easy to find for re-use.
 
 == API Gateway ==
