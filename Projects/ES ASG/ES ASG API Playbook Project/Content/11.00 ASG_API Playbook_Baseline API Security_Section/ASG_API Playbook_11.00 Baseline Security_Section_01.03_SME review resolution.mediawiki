@@ -1,8 +1,11 @@
-﻿<a href=https://department-of-veterans-affairs.github.io/vets-contrib>Put VA Data to Work</a>
-<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/11.00%20ASG_API%20Playbook_Baseline%20API%20Security_Section>Wiki source content can be found here.</a></p>
+<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/11.00%20ASG_API%20Playbook_Baseline%20API%20Security_Section/ASG_API Playbook_11.00 Baseline Security_Section_01.03_SME review resolution.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p>__TOC__</p>
 = 11. Baseline API Security =
+
+= ''**Some links below require VA intranet access.'' =
 
 == 11.1 VA Standards ==
 
@@ -41,6 +44,31 @@
 == 11.3 API Security Guidelines and Best Practices ==
 
 OAuth 2.0 Threat Model and Security Considerations (https://tools.ietf.org/html/rfc6819). 
+
+== 11.4 API Security  ==
+
+When projects go through the intake process they must get an App code for the proper tagging of resource in use. The process for intake to create App code triggers the creation of the initial AD objects to include the Site Service and User objects for Distribution lists, Security Groups, and OUs.
+
+The ability to access the environments is via elevated privileges to the Cloud hosted systems to administer, Manage and access developer tool sets.
+
+The Project must create the proper Security groups that are managed via a Service Now incident ticket, and the application team managing the application.
+
+The procedure to have access to APIs and Development is:
+
+# Must have elevated privileges
+# Must have the token and NEMA
+# Must be enrolled through Clarify (Linux)
+# Use of EPAS to add users to the proper Security groups created at time of intake or with a Service Now incident
+# The users added to the security groups are reduced to the least privilege access to the Role within the API development solution
+# The Cloud Service Providers have other authentication mechanisms and security controls to ensure reduced access for only those roles privileges
+
+The use of centralized 2 factor access for Git Hub repositories.
+
+# Access account request
+# Access 3<sup>rd</sup> party approver
+# Use of a mobile 2 factor authentication app
+# Log on to the specifically shared GitHub repository
+
 
 
 
