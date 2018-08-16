@@ -117,18 +117,18 @@ The Simple Logging Facade for Java (SLF4J) serves as a simple facade for various
 
 === Apache Log4j 2 ===
 
-<blockquote>Apache Log4j 2 is an upgrade to Log4j and provides significant improvements over its predecessor plus it provides many of the improvements available in Logback while fixing some inherent problems in Logback’s architecture.
-</blockquote>
+Apache Log4j 2 is an upgrade to Log4j and provides significant improvements over its predecessor plus it provides many of the improvements available in Logback while fixing some inherent problems in Logback’s architecture.
+
 ==== Subset of Features ====
 
 * API Separation
 
-<blockquote>The API for Log4j is separate from the implementation making it clear for application developers which classes and methods they can use while ensuring forward compatibility. This allows the Log4j team to improve the implementation safely and in a compatible manner.
-</blockquote>
+The API for Log4j is separate from the implementation making it clear for application developers which classes and methods they can use while ensuring forward compatibility. This allows the Log4j team to improve the implementation safely and in a compatible manner.
+
 * Improved Performance
 
-<blockquote>Log4j 2 contains next-generation Asynchronous Loggers based on the LMAX Disruptor library. In multi-threaded scenarios Asynchronous Loggers have higher throughput and orders of magnitude lower latency than Log4j and Logback.
-</blockquote>
+Log4j 2 contains next-generation Asynchronous Loggers based on the LMAX Disruptor library. In multi-threaded scenarios Asynchronous Loggers have higher throughput and orders of magnitude lower latency than Log4j and Logback.
+
 === Logback ===
 
 Logback is intended as a successor to the popular log4j project, picking up where log4j leaves off and is conceptually very similar to log4j as both projects were created by the same developer.
@@ -137,12 +137,12 @@ Logback is intended as a successor to the popular log4j project, picking up wher
 
 * Faster implementation
 
-<blockquote>Based on the previous work on log4j, Logback internals have been re-written to perform faster on certain critical execution paths. Not only are Logback components faster, they have a smaller memory footprint as well.
-</blockquote>
+Based on the previous work on log4j, Logback internals have been re-written to perform faster on certain critical execution paths. Not only are Logback components faster, they have a smaller memory footprint as well.
+
 * Logback-classic “speaks” SLF4J natively
 
-<blockquote>Since the '''''Logger''''' class in Logback-classic implements the SLF4J API natively, there is zero overhead when invoking a SLF4J logger with Logback classic as the underlying implementation. Additionally, since Logback-classic strongly encourages the use of SLF4J as its client API, if the need arises the switch to log4j or to java.util.logging.
-</blockquote>
+Since the '''''Logger''''' class in Logback-classic implements the SLF4J API natively, there is zero overhead when invoking a SLF4J logger with Logback classic as the underlying implementation. Additionally, since Logback-classic strongly encourages the use of SLF4J as its client API, if the need arises the switch to log4j or to java.util.logging.
+
 === java.util.logging (jul) ===
 
 The Java Runtime Java provides a default framework in the java.util.logging package although This most developers would agree that java.util.logging is being replaced with 3rd party logging frameworks.
@@ -161,12 +161,12 @@ The following is a very high level over view of the two logging platforms:
 
 * .NET Core
 
-<blockquote>.NET Core is a cross-platform version of .NET for building websites, services, and console apps.
-</blockquote>
+.NET Core is a cross-platform version of .NET for building websites, services, and console apps.
+
 * .NET Framework
 
-<blockquote>.NET Framework is a Windows-only version of .NET for building any type of app that runs on Windows.
-</blockquote>
+.NET Framework is a Windows-only version of .NET for building any type of app that runs on Windows.
+
 ==== .NET Core Logging Capabilities ====
 
 ASP.NET Core supports a logging API that works with a variety of logging providers. Built-in providers facilitate the sending logs to one or more destinations plus plug in capability to a third-party logging framework.
@@ -175,28 +175,28 @@ ASP.NET Core supports a logging API that works with a variety of logging provide
 
 * Console
 
-<blockquote>The '''''Microsoft.Extensions.Logging.Console''''' provider package sends log output to the console.
-</blockquote>
+The '''''Microsoft.Extensions.Logging.Console''''' provider package sends log output to the console.
+
 * Debug
 
-<blockquote>The '''''Microsoft.Extensions.Logging.Debug''''' provider package writes log output by using the '''''System.Diagnostics.Debug''''' class (Debug.WriteLine method calls).
-</blockquote>
+The '''''Microsoft.Extensions.Logging.Debug''''' provider package writes log output by using the '''''System.Diagnostics.Debug''''' class (Debug.WriteLine method calls).
+
 * EventSource
 
-<blockquote>For apps that target ASP.NET Core 1.1.0 or higher, the '''''Microsoft.Extensions.Logging.EventSource''''' provider package can implement event tracing.
-</blockquote>
+For apps that target ASP.NET Core 1.1.0 or higher, the '''''Microsoft.Extensions.Logging.EventSource''''' provider package can implement event tracing.
+
 * EventLog
 
-<blockquote>The Microsoft.Extensions.Logging.EventLog provider package sends log output to the Windows Event Log.
-</blockquote>
+The Microsoft.Extensions.Logging.EventLog provider package sends log output to the Windows Event Log.
+
 * TraceSource
 
-<blockquote>The '''''Microsoft.Extensions.Logging.TraceSource''''' provider package uses the '''''System.Diagnostics.TraceSource''''' libraries and providers.
-</blockquote>
+The '''''Microsoft.Extensions.Logging.TraceSource''''' provider package uses the '''''System.Diagnostics.TraceSource''''' libraries and providers.
+
 * Azure App Service
 
-<blockquote>The '''''Microsoft.Extensions.Logging.AzureAppServices''''' provider package writes logs to text files in an Azure App Service app's file system and to blob storage in an Azure Storage account. The provider is available only for apps that target ASP.NET Core 1.1 or later.
-</blockquote>
+The '''''Microsoft.Extensions.Logging.AzureAppServices''''' provider package writes logs to text files in an Azure App Service app's file system and to blob storage in an Azure Storage account. The provider is available only for apps that target ASP.NET Core 1.1 or later.
+
 == Logged API Messages ==
 
 This section of the document is consistent with the Exception Logging Guidelines section of the Exception Handling Document.
