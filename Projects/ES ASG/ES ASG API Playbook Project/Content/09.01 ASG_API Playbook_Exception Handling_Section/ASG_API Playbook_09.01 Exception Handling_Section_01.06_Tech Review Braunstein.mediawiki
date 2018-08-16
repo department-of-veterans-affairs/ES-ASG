@@ -303,28 +303,28 @@ In the case of a non-happy path, one of two failures can occur:
 
 * Within the first service invocation
 
-<blockquote>The non-happy path processing if a failure occurred in the first BankAccount invocation, (e.g. there wasn’t sufficient funds in the account to do the transfer) would consist of an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The client application service invocation orchestration would then cancel the submission of the second service.
-</blockquote>
+The non-happy path processing if a failure occurred in the first BankAccount invocation, (e.g. there wasn’t sufficient funds in the account to do the transfer) would consist of an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The client application service invocation orchestration would then cancel the submission of the second service.
+
 * Within the second service invocation
 
-<blockquote>The non-happy path processing if a failure occurred in the second BankAccount invocation would consist of an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, database roll back etc.)
-</blockquote>
+The non-happy path processing if a failure occurred in the second BankAccount invocation would consist of an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, database roll back etc.)
+
 === BankAccounts Use Case ===
 
-<blockquote>The implementation solution for this use case will consist of one BankAccounts RESTful HTTP PUT invocation. The dollar amount of the transfer and the two bank account numbers will be included in the Request Message Body JSON payload.
+The implementation solution for this use case will consist of one BankAccounts RESTful HTTP PUT invocation. The dollar amount of the transfer and the two bank account numbers will be included in the Request Message Body JSON payload.
 
 The happy path scenario consists of the BankAccounts RESTful invocation returning a response that states that the transfer from one account to another was successful.
 
 In the case of a non-happy path, one of two failures can occur:
-</blockquote>
+
 * Processing the first account in the first BankAccounts collection.
 
-<blockquote>The non-happy path processing if a failure occurred in the first BankAccounts processing, (e.g. there wasn’t sufficient funds in the account to do the transfer) would result in an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The result of the first account processing would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.) plus the second account processing would be terminated.
-</blockquote>
+The non-happy path processing if a failure occurred in the first BankAccounts processing, (e.g. there wasn’t sufficient funds in the account to do the transfer) would result in an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The result of the first account processing would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.) plus the second account processing would be terminated.
+
 * Processing the first account in the second BankAccounts collection.
 
-<blockquote>The non-happy path processing if a failure occurred in the second account would result in an error response sent back to the client alerting the client, utilizing the JSON response payload, that the service call was not successful. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.)
-</blockquote>
+The non-happy path processing if a failure occurred in the second account would result in an error response sent back to the client alerting the client, utilizing the JSON response payload, that the service call was not successful. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.)
+
 == Non-Transactional Exception Processing ==
 
 As was alluded to in in '''section''' '''1.2''' '''Transactional Exception Processing''' RESTful web service processing, even those of the non-transactional variety should keep in mind to not compromising the conceptual RESTful model. The RESTful model is predicated on correctly representing the state related transition(s) of the RESTful resource. The processing of exceptions should include not only notifying the end client of errors but just as important, ensuring that the state of the resource is not negatively impacted by the error scenario.
@@ -647,12 +647,12 @@ The Error/Fault Message Channel will provide the capability for the services tha
 
 * Logging Services
 
-<blockquote>Will would centrally capture errors needed to provide support to services and service consumers. It would associate relevant error and fault information, and provide mechanisms to query this information, and to run analytical reports.
-</blockquote>
+Will would centrally capture errors needed to provide support to services and service consumers. It would associate relevant error and fault information, and provide mechanisms to query this information, and to run analytical reports.
+
 * Monitoring and Triage Services
 
-<blockquote>Will enable automated diagnostics and handling of errors, creation of trouble tickets, integration with service desk, SLA management, etc. Design and specification of such services will have to be defined.
-</blockquote>
+Will enable automated diagnostics and handling of errors, creation of trouble tickets, integration with service desk, SLA management, etc. Design and specification of such services will have to be defined.
+
 == Integration with Queuing ==
 
 This section will give an overview of a service that will integrate with a message Queue Messaging system such as IBM’s WebSphere MQ. WebSphere MQ is the current on-premise supported message system in the VA and because of this the IBM supplied functionality will be used to detail RESTful that will integrate with a message Queue Messaging system functionality. It should be noted that that the IBM solution is obviously not vendor agnostic, but Queue Messaging systems are always vendor specific so solution involving queueing can’t be agnostic.
