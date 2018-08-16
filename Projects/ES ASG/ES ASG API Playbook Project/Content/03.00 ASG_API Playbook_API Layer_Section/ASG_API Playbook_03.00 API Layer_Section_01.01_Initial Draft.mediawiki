@@ -158,8 +158,8 @@ By using the using the [https://docs.mulesoft.com/mule-user-guide/v/3.9/reliabil
 
 <span id="_Toc519262344" class="anchor"></span>Figure 4: Reliability Pattern for Loose Coupling
 
-<blockquote>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image4.png|624x143px|A screenshot of a cell phone Description generated with very high confidence]]
-</blockquote>
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image4.png|624x143px|A screenshot of a cell phone Description generated with very high confidence]]
+
 <span class="underline">Source (Provider) and Target (Consumer) data never map data fields directly to each other</span>
 
 Instead, source maps to an enterprise entity data model object (“Canonical”) and target also maps directly to the enterprise entity data model (“Canonical”). The Canonical provides the “Broker” mechanism for Providers and Consumers to share data. Universal data model that represents the business process, through a data object. Acts as a mediation point between Provider and Consumer data mappings. All Provider systems map to the Canonical, all Target systems map from the Canonical, and Provider and Consumer never map directly each other. A loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components. Design should identify and separate components based on volatility and capability, minimizing dependencies
