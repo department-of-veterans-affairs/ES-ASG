@@ -41,20 +41,16 @@ There are two well-established approaches when it comes to API development:
 
 # '''Design First''': Create a well-defined API contract first, following Open API or RESTful API Modelling standards, such as Swagger or RAML, from which the code is then developed and tested. The API Contract is distributed to service consumers before the API is developed, so the consumers can begin developing their consumption design and are not waiting for the full API to be ready.
 
-Benefits of this approach include:
-
-(a) Identifying bugs and issues with the API architecture and design becomes easier once a formal API contract is documented in the form of Swagger or RAML.
-
-(b) Mocking an API response becomes as straight-forward as taking the API contract and adding sample data values for each response object and attribute returned in the API operation responses.
-
-A primary driver for choosing a Design First approach is when the API consumers are external third-party partner platforms, or web/mobile applications. In such cases, the API is a key distribution channel that your API consumers can use to consume your services provided, and a solid design plays a key role in your service adoption. The API contract is the cornerstone of the API design, and can act as the standard or central alignment that keeps all the developers in synch with your API’s objectives and how the API resources are exposed.
+* Benefits of this approach include:
+** Identifying bugs and issues with the API architecture and design becomes easier once a formal API contract is documented in the form of Swagger or RAML.
+** Mocking an API response becomes as straight-forward as taking the API contract and adding sample data values for each response object and attribute returned in the API operation responses.
+* A primary driver for choosing a Design First approach is when the API consumers are external third-party partner platforms, or web/mobile applications. In such cases, the API is a key distribution channel that your API consumers can use to consume your services provided, and a solid design plays a key role in your service adoption. The API contract is the cornerstone of the API design, and can act as the standard or central alignment that keeps all the developers in synch with your API’s objectives and how the API resources are exposed.
 
 <ol start="2" style="list-style-type: decimal;">
 <li><p>'''Code First''': Based on the business plan, the API is directly coded first, from which the Swagger or RAML API contract is then generated and distributed to consumers.</p></li></ol>
 
-Code First approach becomes important when the project has very strict and fast-paced timelines to deliver the software component or service and the project plan doesn’t allow for building API contracts and mocks first.
-
-When choosing which API contract standard to leverage (RAMLvs. Swagger) at first the development team should decide who would be the target consumers or users of that contract and which platform the API is to be deployed within. For example, will the API be deployed in the Mulesoft Anypoint Platform, Apigee, or another platform? In most cases, it is recommended to use Open API standards and design a Swagger contract. A Swagger API contract can be expressed in a form of a JSON or a YAML file. As YAML format is more widely used among technology teams, it is recommended.
+* Code First approach becomes important when the project has very strict and fast-paced timelines to deliver the software component or service and the project plan doesn’t allow for building API contracts and mocks first.
+* When choosing which API contract standard to leverage (RAMLvs. Swagger) at first the development team should decide who would be the target consumers or users of that contract and which platform the API is to be deployed within. For example, will the API be deployed in the Mulesoft Anypoint Platform, Apigee, or another platform? In most cases, it is recommended to use Open API standards and design a Swagger contract. A Swagger API contract can be expressed in a form of a JSON or a YAML file. As YAML format is more widely used among technology teams, it is recommended.
 
 '''<span class="underline">MuleSoft Practices</span>'''
 
