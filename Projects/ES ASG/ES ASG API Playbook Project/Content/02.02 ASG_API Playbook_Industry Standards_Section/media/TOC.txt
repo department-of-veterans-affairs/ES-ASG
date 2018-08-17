@@ -1,2 +1,0 @@
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_02.02%20Industry%20Standards_HL7_Section_01.01_Initial%20Draft' target='_blank'>ASG_API Playbook_02.02 Industry Standards_HL7_Section_01.01_Initial Draft</a>" 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
