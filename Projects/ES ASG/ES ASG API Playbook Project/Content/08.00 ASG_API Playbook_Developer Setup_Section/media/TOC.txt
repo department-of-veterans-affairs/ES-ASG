@@ -1,1 +1,2 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_08.00%20Developer%20Setup%20Section_01.00_Initial-Draft{Frank%20Burgos}' target='_blank'>ASG_API Playbook_08.00 Developer Setup Section_01.00_Initial-Draft{Frank Burgos}</a>" 
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
