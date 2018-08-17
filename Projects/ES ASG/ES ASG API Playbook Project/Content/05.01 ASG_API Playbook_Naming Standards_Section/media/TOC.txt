@@ -1,2 +1,0 @@
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_05.01%20Naming%20Standards_Section_01.03_SME%20Review%20{John_McP}' target='_blank'>ASG_API Playbook_05.01 Naming Standards_Section_01.03_SME Review {John_McP}</a>" 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
