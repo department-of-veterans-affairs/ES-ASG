@@ -1,0 +1,1 @@
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_11.00%20Baseline%20Security_Section_01.03_SME%20review%20resolution' target='_blank'>ASG_API Playbook_11.00 Baseline Security_Section_01.03_SME review resolution</a>" 
