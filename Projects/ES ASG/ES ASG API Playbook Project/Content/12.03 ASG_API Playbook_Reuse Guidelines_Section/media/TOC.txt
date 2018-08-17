@@ -1,1 +1,2 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_12.03%20Reusability%20Section_01.02_SME%20Review%20{MaxGirin}' target='_blank'>ASG_API Playbook_12.03 Reusability Section_01.02_SME Review {MaxGirin}</a>" 
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
