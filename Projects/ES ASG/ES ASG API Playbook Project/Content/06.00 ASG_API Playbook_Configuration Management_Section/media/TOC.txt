@@ -1,1 +1,2 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_06.00%20Configuration%20Management_Section_01.02_SME%20Review%20{Max}' target='_blank'>ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review {Max}</a>" 
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
