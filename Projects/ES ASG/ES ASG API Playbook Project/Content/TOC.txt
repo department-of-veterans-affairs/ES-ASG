@@ -11,3 +11,4 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_04.00%20API%20Contracts_Section_01.03_SME%20Review%20Resolved%20{max.girin}' target='_blank'>ASG_API Playbook_04.00 API Contracts_Section_01.03_SME Review Resolved {max.girin}</a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_05.01%20Naming%20Standards_Section_01.03_SME%20Review%20{John_McP}' target='_blank'>ASG_API Playbook_05.01 Naming Standards_Section_01.03_SME Review {John_McP}</a>"
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>"
