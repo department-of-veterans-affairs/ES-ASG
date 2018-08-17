@@ -39,7 +39,9 @@ An API Contract is a common term to describe how API services are brokered amon
 
 There are two well-established approaches when it comes to API development:
 
-# '''Design First''': Create a well-defined API contract first, following Open API or RESTful API Modelling standards, such as Swagger or RAML, from which the code is then developed and tested. The API Contract is distributed to service consumers before the API is developed, so the consumers can begin developing their consumption design and are not waiting for the full API to be ready.
+<ol style="list-style-type: decimal;">
+<li><p>'''Design First''': Create a well-defined API contract first, following Open API or RESTful API Modelling standards, such as Swagger or RAML, from which the code is then developed and tested. The API Contract is distributed to service consumers before the API is developed, so the consumers can begin developing their consumption design and are not waiting for the full API to be ready.</p>
+<p>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image2.png|78x35px]]</p></li></ol>
 
 * Benefits of this approach include:
 ** Identifying bugs and issues with the API architecture and design becomes easier once a formal API contract is documented in the form of Swagger or RAML.
@@ -117,7 +119,7 @@ Once an API is published, an API developer should ask the API consumers to provi
 
 Following the above API development guidelines, below are the key stages of the API development. An API developer should follow the above guidelines and complete all stages in the below lifecycle.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image2.png]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image3.png]]
 
 # '''Design Phase''' includes the following:
 #* Analyze existing API requirements and user stories created by business stakeholders and your target API consumers.
