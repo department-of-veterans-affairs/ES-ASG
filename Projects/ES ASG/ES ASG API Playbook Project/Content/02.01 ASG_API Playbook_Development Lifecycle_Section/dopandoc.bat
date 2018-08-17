@@ -75,9 +75,10 @@ for /R %%f in (*.gif) do (
 )
 
 rem Log to TOC
+cd ..
 set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/wiki/
 set aURL=%aRoot%!aFile: =%%20!
-set aHref="<a href='%aURL%' target='_blank'>%aFile%</a>"
+set aHref="~a href='%aURL%' target='_blank'~~%aFile%~/a~~"
 echo %aHref% >>TOC.txt
 pause
 rem push to GitHub Repo
