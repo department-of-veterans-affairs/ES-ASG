@@ -1,2 +1,0 @@
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_10.00%20Baseline%20Logging_Section_01.02_SME%20Review_JeffGieber' target='_blank'>ASG_API Playbook_10.00 Baseline Logging_Section_01.02_SME Review_JeffGieber</a>" 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
