@@ -79,8 +79,7 @@ cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/wiki/
 set aURL=%aRoot%!aFile: =%%20!
 set aHref="~a href='%aURL%' target='_blank'~~%aFile%~/a~~"
-echo.%aHref%
-echo.%CD%
+echo %aHref% > TOC.txt
 pause
 rem push to GitHub Repo
 
