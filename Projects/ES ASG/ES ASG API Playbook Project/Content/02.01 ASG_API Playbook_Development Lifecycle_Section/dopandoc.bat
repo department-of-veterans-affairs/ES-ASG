@@ -78,8 +78,8 @@ rem Log to TOC
 set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/wiki/
 set aURL=%aRoot%!aFile: =%%20!
 set aHref="<a href='%aURL%' target='_blank'>%aFile%</a>"
-echo.%aHref% >>TOC.txt
-
+echo %aHref% >>TOC.txt
+pause
 rem push to GitHub Repo
 
 cd "C:\GitHub\ES-ASG"
