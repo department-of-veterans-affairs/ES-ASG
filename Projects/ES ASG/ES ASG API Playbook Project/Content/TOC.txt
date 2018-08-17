@@ -16,3 +16,4 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_05.03%20Configuration%20Parameters_01.03_SME%20Review%20Resolved%20{max.girin}' target='_blank'>ASG_API Playbook_05.03 Configuration Parameters_01.03_SME Review Resolved {max.girin}</a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_05.04%20Objects%20and%20Methods_Section_01.01_Initial%20Draft%20{max%20girin}' target='_blank'>ASG_API Playbook_05.04 Objects and Methods_Section_01.01_Initial Draft {max girin}</a>"
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_05.05%20Middleware%20Artifacts_Section_01.01_Initial%20Draft%20{max%20girin}' target='_blank'>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}</a>"
