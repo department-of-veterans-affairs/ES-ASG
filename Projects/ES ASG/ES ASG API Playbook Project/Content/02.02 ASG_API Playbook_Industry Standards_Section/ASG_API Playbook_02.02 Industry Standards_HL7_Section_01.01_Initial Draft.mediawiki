@@ -7,7 +7,7 @@ API Developer Playbook Blueprint Documentation
 
 Maps to Framework Set #1
 
-[[File:.//media/image1.jpeg|228x228px|Department of Veterans Affairs official seal]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
 
 Document Version Draft 01.00.03
 
@@ -110,20 +110,20 @@ The following FHR related sections contains content that was obtained by inspect
 <li><p>The Table of Contents facilitates traversing to the following pages:</p>
 <ul>
 <li><p>Section 2.1 Conformance -&gt;https://www.hl7.org/fhir/conformance-rules.html)</p></li>
-<li><blockquote><p>Section 2.11 FHIR Overview -&gt; https://www.hl7.org/fhir/overview.html</p></blockquote></li>
-<li><blockquote><p>Section 2.21.0 RESTful AP -&gt; https://www.hl7.org/fhir/http.html</p></blockquote></li>
-<li><blockquote><p>Section 2.21.1 Search -&gt; https://www.hl7.org/fhir/search.html</p></blockquote></li>
+<li><p>Section 2.11 FHIR Overview -&gt; https://www.hl7.org/fhir/overview.html</p></li>
+<li><p>Section 2.21.0 RESTful AP -&gt; https://www.hl7.org/fhir/http.html</p></li>
+<li><p>Section 2.21.1 Search -&gt; https://www.hl7.org/fhir/search.html</p></li>
 <li><p>Section 2.21.2 _filter Parameter -&gt; https://www.hl7.org/fhir/search_filter.html</p></li>
 <li><p>Section 2.21.3 Defined Search Parameters</p></li></ul>
 </li></ul>
 
-<blockquote>-&gt;
-</blockquote>
-<ul>
-<li><blockquote><p>[[ASG_API_Playbook_Industry%20Standards_HL7_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|https://www.hl7.org/fhir/searchparameter-registry.html]]Section 2.22.0 Extended Operations on the RESTful API</p></blockquote></li></ul>
+-&gt;
 
-<blockquote>-&gt; [https://www.hl7.org/fhir/operations.html%232.22.0 https://www.hl7.org/fhir/operations.html#2.22.0]
-</blockquote>
+<ul>
+<li><p>[[ASG_API_Playbook_Industry%20Standards_HL7_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|https://www.hl7.org/fhir/searchparameter-registry.html]]Section 2.22.0 Extended Operations on the RESTful API</p></li></ul>
+
+-&gt; [https://www.hl7.org/fhir/operations.html%232.22.0 https://www.hl7.org/fhir/operations.html#2.22.0]
+
 Some section content was modified to fit within the look and feel of the rest of this document’s sections. Other section content was extracted as is but this approach was used it was annotated appropriately.
 
 It is important to note that the FHIR Release 3 Web site contains a tremendous of content. Only the content that was deemed necessary and appropriate was included in this document.
@@ -422,28 +422,28 @@ The resources are classified into 6 sections:
 
 * '''Clinical:'''
 
-<blockquote>The content of a clinical record
-</blockquote>
+The content of a clinical record
+
 * '''Identification:'''
 
-<blockquote>Supporting entities involved in the care process
-</blockquote>
+Supporting entities involved in the care process
+
 * '''Workflow:'''
 
-<blockquote>Manage the healthcare process
-</blockquote>
+Manage the healthcare process
+
 * '''Financial:'''
 
-<blockquote>Resources that support the billing and payment parts of FHIR
-</blockquote>
+Resources that support the billing and payment parts of FHIR
+
 * '''Conformance:'''
 
-<blockquote>Resources use to manage specification, development and testing of FHIR solutions
-</blockquote>
+Resources use to manage specification, development and testing of FHIR solutions
+
 * '''Infrastructure:'''
 
-<blockquote>General functionality, and resources for internal FHIR requirements
-</blockquote>
+General functionality, and resources for internal FHIR requirements
+
 For a detailed list and description of FHIR Resources defined in the FHIR specification refer to Section 1.2 Resource Index (https://www.hl7.org/fhir/resourcelist.html).
 
 == Argonaut ==

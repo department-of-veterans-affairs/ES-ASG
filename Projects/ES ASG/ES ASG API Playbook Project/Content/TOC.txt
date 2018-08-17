@@ -1,6 +1,2 @@
-[Thu 08/16/2018, 21:39:08.45] 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_13.00%20API%20Documentation%20Blueprint_Section_01.01_Initial%20Draft' target='_blank'>ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft</a>" 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_01.00%20Introduction_Section_01.05_Published%20{Paul%20Marshall}' target='_blank'>ASG_API Playbook_01.00 Introduction_Section_01.05_Published {Paul Marshall}</a>" 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_02.01%20Development%20Lifecycle_Section_01.05_Standards%20Review%20{Marshall}' target='_blank'>ASG_API Playbook_02.01 Development Lifecycle_Section_01.05_Standards Review {Marshall}</a>" 
-"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =%20' target='_blank'></a>" 
+[Thu 08/16/2018, 21:41:01.26] 
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API%20Playbook_13.00%20API%20Documentation%20Blueprint_Section_01.01_Initial%20Draft' target='_blank'>ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft</a>"
