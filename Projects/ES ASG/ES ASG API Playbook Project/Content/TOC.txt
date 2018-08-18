@@ -24,3 +24,4 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_08.00-Developer-Setup-Section_01.00_Initial-Draft{Frank-Burgos}' target='_blank'>ASG_API Playbook_08.00 Developer Setup Section_01.00_Initial-Draft{Frank Burgos}</a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_09.01-Exception-Handling_Section_01.06_Tech-Review-Braunstein' target='_blank'>ASG_API Playbook_09.01 Exception Handling_Section_01.06_Tech Review Braunstein</a>"
