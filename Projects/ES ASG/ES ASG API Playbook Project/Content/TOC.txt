@@ -8,3 +8,4 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_03.00-API-Layer_Section_01.01_Initial-Draft' target='_blank'>ASG_API Playbook_03.00 API Layer_Section_01.01_Initial Draft</a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_04.00-API-Contracts_Section_01.03_SME-Review-Resolved-{max.girin}' target='_blank'>ASG_API Playbook_04.00 API Contracts_Section_01.03_SME Review Resolved {max.girin}</a>"
