@@ -33,3 +33,4 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_10.00-Baseline-Logging_Section_01.02_SME-Review_JeffGieber' target='_blank'>ASG_API Playbook_10.00 Baseline Logging_Section_01.02_SME Review_JeffGieber</a>"
