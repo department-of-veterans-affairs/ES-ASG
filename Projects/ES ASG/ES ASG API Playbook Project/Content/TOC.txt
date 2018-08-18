@@ -21,3 +21,4 @@
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_06.00-Configuration-Management_Section_01.02_SME-Review-{Max}' target='_blank'>ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review {Max}</a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
 "<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_07.00-Unit-Testing_Section_01.03_SME-Review-Resolved-{max.girin}' target='_blank'>ASG_API Playbook_07.00 Unit Testing_Section_01.03_SME Review Resolved {max.girin}</a>"
+"<a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
