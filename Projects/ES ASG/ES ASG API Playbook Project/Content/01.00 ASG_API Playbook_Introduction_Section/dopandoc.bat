@@ -1,24 +1,21 @@
-rem gets current directory folder name
-set aFolder=%CD:~69%
-
 rem Dependencies
 rem pandoc (converts .docx to .mediawiki)
 rem magick (converts images extracted from pandoc into .png)
 rem Repo department-of-veterans-affairs/ES-ASG must be located at C:\GitHub\ES-ASG
 rem Repo department-of-veterans-affairs/ES-ASG.wiki must be located at C:\GitHub\ES-ASG.wiki
 rem GitHub Desktop will install git command line
-
 rem Recommend to synch Repo's before starting
 
 rem Get the URL from GitHub using a browser.  This is in the /media folder of each Section.  Replace /blob/ with /raw/ and replace all %%20 with %%20 (for Powershell below)
 rem set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/01.00%%20ASG_API%%20Playbook_Introduction_Section/media/"
 
-set aRootRaw=https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
-set aRootTree=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/
-
 SETLOCAL ENABLEDELAYEDEXPANSION
-rem set aRepo=%aRootTree%!aFolder: =%%20!
-rem set aImage=%aRepo%media/
+rem gets current directory folder name
+set aFolder=%CD:~69%
+rem set root URLs
+set aRootRaw="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/"
+set aRootTree="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/"
+set aRootWiki="https://github.com/department-of-veterans-affairs/ES-ASG/wiki/"
 set aRepo=%aRootTree%!aFolder: =%%20!
 set aImage=%aRootRaw%!aFolder: =%%20!
 set aImage=%aImage%!/media/
@@ -76,12 +73,10 @@ for /R %%f in (*.gif) do (
 
 rem Log to TOC
 cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
-set aRoot=https://github.com/department-of-veterans-affairs/ES-ASG/wiki/
-set aURL=%aRoot%!aFile: =%%20!
-set aHref="<a href='%aURL%' target='_blank'>%aFile%</a>": =%%20
-echo %aHref%
-rem echo %aHref:"=%>> TOC.txt
-pause
+set aURL=%aRootWiki%!aFile: =-!
+set bURL=%aURL:"=%
+echo "<a href='%bURL%' target='_blank'>%aFile%</a>">>TOC.txt
+
 rem push to GitHub Repo
 
 cd "C:\GitHub\ES-ASG"
