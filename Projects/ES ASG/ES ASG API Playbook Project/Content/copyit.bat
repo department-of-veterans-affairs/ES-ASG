@@ -2,7 +2,8 @@ cd C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content
 
 set aInit=1
 
-echo [%date%, %time%] > TOC.txt
+echo "<h3>Last Generated: [%date%, %time%]</h3>">TOC.txt
+echo "<ul>">>TOC.txt
 
 for /r %%i in (.) do (
 
@@ -13,3 +14,6 @@ for /r %%i in (.) do (
 		    cd ..
       )
 )
+
+cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
+echo "</ul>">>TOC.txt
