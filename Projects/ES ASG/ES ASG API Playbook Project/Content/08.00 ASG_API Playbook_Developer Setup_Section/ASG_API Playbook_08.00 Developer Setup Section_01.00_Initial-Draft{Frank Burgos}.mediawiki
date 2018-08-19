@@ -1,8 +1,3 @@
-﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section>Wiki source content can be found here.</a></p>
-<p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
-<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/ASG_API Playbook_08.00 Developer Setup Section_01.00_Initial-Draft{Frank Burgos}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
-<p>__TOC__</p>
 = Developer Setup =
 
 This document will detail steps for the setting up of a development environment form a generic perspective to a MuleSoft specific perspective. The generic tools selected for discussion have a wide acceptance throughout the development community plus the MuleSoft tools that are part of the MuleSoft development philosophy.
@@ -316,33 +311,33 @@ The version of eclipse used in this document s Mars.1 Release (4.5.1) which come
 
 Click on '''''Help''''' the click on '''''Install New Software'''''. The following screen appears:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image1.png|624x439px]]
+[[File:.//media/image1.png|624x439px]]
 
 In the '''''Work with''''' dialog box select '''--All Available Sites--'''. In the '''''Name''''' dialog box, a list of applications will appear. Scroll down to '''''Git Integration for Eclipse'''''.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image2.png|624x537px]]
+[[File:.//media/image2.png|624x537px]]
 
 Click on the '''''Git Integration for Eclipse Check Box'''''
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image3.png|624x560px]]
+[[File:.//media/image3.png|624x560px]]
 
 Unclick all '''''Check Boxes''''' except '''''Git Integration for Eclipse'''''.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image4.png|624x560px]]
+[[File:.//media/image4.png|624x560px]]
 
 Click on the '''''Next''''' button. The following screen appears:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image5.png|624x560px]]
+[[File:.//media/image5.png|624x560px]]
 
 As stated previously Git was already installed on this instance of Eclipse, so updates will be performed.
 
 Click on the '''Next''' button. The following screen will appear. Click on the '''''I accept the terms of the license agreement radio button''''' then click '''''Finish'''''.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image6.png|624x560px]]
+[[File:.//media/image6.png|624x560px]]
 
 After installation the following dialog box will appear:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image7.png|518x141px]]
+[[File:.//media/image7.png|518x141px]]
 
 == Unit Testing Frameworks ==
 
@@ -360,45 +355,45 @@ Using Eclipse, a HelloWorld java class will be created followed by the creation 
 
 Eclipse after creation of the Eclipse Project, the HelloWorld java class and the srcTest folder:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image8.png|624x336px]]
+[[File:.//media/image8.png|624x336px]]
 
 Highlight the '''''hellowWorld''''' class as shown above, Click on '''''File''''', '''''New''''' and '''''Other''''' and the following screen appears:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image9.png|511x362px]]
+[[File:.//media/image9.png|511x362px]]
 
 Scroll down to Java then Click on '''''JUnit''''' then select '''''JUnit Test Case''''':
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image10.png|511x405px]]
+[[File:.//media/image10.png|511x405px]]
 
 Select '''''Next''''' and the following default JUnit Test Case screen appears:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image11.png|512x598px]]
+[[File:.//media/image11.png|512x598px]]
 
 The only change is to the '''''SourceFolder''''' value which is changed to srcTest:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image12.png|512x598px]]
+[[File:.//media/image12.png|512x598px]]
 
 Click '''Next''' and the following screen appears:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image13.png|512x598px]]
+[[File:.//media/image13.png|512x598px]]
 
 Select the '''''main (String[])''''' checkbox
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image14.png|512x598px]]
+[[File:.//media/image14.png|512x598px]]
 
 Click '''''Finish''''' and the HellowWorldTest class is generated
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image15.png|624x336px]]
+[[File:.//media/image15.png|624x336px]]
 
 ''Syetem.out.println'' lines were added to the setup and tearDown methods. The testMain method has the default ''org.junit.Assert'' ''fail'' static value which will cause the HellowWorldTest to fail.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image16.png|624x336px]]
+[[File:.//media/image16.png|624x336px]]
 
 
 
 Highlight the hellowWorldTest class as shown above, Right mouse click on hellowWorldTest class then select '''''Run AS''''' then select '''''2 JUnit Test''''' then the following screen appears:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image17.png|624x336px]]
+[[File:.//media/image17.png|624x336px]]
 
 Notice that the '''setUp executed''' and '''tearDown executed''' messages were displayed and that the test failed as expected.
 
@@ -513,10 +508,10 @@ https://docs.mulesoft.com/anypoint-studio/v/6/using-maven-in-anypoint-studio
 Sub Links include:
 
 <ul>
-<li><p>Maven Support in Anypoint Studio</p></li>
-<li><p>Building a Mule Application with Maven in Studio</p></li>
-<li><p>Enabling Maven Support for a Studio Project</p></li>
-<li><p>Importing a Maven Project into Studio</p></li></ul>
+<li><blockquote><p>Maven Support in Anypoint Studio</p></blockquote></li>
+<li><blockquote><p>Building a Mule Application with Maven in Studio</p></blockquote></li>
+<li><blockquote><p>Enabling Maven Support for a Studio Project</p></blockquote></li>
+<li><blockquote><p>Importing a Maven Project into Studio</p></blockquote></li></ul>
 
 These sub links are detailed below:
 
@@ -524,8 +519,8 @@ These sub links are detailed below:
 
 These pages describe how to enable or disable Maven support for your projects in Anypoint Studio and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio
-
+<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio
+</blockquote>
 Topics include:
 
 * Setting Your Maven Preferences
@@ -535,8 +530,8 @@ Topics include:
 
 These pages walk one through creating a Mavenized Mule Application project from scratch. It covers providing the project with unit tests, maintaining its POM file, then building and deploying the project and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-maven-in-studio
-
+<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-maven-in-studio
+</blockquote>
 Topics include:
 
 * Prerequisites
@@ -551,8 +546,8 @@ Topics include:
 
 These pages take a Mule project that was already created in Anypoint Studio (i.e. the &quot;mavenization&quot; of a Mule project) and add Maven functionality to it. Maven can make a project more easily shareable with other developers as it takes care of its dependencies and helps automate the project’s build process project and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studio-project
-
+<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studio-project
+</blockquote>
 Topics include:
 
 * Mavenizing an Existing Mule Project
@@ -563,8 +558,8 @@ Topics include:
 
 These pages describe a Mule project that was built using Maven outside Anypoint Studio, you can still import it into Studio and continue to work on it with the benefits of the Studio IDE and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/importing-a-maven-project-into-studio
-
+<blockquote>https://docs.mulesoft.com/anypoint-studio/v/6/importing-a-maven-project-into-studio
+</blockquote>
 Topics include:
 
 * Prerequisites
@@ -622,9 +617,4 @@ MUnit has a set of dedicated Event Processors aimed to validate, assert and mock
 A description Using Maven with MUnit Event Processors are pointed to by this URL:
 
 https://docs.mulesoft.com/munit/v/2.1/message-processors
-
-
-
-
-
 
