@@ -18,3 +18,4 @@
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_05.04-Objects-and-Methods_Section_01.01_Initial-Draft-{max-girin}' target='_blank'>ASG_API Playbook_05.04 Objects and Methods_Section_01.01_Initial Draft {max girin}</a>"
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_05.05-Middleware-Artifacts_Section_01.01_Initial-Draft-{max-girin}' target='_blank'>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}</a>"
+"<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
