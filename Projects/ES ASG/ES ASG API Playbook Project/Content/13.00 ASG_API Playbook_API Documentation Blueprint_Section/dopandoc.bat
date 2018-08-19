@@ -75,7 +75,7 @@ rem Log to TOC
 cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 set aURL=%aRootWiki%!aFile: =-!
 set bURL=%aURL:"=%
-echo "<a href='%bURL%' target='_blank'>%aFile%</a>">>TOC.txt
+echo "<li><a href='%bURL%' target='_blank'>%aFile%</a>">>TOC.txt
 
 rem push to GitHub Repo
 
