@@ -17,3 +17,6 @@ for /r %%i in (.) do (
 
 cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 echo "</ul>">>TOC.txt
+
+rem Remove quotes
+powershell -Command "(gc 'TOC.txt' -encoding UTF8) -replace '"', '' | Out-File 'TOC.txt'" -encoding UTF8
