@@ -39,3 +39,4 @@
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_11.00-Baseline-Security_Section_01.03_SME-review-resolution' target='_blank'>ASG_API Playbook_11.00 Baseline Security_Section_01.03_SME review resolution</a>"
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ =-' target='_blank'></a>"
+"<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_12.03-Reusability-Section_01.02_SME-Review-{MaxGirin}' target='_blank'>ASG_API Playbook_12.03 Reusability Section_01.02_SME Review {MaxGirin}</a>"
