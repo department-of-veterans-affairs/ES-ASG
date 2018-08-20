@@ -27,7 +27,6 @@ for /R %%f in (*.docx) do set aFile=%%~nf
 
 rem if NOT EXIST '%aFile%' then goto eof
 
-
 rem convert .docx to .mediawiki and extract images
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
@@ -73,12 +72,6 @@ for /R %%f in (*.tmp) do (
 for /R %%f in (*.gif) do (
 	magick %%~nf.gif %%~nf.png
 )
-
-rem Log to TOC
-cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
-set aURL=%aRootWiki%!aFile: =-!
-set bURL=%aURL:"=%
-echo "<li><a href='%bURL%' target='_blank'>%aFile%</a>">>TOC.txt
 
 rem push to GitHub Repo
 
