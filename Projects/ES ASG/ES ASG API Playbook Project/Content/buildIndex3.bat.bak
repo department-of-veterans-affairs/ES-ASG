@@ -16,6 +16,8 @@ for /R %%i in (.) do (
   	cd %%i
 		rmdir media /s /q
 
+pushd
+
 		for /R %%j in (*.docx) do set aFile=%%~nj
 		
 		echo FOLDER "%%i">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
@@ -24,6 +26,9 @@ for /R %%i in (.) do (
 		cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 			
 	)
+
+pulld
+
 )
 echo "</ul>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 

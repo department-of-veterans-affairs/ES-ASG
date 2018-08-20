@@ -13,21 +13,17 @@ for /R %%i in (.) do (
 
 	if "%%i"=="C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\." (echo pass) else (
 
+		echo FOLDER "%%i">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
+
   	cd %%i
 		rmdir media /s /q
 
-pushd
-
-		for /R %%j in (*.docx) do set aFile=%%~nj
-		
-		echo FOLDER "%%i">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
+		for /R %%j in (*.docx) do set aFile=%%~nj	
 		echo FILE "%aFile%">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 
 		cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 			
 	)
-
-pulld
 
 )
 echo "</ul>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"

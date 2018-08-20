@@ -75,14 +75,13 @@ for /R %%f in (*.gif) do (
 
 rem push to GitHub Repo
 
-cd "C:\GitHub\ES-ASG"
-git add -f --all
-git commit -m "Publish"
-git push --all
+rem cd "C:\GitHub\ES-ASG"
+rem git add -f --all
+rem git commit -m "Publish"
+rem git push --all
 
-cd "C:\GitHub\ES-ASG.wiki"
-git add -f --all
-git commit -m "Publish"
-git push --all
+rem cd "C:\GitHub\ES-ASG.wiki"
+rem git add -f --all
+rem git commit -m "Publish"
+rem git push --all
 
-:eof
