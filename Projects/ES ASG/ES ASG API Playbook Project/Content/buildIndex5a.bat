@@ -7,7 +7,8 @@ if NOT "%aFile1%"=="" (
 
 echo "<li><a href='%aFile2%' target='_blank'>%aFile1%</a>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 
-rem call "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\dopandoc"
+call "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\dopandoc"
+
 )
 
 			

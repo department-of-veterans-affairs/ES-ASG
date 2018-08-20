@@ -5,24 +5,7 @@ for %%j in (*.docx) do (set "aFile1=%%~nj" & set "aFile2=https://github.com/depa
 
 if NOT "%aFile1%"=="" (
 
-echo aFile1 "%aFile1%">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
-echo aFile2 "%aFile2%">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
-
-
-
-rem https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_01.00-Introduction_Section_01.05_Published-%7BPaul-Marshall%7D
-
-
-
-rem set aRootWiki="https://github.com/department-of-veterans-affairs/ES-ASG/wiki/"
-rem echo aRootWiki "%aRootWiki%">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
-
-rem set aURL="%aRootWiki%"
-rem echo aURL "%aURL%">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
-
-rem set bURL=%aURL:"=%
-rem echo bURL %bURL%>>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
-rem echo "<li><a href='%bURL%' target='_blank'>%aFile%</a>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
+echo "<li><a href='%aFile2%' target='_blank'>%aFile1%</a>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 
 rem call "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\dopandoc"
 )
