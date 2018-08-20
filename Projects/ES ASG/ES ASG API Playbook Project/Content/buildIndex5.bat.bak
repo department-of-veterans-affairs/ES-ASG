@@ -20,3 +20,5 @@ for /r %%i in (.) do (
 echo "</ul>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 echo "<!-- Index Stop -->">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 
+c:\GitHub\AutoHotkeyU64.exe "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\ReplaceText.ahk"
+
