@@ -1,0 +1,30 @@
+FileRead, aTOC, C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt
+
+StringReplace, aTOC,aTOC,",, All
+
+MsgBox, %aTOC%
+
+aFile:=FileOpen("C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC2.txt", "w")
+aFile.Write(aTOC)
+aFile.Close()
+
+FileRead, aIndex, C:\GitHub\ES-ASG\docs\Index.html
+
+MsgBox, %aIndex%
+
+aNewStr:=RegExReplace(aIndex,"s)<!-- Index Start -->.*<!-- Index Stop -->",aTOC, aCount)
+
+MsgBox, %aNewStr%
+
+aFile:=FileOpen("C:\GitHub\ES-ASG\docs\Index2.html", "w")
+aFile.Write(aNewStr)
+aFile.Close()
+
+
+aStr1:="test1<!-- Index Start -->Original String<!-- Index Stop -->test2"
+aStr2:=RegExReplace(aStr1,"<!-- Index Start -->.*<!-- Index Stop -->",aTOC)
+MsgBox %aStr2%
+
+
+
+

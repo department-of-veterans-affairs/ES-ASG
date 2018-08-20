@@ -117,7 +117,7 @@
           <div class="col-lg-8 mx-auto">
             <h2>API Playbook Table of Contents</h2>
 <!-- Index Start -->
-<h4>Last Generated: [Mon 08/20/2018, 12:29:05.71]</h4>
+<h3>Last Generated: [Mon 08/20/2018, 12:33:27.05]</h3>
 <ul>
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_01.00-Introduction_Section_01.05_Published-{Paul-Marshall}' target='_blank'>ASG_API Playbook_01.00 Introduction_Section_01.05_Published {Paul Marshall}</a>
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_02.01-Development-Lifecycle_Section_01.06_Publication-Review-{Marshall}' target='_blank'>ASG_API Playbook_02.01 Development Lifecycle_Section_01.06_Publication Review {Marshall}</a>
@@ -138,6 +138,7 @@
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/ASG_API-Playbook_13.00-API-Documentation-Blueprint_Section_01.01_Initial-Draft' target='_blank'>ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft</a>
 </ul>
 <!-- Index Stop -->
+
           </div>
         </div>
       </div>
