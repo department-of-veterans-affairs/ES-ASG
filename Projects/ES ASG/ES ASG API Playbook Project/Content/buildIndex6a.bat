@@ -9,7 +9,7 @@ for %%j in (*.docx) do (set "aFile1=%%~nj" & set "aFile2=https://github.com/depa
 if NOT "%aFile1%"=="" (
 
 echo "<li><a href='%aFile2%' target='_blank'>%aFolder%</a>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOCIndex.txt"
-echo "<li><a href='%aFile2%' target='_blank'>%aFile%</a>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOCHome.txt"
+echo "<li><a href='%aFile2%' target='_blank'>%aFile1%</a>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOCHome.txt"
 
 call "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\dopandoc6"
 
