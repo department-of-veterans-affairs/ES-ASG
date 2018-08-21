@@ -1,5 +1,3 @@
-rem This .bat file handles the transformation of .docx to .mediawiki files
-
 rem Dependencies
 rem pandoc (converts .docx to .mediawiki)
 rem magick (converts images extracted from pandoc into .png)

@@ -14,7 +14,8 @@ rem set aImage="https://github.com/department-of-veterans-affairs/ES-ASG/raw/mas
 SETLOCAL ENABLEDELAYEDEXPANSION
 rem gets current directory folder name
 set aFolder=%CD:~69%
-rem set root URLs
+
+rem Set some useful locations
 set aRootRaw="https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/"
 set aRootTree="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%%20ASG/ES%%20ASG%%20API%%20Playbook%%20Project/Content/"
 set aRootWiki="https://github.com/department-of-veterans-affairs/ES-ASG/wiki/"
@@ -22,18 +23,19 @@ set aRepo=%aRootTree%!aFolder: =%%20!
 set aImage=%aRootRaw%!aFolder: =%%20!
 set aImage=%aImage%!/media/
 
+rem Clean up prior to generating
 rmdir media /s /q
 del *.mediawiki
+del *.bak
 
-rem get the last .docx file
+rem Get the last .docx file - merely loops through all files, leaving us with the highest version .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
 
-rem if NOT EXIST '%aFile%' then goto eof
-
-rem convert .docx to .mediawiki and extract images
+rem Convert .docx to .mediawiki and extract images to /media
 pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
 
-rem TOC
+rem This will insert at top of file, thus these are in reverse order of what one will see after we're done
+rem Add TOC
 powershell -Command "'<p>__TOC__</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Wiki source content here
@@ -45,13 +47,13 @@ powershell -Command "'<p><a href=' + (34 -as [char]) + '%aRepo%' + '/' + '%aFile
 rem Send feedback via email
 powershell -Command "'<p><a href=' + (34 -as [char]) + 'mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=' + '%aFile%' + (34 -as [char]) + '>Send Feedback to this page Via Email</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
+rem Advisory text
 powershell -Command "'<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
-rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above
+rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above. Remove <blockquote> as it seems to cause problems
 powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
-rem housekeeping and move Wiki for publishing
-del *.bak
+rem Move Wiki for publishing
 copy "%aFile%.mediawiki" "C:\GitHub\ES-ASG.wiki"
 
 rem convert all image files to .png
