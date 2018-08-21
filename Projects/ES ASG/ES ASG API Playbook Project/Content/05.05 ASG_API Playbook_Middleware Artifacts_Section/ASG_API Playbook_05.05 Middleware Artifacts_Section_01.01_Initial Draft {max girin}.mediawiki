@@ -1,6 +1,6 @@
 ﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section>Wiki source content can be found here.</a></p>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section>Wiki source content can be found here.</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section/ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p>__TOC__</p>
 [[#api-naming-convention|API Naming Convention 2]]
