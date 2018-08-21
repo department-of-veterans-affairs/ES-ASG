@@ -1,4 +1,4 @@
-﻿<p>This page was generated on Tue 08/21/2018 at 13:09:49.14 Eastern Time Zone.</p>
+﻿<p>This page was generated from ASG_API Playbook_01.00 Introduction_Section_01.05_Published {Paul Marshall}.docx on Tue 08/21/2018 at 14:25:32.90 Eastern Time Zone.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_01.00 Introduction_Section_01.05_Published {Paul Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/ASG_API Playbook_01.00 Introduction_Section_01.05_Published {Paul Marshall}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
