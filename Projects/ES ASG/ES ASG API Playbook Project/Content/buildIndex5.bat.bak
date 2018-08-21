@@ -1,10 +1,4 @@
 rem Dependency AutoHotKeyU64.exe
-cd C:\GitHub\ES-ASG
-git pull "https://github.com/department-of-veterans-affairs/ES-ASG" "master"
-
-cd C:\GitHub\ES-ASG.wiki
-git pull https:"//github.com/department-of-veterans-affairs/ES-ASG.wiki" "master"
-
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 
