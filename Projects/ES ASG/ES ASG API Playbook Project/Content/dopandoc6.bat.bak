@@ -1,8 +1,5 @@
 rem This .bat file handles the transformation of .docx to .mediawiki files
 
-rem Note:  If you're just working on one file...you may place this .bat in the folder containing the .docx file and it will only generate that one document.
-rem You will need to perform a GitHub sync yourself.
-
 rem Dependencies
 rem pandoc (converts .docx to .mediawiki)
 rem magick (converts images extracted from pandoc into .png)
