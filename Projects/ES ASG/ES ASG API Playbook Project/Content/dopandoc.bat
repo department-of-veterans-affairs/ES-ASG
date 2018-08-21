@@ -21,6 +21,7 @@ set aImage=%aRootRaw%!aFolder: =%%20!
 set aImage=%aImage%!/media/
 
 rmdir media /s /q
+del *.mediawiki
 
 rem get the last .docx file
 for /R %%f in (*.docx) do set aFile=%%~nf
