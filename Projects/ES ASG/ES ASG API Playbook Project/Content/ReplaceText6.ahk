@@ -7,6 +7,7 @@ StringReplace, aTOCHome,aTOCHome,",, All
 FileRead, aIndex, C:\GitHub\ES-ASG\docs\Index.html
 
 aNewIndex:=RegExReplace(aIndex,"s)<!-- Index Start -->.*<!-- Index Stop -->",aTOCIndex)
+aNewIndex:=RegExReplace(aNewIndex, "s)<!-- Index Stop -->.*<!-- Index Stop2 -->","<!-- Index Stop --><!-- Index Stop2 -->")
 aFile:=FileOpen("C:\GitHub\ES-ASG\docs\Index.html", "w")
 aFile.Write(aNewIndex)
 aFile.Close()
