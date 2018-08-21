@@ -1,4 +1,5 @@
-﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
+﻿<p>This page was generated on Tue 08/21/2018 at 12:37:52.39 Eastern Time Zone.</p>
+<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.03 Configuration Parameters_01.03_SME Review Resolved {max.girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section/ASG_API Playbook_05.03 Configuration Parameters_01.03_SME Review Resolved {max.girin}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section>Wiki source content can be found here.</a></p>
@@ -101,6 +102,7 @@ With that said, the naming conventions for the global configuration parameters s
 Mulesoft has a number of reserved global configuration parameters, which all start with “mule.” in the name of the parameter. For example, “mule.env” is reserved to the name of the Mule environment. In addition, there are other reserved Mule properties that are tied to the application deployed. For example, “app.name” is the name of the application running within the Mule runtime.
 
 In a Mule process flow, a developer can reference these parameters like this: ${mule.env}, by adding a dollar sign “$” and wrapping the parameter name with the curly braces. In Mule Expression Language (MEL) used inside an expression such as inside a DataWeave Transformations control, accessing properties is done with a reserved “#p[]”, where you would place the name of the property inside the square brackets. For example, “#p[‘vet360.db.oracle.host’]”.
+
 
 
 

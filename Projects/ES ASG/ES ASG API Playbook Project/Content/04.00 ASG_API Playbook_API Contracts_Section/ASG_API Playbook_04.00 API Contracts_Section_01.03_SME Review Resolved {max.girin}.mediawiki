@@ -1,4 +1,5 @@
-﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
+﻿<p>This page was generated on Tue 08/21/2018 at 12:37:43.66 Eastern Time Zone.</p>
+<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.03_SME Review Resolved {max.girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/ASG_API Playbook_04.00 API Contracts_Section_01.03_SME Review Resolved {max.girin}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section>Wiki source content can be found here.</a></p>
@@ -191,6 +192,7 @@ The developer can also switch the tab on the top-right hand corner of the Design
 As a developer, you should start creating all of your API contracts on Mulesoft platform within the Design Center. Once the API contract is created, save the contract and publish the RAML to the Exchange of your organizational unit within VA parent organization. Then, you should convert the API to a mock API initially, following the Design First strategy to expose the API contract and mock to your API consumers. Once the mock API is up and running, inform your API consumers to start testing their client applications and microservices to consume your mock API. Only after you have completed your “live” microservice development and validated your API live requests and responses, you can publish your API to Exchange and Mulesoft runtimes, and update the API Contract definition inside the Design Center to no longer return mock responses.
 
 Once any new API contract changes are made to the RAML contract, make sure to version your contract by iterating the version number on the RAML contract. Start with 0.1 version initially and iterate minor versions for minor defects or hotfixes. Iterate major contract versions for significant operation changes. For example, if a new field needs to be added to the response, but the operation remains the same, iterate a minor version (e.g., from 0.1 to 0.2). If there is a change in the operation signature itself (e.g. the URI now has a new path parameter), iterate a major version (from 0.2 to 1.0).
+
 
 
 

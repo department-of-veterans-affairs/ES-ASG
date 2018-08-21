@@ -1,4 +1,5 @@
-﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
+﻿<p>This page was generated on Tue 08/21/2018 at 12:38:09.81 Eastern Time Zone.</p>
+<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_07.00 Unit Testing_Section_01.03_SME Review Resolved {max.girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/ASG_API Playbook_07.00 Unit Testing_Section_01.03_SME Review Resolved {max.girin}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section>Wiki source content can be found here.</a></p>
@@ -155,6 +156,7 @@ A Continuous Integration (CI) workflow with a unit test stage is shown below, us
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image10.png|594x252px]]
 
 When the unit test stage is completed, the unit test coverage report is automatically generated as part of the CI stage. That report is available for viewing on the CI Management Console, such as inside Jenkins CI Console. Finally, the Regression and Release stages are executed before the final Deploy and Publish stages. The Continuous Delivery automation can be integrated together with the Continuous Integration, in a single CI/CD workflow. CD portion of the automation workflow is dealing with actual deployment of the source code into a virtual container (e.g., Docker or OpenShift Pod) or onto the “bare metal” server instance if virtualization is not used.
+
 
 
 
