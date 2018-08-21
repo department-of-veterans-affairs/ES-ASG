@@ -1,7 +1,7 @@
 ﻿<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href=mailto:jordan.braunstein@visualintegrator.com;paul.marshall4@va.gov>Send Feedback to this page Via Email</a></p>
-<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section>Wiki source content can be found here.</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section/ASG_API Playbook_05.03 Configuration Parameters_01.03_SME Review Resolved {max.girin}.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
+<p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = API Naming Convention =
 
