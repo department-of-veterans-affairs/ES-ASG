@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.04 Objects and Methods_Section_01.01_Initial Draft {max girin}.docx</b> on <b>Tue 08/21/2018</b> at <b>15:08:43.75 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.04 Objects and Methods_Section_01.01_Initial Draft {max girin}.docx</b> on <b>Tue 08/21/2018</b> at <b>15:44:30.88 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.04 Objects and Methods_Section_01.01_Initial Draft {max girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.04%20ASG_API%20Playbook_Objects%20and%20Methods_Section/05.04 ASG_API Playbook_Objects and Methods_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
