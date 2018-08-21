@@ -16,7 +16,7 @@ cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 
 rem Create TOC.txt and add some heading info
 echo "<^!-- Index Start -->">"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
-echo "<h3>Last Generated: [%date%, %time%]</h3>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
+echo "<h4>Last Generated: [%date%, %time%] Eastern Time Zone</h4>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 echo "<ul>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOC.txt"
 
 for /r %%i in (.) do (
