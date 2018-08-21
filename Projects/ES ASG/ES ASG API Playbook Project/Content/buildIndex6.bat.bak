@@ -30,8 +30,6 @@ for /r %%i in (.) do (
 		cd "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content"
 	)
 
-pause
-
 )
 
 rem Add tail info
