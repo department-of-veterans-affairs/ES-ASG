@@ -35,32 +35,32 @@ rem Get the last .docx file - merely loops through all files, leaving us with th
 for /R %%f in (*.docx) do set aFile=%%~nf
 
 rem Convert .docx to .mediawiki and extract images to /media
-pandoc --extract-media ./ -t mediawiki -o "%aFile%.mediawiki" "%aFile%.docx"
+pandoc --extract-media ./ -t mediawiki -o "%aFolder%.mediawiki" "%aFile%.docx"
 
 rem This will insert at top of file, thus these are in reverse order of what one will see after we're done
 rem Add TOC
-powershell -Command "'<p>__TOC__</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'<p>__TOC__</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Wiki source content here
-powershell -Command "'<p><a href=' + '%aRepo%' +'>Wiki source content can be found here.</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'<p><a href=' + '%aRepo%' +'>Wiki source content can be found here.</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Edit .mediawiki and Pull Request
-powershell -Command "'<p><a href=' + (34 -as [char]) + '%aRepo%' + '/' + '%aFile%.mediawiki' + (34 -as [char]) + '>Edit the Wiki .mediawiki file here.</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'<p><a href=' + (34 -as [char]) + '%aRepo%' + '/' + '%aFolder%.mediawiki' + (34 -as [char]) + '>Edit the Wiki .mediawiki file here.</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Send feedback via email
-powershell -Command "'<p><a href=' + (34 -as [char]) + 'mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=' + '%aFile%' + (34 -as [char]) + '>Send Feedback to this page Via Email</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'<p><a href=' + (34 -as [char]) + 'mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=' + '%aFile%' + (34 -as [char]) + '>Send Feedback to this page Via Email</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Advisory text
-powershell -Command "'<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Generated Timestamp
-powershell -Command "'<p>This page was generated from <b>' + '%aFile%' + '.docx</b> on <b>' + '%date%' + '</b> at <b>' + '%time%' + ' Eastern Time Zone</b>.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'<p>This page was generated from <b>' + '%aFile%' + '.docx</b> on <b>' + '%date%' + '</b> at <b>' + '%time%' + ' Eastern Time Zone</b>.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above. Remove <blockquote> as it seems to cause problems
-powershell -Command "(gc '%aFile%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Move Wiki for publishing
-copy "%aFile%.mediawiki" "C:\GitHub\ES-ASG.wiki"
+copy "%aFolder%.mediawiki" "C:\GitHub\ES-ASG.wiki"
 
 rem convert all image files to .png
 cd media

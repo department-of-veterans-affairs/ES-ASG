@@ -1,7 +1,7 @@
-﻿<p>This page was generated on Tue 08/21/2018 at 13:11:04.29 Eastern Time Zone.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft.docx</b> on <b>Tue 08/21/2018</b> at <b>14:38:15.21 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft">Send Feedback to this page Via Email</a></p>
-<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/13.00%20ASG_API%20Playbook_API%20Documentation%20Blueprint_Section/ASG_API Playbook_13.00 API Documentation Blueprint_Section_01.01_Initial Draft.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/13.00%20ASG_API%20Playbook_API%20Documentation%20Blueprint_Section/13.00 ASG_API Playbook_API Documentation Blueprint_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/13.00%20ASG_API%20Playbook_API%20Documentation%20Blueprint_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 The intent is for this document to be inserted into Section 13 of the Developer Playbook.
