@@ -40,7 +40,7 @@ rem Edit .mediawiki and Pull Request
 powershell -Command "'<p><a href=' + (34 -as [char]) + '%aRepo%' + '/' + '%aFile%.mediawiki' + (34 -as [char]) + '>Edit the Wiki .mediawiki file here.</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 rem Send feedback via email
-powershell -Command "'<p><a href=' + (34 -as [char]) + 'mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=' + '%aFile%' + (34 -as [char]) + '>Send Feedback to this page Via Email</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
+powershell -Command "'<p><a href=' + (34 -as [char]) + 'mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=' + '%aFile%' + '?body=Please%20enter%20specific%20reference%20locations%20related%20to%20your%20comments>Send Feedback to this page Via Email</a></p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
 powershell -Command "'<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFile%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFile%.mediawiki'" -encoding UTF8
 
