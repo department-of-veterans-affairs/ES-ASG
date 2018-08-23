@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.01_Initial Draft.docx</b> on <b>Tue 08/21/2018</b> at <b>23:40:03.83 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.01_SME review ee.docx</b> on <b>Wed 08/22/2018</b> at <b>20:29:55.02 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.01_Initial Draft">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.01_SME review ee">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/03.00 ASG_API Playbook_API Layer_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -50,7 +50,7 @@ Microservices architecture forms the core of this model in that the services dep
 
 An API-led connectivity approach provides a framework for ordering and structuring the building blocks of a composable enterprise to optimize the agility and flexibility benefits of using an API Platform.  This comes in a form a multi-tier architecture with three distinct API layers.
 
-<span id="_Toc519262341" class="anchor"></span>Figure 1: API Layers Concept
+<span id="_Toc519262341" class="anchor"></span>Figure : API Layers Concept
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image1.png|594x240px|../../../../../../../../Desktop/Screen%20Shot%202016-05-20%20at%203.3]]
 
@@ -93,7 +93,7 @@ In all these cases the API gateway pattern is a good approach because it is wher
 
 The list of bulleted items below are characteristics of Experience API’s and should be followed as a rule of when to leverage an Experience API I (as opposed to System or Process API) in the integration architecture.
 
-* The means by which data can be reconfigured so that it is most easily consumed by its intended audience.
+* The means by which data can be reconfigured so that it is most easily consumed by its intended audience.
 * API’s that are exposed to a User Interface or Application layer
 * Typically, API’s exposed to Trading Partners or across company lines is through experience layer.
 * In a mature and consolidated architecture, separation between experience, process and system layers might be physical. This means we will find different deployment units (a different app, or zip) dedicated to each one of these layers.
@@ -102,7 +102,7 @@ The list of bulleted items below are characteristics of Experience API’s and s
 
 Typically, the runtime flow of API’s is Experience to Process to System (Top-Down), as depicted in the diagram below. However, if the consumer of an API is another System instead of End User for a User Interface application, then often the Process or System API are exposed to directly to the Consumer
 
-<span id="_Toc519262342" class="anchor"></span>Figure 2: API Layers Invocation
+<span id="_Toc519262342" class="anchor"></span>Figure : API Layers Invocation
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image2.png|169x249px|C:\e9ff527e5a932326a65acf3c1425dc1f]]
 
@@ -149,7 +149,7 @@ Each API is categorized into Experience, Process, or System API and managed acco
 
 Sometimes referred to as “separation of concerns”. Separate API’s and flows logically separate provider and consumer logic to ensure they individual pieces to the API application set. Separation of Concerns provides a logical architecture whereby IT assets (such as API’s, queues, or other architecture components) are separated and categorized for Provider and Consumer, and are connected through an independent mediation component (API, queue, or another). It creates an architecture whereby Provider and Consumer never directly communicate
 
-<span id="_Toc519262343" class="anchor"></span>Figure 3: Separation of Concerns
+<span id="_Toc519262343" class="anchor"></span>Figure : Separation of Concerns
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image3.png|624x225px]]
 
@@ -157,7 +157,7 @@ Sometimes referred to as “separation of concerns”. Separate API’s and flow
 
 By using the using the [https://docs.mulesoft.com/mule-user-guide/v/3.9/reliability-patterns Reliability Pattern] that was documented by MuleSoft, Inc, it allows API’s to communicate with each other through a mediation layer—the queue—so that API’s are not invoking each other. The queue provides a mediation layer to “loosely couple” the API flows together. Non- persistent queues can be used so not to impact runtime performance latency of the message flows.
 
-<span id="_Toc519262344" class="anchor"></span>Figure 4: Reliability Pattern for Loose Coupling
+<span id="_Toc519262344" class="anchor"></span>Figure : Reliability Pattern for Loose Coupling
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image4.png|624x143px|A screenshot of a cell phone Description generated with very high confidence]]
 
@@ -165,7 +165,7 @@ By using the using the [https://docs.mulesoft.com/mule-user-guide/v/3.9/reliabil
 
 Instead, source maps to an enterprise entity data model object (“Canonical”) and target also maps directly to the enterprise entity data model (“Canonical”). The Canonical provides the “Broker” mechanism for Providers and Consumers to share data. Universal data model that represents the business process, through a data object. Acts as a mediation point between Provider and Consumer data mappings. All Provider systems map to the Canonical, all Target systems map from the Canonical, and Provider and Consumer never map directly each other. A loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components. Design should identify and separate components based on volatility and capability, minimizing dependencies
 
-<span id="_Toc519262345" class="anchor"></span>Figure 5: Provider/Consumer Separation
+<span id="_Toc519262345" class="anchor"></span>Figure : Provider/Consumer Separation
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image5.png|368x277px]]
 
@@ -178,7 +178,7 @@ A well-designed Canonical has the following characteristics:
 * Also referred to as: Universal Data Model (UDM), Common Object Model (COM), Common Information Model (CIM)
 * Virtual Meta Data
 
-<span id="_Toc519262346" class="anchor"></span>Figure 6: Canonical Example
+<span id="_Toc519262346" class="anchor"></span>Figure : Canonical Example
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/media/image6.png|143x318px]]
 
