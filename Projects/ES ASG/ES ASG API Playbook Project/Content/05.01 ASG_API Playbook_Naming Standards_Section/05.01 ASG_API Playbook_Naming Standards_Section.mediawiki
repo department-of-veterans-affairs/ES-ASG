@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.06_Standards Review {Marshall}.docx</b> on <b>Wed 08/22/2018</b> at <b>20:30:03.67 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.06_Standards Review {Marshall}.docx</b> on <b>Fri 08/24/2018</b> at <b>21:32:14.61 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.06_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -10,33 +10,33 @@
 
 == Objective ==
 
-This blueprint defines an API naming convention for the Veteran’s Affairs enterprise, supporting all middleware and API management solutions and supporting all Veteran’s Affairs organization units and lines of businesses. Most importantly, define an API URL standard.
+This blueprint defines an API naming convention for the VA Enterprise, supporting all middleware and API management solutions and supporting all VA organization units and lines of businesses. Most importantly, define an API URL standard.
 
 === Global and Enterprise Impacts of Naming Convention Standards ===
 
-The naming conventions standards contained herein are applicable across any centralized or geographically distributed implementations of Integrations and API’s.
+The naming conventions standards contained herein are applicable across any centralized or geographically distributed implementations of Integrations and APIs.
 
-=== Cross Integration or Tech Platform Support ===
+=== Cross Integration or Technical Platform Support ===
 
-The naming convention standards contained herein for API are applicable across integration platforms, as they are agnostic of the underlying technology stack. For example, if the API’s are developed on MuleSoft, 3Scale, Kong, CA Layer, or Spring, the API naming conventions should remain consistent and continue to be relevant no matter of the technology platform used to build and host these APIs. Specific vendor applicability is noted in separate sections.
+The naming convention standards contained herein for APIs are applicable across integration platforms, as they are agnostic of the underlying technology stack. The intention is to provide a vendor neutral convention for MuleSoft, 3Scale or any other API development and hosting platform. Where product-specific guidance is required, these are addressed in independent sections.
 
 === Cross Deployment Models ===
 
-The naming convention standards contained herein for API are applicable across deployment and hosting models, whether the API is deployed to a Cloud (IaaS, PaaS, or SaaS) or On Premise, as the naming conventions either accounts for the deployment model or is agnostic of the underlying hosting and cloud model. The conventions account for deployment in the VA Enterprise Cloud (VAEC) deployment model to ensure uniqueness across the VA.
+The naming convention standards contained herein for APIs are applicable across deployment and hosting models, whether an API is deployed to a Cloud (e.g. IaaS, PaaS, or SaaS) or On Premise, as the naming conventions either account for the deployment model or is agnostic of the underlying hosting and cloud model. The conventions account for deployment in the VA Enterprise Cloud (VAEC) deployment model to ensure unique names across the entire VA.
 
-The VA naming convention standard requires the API name to be unique no matter the region, locale, or infrastructure environment due to being deployed in a domain that supports the cloud hosted environment across clouds, as well as On Premise.
+The VA naming convention standard requires the API name to be unique no matter the region, locale, or infrastructure environment to avoid possible future collisions as APIs may be rehosted to different environments.
 
-Note, whether an API is Internal facing, External facing, or both for Consumer use, is addressed and controlled via API policies, and not addressed via API naming conventions. For more information please see '''<span class="underline">Playbook: API Policies framework.</span>'''
+Note, whether an API is Internal facing, External facing, or both for Consumer use, is addressed and controlled via API policies, and not addressed via API naming conventions. For more information please see '''<span class="underline">Playbook: API Policies framework.[[TBD]]</span>'''
 
-Note, the scope of this API Naming Convention document is to focus on the major API naming convention elements, including and up to the application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such.</span>'''
+Note, the scope of this API Naming Convention document is to focus on the major API naming convention elements, including and up to the application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such.</span>''''''<span class="underline">[[TBD]]</span>'''
 
 === Discoverability ===
 
-API names should be syntactically valid DNS names (as per [http://www.ietf.org/rfc/rfc1035.txt RFC 1035]) which can be resolved to one or more network addresses. If an API is composed of several services or API’s, they should be named in a way to help discoverability. One way to do this is for the API Names to share a common prefix. For example, the services build.VAappname.com and buildresults.VAappnameapis.com are both services that are part of the VAappname Build API.
+API names should be syntactically valid DNS names (as per [http://www.ietf.org/rfc/rfc1035.txt RFC 1035]) which can be resolved to one or more network addresses. If an API is composed of several services or APIs, they should be named in a way to help discoverability. One way to do this is for the API Names to share a common prefix. For example, the services build.VAappname.com and buildresults.VAappnameapis.com are both services that are part of the VAappname Build API.
 
 == Vendor Agnostic API Naming Convention ==
 
-=== To provide consistent developer experience across many APIs and over a long period of time, all names used by an API should be: ===
+=== To provide consistent developer experience across many APIs and over an extended period of time, all names used by an API should be: ===
 
 ===  ===
 
@@ -52,7 +52,7 @@ API names should be syntactically valid DNS names (as per [http://www.ietf.or
 
 === VA Background Requirements ===
 
-Table : VA API Naming Conventions Requirements
+Table 1: VA API Naming Conventions Requirements
 
 {|
 ! ID
@@ -60,49 +60,51 @@ Table : VA API Naming Conventions Requirements
 ! Framework Impacts
 |-
 | 1
-| Veteran’s Affairs has a preference to host API’s, applications, and IT solutions in the Veterans Affairs Enterprise Cloud (VAEC). Some API’s may still be hosted On Premise.
+| VA has a preference to host APIs, applications, and IT solutions in the Veterans Affairs Enterprise Cloud (VAEC). Some APIs may still be hosted On Premise.
 | The VA Naming Convention accounts for Cloud or On-Premise solutions.
 |-
 | 2
-| VA does a majority of their business in USA.
+| VA does most of their business in USA.
 |
 The Naming Convention will not account for a region or locale in the naming convention because the majority of VA is USA based.
 
-Even for other regions outside of the USA, the API Naming conventions does factor in the different Organization Name into the naming standard and therefore could allow the API’s in other countries to be differentiated by the Organization Name
+Even for other regions outside of the USA, the API Naming conventions does factor in the different Organization Name into the naming standard and therefore could allow the APIs in other countries to be differentiated by the Organization Name
 
-Should VA business model change the future, where there is more globalization and geographic differences outside of the USA, the Naming Conventions shall be adjusted at that time.
+Should VA’s business model change the future, where there is more globalization and geographic differences outside of the USA, the Naming Conventions shall be adjusted at that time.
 |-
-| 5
+| 3
 | VA has many Use Cases that involve Salesforce.com and enterprise systems (although, these are not the only Use Cases, and this framework is a broader, enterprise level framework)
 | The Naming Conventions shall account for the Canonical representation of business objects, such as “Veteran, “Address”, and others.
 |}
 
 === Naming Criteria ===
 
-Following the industry standards on web resource definition, any API URL always consists of the protocol, host, port, base path, RESTful operation, and, finally, parameters to the API t.
+Following the industry standards on web resource definition, any API URL always consists of the protocol, host, port, base path, RESTful operation, and, finally, parameters to the API.
 
 With the API URL naming convention, the following required and optional criteria should be met:
 
-<ol style="list-style-type: decimal;">
-<li><p>Designate the environment hosting the API (dev, qa, production, uat, etc.).</p></li>
-<li><p>Define whether the API is Experience, Process, or System API. '''<span class="underline">(See Playbook section on “API Layers”).</span>'''</p>
+# Designate the environment hosting the API (e.g. dev, qa, production, uat).
+
+Define whether the API is Experience, Process, or System API See: [[03.00 ASG_API Playbook_API Layer_Section]!03.00 ASG_API Playbook_API Layer_Sectio
+
 <ol style="list-style-type: lower-alpha;">
 <li><p>Experience API is targeted to a specific UI platform such as mobile app, desktop portal, or tablet.</p></li>
 <li><p>Process API is used to orchestrate and provide business logic across two or more system APIs.</p></li>
-<li><p>System API is used to integrate with a back office or external system or platform (e.g., a database or an ERP system). Typically, follows a Create/Read/Update/Delete model with system interaction.</p></li></ol>
-</li>
-<li><p>Distinguish the Veteran’s Affairs enterprise Organization Name who owns the API. For project teams where, multiple teams are developing and contributing to the API, the Organization Name who has ownership of the API should be noted in the naming convention. If the API is not owned nor is functionally tied to an Organization, then it should not be part of the URL. Instead, the word “Enterprise” can be substituted in for the Organization Name.</p></li>
-<li><p>Define the Veteran’s Affairs enterprise application serving this API. I.E. what system is the “Provider” of the API?</p></li>
+<li><p>System API is used to integrate with a back office or external system or platform (e.g., a database or an ERP system), and typically follows a Create/Read/Update/Delete model with system interaction.</p></li></ol>
+
+<ol start="2" style="list-style-type: decimal;">
+<li><p>Distinguish the VA Enterprise Organization Name who owns the API. For project teams where, multiple teams are developing and contributing to the API, the Organization Name who has ownership of the API should be noted in the naming convention. If the API is not owned nor is functionally tied to an Organization, then it should not be part of the URL. Instead, the word “Enterprise” can be substituted for the Organization Name.</p></li>
+<li><p>Define the VA Enterprise application serving this API (i.e. what system is the “Provider” of the API?).</p></li>
 <li><p>Identify the key Canonical Business Object that the API represents for the enterprise.</p></li>
-<li><p>Define the base API path, /api, needed to differentiate all APIs from other HTTP resources throughout the enterprise at Veteran’s Affairs.</p></li>
+<li><p>Define the base API path, /api, needed to differentiate all APIs from other HTTP resources throughout the VA Enterprise.</p></li>
 <li><p>Provide ability by the API consumer to easily determine what version of the API is being consumed by incorporating version numbering into the API URL itself.</p></li>
-<li><p>Define the RESTful operation and parameters ('''<span class="underline">See Playbook section: REST Operation Naming Convention section).</span>'''</p></li></ol>
+<li><p>Define the RESTful operation and parameters ('''<span class="underline">See Playbook section: REST Operation Naming Convention section).[[TBD]]</span>'''</p></li></ol>
 
 Below is a table documenting which criteria are required and which are optional in the VA API naming convention standard:
 
 === Naming Convention Summary ===
 
-Table : API Naming Convention Summary
+Table 2: API Naming Convention Summary
 
 {|
 ! Category
@@ -189,11 +191,11 @@ Note, the naming standard shall enable unique API names across all of VA enterpr
 
 === Enviornment Naming Convention ===
 
-The naming convention for the API’s deployed in VA should incorporate environment names always, (The assumption is that the API shall be deployed across multiple environments).
+The naming convention for the APIs deployed in VA should incorporate environment names always. An API will always be deployed across multiple environments. 
 
-As an example, the environment should be the prefix for each of the deployed API’s except for Production, which doesn’t have the environment prefix.
+As an example, the environment should be the prefix for each of the deployed APIs except for Production, which doesn’t have the environment prefix.
 
-Normally, the continental region is also included in the prefix of an API via industry best practice, but since VA pre-dominantly operates in in the US, the current naming convention doesn’t have any global region requirements (The assumption is all APIs are US based).
+Normally, the continental region is also included in the prefix of an API via industry best practice, but since VA predominantly operates in in the US, the current naming convention doesn’t have any global region requirements (The assumption is all APIs are US based).
 
 Table 3: VA Environment Naming Convention Summary
 
@@ -251,9 +253,9 @@ The framework is flexible in that it allows for any VA Organization Names to be 
 
 If an API is <span class="underline">not</span> associated, owned, or managed by a single VA Organization, then it must be reflected in the naming convention as “Enterprise”. This means multiple teams own the API and ownership cannot be delineated to a single VA Organization. If the C4E or the Integration governance team owns the API, then it’s reflected as “C4E” naming convention in place of the Organization Name.
 
-In this context, the Organizational Names examples for Veteran’s Affairs and are provided below:
+In this context, the Organizational Names examples for the VA and are provided below:
 
-Examples of Line of Business Team Name for Veteran’s Affairs, include:
+Examples of Line of Business Team Name for the VA, include:
 
 * Enterprise Services (API URL path element: “/EnterpriseServices”)
 * Vet360 (API URL path element: “/Vet360”)
@@ -265,9 +267,9 @@ Examples of Line of Business Team Name for Veteran’s Affairs, include:
 
 === Major/Minor Versions ===
 
-We recommend having only the major versions in the API Base URL naming convention (e.g., “v1”), as opposed to showing major/minor versions (e.g., “v1.0” or even “v1.0.0”). The consumer of the API should be able to easily determine by the API URL what major version of the API is being consumed. The consumer of the API mostly won’t be concerned with the minor release version from the actual API URL. This granular version information should be provided to the API consumer in the detailed release notes, provided to the consumer or Veteran’s Affairs partner via the API Portal or via written release notes.
+It is recommended to have only the major versions in the API Base URL naming convention (e.g., “v1”), as opposed to showing major/minor versions (e.g., “v1.0” or even “v1.0.0”). The consumer of the API should be able to easily determine by the API URL what major version of the API is being consumed. The consumer of the API mostly won’t be concerned with the minor release version from the actual API URL. This granular version information should be provided to the API consumer in the detailed release notes, provided to the consumer or VA partner via the API Portal or via written release notes.
 
-The API Portal or API Manager should capture additional metadata about each public API, such as major/minor API version, all system integrations for that API, owner of the API, examples of consuming the API within the internal Veteran’s Affairs platforms, and other detailed information about the API.
+The API Portal or API Manager should capture additional metadata about each public API, such as major/minor API version, all system integrations for that API, owner of the API, examples of consuming the API within the internal VA platforms, and other detailed information about the API.
 
 On the contrary, the API Base URL should provide clear and targeted information about that API, its owner, line of business, API type, major released version, and the application.
 
@@ -277,7 +279,7 @@ Note, this “Naming Conventions Framework” content does not replace the need 
 
 “/api” will be part of the API URL base path as illustrated above as a <span class="underline">required</span> element in the API Base URL path. The reason for having /api always being part of the path is two-fold:
 
-* Having /api in the path helps configure load balancing solutions (i.e., for L7 path-based balancing of load across multiple instances), as well as to configure any type of internal gateway and firewall policies for all Veteran’s Affairs Enterprise APIs.
+* Having /api in the path helps configure load balancing solutions (i.e., for L7 path-based balancing of load across multiple instances), as well as to configure any type of internal gateway and firewall policies for all VA Enterprise APIs.
 * Having the word /api in the path instructs the consuming applications that this URL is an API URL, which follows certain API configuration and naming standards.
 
 ==  ==
@@ -286,7 +288,7 @@ As described in other sections, it is recommended to include a version number in
 
 === Canonical Business Object Name ===
 
-If an API is associated with a Canonical Business Object, that should be captured in the API Naming Convention URL path. Some API’s may not be associated with a Canonical Business Object, so this criterion is “optional”.
+If an API is associated with a Canonical Business Object, that should be captured in the API Naming Convention URL path. Some APIs may not be associated with a Canonical Business Object, so this criterion is optional.
 
 The following decision tree can be applied to decide when it is required vs optional:
 
@@ -297,7 +299,7 @@ The following decision tree can be applied to decide when it is required vs opti
 <li><p>'''No''' – don’t add the Canonical Business object name into the API naming convention</p></li></ol>
 </li></ol>
 
-Final API URL should look like this:
+The full API URL should look like this:
 
 https://dev-exp-vet360.va.gov:8081/api/v1/veteranportal/address (with optional Canonical Business Object element named “address”)
 
@@ -339,7 +341,7 @@ The proposed solution externalizes environment specific information to property 
 
 a specific server path (e.g. /opt/mule/mule-ext-configs). These property files can/will be picked up by each API application using a global configuration named: &lt;context:property-placeholder&gt;
 
-In practice, property-placeholders work exactly the same as the default mule-app.properties file
+In practice, property-placeholders work the same as the default mule-app.properties file
 
 included on every Mule application and properties defined on property files (as key=value pairs)
 
@@ -584,7 +586,7 @@ The MuleSoft Naming Conventions framework includes the following MuleSoft compon
 
 Within the MuleSoft API Manager, there is API URL field on the screen that needs to be populated with the API Base URL, following the naming convention defined in this document. Examples of sample APIs that could be defined in the API Manager are provided below:
 
-Figure : Veteran’s Affairs - API URL setting in MuleSoft API Manager
+Figure 1: VA - API URL setting in MuleSoft API Manager
 
 INSERT SCREENSHOT
 
@@ -594,7 +596,7 @@ INSERT SCREENSHOT
 
 ==== Use Case ====
 
-Standardize MuleSoft application names across the Veteran’s Affairs enterprise. The name of the application should be meaningful and should provide as much details about the purpose and use of the application as possible.
+Standardize MuleSoft application names across the VA Enterprise. The name of the application should be meaningful and should provide as much details about the purpose and use of the application as possible.
 
 ==== Naming Criteria ====
 
@@ -606,7 +608,7 @@ INSERT SCREENSHOT
 
 ==== Use Case ====
 
-Standardize Mule module name across the Veteran’s Affairs enterprise. The name of the module should be indicating whether this is a MuleSoft component, library, or connector, as well as providing a clear indication on the purpose and name of that module.
+Standardize Mule module name across the VA Enterprise. The name of the module should be indicating whether this is a MuleSoft component, library, or connector, as well as providing a clear indication on the purpose and name of that module.
 
 ==== Naming Criteria ====
 
@@ -639,7 +641,7 @@ Table 5: Mule Module Naming Convention Summary
 
 ==== Use Case ====
 
-Standardize MuleSoft flow and sub-flow naming convention, to allow for consistent naming of them across Veteran’s Affairs enterprise MuleSoft projects.
+Standardize MuleSoft flow and sub-flow naming convention, to allow for consistent naming of them across VA Enterprise MuleSoft projects.
 
 ==== Naming Criteria ====
 
@@ -665,7 +667,7 @@ Can create a configuration parameter for each target Mulesoft environment and de
 
 Mule 4 has ability to define global properties. As a developer, you can use the &lt;global-property&gt; element to set a placeholder value from within your Mule configuration, such as from within another Mule configuration file. Example of a definition of a global property is shown below:
 
-Figure : Global Properties Example
+Figure 2: Global Properties Example
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image2.png|624x70px]]
 

@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_01.00_Initial-Draft{Frank Burgos}.docx</b> on <b>Wed 08/22/2018</b> at <b>20:30:29.60 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_02.00_SME Review{Ron O.}.docx</b> on <b>Fri 08/24/2018</b> at <b>21:32:43.57 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_01.00_Initial-Draft{Frank Burgos}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_02.00_SME Review{Ron O.}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/08.00 ASG_API Playbook_Developer Setup_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -404,6 +404,196 @@ Highlight the hellowWorldTest class as shown above, Right mouse click on hellowW
 Notice that the '''setUp executed''' and '''tearDown executed''' messages were displayed and that the test failed as expected.
 
 = MuleSoft Developer Setup =
+
+== '''VA’s MuleSoft DVP Platform''' ==
+
+The VA Enterprise Services Organization currently offers VA API development teams access to its AnyPoint MuleSoft platform currently hosted on it VA Gov. Cloud environment. Development teams will need to follow the sequence of steps outlined below to gain access to these API tools. The following 4 steps are required to request, provision, and configure your team’s VA MuleSoft API tools.
+
+{|
+! Step
+! '''Activities'''
+! '''Roles'''
+|-
+| 3.1.1
+| Request DVP Access
+| Dev. Team &amp; C4E team
+|-
+| 3.1.2
+| Request VA Security Groups
+| Dev. Team
+|-
+| 3.1.3
+| ePAS request access to new security groups
+| Dev. Team
+|-
+| 3.1.4
+| Configure &amp; Testing Your Account
+| Dev. Team &amp; C4E teams
+|}
+
+=== Request DVP Access ===
+
+{|
+! Step
+! '''Activities'''
+! '''Roles'''
+|-
+| 3.1.1.1
+| Submit a DVP Access Request
+| Dev. Team
+|-
+| 3.1.1.2
+| Meet w/ MuleSoft C4E team
+| Dev. Team &amp; C4E teams
+|-
+| 3.1.1.3
+| Identify Anypoint Organization name
+| Dev. Team &amp; C4E teams
+|-
+| 3.1.1.4
+| Determine team structure &amp; roles
+| Dev. Team &amp; C4E teams
+|}
+
+==== Submit a DVP Access Request [Additional steps to be provided by DVP MuleSoft Business Sponsor] ====
+
+==== Meet w/ MuleSoft C4E Team [Additional steps to be provided by C4E team] ====
+
+==== Identify Anypoint Organization Names ====
+
+==== AnyPoint provides role based access functions to its users based on the following 5 API Development organizational roles: ====
+
+<ul>
+<li><p>Developers</p></li>
+<li><p>Architects</p></li>
+<li><p>Production Development Operations</p></li>
+<li><p>Non-Production Development Operations</p></li>
+<li><p>Organization Administrators</p>
+<p>For the AnyPoint tools to be configured for your team. Each new VA Developer team must create 5 Each Business group which correspond to the 5 API management groups MuleSoft PaaS uses to develop and administer APIs.</p>
+<ul>
+<li><p>OIT VAEC DVP {bg} Developer</p></li>
+<li><p>OIT VAEC DVP {bg} Architect</p></li>
+<li><p>OIT VAEC DVP {bg} Prod Dev Ops</p></li>
+<li><p>OIT VAEC DVP {bg} NonProd Dev Ops</p></li>
+<li><p>OIT VAEC DVP {bg} OrgAdmin</p>
+<p>bg=Business group name</p>
+<p>For example: the Enterprise Services Architecture Support Group (ASG) created the following 5 security groups in the VA</p></li>
+<li><p>OIT VAEC DVP ASG API Developer</p></li>
+<li><p>OIT VAEC DVP ASG API Architect</p></li>
+<li><p>OIT VAEC DVP ASG API Prod Dev Ops</p></li>
+<li><p>OIT VAEC DVP ASG API NonProd Dev Ops</p></li>
+<li><p>OIT VAEC DVP ASG API OrgAdmin</p></li></ul>
+</li></ul>
+
+==== Determine team structure &amp; roles [Add steps from C4E team] ====
+
+= Request VA Security Groups  =
+
+Once your team is granted approval from the DVP management team please follow the instructions below to create your VA MuleSoft Security Group’s
+
+=== Prerequisites  ===
+
+* PIV card
+* VA email address
+* GFE or CAG client
+
+=== Estimated Completion Time ===
+
+* 1-2 weeks
+
+=== Instructions ===
+
+# 
+
+Request your Security Groups on Service Now
+
+<ol style="list-style-type: upper-alpha;">
+<li><p>On your GFE or CAG desktop select the [https://yourit.va.gov/va?id=va_index '''(YourIT)'''] Service Now link</p>
+<p>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image18.png|67x64px]]</p></li>
+<li><p>Select “Make a Request”</p>
+<p>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image19.png|94x72px]]</p></li>
+<li><p>Under Popular Service Items, select Incident Report (*Note: due to troubles properly, routing security group request for AWS in Service Now, do not use “AD/Security Group Requests”)</p>
+<p>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image20.png|265x184px]]</p></li>
+<li><p>In the Incident Report add your team information accordingly but specifically format your request with these specific details. This will ensure your request is transferred and processed in a timely fashion:</p>
+<p>[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image21.png|492x200px]]</p>
+<p>Please update your incident request with the information listed below:</p></li></ol>
+
+{|
+| '''SN Field Name:'''
+| '''Selection/Content:'''
+|-
+| Category
+| Service
+|-
+| Sub-Category
+| Active Directory
+|-
+| Brief Description
+| Requesting the creation of 5 security groups in VA AWS Cloud
+|-
+| Detailed Description
+|
+Requesting the creation of the following 5 security groups in the VA AWS Cloud environment. These security groups are required by [your organization name]to access the VA’s MuleSoft tools suite.
+
+Requested Security Group Names:
+
+* OIT VAEC DVP {bg} Developer
+* OIT VAEC DVP {bg} Architect
+* OIT VAEC DVP {bg} Prod Dev Ops
+* OIT VAEC DVP {bg} NonProd Dev Ops
+* OIT VAEC DVP {bg} OrgAdmin
+
+Please have this ticket routed to the following support team:
+
+IO.SS.FF.ACTIVEDIRECTORY.TEAM8
+
+In care of:
+
+Rachelle Mann and Denver Griffith
+|}
+
+= ePAS request access to new security groups =
+
+=== Prerequisites  ===
+
+* PIV card
+* VA email address
+* GFE or CAG client
+* Copy of <span class="underline">Role-Based Training</span> certificate for <span class="underline">System Administrators</span> (TMS #1357076), Developers, DBAs, etc.
+
+'''NOTE:''' Training certificates can be downloaded here: [http://www.TMS.va.gov www.TMS.va.gov]
+
+* Copy of signed Roles of Behavior document (needed <span class="underline">ONLY</span> if submitting request <span class="underline">for someone else</span>)
+
+=== Estimated Completion Time ===
+
+* 1week
+
+=== Instructions ===
+
+Access to your DVP security groups requires your team members to submit a request on the VA’s ePAS site here: https://epas.r02.med.va.gov/apps/myva/. Each team member will be required to submit their own ePAS request and be directed to specify which security groups they will need to access to. Please refer to your MuleSoft support team to address which individuals should have access to which security groups. Please select the follow link and follow these step-by-step instructions on how to complete your MYVA Elevated Privilege request (see MYVA EP)
+
+= Configuration and Testing Your Account =
+
+{|
+! 3.1.4.1
+! Map Security groups to Anypoint Org
+! C4E team
+|-
+| 3.1.4.2
+| Spin up Mule Dev runtimes &amp; hookup with Anypoint
+| C4E team
+|-
+| 3.1.4.3
+| Container config &amp; code promotion path across env.
+| Project &amp; C4E teams
+|-
+| 3.1.4.4
+| Load test to validate sizing
+| Project &amp; C4E teams
+|}
+
+[Section is awaiting inputs from the MuleSoft C4E team]
 
 ==  Maven with MuleSoft ==
 

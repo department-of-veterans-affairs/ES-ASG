@@ -1,170 +1,101 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review {Max}.docx</b> on <b>Wed 08/22/2018</b> at <b>20:30:19.47 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_06.09 Configuration Management_Section_01.03_SME_ Review Resolution {Frank Burgos}.docx</b> on <b>Fri 08/24/2018</b> at <b>21:32:32.87 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_06.00 Configuration Management_Section_01.02_SME Review {Max}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_06.09 Configuration Management_Section_01.03_SME_ Review Resolution {Frank Burgos}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/06.00 ASG_API Playbook_Configuration Management_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-API Developer Playbook Blueprint Documentation
-
-Maps to Framework Set #1
-
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
-
-Document Version Draft 01.00.03
-
-Revision History
-
-{|
-| Date
-| Version
-| Description
-| Author
-|-
-|
-
-|
-
-|
-
-|
-
-|}
-
-Table of Contents
-
-[[#configuration-management|1. Configuration Management 1]]
-
-[[#api-configuration-management|1.1. API Configuration Management 1]]
-
-[[#configuration-management-in-the-cloud|1.1.1. Configuration Management in the Cloud 1]]
-
-[[#configuration-management-software-tools|1.1.2. Configuration Management Software Tools 1]]
-
-[[#future-of-configuration-management-software|1.1.3. Future of Configuration Management Software 2]]
-
-[[#changes-to-restful-apis|1.2. Changes to RESTful APIs 2]]
-
-[[#when-to-version|1.3. When to Version 3]]
-
-[[#versioning-guidelines|1.4. Versioning Guidelines 3]]
-
-[[#uri-versioning|1.4.1. URI Versioning 3]]
-
-[[#media-type-versioning|1.4.2. Media Type Versioning 4]]
-
-[[#http-request-accept-examples|1.4.2.1. HTTP Request Accept Examples: 4]]
-
-[[#http-response-content-type-examples|1.4.2.2. HTTP Response Content-Type Examples: 4]]
-
-[[#summary|1.4.3. Summary 5]]
-
-[[#github|1.5. GitHub 6]]
-
-[[#the-git-command-line|1.5.1. The GIT Command Line 6]]
-
-[[#github-branching-and-merging|1.5.2. GitHub Branching and Merging 6]]
-
-[[#github-branching|1.5.3. GitHub Branching 6]]
-
-[[#github-branching-and-related-command-lines|1.5.3.1. GitHub Branching and Related Command Lines 7]]
-
-[[#github-merging|1.5.4. GitHub Merging 7]]
-
-[[#github-merging-and-related-command-lines|1.5.4.1. GitHub Merging and Related Command Lines 8]]
-
-[[#resolving-github-merging-conflicts|1.5.4.2. Resolving GitHub Merging Conflicts 8]]
-
-[[#github-integration|1.5.5. GitHub Integration 9]]
-
-[[#testing|1.5.5.1. Testing 9]]
-
-[[#code-quality|1.5.5.2. Code Quality 9]]
-
-[[#code-review|1.5.5.3. Code Review 9]]
-
-[[#continuous-integration|1.5.5.4. Continuous Integration 9]]
-
-[[#dependency-management|1.5.5.5. Dependency Management 9]]
-
-[[#deployment|1.5.5.6. Ddeployment 10]]
-
-[[#references|2. References 11]]
-
-[[#acronym|3. Acronym 11]]
-
-
-
-Table of Tables
-
-[[#_Toc515341204|Table 1: Reference Table 11]]
-
-[[#_Toc517969177|Table 2: Acronym Table 11]]
-
-'''Table of Figures'''
-
 = Configuration Management =
 
 The section of the document is dedicated to the generic topic of Configuration Management, albeit with a more detailed discussion of Configuration Management topics. DevOps, which is a set of tools, processes and procedures that modern software development teams put in place to ensure that source code is deployed in a stable and repeatable way, will not be discussed in this section.
 
-So, for the purposed of this section, the definition of API Configuration Management is the set of practices aiming to manage the '''runtime state''' of the software applications'''.'''
+So, for the purposed of this section, the definition of API Configuration Management is the set of practices aiming to manage the '''runtime state''' of API software applications'''.'''
 
 == API Configuration Management ==
 
-Applications typically consists of one or more databases, web servers, application servers, reverse proxies, load balancers, and other moving parts that need work together at runtime to implement a working system.
+Applications, including those of the API variety, typically consists of one or more databases, web servers, application servers, reverse proxies, load balancers, and other moving parts that need work together at runtime to implement a working system.
 
-Environment configuration management is the process of describing the ways in which all these inputs, typically referred to artifacts, interact and how they leverage the underlying infrastructure. Specifically, it addresses the installation, configuration and execution of configuration items on servers.
+Environment configuration management is the process of describing the ways in which all these artifacts interact and how they can be managed utilizing existing underlying configuration management components.
 
-Traditional configuration management required the writing of items such as scripts, hand-maintain files listing technical endpoints, port numbers, and namespaces etc. The laborious nature of this process resulted in the increased complexity of a system as well as the configuration management process itself.
+=== Configuration Management Automation  ===
 
-Increased infrastructure configuration automation evolved because of the needs of processes such as artifact versioning, environment changes and the need for coordination between developers and system engineers.
+Prior to the advent of automated configuration management products, the responsibilities of system engineers typically consisted of the creation of items such as scripts, manually maintained files consisting of service and technical endpoints, port numbers, namespaces etc. The laborious nature of this process resulted in the increased complexity of a system as well as the configuration management process itself.
 
-=== Configuration Management in the Cloud ===
+Increased infrastructure configuration management automation evolved because of the needs of processes such as artifact versioning, environment changes and the need for coordination between developers and system engineers.
 
-The cloud facilitated the migration of server infrastructure from on-premise to the cloud and while the inherent complexities of running an on-premise infrastructure decreased, new problems arose as well.
+This section describes a conceptual example of an automated configuration management eco-system using a suite of automated products.
 
-Cloud technologies have enabled teams to deploy software to a multitude of servers concurrently to satisfy the demands of modern software usage. Managing many servers requires automation on a different scale with a more systematic approach.
+The following diagram depicts products that have gained wide acceptance in the configuration management space. There are other potential solutions, but the products shown here are common. Again, API development and configuration management can be implemented using this component example but a non-API effort can also utilize this model. The diagram depicts the connectivity between components using arrows. Because this is a conceptual diagram the arrows are implemented utilizing plugin components. For example, the integration between GitHub and Jenkins utilizes the Github/Jenkins Plugin. This plugin facilitates the integration of Jenkins with Github projects.
 
-This is where an '''API-driven''' approach to configuration management can help.
+A point should be raised regarding the Configuration Management Automation subject matter covered in this section. The creation of a complex automation eco-system, as detailed in the following diagram, is the culmination of design efforts by many senior technical personnel. Typically, an API developer would not be part of this technical effort but the intent is to provide the developer with an understandable view of the overall automation eco-system integrations and flows.
 
-Rather than installing and launching scripts individually on each node, a centralized configuration management server could control all the nodes programmatically and drastically reduce the workload of the team’s system administrators.
+Figure 1 Configuration Management Automation Example
 
-=== Configuration Management Software Tools ===
+Short high-level descriptions (mostly of the marketing variety) of the products depicted in the above diagram follow. Certain component groupings contained multiple product choices. A grouping that have multiple choices will contain a reference to the desirable component.
 
-New configuration management software tools have gradually been introduced in the last decade to address the growing needs of automated configuration management. Following is a high-level overview of existing configuration management tools.
+'''Build Automation Products'''
 
-* '''Ansible'''
+* Maven
+* Ant
+* Gradle
 
-Ansible, also open source and built in Python. It was created in reaction to the relative complexity of Puppet and Chef, and attempts to offer a simpler, more elegant alternative, with a shorter learning curve. Ansible is based on an agentless architecture, meaning that no agent is required to run on each infrastructure node, which leads to less complexity and less load on the network. Ansible modules, referred to as units of work, can be written with a variety of scripting languages like Python, Perl or Ruby. Ansible lets users define playbooks in YAML for often used system descriptions.
+Gradle and Maven are more recent build automation products. ANT is a product that has been in use for several years. Maven has a larger user base as compared to Gradle and is the recommended product. The ''ASG_API_Playbook_08.00 Developer Setup Section'' has a detailed description of Maven.
 
-* '''Puppet'''
+'''Source Code Management Products'''
 
-It is built in Ruby but offers its own JSON-like declarative language to create ‘manifests’, the modules in which configuration items are described, using high-level concepts like users, services and packages. Puppet is “Model driven”, which means that not much programming is usually required. This makes Puppet more desirable for system engineers with little experience in programming.
+* Git/GitHub
+* Subversion (SVN)
 
-* '''Chef'''
+Git is a distributed version control system that has many enhanced features like branching and merging. SVN is a centralized system that has been is use for some time.
 
-Is generally developer-friendly and very popular with teams already using Ruby. It lets developers write ‘cookbooks’ in Ruby and stores the resulting instructions in PostgreSQL.
+Git is not better or worse than SVN, it's just different. If there is a need for Offline Source Control and the willingness to spend some extra time learning it, then Git is a good choice. But if there is a need for a strictly centralized Source Control then the simplicity and excellent Windows based tooling of SVN works well.
 
-* '''SaltStack'''
+Because of the growing acceptance of Git and GitHub, Git is the recommended product.
 
-It is built in Python and open sourced in 2011. SaltStack focuses on low-latency architecture and fault tolerance. It features a decentralized setup, small messaging payloads, no single point of failure, and parallel execution of commands for optimal performance.
+'''Continuous Integration'''
 
-=== Future of Configuration Management Software ===
+* Jenkins
 
-While the configuration management technological landscape has greatly matured, the consensus that things will keep evolving in the future. urrent mainstream solutions are often viewed as too complicated, unforgiving and difficult to maintain. One alternative to the classic configuration management approach is the emerging immutable container infrastructure. Docker is an example of this evolving technology.
+Jenkins is an open Continuous Integration Source Automation platform. Organizations can accelerate the software development flow by automating the steps of the process. Jenkins manages and controls software delivery processes throughout the entire lifecycle, including such tasks as build, document, test, package, stage, deployment, and static code analysis.
 
-Whereas regular configuration management aims to define and manage state at run time, containerized applications require that all the configuration be defined at build time. The resulting portable containers can then be moved from one host to the next without any changes in state. These states can then be saved in Docker images and used later to re-spawn a new instance of the complete environment. Images therefore offer an alternative means of configuration management, arguably superior to runtime configuration management.
+* OpenShift Pipeline Jenkins Plugin
 
-== Changes to RESTful APIs ==
+OpenShift provides a Jenkins Container as the CI/CD tool to run on an OpenShift cluster. This Jenkins Container is used to set up a configuration pipeline to deploy applications to an OpenShift cluster. This is an integrated solution that is different from running Jenkins outside OpenShift that deploys applications to an OpenShift cluster.
 
-The following is a paraphrased excerpt from an interview with Roy Fielding and his discussions involving RESTful API changes over time.
+'''Binary Repository Manager'''
 
-https://www.infoq.com/articles/roy-fielding-on-versioning
+* Artifactory
 
-Anticipating change is one of the central themes of REST. It makes sense that experienced developers are going to think about the ways that their API might change in the future, and to think that versioning the interface is paving the way for those changes. That led to a never-ending debate about where and how-to version the API.
+Artifactory (short for Artifact Repository) is a product that serves as a binary repository manager. The binary repository is a natural extension to a source code repository. It will store the outcome of a build process sometime known as artifacts. For example, artifacts in the Java world are jar, ear, war etc.
 
-Reality regarding services APIs is that contracts between services and service consumers are bound to change. API Contract versioning facilitates the rolling out of new service features that involve contract changes and at the same time provide backward compatibility for service consumers that are still using prior API versions. Plan for contract versioning from the very start of the design effort, even though the current thinking is that is versioning will not be needed, because eventually it most likely will.
+'''Highly Available OpenShift Cluster Deployment'''
 
-== When to Version ==
+* Ansible
+
+Ansible is product that automates software provisioning, configuration management, and application deployments. It automates cloud provisioning, configuration management, application deployment, intra-service orchestration plus other IT needs.
+
+'''Platform-As-A-Service Application Hosting Platform'''
+
+* OpenShift
+
+OpenShift Container Platform offers a full enterprise enterprises level control over Kubernetes environments, whether they’re on-premise or in the public cloud, this provides the capability to build and run applications anywhere.
+
+'''Container Orchestration and Management'''
+
+* Kubernetes
+
+Kubernetes is a product for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.
+
+'''Application Containers'''
+
+* Dockers
+
+Docker is producer that performs operating-system-level virtualization, also known as &quot;containerization&quot;. It helps create and deploy software within containers. It’s a collection of tools that help you “Build, Ship, and Run any App, Anywhere”
+
+== API Versioning ==
+
+A viable versioning strategy for software artifacts is a crucial consideration within configuration management. This section will detail versioning, when deploying APIs, using the RESTful architecture and its implementation from a HTTP Request and Response perspective.
+
+=== When to Version ===
 
 APIs only need to be up-versioned when a breaking change is made. Breaking changes include:
 
@@ -176,9 +107,9 @@ Breaking changes should always result in a change to the major version number fo
 
 Non-breaking changes, such as adding new endpoints or new response parameters, do not require a change to the major version number. However, it can be helpful to track the minor versions of APIs when changes are made to support customers who may be receiving cached versions of data or may be experiencing other API issues.
 
-== Versioning Guidelines ==
+=== Versioning Guidelines ===
 
-There is substantial documentation on the web regarding RESTful versioning. This document will detail '''two''' options that for the most part have been overwhelmingly referenced in these various discussions, more so then what seems to be less viable options:
+There is substantial discussion documentation on the web regarding RESTful versioning. This document will detail '''two''' options that for the most part have been overwhelmingly referenced in these discussions:
 
 * URI Versioning – version the URI space using version indicators
 * Media Type Versioning – version the Representation of the Resource
@@ -196,7 +127,7 @@ Adding, removing, reordering, and renaming fields constitutes a breaking change 
 * http://www. mycompany.com/myapp /resource1.0
 * http://www. mycompany.com/myapp /resource2.0
 
-In the above examples it is most likely the behavior of the resource that changes and not the actual resource. In other words, it is the contract that changed. The two identifiers are used to access the same resource. This is the most common argument why this approach is somewhat problematic but it is simple and will never break any cache constraints. But there is one scenario when the version in the URL somewhat makes sense. That is when the resource changes and it each individual version must be accessible
+In the above examples it is most likely the behavior of the resource that changes and not the actual resource. In other words, it is the contract that changed. The two identifiers are used to access the same resource. This is the most common argument why this approach is somewhat problematic but it is simple and will never break any cache constraints.
 
 By convention, the default value for format is json. Examples:
 
@@ -229,17 +160,19 @@ The Accept header in the request tells the server the content types that the cli
 
 Content negotiation preserves clean set of URLs but there is still the task of having to deal with the complexity of serving different versions of content somewhere. This burden tends to be moved up the stack to the API controller infrastructure which become responsible for figuring out which version of a resource to send. The result tends to be a more complex API as clients must know which headers to specify before requesting a resource.
 
-=== Summary ===
+=== URI Versioning and Media Type Versioning Evaluation ===
 
-If the responsible development community is more RESTful architecturally minded and aware, REST API versioning should be accommodated by using version data representations in the MIME types in the HTTP Application Accepts. If development community views the URL as the most important facet then changing the URL there when versions change.
+If the development community is more RESTful architecturally minded and aware, REST API versioning should be accommodated by using version data representations in the MIME types in the HTTP Application Accepts. If development community views the URL as the most important facet then changing the URL should be used when versions change.
 
 Both mechanisms are valid. You need to know your consumer to know which path to follow. In general, working in an enterprises minded environment tends to point developers towards REST versioning using the MIME philosophy.
 
-== GitHub ==
+== GitHub Integration ==
 
-Git and GitHub are not the same thing. Git by itself, is a distributed revision control and software configuration management (SCM) system. GitHub is a web-based software as a service for software development projects that uses Git
+Git is a distributed software configuration management (SCM) version control system that as the name implies facilitates the versioning of software artifacts. GitHub currently hosts the source code for numerous open source projects.
 
-GitHub is a publicly available, free service which requires all code, unless there is a paid account, be available in the public domain. GitHub currently hosts the source code for numerous open source projects. An in-depth discussion on the pros and cons of Git compared to centralized source code control systems will not be a part of this discussion as Git and GitHub is the VA’s recommended SCM alternative.
+An in-depth discussion on the pros and cons of Git compared to centralized source code control systems will not be a part of this discussion as Git and GitHub is the VA’s recommended SCM alternative.
+
+Because of the recommendation of GitHub as the VA alternative, a discussion of the GIT Branching and Merging capabilities will be discussed. Branching and Merging is an integral component of API software configuration management.
 
 === The GIT Command Line ===
 
@@ -314,146 +247,6 @@ Once steps 1 and 2 have been taken place, a merge can be initiated by executing 
 ==== Resolving GitHub Merging Conflicts ====
 
 If the two branches both changed the same part of the same file, Git won't be able to determine which version to use. When this a situation occurs, it stops right before the merge commit so the conflict can be resolved manually. When a merge conflict is encountered, running the Git '''''status''''' command shows which files need to be resolved.
-
-=== GitHub Integration ===
-
-There are numerous products that integrate with the GitHub Platform. The following GitHub Market Place Link list in more many integrating products: https://github.com/marketplace.
-
-The following is a small sub set by grouped by product functionality.
-
-==== Testing ====
-
-* TestQuality
-
-TestQuality's GitHub Test Management extends Github to provide powerful and modern test plan management helping developers and testers create, run, coordinate and monitor software testing tasks.
-
-==== Code Quality  ====
-
-* Sider
-
-Sider supports over 20 analysis tools to empower development teams by increasing code review efficiency and quality. It also offers quick and simple extended functionality with custom tools to tailor-fit your team, enabling them to save time and improve the development process.
-
-==== Code Review  ====
-
-* AccessLint
-
-AccessLint brings automated web accessibility testing into the development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live.
-
-==== Continuous Integration ====
-
-* Jenkins
-
-With the help of the Git plugin Jenkins can easily pull source code from any Git repository that the Jenkins build node can access. The GitHub plugin extends upon that integration further by providing improved bi-directional integration with GitHub. Allowing the setting up of a Service Hook which will hit the Jenkins instance every time a change is pushed to GitHub.
-
-==== Dependency Management ====
-
-* Dependabot
-
-Dependabot helps to keep Ruby, JavaScript, Python, PHP, Elixir, Rust, Java and .NET dependencies up to date. Every day, Dependabot checks the dependency files for outdated or insecure requirements and opens individual pull requests for any it finds. Review the PRs, merge them, and get to work on the latest, most secure releases
-
-==== Deployment ====
-
-* Codefresh
-
-Codefresh is designed specifically for teams deploying containers to production. Move fast and deploy with confidence thanks to:
-
-* Docker Optimized CI
-* Kubernetes Optimized CD
-* Insanely fast build flow optimized for Docker
-* Easy Image Management from an embedded registry
-* Quick Setup and Powerful Pipelines
-* Streamlined deployment to Kubernetes, Swarm, ECS, and more.
-
-= References =
-
-<span id="_Toc515341204" class="anchor"></span>Table 1: Reference Table
-
-{|
-! Ref. ID
-! Reference Name
-! Reference
-! Definition
-|-
-| R1
-| FHIR Standard
-| http://www.fhir.org/
-|
-
-|-
-| R2
-| HTTPS Standard
-| https://https.cio.gov/everything/
-| All web traffic shall be HTTPS and none shall be HTTP
-|-
-|
-
-|
-
-|
-
-|
-
-|-
-|
-
-|
-
-|
-
-|
-
-|}
-
-= Acronym =
-
-<span id="_Toc517969177" class="anchor"></span>Table 2: Acronym Table
-
-{|
-! Acronym
-! Elaboration
-! Definition
-|-
-| API
-| Application Programming Interface
-| A computer function that performs a logical operation on rules or data.
-|-
-| SDK
-| Software Development Kit
-| A collection of software modules and assets that allows a consumer to apply the modules for runtime functionality.
-|-
-| ROI
-| Return on Investment
-| The benefit or payoff received from investing cost into an initiative
-|-
-| RAML
-| RESTful API Modeling Language
-| A language and approach to building API soft contracts the describe and specify API design details.
-|-
-| JSON
-| Javascript Object Notation
-|
-
-|-
-| SOAP
-| Simple Object Access Protocol
-| Is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks
-|-
-| XML
-| Xtensible Markup Language
-|
-
-|-
-| FHIR
-| Fast Health Care Interoperability Resource
-| Is a standard describing data formats and elements (known as &quot;resources&quot;) and an application programming interface (API) for exchanging electronic health records
-|-
-|
-
-|
-
-|
-
-|}
 
 
 
