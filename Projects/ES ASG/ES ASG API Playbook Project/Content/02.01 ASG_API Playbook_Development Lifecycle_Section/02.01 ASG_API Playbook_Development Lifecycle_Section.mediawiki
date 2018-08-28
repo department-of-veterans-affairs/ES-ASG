@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.06_Publication Review {Marshall}.docx</b> on <b>Fri 08/24/2018</b> at <b>21:55:27.01 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.06_Publication Review {Marshall}.docx</b> on <b>Mon 08/27/2018</b> at <b>21:51:05.13 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_02.01 Development Lifecycle_Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/02.01 ASG_API Playbook_Development Lifecycle_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>

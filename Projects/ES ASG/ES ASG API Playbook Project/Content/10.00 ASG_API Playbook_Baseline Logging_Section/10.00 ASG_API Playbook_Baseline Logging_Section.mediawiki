@@ -1,116 +1,29 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.02_SME Review_JeffGieber.docx</b> on <b>Fri 08/24/2018</b> at <b>21:56:38.73 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.03_SME_ Review Resolution {Frank Burgos}.docx</b> on <b>Mon 08/27/2018</b> at <b>21:52:10.81 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.02_SME Review_JeffGieber">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.03_SME_ Review Resolution {Frank Burgos}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/10.00 ASG_API Playbook_Baseline Logging_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-API Developer Playbook Blueprint Documentation
-
-Maps to Framework Set #1
-
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
-
-Document Version Draft 01.00.01
-
-Revision History
-
-{|
-| Date
-| Version
-| Description
-| Author
-|-
-|
-
-|
-
-|
-
-|
-
-|}
-
-Table of Contents
-
-[[#baseline-logging|1. Baseline Logging 1]]
-
-[[#logging-overview|1.1. Logging Overview 1]]
-
-[[#logging-framework-used-within-each-api|1.2. Logging Framework Used within Each API 1]]
-
-[[#logging-with-java-supported-api-implementations|1.3. Logging with Java supported API implementations 1]]
-
-[[#simple-logging-facade-for-java-slf4j|1.3.1. Simple Logging Facade for Java (SLF4J) 1]]
-
-[[#subset-of-features|1.3.1.1. Subset of Features 1]]
-
-[[#apache-log4j-2|1.3.2. Apache Log4j 2 1]]
-
-[[#subset-of-features-1|1.3.2.1. Subset of Features 2]]
-
-[[#logback|1.3.3. Logback 2]]
-
-[[#subset-of-features-2|1.3.3.1. Subset of Features 2]]
-
-[[#java.util.logging-jul|1.3.4. java.util.logging (jul) 2]]
-
-[[#subset-of-features-3|1.3.4.1. Subset of Features 2]]
-
-[[#logging-with-.net-supported-api-implementations|1.4. Logging with .Net supported API implementations 3]]
-
-[[#overview-of-.net-framework-and-.net-core|1.4.1. Overview of .NET Framework and .NET Core 3]]
-
-[[#net-core-logging-capabilities|1.4.1.1. .NET Core Logging Capabilities 3]]
-
-[[#logged-api-messages|1.5. Logged API Messages 5]]
-
-[[#enterprise-shared-services-logging-model|1.5.1. Enterprise Shared Services Logging Model 5]]
-
-[[#logging-policy-assertions|1.6. Logging Policy Assertions 9]]
-
-[[#api-audit-level-logging|1.7. API Audit Level Logging 11]]
-
-[[#integration-with-third-party-log-aggregators|1.8. Integration with Third-Party Log Aggregators 12]]
-
-[[#splunk|1.8.1. Splunk 12]]
-
-[[#logentries|1.8.2. Logentries 12]]
-
-[[#goaccess|1.8.3. GoAccess 13]]
-
-Table of Tables
-
-[[#_Toc518056019|Table 1: ESS Logging Description Table 5]]
-
-[[#_Toc519773842|Table 2: Logging Policy Assertion Table 9]]
-
-'''Table of Figures'''
-
-[[#_Toc518056025|Figure 1 ESS Logging Model 5]]
-
-[[#_Toc518056026|Figure 2 Logging Example 8]]
-
-= Baseline Logging =
+= API Baseline Logging =
 
 == Logging Overview ==
 
-To manage highly dynamic application environments, organizations turn to application logging infrastructures for assistance, but reliance on these systems can have an undesired impact on the applications themselves. Organizations typically use some type of logging system or systems to log errors, traces, information messages or debugging information etc. Applications can write logs to a file, database, or big data store and there are many logging frameworks and practices being used.
-
-Logging provides meaningful insights concerning application behavior, especially dealing with failures. However, by being part of the application, logging also participates in the execution chain, which can result in disadvantages such as a negative impact on performance.
-
-Typically, the overhead of logging is negligible. This scenario changes when the application is subjected to significant loads, these are the circumstances when a well thought out logging implementation such as the deployment of asynchronous implementation where needed pays dividends.
+This document will detail guidelines and components that facilitate the creation of an API logging philosophy although non-API type applications can be implemented using these logging concepts as well.
 
 == Logging Framework Used within Each API ==
 
-This section will discuss logging framework capabilities for two of the more prevalent application development environment at the VA namely Java (Enterprise as well Standard Editions) and well as Microsoft .NET
+This section will discuss logging framework capabilities for two of the more prevalent application development environments, namely Java (Enterprise as well Standard Editions) and Microsoft .NET
 
 == Logging with Java supported API implementations ==
 
-This article discusses the most popular java logging frameworks: Simple Logging Facade for Java (SLF4J) which is a logging facade that provides a common interface for different logging frameworks, Log4j 2 and its predecessor Log4J and Logback.
+This article discusses the most popular java logging frameworks:
+
+* '''Simple Logging Facade for Java''' (SLF4J) which is a logging facade that provides a common interface for different logging frameworks,
+* '''Log4j 2''' and its predecessor Log4J and Logback.
 
 === Simple Logging Facade for Java (SLF4J) ===
 
-The Simple Logging Facade for Java (SLF4J) serves as a simple facade for various logging frameworks (e.g. , log4j 2, java.util.logging (jul), Logback) allowing the end user to select the desired logging framework at deployment time. In practice, 4 out of 5 Java projects choose to go with slf4j based on data from the top Java libraries in 2016 on Github.
+The Simple Logging Facade for Java (SLF4J) serves as a simple facade for various logging frameworks (e.g., log4j 2, java.util.logging (jul), Logback) allowing the end user to select the desired logging framework at deployment time.
 
 ==== Subset of Features ====
 
@@ -198,19 +111,15 @@ The '''''Microsoft.Extensions.Logging.TraceSource''''' provider package uses the
 
 The '''''Microsoft.Extensions.Logging.AzureAppServices''''' provider package writes logs to text files in an Azure App Service app's file system and to blob storage in an Azure Storage account. The provider is available only for apps that target ASP.NET Core 1.1 or later.
 
-== Logged API Messages ==
+== JSON Format for Logged API Messages ==
 
-This section of the document is consistent with the Exception Logging Guidelines section of the Exception Handling Document.
+This section details a '''proposed''' standardized layout that will facilitate the creation of a JSON logging item. The following UML API Logging Class Diagram is used to define the data elements that will be logged, in a JSON format, by the appropriate logging infrastructure.
 
-The Enterprise Shared Services (ESS) Exception Handling Guidelines document, is pointed to by this imbedded document:
+=== API Logging Model ===
 
-This document contains XML based logging guidelines that were defined for SOAP services. From a consistency perspective, continuing these guidelines for RESTful based services would be beneficial.
+Figure 1 API Logging Model
 
-=== Enterprise Shared Services Logging Model ===
-
-<span id="_Toc518056025" class="anchor"></span>Figure 1 ESS Logging Model
-
-<span id="_Toc518056019" class="anchor"></span>Table 1: ESS Logging Description Table
+Table 1: API Logging Description Table
 
 {|
 ! '''Element'''
@@ -219,46 +128,29 @@ This document contains XML based logging guidelines that were defined for SOAP s
 ! '''Example'''
 ! '''Description'''
 |-
-| transaction ID
+| transactionID
 | String
 | Yes
 | a20014d3e17ff4fcb578-b7a6-41f9-b974-cef684d5ec62
 | A unique identifier passed to the service in the message header.
 |-
-| Code
+| code
 | int
 | Yes
-| 32154
-| A descriptor of the fault condition, and generated by the service. It may be unique to the service, but is typically a coded entry defined by the protocol used on the service interface.
+| 404
+| A descriptor of the fault condition, and generated by the service. It could be an application generated error code or it could map to the HTTP Response Code.
 |-
-| Text
+| txt
 | String
 | Yes
-| gov.va.ess.service.AccessServiceLegacySystemError
-| A textual description of the fault condition, and generated by the service. It may be unique to the service, but is typically defined by the protocol used on the service interface. It should be human readable.
+| Service Not Found
+| A technical textual description of the fault condition, and generated by the service.
 |-
-| essCode
-| String
-| Yes
-| gov.va.ess.fault.io.FileCannotBeFound
-| A code representing the mapping of the fault condition to the standard ESS taxonomy.
-|-
-| essText
+| apiText
 | String
 | No
-| Requested action is denied due to insufficient authorization
+| Requested service not found. Validate invocation URL.
 | A user interface friendly text description of the fault condition. The service generating the fault may populate this field.
-|-
-| nestedFault
-|
-
-| No
-|
-
-|
-Nested structure of faults bubbled up from lower in the chain of service calls.
-
-Only populated if fault is triggered by another fault.
 |-
 | severity
 | String
@@ -275,23 +167,47 @@ Enumeration:
 
 '''Information''' – Not an error, but information that is otherwise important to understanding service behavior. Example might be shutting the service down for maintenance.
 |-
+| nestedFault
+| APIFault
+| No
+|
+
+|
+Nested structure of faults bubbled up from lower in the chain of service calls.
+
+Must be populated if fault is triggered by another fault. Is not populated if fault is triggered by an internal exception.
+
+Refer to the ASG_API Playbook_09.01 Exception Handling_Section document for a description of the API Fault.
+|-
 | timestamp
-| Timestamp
+| Time stamp
 | Yes
-| 2013-05-05T08:15:30-05:00
+| 201805-05T08:15:30-05:00
 | Timestamp of the time the error occurred.
 |-
 | serviceName
 | String
 | Yes
-| gov.va.ess.util.FileAccessService
-| Unique name of the service. This is the service namespace.
+| Vet360 Veteran Address Lookup
+| Unique name of the service. The example is a hypothetical one. Refer to the Naming Standards document for guidelines.
 |-
 | serviceInstance
 | String
 | Yes
-| [[http://101.12.34.97:443 /eligibility/claimsService/Benefits/eligibilityStatus|http://101.12.34.97:443 /eligibility/claimsService/Benefits/eligibilityStatus]]<span class="underline">/v1</span>
-| This is the service endpoint
+| https://dev-exp-vet360.va.gov:8081/api/v1/veteranportal/address
+| This is the service endpoint. Refer to the Naming Standards document for guidelines.
+|-
+| userId
+| String
+| Yes
+| CN=Test User …
+| Fully qualified identifier of the user passed on the request.
+|-
+| subjectId
+| String
+| Yes
+| &quot;subjectID&quot;: &quot;Id-1234567890V654321, “IdType”: “NI” …
+| Fully qualified identifier of the subject of the request. This would typically be the veteran or beneficiary but may be any entity that is the primary subject of the request and/or important to understanding the error.
 |-
 | hostName
 | String
@@ -305,80 +221,39 @@ Enumeration:
 | 101.34.28.134
 | IP address of the individual host.
 |-
-| userId
-| String
-| No
-| CN=Test User, OU=ESS,DC=OIT,DC=VA,DC=GOV
-| Fully qualified identifier of the user passed on the request.
-|-
-| subjectId
-| String
-| No
-|
-&lt;Id&gt;1234567890V654321&lt;Id&gt; &lt;IdType&gt;NI&lt;IdType&gt;
-
-&lt;AssigningLocation&gt;123VA&lt;/AssigningLocation&gt;
-
-&lt;IdSource&gt;200M&lt;/IdSource&gt;
-| Fully qualified identifier of the subject of the request. This would typically be the veteran or beneficiary, but may be any entity that is the primary subject of the request and/or important to understanding the error.
-|-
-| codePackage
-| String
-| No
-| gov.va.ess.resource.fileAccess
-| Identifier of the code package or deployment unit originating the exception. This should be unique.
-|-
-| serviceDomain
-| String
-| No
-| gov.va.ess.resources.v2.2.3
-| Name of the service domain
-|-
 | businessDomain
 | String
 | No
-| Education Eligibility
+| Vet360 Veteran Address Lookup
 | Name of the business domain
 |-
-| correlationId
-| String
-| No
-| c1d2398c3-1449-7654-9793-29373a9b9c53c1d2398c3-1449-7654-9793-29373a9b9c53
-| Correlation ID of the current request
-|-
-| sessionId
-| String
-| No
-| 8839272636511237
-| Session ID of the user session
-|-
 |
-Fault Trace
+fault Trace
 
-or equivalent
+(or equivalent)
 | String
 | No
-| java.io.IOException: Unable to find file 'topicalIndex.csv' ...
-| Detailed information on the state of the execution of service code package when the error occurred.
+| java.io.IOException: Unable to find file 'topicalIndex.csv'
+| Detailed information on the state of the execution of service code package when the error occurred
 |}
 
-<span id="_Toc518056026" class="anchor"></span>Figure 2 Logging Example
+The following example contains a minimized set of HTTP Response Message Header name-value pair parameters. Some elements in this figure are truncated for readability.
 
-Some elements in this figure are truncated for readability.
+Figure 2 Logging Example
 
 {
 
-&quot;ESSError&quot;: {
+&quot;APIError&quot;: {
 
 &quot;transaction ID&quot;: &quot;a20014d3e17ff4fcb578-b7a6-41f9-b974-cef684d5ec62&quot;,
 
-&quot;code&quot;: &quot;32154&quot;,
+&quot;code&quot;: &quot;404&quot;,
 
-&quot;text&quot;: &quot;gov.va.ess.service.AccessServiceLegacySystemError&quot;,
+&quot;text&quot;: &quot; Invalid URL Service Not Found &quot;,
 
-&quot;essCode&quot;: &quot;gov.va.ess.fault.io.ResourceNotFound&quot;,
+&quot;apiText&quot;: &quot; Requested service not found. Validate invocation URL &quot;,
 
-&quot;essText&quot;: &quot;UnabletolocateresourceXXX&quot;,
+&quot;severity&quot;: &quot;Fatal&quot;,
 
 &quot;nestedFault&quot;: {
 
@@ -386,35 +261,25 @@ Some elements in this figure are truncated for readability.
 
 &quot;text&quot;: &quot;NotFound&quot;
 
-&quot;essCode&quot;: &quot;gov.va.ess.fault.io.ResourceNotFound&quot;,
-
-&quot;essText&quot;: &quot;UnabletolocateresourceXXX&quot;,
+&quot;apiText&quot;: &quot; Requested service not found. Validate invocation URL &quot;,
 
 }
 
-&quot;severity&quot;: &quot;Information&quot;,
+&quot;timestamp&quot;: &quot;2018-05-05T08:15:30-05:00&quot;,
 
-&quot;timestamp&quot;: &quot;2013-05-05T08:15:30-05:00&quot;,
+&quot;serviceName&quot;: &quot; Vet360 Veteran Address Lookup &quot;,
 
-&quot;serviceName&quot;: &quot;gov.va.ess.util.FileAccessService&quot;,
+&quot;serviceInstance&quot;: &quot;https://dev-exp-vet360.va.gov:8081/api/v1/veteranportal/addr...
 
-&quot;serviceInstance&quot;: &quot;http://101.12.34.97:443...,
+&quot;userID&quot;: &quot;CN=Test …
+
+&quot;subjectID&quot;: &quot;Id-1234567890V654321, “IdType”: “NI” …
 
 &quot;hostName&quot;: &quot;vaaacmhvapp12&quot;,
 
 &quot;hostIP&quot;: &quot;101.34.28.134&quot;,
 
-&quot;userID&quot;: &quot;CN=Test User, OU=ESS,DC=OIT,DC=VA,DC=GOV&quot;,
-
-&quot;subjectID&quot;: &quot;Id&gt;1234567890V654321&lt;Id&gt; &lt;IdType&gt;NI&lt;IdType&gt;…&gt;&quot;,
-
-&quot;codePackage&quot;: &quot;gov.va.ess.resource.fileAccess&quot;,
-
-&quot;serviceDomain&quot;:&quot;gov.va.ess.resources.v2.2.3&quot;,
-
-&quot;businessDomain&quot;: &quot;Education Eligibility&quot;,
-
-&quot;Correlation ID&quot;: &quot;c1d2398c3-1449-7654-9793-29373a9b9c53c1d2398c3…”, &quot;Session ID&quot;: &quot;8839272636511237&quot;,
+&quot;businessDomain&quot;: &quot; Vet360 Veteran Address Lookup &quot;,
 
 &quot;faultTrace&quot;: &quot;java.io.IOException: Unable to find file 'topicalIndex.csv' ...&quot;
 
@@ -422,15 +287,13 @@ Some elements in this figure are truncated for readability.
 
 }
 
-== Logging Policy Assertions ==
+== API Logging Policy Guidelines ==
 
-The following table is a modified version of the Appendix C Extracted Policy Assertions table contained in the Enterprise Shared Services (ESS) Exception Handling Guidelines document, which pointed to by this imbedded document:
+The following table is a modified version of the Appendix C Extracted Policy Assertions table contained in the Enterprise Shared Services (ESS) Exception Handling Guidelines document. The content has been modified to be consistent with an API/Restful Service implementation
 
-The table was modified to include references to Logging Assertions only. Refer to '''Figure 1 ESS Logging Model''' which defines the response logging model.
+Refer to '''Figure 1 API Logging Model''' which defines the response logging model.
 
-References in the table regarding central logging are dependent on the creation of a centralized logging service. There will be situations where exceptions should be logged centrally, but until this centralized error logging service is available, local logging will have to suffice.
-
-<span id="_Toc519773842" class="anchor"></span>Table 2: Logging Policy Assertion Table
+Table 2: Logging Policy Assertion Table
 
 {|
 ! '''Logging Policy Assertions'''
@@ -439,52 +302,45 @@ References in the table regarding central logging are dependent on the creation 
 | '''Notes'''
 | '''Required / Recommended'''
 |-
-| Any exception that results in a fault message must log information according to the ESS logical data model for errors.
+| Any processing the results in an error message propogated to a service consumer must log information consistent with the API logical model
 |
 
 | Required
 |-
-| Exceptions that do not result in a fault message, but do affect the behavior of service orchestrations or service consumers must log information.
+| Processing that does not result in an error but effects the behavior of service orchestrations must log information consistent with the API logical model
 | Examples might include partial data, and exceptions that trigger manual data quality workflow.
 | Required
 |-
-| Access services and Partner services must all log errors returned by the components called.
-| Legacy system components and partner system components do not comply with ESS error logging conventions, therefore the services that wrap these components must log such errors.
+| Processing errors from legacy system and/or partner system components must log errors returned by the components called and be consistent with the API logical model
+| Legacy system components and partner system components do not comply with API error logging conventions, therefore the API services that integrate these components must log such errors.
 | Required
 |-
-| Faults received by an ESS service must be either wrapped as a nested fault, or handled and logged to the error log.
-| Refer to '''Figure 1 ESS Logging Model'''
+| Faults received by an API service must be either wrapped as a nested APIFault, and/or handled and logged to the error log and be consistent with the API logical model
+| Refer to the ASG_API Playbook_09.01 Exception Handling Section document for a description of the API Fault.
 | Required
 |-
-| Errors in service orchestrations that result in incomplete result data sets must be indicated in the ESS Response Code according to the ESS response information model.
+|
+Errors in service orchestrations that result in incomplete result data sets must be indicated in the
+
+API Logging Text element.
 | When a service or operation returns partial data, the status returned to the calling consumer shall flag the partial nature of the returned data.
 | Required
 |-
-| Exceptions that do not return a fault and do not influence the behavior of service orchestrations and service consumers should not be logged centrally.
-| Such exceptions should be logged locally according to local system conventions.
-| Recommended
-|-
-| Information such shutdowns due to scheduled maintenance should be logged centrally.
+| Information such shutdowns due to scheduled maintenance should be logged.
 |
 
 | Recommended
-|-
-| Services should log errors locally.
-| All exceptions should be logged locally according to local system conventions.
-| Recommended
 |}
-
-
 
 == API Audit Level Logging ==
 
-Logging is simply the abstract task of recording data about events that take place in an application. As such it focuses on things that are of interest at the development environment level.
+Logging in general is a process of recording data about events that take place in an application. As such it focuses on things that are of interest at the development environment level.
 
-Auditing Logging focuses on recording domain-level events: a transaction is created, a user is performing an action, etc. In certain types of application such as banking, there is a legal obligation to record such events. The audit log retains events that are logged to an audit logging infrastructure. Auditing is used to typically answer questions line who did what, why and when.
+Auditing Logging focuses on recording business domain-level events: a transaction is created, a user is performing an action, etc. In certain types of application, there is a legal obligation to record such events. The audit log retains events that are persisted to an audit logging infrastructure. Auditing is used to typically answer questions like who did what, why and when.
 
-Audit implies active review of the logging. A system cannot audit without logging, but logging can exist without audit.
+A system cannot audit without logging, but logging can exist without audit.
 
-The elements that require an audit log to be created will vary on the business rules of the application. A stated above certain application has legal constraints that dictate what had to be included in an audit log. Because an audit log is a specialization of a log, the attribute requirements defined for logging should also be applied to audit logging.
+The drivers that require an audit log to be created will vary on the business rules of the application. Because an audit log is nothing more that a specialization of a generic log, the data requirements and formatting defined for generic logging should also be applied to audit logging.
 
 The analysis that goes into the determination of business process that flow from business requirements will have to take into consideration and identify what are the auditing requirements.
 
@@ -492,13 +348,15 @@ The analysis that goes into the determination of business process that flow from
 
 Application logs can be difficult to deal with, but regardless logging is an important aspect of any production system. When faced with investigating a system issue, it’s much easier to use a log aggregation management solution then it is to parse a jumble of text-files spread throughout the system environment.
 
-A log aggregation management tools will prove its worth by facilitating the pinpointing of the root cause of any application or software error, within a single query. Another factor is having a visual overview of how software is being used globally by the system’s user base, getting all this crucial data in one single component such as a dashboard is going to make the job of monitoring a system’s health easier.
+A log aggregation management tools will facilitate the pinpointing of the root cause of any application or software error, within a single query. Another factor is having a visual overview of how software is being used globally by the system’s user base, getting all this crucial data in one single component such as a dashboard is going to make the job of monitoring a system’s health easier.
 
-There are many log management features in the market today and the following is but a small subset of these products although Splunk is being integrated in the VA’s cloud infrastructures.
+There are many log management features in the market today and the following is but a small subset of these products although Splunk is being integrated in the VA’s cloud infrastructures so a high-level description of the product follows.
 
 === Splunk ===
 
 Splunk focuses its log management services around enterprise customers who need concise tools for searching, diagnosing and reporting any events surrounding data logs. Splunk’s software is built to support the process of indexing and deciphering logs of any type, whether structured, unstructured, or sophisticated application logs, based on a multi-line approach.
+
+The VA has two Splunk products in the TRM; [https://www.oit.va.gov/Services/TRM/ToolPage.aspx?tid=6615 Splunk Enterprise] and [https://www.oit.va.gov/Services/TRM/ToolPage.aspx?tid=8352 Splunk Enterprise Security]. Splunk Enterprise is used to manage logs and provide feedback on function and performance to developers and system owners. The Security product looks for vulnerabilities and is used in risk mitigation by VA Security. Both read the same log files from the same forwarders and indexers. While the ATO for a system may already have Splunk installed and in use, permissions for Splunk Enterprise for use by developers may be required separately. Licensing for Splunk is ‘log sized’ based. Thus developers use of Splunk may trigger larger log storage. It is important to contact the system owner for licensing information.
 
 Key Features:
 
@@ -507,31 +365,6 @@ Key Features:
 * Drilling algorithm for finding anomalies and familiar patterns across log files.
 * Monitoring and alert system for keeping an eye on important events and actions.
 * Visual reporting using an automated dashboard output.
-
-=== Logentries ===
-
-Logentries is a cloud-based log management platform that makes any type of computer-generated type of log data accessible to developers, IT engineers, and business analysis groups of any size. Logentries’ easy onboarding process ensures that any business team can quickly and effectively start understanding their log data from day one.
-
-Key Features:
-
-* Real-time search and monitoring; contextual view, custom tags, and live-tail search.
-* Dynamic scaling for different types and sizes of infrastructure.
-* In-depth visual analysis of data trends.
-* Custom alerts and reporting of pre-defined queries.
-* Modern security features to protect your data.
-* Flawless integration with leading chat and performance management tools.
-
-=== GoAccess ===
-
-GoAccess is a real-time log analyzer software intended to be run through the terminal of Unix systems, or through the browser. It provides a rapid logging environment where data can be displayed within milliseconds of it being stored on the server.
-
-Key Features:
-
-* Truly real-time; updates log data within milliseconds within the terminal environment.
-* Custom log strings.
-* Monitor pages for their response time; ideal for apps.
-* Effortless configuration; select your log file and run GoAccess.
-* Understand your website visitor data in real-time.
 
 
 

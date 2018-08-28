@@ -1,79 +1,9 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_02.02 Industry Standards_HL7_Section_01.01_Initial Draft.docx</b> on <b>Fri 08/24/2018</b> at <b>21:55:33.22 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API_Playbook_02.02 Industry Standards_Section_01.02_Iniitial Draft {Frank Burgos}.docx</b> on <b>Mon 08/27/2018</b> at <b>21:51:10.75 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_02.02 Industry Standards_HL7_Section_01.01_Initial Draft">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API_Playbook_02.02 Industry Standards_Section_01.02_Iniitial Draft {Frank Burgos}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/02.02 ASG_API Playbook_Industry Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-API Developer Playbook Blueprint Documentation
-
-Maps to Framework Set #1
-
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/media/image1.png|228x228px|Department of Veterans Affairs official seal]]
-
-Document Version Draft 01.00.03
-
-Revision History
-
-{|
-| Date
-| Version
-| Description
-| Author
-|-
-|
-
-|
-
-|
-
-|
-
-|}
-
-Table of Contents
-
-[[#industry-standards|1. Industry Standards 1]]
-
-[[#hl7|1.1. HL7 1]]
-
-[[#health-level-seven-international|1.1.1. Health Level Seven International 1]]
-
-[[#fhir|1.2. FHIR 2]]
-
-[[#fhir-overview|1.2.1. FHIR Overview 2]]
-
-[[#fhir-release-3-web-site-content|1.2.2. FHIR Release 3 Web Site Content 2]]
-
-[[#fhir-restful-api|1.2.3. FHIR RESTful API 3]]
-
-[[#fhir-restful-api-service-base-url|1.2.3.1. FHIR RESTful API Service Base URL 3]]
-
-[[#restful-api-url-common-interactions|1.2.3.2. RESTful API URL Common Interactions 5]]
-
-[[#url-fhir-resources|1.2.4. URL FHIR Resources 7]]
-
-[[#argonaut|1.3. Argonaut 8]]
-
-[[#argonaut-data-query-implementation-guide|1.3.1.1. Argonaut Data Query Implementation Guide 8]]
-
-[[#argonaut-provider-directory-guide|1.3.1.2. Argonaut Provider Directory Guide 8]]
-
-Table of Tables
-
-[[#_Toc517969175|Table 1: Instance Level Interactions Table 4]]
-
-[[#_Hlk520288093|Table 2: Type Level Interactions Table 4]]
-
-[[#_Toc520358498|Table 3: Whole System Interactions Table 4]]
-
-[[#_Toc520358499|Table 4: Base Operations -All Resource Types) Table 5]]
-
-[[#_Toc520358500|Table 5: Base Operations (All resource types) 5]]
-
-'''Table of Figures'''
-
-'''No table of figures entries found.'''
-
 = Industry Standards =
 
 == HL7 ==
@@ -121,7 +51,7 @@ The following FHR related sections contains content that was obtained by inspect
 -&gt;
 
 <ul>
-<li><p>[[ASG_API_Playbook_Industry%20Standards_HL7_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|https://www.hl7.org/fhir/searchparameter-registry.html]]Section 2.22.0 Extended Operations on the RESTful API</p></li></ul>
+<li><p>[[C:\\Users\\VHAISPBURGOF\\Documents\\Backup\\ASG Stuff\\API Management\\API Development Playbook Burgos\\Industry Standards\\ASG_API_Playbook_Industry Standards_HL7_Section _01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|https://www.hl7.org/fhir/searchparameter-registry.html]]Section 2.22.0 Extended Operations on the RESTful API</p></li></ul>
 
 -&gt; [https://www.hl7.org/fhir/operations.html%232.22.0 https://www.hl7.org/fhir/operations.html#2.22.0]
 
@@ -161,7 +91,7 @@ All the logical interactions are defined relative to the service root URL. This 
 
 The followings table are a combination of various tables detailed in Section 2.21.0 RESTful AP (https://www.hl7.org/fhir/http.html). The tables define instance level, type level and whole system interaction verbs (read, update etc.) along with their corresponding interaction descriptions, URL Path and the HTTP verb.
 
-<span id="_Toc517969175" class="anchor"></span>'''Table''' '''1: Instance Level Interactions Table'''
+'''Table''' '''1: Instance Level Interactions Table'''
 
 {|
 ! '''Instance Level Interactions'''
@@ -202,7 +132,7 @@ The followings table are a combination of various tables detailed in Section 2.2
 | GET
 |}
 
-<span id="_Hlk520288093" class="anchor"></span>'''Table''' '''2: Type Level Interactions Table'''
+'''Table''' '''2: Type Level Interactions Table'''
 
 {|
 ! '''Type Level Interactions'''
@@ -239,7 +169,7 @@ POST
 | GET
 |}
 
-<span id="_Toc520358498" class="anchor"></span>'''Table''' '''3: Whole System Interactions Table'''
+'''Table''' '''3: Whole System Interactions Table'''
 
 {|
 ! '''Whole System Interactions'''
@@ -284,7 +214,7 @@ The RESTful API defines a set of common interactions (read, update, search, etc.
 
 This is a full list of the operations defined by this specification extracted from Section 1.5 Defined RESTful API Operations (https://www.hl7.org/fhir/operationslist.html).
 
-<span id="_Toc520358499" class="anchor"></span>'''Table''' '''4: Base Operations -All Resource Types''') '''Table'''
+'''Table''' '''4: Base Operations -All Resource Types''') '''Table'''
 
 {|
 ! '''Base Operations (All resource types''')
@@ -302,7 +232,7 @@ This is a full list of the operations defined by this specification extracted fr
 | [base]/[Resource]/[id]/$meta-delete
 |}
 
-<span id="_Toc520358500" class="anchor"></span>'''Table''' '''5: Base Operations (All resource types''')
+'''Table''' '''5: Base Operations (All resource types''')
 
 {|
 ! '''Base Operations (All resource types''')
@@ -463,7 +393,7 @@ The Argonaut Data Query Implementation Guide is based upon the core FHIR Draft S
 
 The URL for the Data Query Implementation Guide Version 1.00 is:
 
-[[ASG_API_Playbook_Industry%20Standards_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|http://www.fhir.org/guides/argonaut/r2]]/
+[[file:///C:\Users\VHAISPBURGOF\Documents\Backup\ASG%20Stuff\API%20Management\API%20Development%20Playbook%20Burgos\Industry%20Standards\ASG_API_Playbook_Industry%20Standards_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|http://www.fhir.org/guides/argonaut/r2]]/
 
 ==== Argonaut Provider Directory Guide ====
 
