@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.03_SME_ Review Resolution {Frank Burgos}.docx</b> on <b>Wed 08/29/2018</b> at <b> 9:19:37.50 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.03_SME_ Review Resolution {Frank Burgos}.docx</b> on <b>Wed 08/29/2018</b> at <b>15:33:24.21 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.03_SME_ Review Resolution {Frank Burgos}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/10.00 ASG_API Playbook_Baseline Logging_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>

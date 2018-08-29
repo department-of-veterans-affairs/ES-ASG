@@ -1,46 +1,34 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.04_Tech Review Braunstein.docx</b> on <b>Wed 08/29/2018</b> at <b> 9:20:01.66 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.06_Publication Review {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b>15:33:41.01 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.03 Reusability Section_01.04_Tech Review Braunstein">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.03 Reusability Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/12.03 ASG_API Playbook_Reuse Guidelines_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-= Feedback: =
-
-Need content on using an API Catalog/Exchange/Marketplace. How to Providers put APIs in Catalog. How do Consumers get API’s in Catalog. What is the governance mechanism between the Provider, Consumer, and the API Custodian (i.e. Administrator) during the “Reuse process”. How do Consumers find and browse API’s that are reusable?
-
-How to leverage an API Contract during “Reuse process”
-
-Need content on using Shared Libraries and Common Re-Use. Examples, such as Error Handling, Logging, and other utilities.
-
-I killed the section on 3 API Layers because we have content already defining the 3 API Layers. But, more importantly, how are API’s at each layer made reusable and how are they typically reused?
-
-=  =
-
-=  =
-
 = INTRODUCTION =
 
-Introducing software reuse at a corporate level represents one of the most promising means of addressing the rising costs that are plaguing the software industry. A series of mechanisms are needed for shortening development cycles and providing reliable software of high quality which will be more maintainable and flexible for future extensions. API driven solutions can leverage these approaches, so that the VA solutions built on API’s can follow a “Re-Use First” approach to solution design.
+Implementing software reuse at a corporate level represents one of the most promising means of addressing the rising costs that are plaguing the software industry. A series of mechanisms are needed for shortening development cycles and providing reliable software of high quality which will be more maintainable and flexible for future extensions. API driven solutions can leverage these approaches, so that the VA solutions built on APIs can follow a “Re-Use First” approach to solution design.
 
-This section describes guidelines for implementing an API reuse methodology focusing on a reusable API artifact library system and its role inside the reuse program. The goal for reuse program is to make API reuse a significant and systematic part of the software development process. To institutionalize an API reuse process that incorporates reuse-specific activities all along the object oriented software development process, drawing heavily on a reusable software artifact library system which has been designed to support the classification, management and search for artifacts to be employed in reuse efforts.
+This section describes guidelines for implementing an API reuse methodology, focusing on a reusable API artifact library system and its role inside the reuse program. The goal for a reuse program is to make API reuse a significant and systematic part of the software development process. To institutionalize an API reuse process that incorporates reuse-specific activities all along the object oriented software development process, drawing heavily on a reusable software artifact library system which has been designed to support the classification, management and search for artifacts to be employed in reuse efforts. [Seriously long sentence framgment]
 
-The API implementation patterns are mainstream and engineers can effectively take advantage of reusable components without having to tightly couple or make a duplicate copy of code for basic reuse, the prime question shifts from “what can we do to enable software reuse?” to “how can we instrument and measure our software reuse?”
+The API implementation patterns are mainstream, and engineers can effectively take advantage of reusable components without having to tightly couple or make a duplicate copy of code for basic reuse. The primary consideration shifts from “What to do to enable software reuse” to “How to instrument and measure software reuse.”
 
 = Definition of Reusability =
 
-A broad definition of ''software reuse'' is using existing software artifacts to construct a new software system. A ''software artifact'' can be defined as a piece of formalized knowledge that can contribute to the software development process.
+A broad definition of ''software reuse'' is: using existing software artifacts to construct a new software system. A ''software artifact'' can be defined as a piece of formalized knowledge that can contribute to the software development process.
 
 Artifacts can be reused in multiple contexts in a project, including collections and modules. One can edit artifact content in a module or by opening the artifact outside the module. Content changes are reflected in all contexts; however, links, tags, and comments are specific to the context in which they are created.
 
-Accelerated project delivery driven by reusable assets and shared services. To address the growing IT project delivery gap in government, agencies must stop “reinventing the wheel” with each incremental project, and instead, seek to build and leverage shared services. Traditional architectural approaches centered around point-to-point integration are unable to fulfill these needs. Without reusing integration work (such as API’s) across projects, or across agencies, governments are unable to increase the speed at which they can deliver projects without adding incremental staffing. Limited budgets typically rule this out as a tenable option. Furthermore, point-to point integration creates architectural brittleness over time, making the agencies less flexible and adaptive to change. It also creates a dependence on legacy systems, increasing maintenance costs and reducing budget for innovation and net new projects.
+To address the growing IT project delivery gap in government, agencies must stop “reinventing the wheel” with each incremental project, and instead, seek to build and leverage shared services. Traditional architectural approaches centered around point-to-point integration are unable to fulfill these needs. Without reusing integration work (such as APIs) across projects, or across agencies, governments are unable to increase the speed at which they can deliver projects without adding incremental staffing. Limited budgets typically rule this out as a tenable option. Furthermore, point-to-point integration creates architectural brittleness over time, making the agencies less flexible and adaptive to change.
 
 = Reusable Services for a Micro-services Architecture =
 
-The Javascript world has, for a recent while, been adopting the culture of actively building applications with reusable code, which has led to the numerous component-based frameworks. The prominent of these are ReactJs, VueJs and Angular. Since a component could contain its own markup, style and behavior, this component can then be reused across the web app or sometimes even in a separate app altogether. Furthermore, different developers could work on different components which can then be integrated to produce one app. This inherently led to improved productivity on the developer’s end as everything just became plug-and-play and they needed not to repeat themselves.
+The Javascript world has recently been adopting the culture of actively building applications with reusable code, which has led to the numerous component-based frameworks. The prominent of these are ReactJs, VueJs and Angular. Since a component could contain its own markup, style and behavior, this component can then be reused across the web app or sometimes even in a separate app altogether. Furthermore, different developers could work on different components which can then be integrated to produce one app. This inherently leads to improved productivity on the developer’s end as everything becomes plug-and-play and they not be repeated.
 
-Micro-services are built with the same narrative of separating concerns, combining small parts of a system to form the bigger picture as it were (not producing a distributed monolith). Again different developers work on different micro-services of the same application/back-end and integrate these independent services with a message bus or via HTTP APIs. This separation brings about independent governance on the state and future of a service, leaving all the power to the developer/team responsible for that service.
+Micro-services are built with the same narrative of separating concerns; combining small parts of a system, collectively forming the larger whole rather than producing a distributed monolith. Again different developers can work on different micro-services of the same application/back-end and integrate these independent services with a message bus or via HTTP APIs. This separation brings about independent governance on the state and future of a service, leaving all the design authority to the developer or team responsible for that service.
 
-There are similarities in different projects, (for example user management &amp; messaging) or similar tasks that developers easily overlook. Building a bulk SMS API (like Frello) from the scratch for a single project. There is some necessary code that needs to be rewritten with every project to connect the relevant APIs, and depending on the nature of the projects.
+&lt;&lt;PTM Standars Review stops here&gt;&gt;
+
+There are similarities in different projects, (for example user management &amp; messaging) or similar tasks that developers easily overlook. Building a bulk SMS API (like Frello) from scratch for a single project. There is some necessary code that needs to be rewritten with every project to connect the relevant APIs, and depending on the nature of the projects.
 
 = Reusable Micro-services approach =
 
@@ -51,14 +39,7 @@ There are similarities in different projects, (for example user management &amp;
 
 This will make an independent service is up and running and ready to be deployed. This approach will not only improve productivity but also starts a culture of sharing work with other developers, projects, and ultimately the Open Source Community itself 
 
-# 
-# 
-
-* 
-* 
-* 
-
-* Microservice capabilities are expressed formally with [https://www.mulesoft.com/platform/api business-oriented APIs]. They encapsulate a core business capability, and as such are valuable assets to the business. The implementation of the service, which may involve integrations with systems of record, is completely hidden as the interface is defined purely in business terms. The positioning of services as valuable assets to the business implicitly promotes them as adaptable for use in multiple contexts. The same service can be reused in more than one business process or over different business channels or digital touchpoints, depending on need. Dependencies between services and their consumer are minimized by applying the principle of loose coupling. By standardizing on contracts expressed through business oriented APIs, consumers are not impacted by changes in the implementation of the service. This allows service owners to change the implementation and modify the systems of record or service compositions which may lie behind the interface and replace them without any downstream impact. If microservices’ interfaces are exposed with a standard protocol, such as a REST-ful API, they can be consumed and reused by other services and applications without direct coupling through language bindings or shared libraries. Project teams need to easily discover services as potential reuse candidates. These services should provide documentation, test consoles, etc so re-using is significantly easier than building from scratch.
+* Microservice capabilities are expressed formally with [https://www.mulesoft.com/platform/api business-oriented APIs]. They encapsulate a core business capability, and as such are valuable assets to the business. The implementation of the service, which may involve integrations with systems of record, is completely hidden as the interface is defined purely in business terms. The positioning of services as valuable assets to the business implicitly promotes them as adaptable for use in multiple contexts. The same service can be reused in more than one business process or over different business channels or digital touchpoints, depending on need. Dependencies between services and their consumer are minimized by applying the principle of loose coupling. By standardizing on contracts expressed through business oriented APIs, consumers are not impacted by changes in the implementation of the service. This allows service owners to change the implementation and modify the systems of record or service compositions which may lie behind the interface and replace them without any downstream impact. If microservices’ interfaces are exposed with a standard protocol, such as a RESTful API, they can be consumed and reused by other services and applications without direct coupling through language bindings or shared libraries. Project teams need to easily discover services as potential reuse candidates. These services should provide documentation, test consoles, etc so re-using is significantly easier than building from scratch.
 
 = Software Process for Reuse  =
 
@@ -86,11 +67,6 @@ solve application problems for a broad telecommunication market (e.g., Billing, 
 As we will show below, moving beyond point-to-point connectivity requires an approach centered around the development of connectivity assets that are both reusable across different projects and contexts, and discoverable by the teams that need them. In our experience, enabling that approach requires that monolithic services be broken down into smaller, constituent microservices. Agencies that employ this approach simultaneously realize greater project delivery speed and security, but only if they do so in such a way that drives reuse of these microservices across the enterprise.
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image2.png|624x417px]]
-
-=  =
-
-* 
-* 
 
 Microservices promote reuse by exposing their functionality through a standardized API contract that any project team can leverage without needing to understand the underlying business logic of the microservice. In addition, as a function of their smaller scope, microservices can be used across a much larger variety of projects and business contexts. Furthermore, by decoupling services from their end consumers, multiple project teams from different domains can implement microservices with their own choice of technology, yet remain aligned with the broader mission of the agency, encouraging project teams to reuse existing microservices instead of building their own.
 
@@ -141,11 +117,11 @@ Reuse approach can be of two types:
 * After addition or creation of artifacts in modules, work can be done with the artifacts in the module or on the Artifacts page. When you work with an artifact outside a module, you are working with the ''base'' artifact. Changes to the artifact name, content, and attributes are reflected in all contexts: in the base artifact and in all modules that include the artifact.
 * Creation of links, tags, and comments for artifacts in the context of a module, those contextual elements are applicable and visible only in the module where are they created. For example, in the following module, artifact 374 is linked to artifact 375 and artifact 375 is linked from artifact 374:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image4.png|553x197px|Sample artifact in a module]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image3.png|553x197px|Sample artifact in a module]]
 
 * However, the base artifacts 374 and 375 on the Artifacts page, are not linked:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image5.png|383x75px|Sample base artifacts]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image4.png|383x75px|Sample base artifacts]]
 
 == Using bi-directional links in a module ==
 
@@ -153,7 +129,7 @@ The user should be able to link one artifact in a module to another artifact in 
 
 If user Include links, tags and comments from base artifacts, an indication must be shown as below:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image6.png|521x124px|screen cap showing blue arrow link from base artifact]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image5.png|521x124px|screen cap showing blue arrow link from base artifact]]
 
 = GENERAL GUIDELINE: =
 
@@ -172,6 +148,16 @@ If user Include links, tags and comments from base artifacts, an indication must
 = REUSABILITY FRAMEWORK =
 
 \
+
+= Feedback: =
+
+Need content on using an API Catalog/Exchange/Marketplace. How to Providers put APIs in Catalog. How do Consumers get API’s in Catalog. What is the governance mechanism between the Provider, Consumer, and the API Custodian (i.e. Administrator) during the “Reuse process”. How do Consumers find and browse API’s that are reusable?
+
+How to leverage an API Contract during “Reuse process”
+
+Need content on using Shared Libraries and Common Re-Use. Examples, such as Error Handling, Logging, and other utilities.
+
+I killed the section on 3 API Layers because we have content already defining the 3 API Layers. But, more importantly, how are API’s at each layer made reusable and how are they typically reused?
 
 
 

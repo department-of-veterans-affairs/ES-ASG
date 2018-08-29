@@ -1,18 +1,18 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.08_Standards Review {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b> 9:19:30.09 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.09_Publication Review - Standards Incomplete {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b>15:33:17.54 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_09.01 Exception Handling_Section_01.08_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_09.01 Exception Handling_Section_01.09_Publication Review - Standards Incomplete {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section/09.01 ASG_API Playbook_Exception Handling_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = Exception Handling =
 
-The SOA web service interfacing style of SOAP tends to be centered around operations that are usually use-case specific and specialized. In contrast, RESTful is centered around business/data entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations. This section on RESTful error handling
+The SOA web service interfacing style of SOAP tends to be centered around operations that are usually use-case specific and specialized. In contrast, RESTful is centered around business/data entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations. This section focuses on RESTful error handling
 
-Success and error responses are a vital part to define how an API is used correctly. Defining all success and service specific error responses in an API specification is required. Both are part of the interface definition and provide for service clients.
+Success and error responses are a vital part to define how an API is used correctly. Defining all success and service specific error responses in an API specification is required. Both are part of the interface definition and provide valuable information for service clients.
 
-API designers should ensure that error handling guidelines the associated API documentation. Such documentation provides information and exception handling guidance application-specific errors and should be referenced as part of the API specification. This facilitat self-service enablement, thereby improving consumer and provider API understanding.
+API designers should ensure that error handling guidelines is contained in the associated API documentation. Such documentation provides information and exception handling guidance for application-specific errors and should be referenced as part of the API specification. This supports facilitating self-service enablement, thereby improving consumer and provider API understanding.
 
-This document detail various Exception Handling Artifacts and Strategies that provide the API developer sufficient background to ensure the developed API is sufficiently robust from an Exception Handling perspective.
+This document details various Exception Handling Artifacts and Strategies that provide the API developer sufficient background to ensure the developed API is sufficiently robust from an Exception Handling perspective.
 
 These Artifacts and Strategies include:
 
@@ -27,31 +27,29 @@ These Artifacts and Strategies include:
 
 == Exceptions and API Development ==
 
-The discussion of the of exceptions and try/catch best practices in this on the Java implementation although differences between Java and C# will be noted where appropriate.
+The discussion of the several types of exceptions and try/catch best practices in this focuses on the Java implementation although differences between Java and C# will be noted where appropriate.
 
-A extensive description of Exception Handling including the try/catch statement in both Java and C# programming languages
+An extensive description of Exception Handling, including the try/catch statement in both Java and C# programming languages, can be found https://pclt.sites.yale.edu/exception-handling-java-and-c
 
-https://pclt.sites.yale.edu/exception-handling-java-and-c
-
-In Java all exceptions ('''''java.lang.Exception)''''' and errors ('''''java.lang.Error)''''' extend from a common '''''java.lang.Throwable''''' parent class and only Throwable objects can be thrown and caught. In the .NET Framework, they are all descended from '''''System.Exception'''''.
+In Java, all exceptions ('''''java.lang.Exception)''''' and errors ('''''java.lang.Error)''''' extend from a common '''''java.lang.Throwable''''' parent class and only Throwable objects can be thrown and caught. In the .NET Framework, they are all descended from '''''System.Exception'''''.
 
 === Checked Exceptions ===
 
-Checked that are checked at compile time. If code within a method invokes a method that throws a hecked xception, then the invoking method must either handle the exception or it must propagate the exception using throws statement.
+Checked Exceptions are thosethat are checked at compile time. If code within a method invokes a method that throws a Checked Exception, then the invoking method must either handle the exception or it must propagate the exception using a throws statement.
 
-Checked xceptions requirements instituted by API designers force API developers to deal with the exceptions. The expectation of the API designer is for the developers to be able to provide the appropriate logic to recover from those exceptions. Minimally this would include logging the exceptions and returning the appropriate response to the end user.
+Checked Exceptions requirements instituted by API designers force API developers to deal with the exceptions. The expectation of the API designer is for the developers to be able to provide the appropriate logic to recover from those exceptions. Minimally this would include logging the exceptions and returning the appropriate response to the end user.
 
-Java supports both hecked and nchecked.
+Java supports both Checked and Unchecked Exceptions.
 
 === Unchecked Exceptions ===
 
-Unchecked that are not checked at compiled time although some component in the stack trace must accommodate the nchecked xception. This typically occurs at the top of the stack trace immediately before returning to the end user.
+Unchecked Exceptions are those that are not checked at compiled time although some component in the stack trace must accommodate the Unchecked Exception. This typically occurs at the top of the stack trace immediately before returning to the end user.
 
-Unchecked xceptions give developers fixability to ignore exceptions that are not recoverable but handle the ones that are.
+Unchecked Exceptions give developers fixability to ignore exceptions that are not recoverable but handle the ones that are.
 
-Java exceptions inherited from '''''java.lang.Error''''' and '''''java.lang.RuntimeException''''' classes are nchecked xceptions verything else under '''''java.lang.throwable''''' is checked.
+Java exceptions inherited from '''''java.lang.Error''''' and '''''java.lang.RuntimeException''''' classes are Unchecked Exceptions. Everything else under '''''java.lang.throwable''''' is checked.
 
-C# only supports nchecked xceptions thus all exception handling is purely optional although as stated above, in the Java example, some component in the stack trace must accommodate the nchecked xception.
+C# only supports Unchecked Exceptions thus all exception handling is purely optional although as stated above, in the Java example, some component in the stack trace must accommodate the Unchecked Exception.
 
 === Try/Catch Exception Handling Best Practices ===
 
@@ -75,11 +73,11 @@ try {
 
 }
 
-* The '''try''' block needs to catch all checked exceptions ptionally unchecked exceptions can be caught here as well.
-* The '''catch''' block defines the exception to be caught.
+* The '''try''' block needs to catch all checked exceptions. Optionally unchecked exceptions can be caught here as well.
+* The '''catch''' block defines the exception(s) to be caught.
 * The '''finally''' block always executed and will happen either after the successful execution of the try block or after the exception has been handled in a catch block. The finally block accommodates any actions outside if the catch block for example, closing a File.
 
-Defining Exception Handling best practices in either Java or C# in detail
+Defining Exception Handling best practices in either Java or C# in detail is not within the scope of this discussion.
 
 The following link provides Java Exception Handling Best Practices:
 
@@ -97,7 +95,7 @@ Restful APIs are typically based on the HTTP protocol for connecting their clien
 
 === HTTP Response Message Header Configuration ===
 
-API response implementations utilize the HTTP Response Message Header. A high-level overview of the HTTP Header and it communica success and error conditions follows.
+API response implementations utilize the HTTP Response Message Header. A high-level overview of the HTTP Header and how it communicates success and error conditions follows.
 
 '''Important Note:'''
 
@@ -107,7 +105,7 @@ Figure 1 Sample HTTP Response Message
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section/media/image1.png|624x236px]]
 
-The above figure is a pictorial example of a HTTP Response Message. It will facilitate the explanation of the parts of the message in the descriptions that follow.
+The above figure is a pictorial example of an HTTP Response Message. It will facilitate the explanation of the parts of the message in the descriptions that follow.
 
 ==== HTTP Status Line ====
 
@@ -119,7 +117,7 @@ The HTTP Status Line has the following syntax:
 
 * HTTP-version: The HTTP version used in this session. Either HTTP/1.0 and HTTP/1.1.
 * status-code: a 3-digit number generated by the server to reflect the outcome of the request.
-* reason-phrase: gives to the status code.
+* reason-phrase: gives a brief explanation to the status code.
 
 Examples of status line are:
 
@@ -187,7 +185,7 @@ The above 400 Bad Request example definitively identified the issue in this case
 
 ===== 500 Internal Server Error Guidelines =====
 
-The 500 response codes indicate non-programmatic failures, such failure to connect to a database. The expectation from a client perspective is that the client can re-submit the same request in the future and expect a successful response
+The 500 response codes indicate non-programmatic failures, such as failure to connect to a database. The expectation from a client perspective is that the client can re-submit the same request in the future and expect a successful response
 
 When returning a 500 Internal Server Error, only the minimum data necessary to aid the consumer in handling the error should be provided. This may include a generic error message, a reference id to a logged error which the consumer may use to match their error to the API’s logs, or instructions on how to seek assistance. <span class="underline">Under no circumstances should diagnostic data be released in a 500 Internal Server Error, as this information can be used to compromise VA systems and security.</span>
 
@@ -318,7 +316,7 @@ The definition of Transactional Processing per Wikipedia:
 
 Because RESTful is typically defined as an architecture, the implementation of transactional semantics in a Restful API implementation should be considered an architectural responsibility.
 
-Although this document is meant to be guidelines for API Developers and a use case solution detailing various solutions, the fact remains that the solutioning for API transactional behavior '''should be defined''' by architectural personnel.
+Although this document is meant to be a set of guidelines for API Developers including an example use case detailing various solutions, the fact remains that the solutioning for API transactional behavior should be defined by architectural personnel.
 
 The following URL contains a detail White Paper discussion of Restful Transactional challenges:
 
@@ -330,66 +328,68 @@ An excerpt from the document abstract states:
 
 ''The goal of this paper is to analyze the state-of-the-art RESTful transaction models and identify the current challenges. ''
 
-=== BankAccount Use Case Overview ===
+=== Bank Account Use Case Overview ===
 
-Consider the following use case and how to implement it using an API service philosophy, keeping in mind to not comprise the state of conceptual API model. The API model is predicated on correctly representing the state related transition(s) of the API resource. The processing of exceptions should include not only notifying the end client of errors but just as important, ensuring that the state of the resource is not negatively impacted by the error scenario.
+Consider the following use case and how it might be implemented with an API service philosophy, keeping in mind to not comprise the state of conceptual API model. The API model is predicated on correctly representing the state related transition(s) of the API resource. The processing of exceptions should include not only notifying the end client of errors but just as important, ensuring that the state of the resource is not negatively impacted by the error scenario.
 
-The use case is updating multiple resources. For example, the transfer of $100 from one customers bank account into another customer’s bank account. The actual detailed transactional semantics of this use case will not be detailed in this section as these details are better served by their inclusion in a section that discusses transactional behaviors using a API service or services.
+The use case is updating multiple resources. For example, the transfer of $100 from one customer’s bank account into another customer’s bank account. The actual detailed transactional semantics of this use case will not be detailed in this section as these details are better served by their inclusion in a section that discusses transactional behaviors using an API service or services.
 
-An Exception Processing discussion for this scenario will need some assumptions made as to the makeup of the RESTful services needed to implement this scenario. There are potentially many RESTful service solutions that this use case, but two will be discussed in this section. These proposals may not be the most reasonable or elegant solution, but the point is to detail the Exception Processing of each. It should be noted here that the use cases and subsequent RESTful interactions that can be applied to a domain object such as a Bank Account can be created using elegant restful principles such as ''Hypermedia As The Engine Of Application State'' (HATEOAS).
+An Exception Processing discussion for this scenario will require some assumptions made as to the makeup of the RESTful services needed to implement this scenario. There are potentially many RESTful service solutions for this use case, but two will be discussed in this section. These proposals may not be the most reasonable or elegant solution, but the point is to detail the Exception Processing of each. It should be noted here that the use cases and subsequent RESTful interactions that can be applied to a domain object such as a Bank Account can be created using elegant restful principles such as ''Hypermedia As The Engine Of Application State'' (HATEOAS).
 
 Restful Service Solutions Detailed:
 
-* The first is a RESTful service that updates the state of two instances of a resource named BankAccount identified by a unique identifier for that resource (i.e. account number).
-* The second is a RESTful service that updates the state of a collection of Bank Account references contained in a single Bank Accounts resource identified by unique identifiers for each Bank Account resource in the collection (i.e. account number).
+* The first is a RESTful service that updates the state of two instances of a resource named <span class="underline">BankAccount</span>, containing a unique identifier for that resource (i.e. account number).
+* The second is a RESTful service that updates the state of a collection of Bank Account references contained in a single <span class="underline">BankAccount</span> resource using the unique identifier for each <span class="underline">BankAccount</span> resource in the collection (i.e. account number).
 
 An additional approach to the above resource solution is the use of a Bank Account Transaction resource which raises the process level of abstraction. Simply stated this Bank Account Transaction resource acts as a Transactional Processing (TP) monitor and has the responsibilities of managing the various banking resources under its control ensuring transactional integrity.
 
-The following URL contains an alternative architectural solutions to the Bank Account use case:
+The following URL contains a alternative architectural solutions to the Bank Account use case:
 
 https://jcalcote.wordpress.com/2009/08/06/restful-transactions/
 
-==== BankAccount Use Case ====
+==== Bank Account Use Case ====
 
-The implementation solution for this use case will consist of two BankAccount RESTful HTTP PUT invocations one for the first account and one for the second. Because there is a requirement to implement stateful semantics on the server, the inclusion of a unique Transaction Id which could be included in the HTTP Request Header of both invocations will be used. The dollar amount of the transfer will be included in the Request Message Body JSON payload of the first invocation.
+The implementation solution for this use case consists of two <span class="underline">BankAccount</span> RESTful HTTP PUT invocations; one for the first account and one for the second. Because there is a requirement to implement stateful semantics on the server, the inclusion of a unique Transaction Id which could be included in the HTTP Request Header of both invocations will be used. The dollar amount of the transfer will be included in the Request Message Body JSON payload of the first invocation.
 
-The unique Transaction Id will be used on the server implementation to marry the two RESTful invocations.
+The unique Transaction Id will be used on the server implementation to join the two RESTful invocations.
 
-The happy path scenario consists of the second RESTful invocation returning a response that states that the transfer from one account to another was successful. The client application service invocation orchestration would then have to reconcile the business rules whereby the two invocations were successful.
+The normal course scenario consists of the second RESTful invocation returning a response that states that the transfer from one account to another was successful. The client application service invocation orchestration would then have to reconcile the business rules whereby the two invocations were successful.
 
-In the case of a non-happy path, one of two failures can occur:
+In the case of an alternate course path, one of two failures can occur:
 
 * Within the first service invocation
 
-The non-happy path processing if a failure occurred in the first BankAccount invocation, (e.g. there wasn’t sufficient funds in the account to do the transfer) would consist of an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The client application service invocation orchestration would then cancel the submission of the second service.
+The alternate course processing if a failure occurred in the first <span class="underline">BankAccount</span> invocation, (e.g. there are insufficient funds in the account to do the transfer) would consist of a returned error response alerting the client that the service call was unsuccessful. The appropriate error verbiage would be included in the JSON response payload. The client application service invocation orchestration would then cancel the submission of the second service.
 
 * Within the second service invocation
 
-The non-happy path processing if a failure occurred in the second BankAccount invocation would consist of an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, database roll back etc.)
+The alternatate course processing if a failure occurred in the second <span class="underline">BankAccount</span> invocation would consist of an error response sent back alerting the client that the service call was unsuccessful. The appropriate error verbiage would be included in the JSON response payload. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, database roll back etc.)
 
-==== BankAccounts Use Case ====
+==== Bank Accounts Use Case ====
 
-The implementation solution for this use case will consist of one BankAccounts RESTful HTTP PUT invocation. The dollar amount of the transfer and the two bank account numbers will be included in the Request Message Body JSON payload.
+The implementation solution for this use case will consist of one <span class="underline">BankAccounts</span> RESTful HTTP PUT invocation. The dollar amount of the transfer and the two bank account numbers will be included in the Request Message Body JSON payload.
 
-The happy path scenario consists of the BankAccounts RESTful invocation returning a response that states that the transfer from one account to another was successful.
+The normal course scenario consists of the <span class="underline">BankAccounts</span> RESTful invocation returning a response that states that the transfer from one account to another was successful.
 
-In the case of a non-happy path, one of two failures can occur:
+In the case of a alternate course, one of two failures can occur:
 
-* Processing the first account in the first BankAccounts collection.
+* Processing the first account in the first <span class="underline">BankAccounts</span> collection.
 
-The non-happy path processing if a failure occurred in the first BankAccounts processing, (e.g. there wasn’t sufficient funds in the account to do the transfer) would result in an error response sent back alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The result of the first account processing would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.) plus the second account processing would be terminated.
+The alternate course processing if a failure occurred in the first <span class="underline">BankAccounts</span> processing, (e.g. there are insufficient funds in the account to do the transfer) would result in a returned error response alerting the client that the service call was not successful. The appropriate error verbiage would be included in the JSON response payload. The result of the first account processing would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.) plus the second account processing would be terminated.
 
-* Processing the first account in the second BankAccounts collection.
+* Processing the first account in the second <span class="underline">BankAccounts</span> collection.
 
-The non-happy path processing if a failure occurred in the second account would result in an error response sent back to the client alerting the client, utilizing the JSON response payload, that the service call was not successful. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.)
+The alternate course processing if a failure occurred in the second account would result in an error response sent back to the client alerting the client, utilizing the JSON response payload, that the service call was unsuccessful. The result of the first service would be nullified by whatever transaction recovery scheme was used (a pending database commit for the first bank account was cancelled, etc.)
 
 
 
 == Non-Transactional Exceptions and API Development ==
 
-As was alluded to in in '''section''' '''1.4''' '''Transactional Exceptions and''' API Development RESTful web service processing, even those of the non-transactional variety should keep in mind to not compromising the conceptual RESTful model. The RESTful model is predicated on correctly representing the state related transition(s) of the RESTful resource. The processing of exceptions should include not only notifying the end client of errors but just as important, ensuring that the state of the resource is not negatively impacted by the error scenario.
+As was alluded to in in section 1.4 Transactional Exceptions and API Development '''[hyperlink here]''' RESTful web service processing, even those of the non-transactional variety should not compromise the conceptual RESTful model. The RESTful model is predicated on correctly representing the state related transition(s) of the RESTful resource. The processing of exceptions should include notifying the end client of errors, and, just as important, ensure the state of the resource is not negatively impacted by the error scenario.
 
-The processing of the scenarios defined in '''section''' '''1.4''' '''Transactional Exceptions and''' API Development even though they involved multiple state transition processing, should be applied to RESTful web services that perform more simplistic single resource processing. There is no need to re-iterate the processing step as they are applicable to non-transactional scenarios.
+&lt;&lt;PTM Standards Review Stops Here&gt;&gt;
+
+The processing of the scenarios defined in section 1.4 Transactional Exceptions and API Development even though they involved multiple state transition processing, should be applied to RESTful web services that perform more simplistic single resource processing. There is no need to re-iterate the processing steps as they are applicable to non-transactional scenarios.
 
 
 

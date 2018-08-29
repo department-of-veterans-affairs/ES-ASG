@@ -1,32 +1,34 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b> 9:19:10.07 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.06_Publication Review {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b>15:32:58.35 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_06.00 Configuration Management_Section_01.05_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_06.00 Configuration Management_Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/06.00 ASG_API Playbook_Configuration Management_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = Configuration Management =
 
-Th section is dedicated to the topic of Configuration Management,
+This section is dedicated to the topic of Configuration Management, with an emphasis on related topics, such as automation of CI/CD.
 
-API Configuration Management is the set of practices the '''runtime state''' of API software applications'''.'''
+A working definition of API Configuration Management is the set of practices for managing the '''runtime state''' of API software applications'''.'''
 
 == API Configuration Management ==
 
-Applications, including those of the API variety, typically consists of one or more databases, web servers, application servers, reverse proxies, load balancers, and other that work together at runtime to implement a working system.
+Applications, including those of the API variety, typically consists of one or more databases, web servers, application servers, reverse proxies, load balancers, and other capabilities that work together at runtime to implement a robust working system.
 
-Environment onfiguration anagement is the process
+Environment Configuration Management is the process and tools for managing all of the artifact revisions as a set of compatible, functioning components. CM guarantees that Revision α of one component works with Revision α of another component and Revision α of yet another.
 
 === Configuration Management Automation  ===
 
-Prior to the advent of automated configuration management products, the responsibilities of system engineers typically consisted of the creation of items such as scripts, manually maintained files consisting of service and technical endpoints, port numbers, namespaces etc. The laborious nature of this process resulted in the increased complexity of a system as well as the configuration management process itself.
+Prior to the capability of automated configuration management products, the responsibilities of system engineers typically consisted of the creation of items such as scripts, manually maintained files consisting of service and technical endpoints, port numbers, namespaces etc. The tedious nature of this process resulted in the increased complexity of a system as well as the configuration management process itself.
 
 Increased infrastructure configuration management automation evolved because of the needs of processes such as artifact versioning, environment changes and the need for coordination between developers and system engineers.
 
 This section describes a conceptual example of an automated configuration management eco-system using a suite of automated products.
 
-The following diagram depicts products that have gained wide acceptance in the configuration management space. There are other potential solutions, but the products shown here are common. Again, API development and configuration management can be implemented using this component example but a non-API effort can also utilize this model. The diagram depicts the connectivity between components using arrows. Because this is a conceptual diagram the arrows are implemented utilizing plugin components. For example, the integration between GitHub and Jenkins utilizes the Github/Jenkins Plugin. This plugin facilitates the integration of Jenkins with Github projects.
+The following diagram depicts products that have gained wide acceptance in the configuration management space. There are other potential solutions, but the products shown here are common. Again, API development and configuration management can be implemented using this component example, but a non-API effort can also utilize this model. The diagram depicts the connectivity between components using arrows. Because this is a conceptual diagram the arrows are implemented utilizing plugin components. For example, the integration between GitHub and Jenkins utilizes the Github/Jenkins Plugin. This plugin facilitates the integration of Jenkins with Github projects.
 
-A point should be raised regarding the Configuration Management Automation subject matter covered in this section. The creation of a complex automation eco-system, as detailed in the following diagram, is the culmination of design efforts by many senior technical personnel. Typically, an API developer would not be part of this technical effort but the intent is to provide the developer with an understandable view of the overall automation eco-system integrations and flows.
+A point should be raised regarding the Configuration Management Automation subject matter covered in this section: The creation of a complex automation eco-system, as detailed in the following diagram, is the culmination of design efforts by many senior technical personnel. Typically, an API developer would not be part of this technical effort, but the intent is to provide the developer with an understandable view of the overall automation eco-system integrations and flows.
+
+&lt;&lt;PTM Standards Review stops here&gt;&gt;
 
 Figure 1 Configuration Management Automation Example
 
