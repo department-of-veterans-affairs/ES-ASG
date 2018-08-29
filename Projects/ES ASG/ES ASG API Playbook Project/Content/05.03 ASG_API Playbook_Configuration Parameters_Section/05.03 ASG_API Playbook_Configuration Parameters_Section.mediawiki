@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.03 Configuration Parameters_01.03_SME Review Resolved {max.girin}.docx</b> on <b>Mon 08/27/2018</b> at <b>21:51:31.94 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.03 Configuration Parameters_01.04_Standards Review {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b> 9:18:51.78 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.03 Configuration Parameters_01.03_SME Review Resolved {max.girin}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.03 Configuration Parameters_01.04_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section/05.03 ASG_API Playbook_Configuration Parameters_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -16,7 +16,7 @@
 
 Configuration parameters are defined inside environment property files or added to the runtime configuration of the application. In instances where these parameters are defined inside property files, these parameters are commonly entered as key-value pairs.
 
-For example, for VA vet360 API, there is a need to store a configuration parameter for the relational database. The database has its host, port, username, password, and database instance. All of these variables are considered configuration parameters that are managed either in one of the environment property files or as runtime arguments when launching an application (e.g., Linux runtime arguments, Java JVM arguments, etc).
+For example, for VA vet360 API, there is a need to store a configuration parameter for the relational database. The database configuration includes its host, port, username, password, and instance. All of these variables are considered configuration parameters that are managed either in one of the environment property files or as runtime arguments when launching an application (e.g., Linux runtime arguments, and Java JVM arguments).
 
 The naming conventions for the configuration parameters should reflect the following:
 
@@ -52,20 +52,20 @@ An example of a full name of a configuration parameter:
 * vet360.db.oracle.port
 * vet360.web.iis.port
 
-'''Important''': Since configuration parameters are managed in Environment Property files, which already are named by specific environment (“dev.configuration”), there is no need to add an environment name into the name of the configuration parameter. In fact, it is the opposite, no environment-specific indicators, keywords, or flags should be part of the name of any configuration parameter. Configuration parameters are reused across environments and, as such, are not tied to a specific environment.
+'''Important''': Since configuration parameters are managed in Environment Property files, which already are named by the specific environment (“dev.configuration”), there is no need to add an environment name into the name of the configuration parameter. In fact, no environment-specific indicators, keywords, or flags should be part of the name of any configuration parameter. Configuration parameters are reused across environments and, as such, are not tied to a specific environment.
 
-With that said, once a configuration parameter is placed in an environment property file tied to a specific environment, the value of that parameter becomes specific to that environment.
+Once a configuration parameter is placed in an environment property file tied to a specific environment, the value of that parameter becomes specific to that environment.
 
 For example, '''mule.env'''=dev inside the dev.configuration property file. The same '''mule.env'''=qa is now inside the qa.configuration file.
 
 === Configuration Properties Naming Convention Guidelines ===
 
-Some general guidelines and rules when choosing naming convention for configuration parameters:
+Here are some general guidelines and rules when choosing naming convention for configuration parameters:
 
-* Shorter names
-* Never have environment specific keywords in the name of the parameter (e.g., “dev” or “prod”)
-* Names should be descriptive to clearly indicate which platform or system that parameter is associated with, the name of the platform, and the type of the parameter
-* All parameters across the VA organization should be consistently named based on a single canonical model. Example model for the parameter names can contain these globally defined parameter types (this is just an example of what the model can contain):
+* Use short names rather than lengthy names
+* Environment specific keywords (e.g. dev, or prod) should never be in the parameter name.
+* Names should be descriptive enough to clearly indicate which platform or system a parameter is associated with, the name of the platform, and the type of the parameter
+* All parameters across the VA should be consistently named based on a single canonical model. Example model for the parameter names can contain these globally defined parameter types (this is just an example of what the model can contain):
 ** host
 ** port
 ** instance
@@ -73,7 +73,6 @@ Some general guidelines and rules when choosing naming convention for configurat
 ** username
 ** password
 ** path
-* 
 
 == MuleSoft specific API Naming Convention ==
 
@@ -81,11 +80,11 @@ Some general guidelines and rules when choosing naming convention for configurat
 
 ==== Use Case ====
 
-Can create a configuration parameter for each target Mulesoft environment and deploy the same artifact across multiple environments (e.g., dev, qa, production), without modifying the keys of the property parameters. Standardize on configuration parameter naming convention.
+Can create a configuration parameter for each target Mulesoft environment and deploy the same artifact across multiple environments (e.g., dev, qa, production), without modifying the keys of the property parameters. Standardize on the configuration parameter naming convention.
 
 ==== Global Properites ====
 
-Mule 4 has ability to define global properties. As a developer, you can use the &lt;global-property&gt; element to set a placeholder value from within your Mule configuration, such as from within another Mule configuration file. Example of a definition of a global property is shown below:
+Mule 4 has the ability to define global properties. A developer can use the &lt;global-property&gt; element to set a placeholder value from within the Mule configuration, such as from within another Mule configuration file. Example of a definition of a global property is shown below:
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.03%20ASG_API%20Playbook_Configuration%20Parameters_Section/media/image1.png|624x70px]]
 

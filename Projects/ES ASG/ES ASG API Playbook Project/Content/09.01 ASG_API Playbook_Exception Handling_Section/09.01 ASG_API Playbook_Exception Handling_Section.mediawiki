@@ -1,18 +1,18 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.07_Tech Review Resolution {Frank Burgos}.docx</b> on <b>Mon 08/27/2018</b> at <b>21:52:04.58 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.08_Standards Review {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b> 9:19:30.09 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_09.01 Exception Handling_Section_01.07_Tech Review Resolution {Frank Burgos}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_09.01 Exception Handling_Section_01.08_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section/09.01 ASG_API Playbook_Exception Handling_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = Exception Handling =
 
-The SOA web service interfacing style of SOAP tends to be centered around operations that are usually use-case specific and specialized. In contrast, RESTful is centered around business/data entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations. This section of the document will focus on RESTful error handling
+The SOA web service interfacing style of SOAP tends to be centered around operations that are usually use-case specific and specialized. In contrast, RESTful is centered around business/data entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations. This section on RESTful error handling
 
-Success and error responses are a vital part to define how an API is used correctly. Defining all success and service specific error responses in an API specification is required. Both are part of the interface definition and provide important information for service clients.
+Success and error responses are a vital part to define how an API is used correctly. Defining all success and service specific error responses in an API specification is required. Both are part of the interface definition and provide for service clients.
 
-API designers should ensure that error handling guidelines a part of the associated API documentation. Such documentation provides information and exception handling guidance on application-specific errors and should be referenced as part of the API specification. This can facilitate self-service enablement, thereby improving consumer and provider API understanding.
+API designers should ensure that error handling guidelines the associated API documentation. Such documentation provides information and exception handling guidance application-specific errors and should be referenced as part of the API specification. This facilitat self-service enablement, thereby improving consumer and provider API understanding.
 
-This document will detail various Exception Handling Artifacts and Strategies that will provide the API developer sufficient background to ensure that the developed API is sufficiently robust from an Exception Handling perspective.
+This document detail various Exception Handling Artifacts and Strategies that provide the API developer sufficient background to ensure the developed API is sufficiently robust from an Exception Handling perspective.
 
 These Artifacts and Strategies include:
 
@@ -27,9 +27,9 @@ These Artifacts and Strategies include:
 
 == Exceptions and API Development ==
 
-The discussion of the various types of exceptions and try/catch best practices in this section will focus on the Java implementation although differences between Java and the C# will be noted where appropriate.
+The discussion of the of exceptions and try/catch best practices in this on the Java implementation although differences between Java and C# will be noted where appropriate.
 
-A truly extensive description of Exception Handling including the try/catch statement in both Java and C# programming languages is pointed to by this URL:
+A extensive description of Exception Handling including the try/catch statement in both Java and C# programming languages
 
 https://pclt.sites.yale.edu/exception-handling-java-and-c
 
@@ -37,25 +37,25 @@ In Java all exceptions ('''''java.lang.Exception)''''' and errors ('''''java.lan
 
 === Checked Exceptions ===
 
-Checked are the exceptions that are checked at compile time. If code within a method invokes a method that throws a checked exception, then the invoking method must either handle the exception or it must propagate the exception using throws statement.
+Checked that are checked at compile time. If code within a method invokes a method that throws a hecked xception, then the invoking method must either handle the exception or it must propagate the exception using throws statement.
 
-Checked exceptions requirements instituted by API designers force API developers to deal with the exceptions. The expectation of the API designer is for the developers to be able to provide the appropriate logic to recover from those exceptions. Minimally this would include logging the exceptions and/or returning the appropriate response to the end user.
+Checked xceptions requirements instituted by API designers force API developers to deal with the exceptions. The expectation of the API designer is for the developers to be able to provide the appropriate logic to recover from those exceptions. Minimally this would include logging the exceptions and returning the appropriate response to the end user.
 
-Java supports both checked and unchecked.
+Java supports both hecked and nchecked.
 
 === Unchecked Exceptions ===
 
-Unchecked are the exceptions that are not checked at compiled time although some component in the stack trace must accommodate the unchecked exception. This typically occurs at the top of the stack trace immediately before returning to the end user.
+Unchecked that are not checked at compiled time although some component in the stack trace must accommodate the nchecked xception. This typically occurs at the top of the stack trace immediately before returning to the end user.
 
-Unchecked exceptions give developers fixability to ignore exceptions that are not recoverable but handle the ones that are.
+Unchecked xceptions give developers fixability to ignore exceptions that are not recoverable but handle the ones that are.
 
-Java exceptions inherited from '''''java.lang.Error''''' and '''''java.lang.RuntimeException''''' classes are unchecked exceptions, everything else under '''''java.lang.throwable''''' is checked.
+Java exceptions inherited from '''''java.lang.Error''''' and '''''java.lang.RuntimeException''''' classes are nchecked xceptions verything else under '''''java.lang.throwable''''' is checked.
 
-C# only supports unchecked exceptions thus all exception handling is purely optional although as stated above, in the Java example, some component in the stack trace must accommodate the unchecked exception.
+C# only supports nchecked xceptions thus all exception handling is purely optional although as stated above, in the Java example, some component in the stack trace must accommodate the nchecked xception.
 
 === Try/Catch Exception Handling Best Practices ===
 
-The system design artifact that addresses exceptions is implemented using the try/catch block statement. The following code is a typical try/catch statement with a finally statement,
+The system design artifact that addresses exceptions is implemented using the '''try'''/'''catch''' block statement. The following code is a typical '''try'''/'''catch''' statement with a '''finally''' statement,
 
 public void tryCatchExample() {
 
@@ -75,11 +75,11 @@ try {
 
 }
 
-* The try block needs to catch all checked exceptions, optionally unchecked exceptions can be caught here as well.
-* The catch block defines the exception or exceptions to be caught.
-* The finally block always executed and will happen either after the successful execution of the try block or after the exception has been handled in a catch block. The finally block accommodates any actions outside if the catch block for example, closing a File.
+* The '''try''' block needs to catch all checked exceptions ptionally unchecked exceptions can be caught here as well.
+* The '''catch''' block defines the exception to be caught.
+* The '''finally''' block always executed and will happen either after the successful execution of the try block or after the exception has been handled in a catch block. The finally block accommodates any actions outside if the catch block for example, closing a File.
 
-Defining Exception Handling best practices in either Java or C# in detail in this document is not a useful exercise.
+Defining Exception Handling best practices in either Java or C# in detail
 
 The following link provides Java Exception Handling Best Practices:
 
@@ -97,7 +97,7 @@ Restful APIs are typically based on the HTTP protocol for connecting their clien
 
 === HTTP Response Message Header Configuration ===
 
-API response implementations utilize the HTTP Response Message Header. A high-level overview of the HTTP Header and it communication of success and error conditions follows.
+API response implementations utilize the HTTP Response Message Header. A high-level overview of the HTTP Header and it communica success and error conditions follows.
 
 '''Important Note:'''
 
@@ -119,7 +119,7 @@ The HTTP Status Line has the following syntax:
 
 * HTTP-version: The HTTP version used in this session. Either HTTP/1.0 and HTTP/1.1.
 * status-code: a 3-digit number generated by the server to reflect the outcome of the request.
-* reason-phrase: gives a '''short''' explanation to the status code.
+* reason-phrase: gives to the status code.
 
 Examples of status line are:
 
@@ -187,11 +187,9 @@ The above 400 Bad Request example definitively identified the issue in this case
 
 ===== 500 Internal Server Error Guidelines =====
 
-The 500 Internal Server Error response required a discussion as to how it should be handled from the perspective of the API developer.
+The 500 response codes indicate non-programmatic failures, such failure to connect to a database. The expectation from a client perspective is that the client can re-submit the same request in the future and expect a successful response
 
-The 500 response codes indicate non-programmatic failures, such failure to connect to a database. The expectation from a client perspective is that the client can re-submit the same request in the future and expect a successful response.
-
-When returning a 500 Internal Server Error, '''only''' the minimum data necessary to aid the consumer in handling the error should be provided. This may include a generic error message, a reference id to a logged error which the consumer may use to match their error to the API’s logs, or instructions on how to seek assistance. Under '''no''' circumstances should diagnostic data be released in a 500 Internal Server Error, as this information can be used to compromise VA systems and security.
+When returning a 500 Internal Server Error, only the minimum data necessary to aid the consumer in handling the error should be provided. This may include a generic error message, a reference id to a logged error which the consumer may use to match their error to the API’s logs, or instructions on how to seek assistance. <span class="underline">Under no circumstances should diagnostic data be released in a 500 Internal Server Error, as this information can be used to compromise VA systems and security.</span>
 
 Ultimately the response generated because of an internal server error should ensure that the error returned is clear enough for the API user to take the appropriate action.
 
@@ -231,7 +229,7 @@ Necessary system alerting had been accomplished. &lt;P&gt;&lt;P&gt;
 
 VA APIs should use the Status Code which best reflects the result of each API call. A complete list can be found at https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml, or a more friendly list at https://developer.mozilla.org/en-US/docs/Web/HTTP/Status.
 
-While there is '''no prohibition''' for use of any HTTP Status Code, there are those which are more and those which are less useful. 200 OK is a ubiquitous code and its use is strongly encouraged. 203 Non-Authoritative Information is rarely used and only appropriate when it exactly describes the response and is useful to the consumer. The recommended VA status codes are as follows:
+While there is no prohibition for use of any HTTP Status Code, there are those which are more and those which are less useful. 200 OK is a ubiquitous code and its use is strongly encouraged. 203 Non-Authoritative Information is rarely used and only appropriate when it exactly describes the response and is useful to the consumer. The recommended VA status codes are as follows:
 
 * 200 OK – When the API call was successful.
 * 400 Bad Request – When the API call failed because the request contained incomplete or invalid data. Should be paired with meaningful instructions in the HTTP Response Message Body.
@@ -241,7 +239,7 @@ While there is '''no prohibition''' for use of any HTTP Status Code, there are t
 
 == JSON Response for API Service Errors Guidelines ==
 
-This section details a '''proposed''' standardized layout that will facilitate the creation of JSON payload specifically as it applies to the generation of a JSON Response for API errors. The following XML API Fault Class Diagram is used to define the data elements that will be returned, in a JSON format, to the API consumer. The JSON response will be contained in the HTTP Response Message body.
+This section details a proposed standardized layout that will facilitate the creation of JSON payload specifically as it applies to the generation of a JSON Response for API errors. The following XML API Fault Class Diagram is used to define the data elements that will be returned, in a JSON format, to the API consumer. The JSON response will be contained in the HTTP Response Message body.
 
 Figure 4 API Fault Class Diagram
 
