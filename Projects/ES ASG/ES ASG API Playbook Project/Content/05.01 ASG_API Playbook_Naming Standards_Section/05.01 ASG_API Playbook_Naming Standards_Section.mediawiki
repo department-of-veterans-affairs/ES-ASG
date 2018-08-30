@@ -1,36 +1,36 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b> 9:45:04.04 Eastern Time Zone</b>.</p>
-<p>Refer to XXXXXXXXXXXXXXX three ways to provide feedback on XXXXXXXXXXXXXXX Wiki Home page.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b> 9:46:49.79 Eastern Time Zone</b>.</p>
+<p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
-<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit XXXXXXXXXXXXXXX Wiki .mediawiki file here.</a></p>
+<p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = API Naming Convention =
 
 == Objective ==
 
-This section defines an API naming convention for XXXXXXXXXXXXXXX VA Enterprise, supporting all middleware and API management solutions and supporting all VA organization units and lines of businesses. Most importantly, define an API URL standard.
+This section defines an API naming convention for the VA Enterprise, supporting all middleware and API management solutions and supporting all VA organization units and lines of businesses. Most importantly, define an API URL standard.
 
 === Global and Enterprise Impacts of Naming Convention Standards ===
 
-XXXXXXXXXXXXXXX naming conventions standards contained herein are applicable across any centralized or geographically distributed implementations of Integrations and APIs.
+The naming conventions standards contained herein are applicable across any centralized or geographically distributed implementations of Integrations and APIs.
 
 === Cross Integration or Technical Platform Support ===
 
-XXXXXXXXXXXXXXX naming convention standards contained herein for APIs are applicable across integration platforms, as XXXXXXXXXXXXXXXy are agnostic of XXXXXXXXXXXXXXX underlying technology stack. XXXXXXXXXXXXXXX intention is to provide a vendor neutral convention for MuleSoft, 3Scale or any oXXXXXXXXXXXXXXXr API development and hosting platform. Where product-specific guidance is required, XXXXXXXXXXXXXXXse are addressed in independent sections.
+The naming convention standards contained herein for APIs are applicable across integration platforms, as they are agnostic of the underlying technology stack. The intention is to provide a vendor neutral convention for MuleSoft, 3Scale or any other API development and hosting platform. Where product-specific guidance is required, these are addressed in independent sections.
 
 === Cross Deployment of APIs across Clouds or On Premise ===
 
-XXXXXXXXXXXXXXX naming convention practices and guidelines contained herein for APIs are applicable across deployment and hosting models, wheXXXXXXXXXXXXXXXr an API is deployed to a Cloud (e.g. IaaS, PaaS, or SaaS) or On Premise, as XXXXXXXXXXXXXXX naming conventions eiXXXXXXXXXXXXXXXr account for XXXXXXXXXXXXXXX deployment model or is agnostic of XXXXXXXXXXXXXXX underlying hosting and cloud model. XXXXXXXXXXXXXXX conventions account for deployment in XXXXXXXXXXXXXXX VA Enterprise Cloud (VAEC) deployment model to ensure unique names across XXXXXXXXXXXXXXX entire VA; This API Naming Convention applies globally to all deployments (e.g. Cloud or On Premise) for XXXXXXXXXXXXXXX VA. It is intended to be environment and product agnostic.
+The naming convention practices and guidelines contained herein for APIs are applicable across deployment and hosting models, whether an API is deployed to a Cloud (e.g. IaaS, PaaS, or SaaS) or On Premise, as the naming conventions either account for the deployment model or is agnostic of the underlying hosting and cloud model. The conventions account for deployment in the VA Enterprise Cloud (VAEC) deployment model to ensure unique names across the entire VA; This API Naming Convention applies globally to all deployments (e.g. Cloud or On Premise) for the VA. It is intended to be environment and product agnostic.
 
-XXXXXXXXXXXXXXX VA naming convention guideline requires XXXXXXXXXXXXXXX API name to be unique no matter XXXXXXXXXXXXXXX region, locale, or infrastructure environment to avoid probable future collisions as APIs may be rehosted to different environments.
+The VA naming convention guideline requires the API name to be unique no matter the region, locale, or infrastructure environment to avoid probable future collisions as APIs may be rehosted to different environments.
 
-Note, wheXXXXXXXXXXXXXXXr an API is Internal facing, External facing, or both for Consumer use, is addressed and controlled via API policies, and not addressed via API naming conventions. For more information please see '''<span class="underline">Playbook: API Policies framework [[TBD]]</span>'''
+Note, whether an API is Internal facing, External facing, or both for Consumer use, is addressed and controlled via API policies, and not addressed via API naming conventions. For more information please see '''<span class="underline">Playbook: API Policies framework [[TBD]]</span>'''
 
-Note, XXXXXXXXXXXXXXX scope of this API Naming Convention document is to focus on XXXXXXXXXXXXXXX major API naming convention elements, including and up to XXXXXXXXXXXXXXX application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such</span>''' <span class="underline"> '''[[TBD]]'''</span>
+Note, the scope of this API Naming Convention document is to focus on the major API naming convention elements, including and up to the application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such</span>''' <span class="underline"> '''[[TBD]]'''</span>
 
 === Discoverability ===
 
-API names should be syntactically valid DNS names (as per [http://www.ietf.org/rfc/rfc1035.txt RFC 1035]) and [https://restfulapi.net/resource-naming REST Resource Naming Guide], which can be resolved to one or more network addresses. If an API is composed of several services or APIs, XXXXXXXXXXXXXXXy should be named in a way to help discoverability. One way to do this is for XXXXXXXXXXXXXXX API Names to share a common prefix. For example, XXXXXXXXXXXXXXX services build.VAappname.com and buildresults.VAappnameapis.com are both services that are part of XXXXXXXXXXXXXXX VAappname Build API.
+API names should be syntactically valid DNS names (as per [http://www.ietf.org/rfc/rfc1035.txt RFC 1035]) and [https://restfulapi.net/resource-naming REST Resource Naming Guide], which can be resolved to one or more network addresses. If an API is composed of several services or APIs, they should be named in a way to help discoverability. One way to do this is for the API Names to share a common prefix. For example, the services build.VAappname.com and buildresults.VAappnameapis.com are both services that are part of the VAappname Build API.
 
 == Vendor Agnostic API Naming Convention ==
 
@@ -54,32 +54,32 @@ Table 1: VA API Naming Conventions Requirements
 ! Framework Impacts
 |-
 | 1
-| VA has a preference to host APIs, applications, and IT solutions in XXXXXXXXXXXXXXX Veterans Affairs Enterprise Cloud (VAEC). Some APIs may still be hosted On Premise.
-| XXXXXXXXXXXXXXX VA Naming Convention accounts for Cloud or On-Premise solutions.
+| VA has a preference to host APIs, applications, and IT solutions in the Veterans Affairs Enterprise Cloud (VAEC). Some APIs may still be hosted On Premise.
+| The VA Naming Convention accounts for Cloud or On-Premise solutions.
 |-
 | 2
-| VA does most of XXXXXXXXXXXXXXXir business in USA.
+| VA does most of their business in USA.
 |
-XXXXXXXXXXXXXXX Naming Convention will not account for a region or locale in XXXXXXXXXXXXXXX naming convention because XXXXXXXXXXXXXXX majority of VA is USA based. (If a company, organization, or enterprise is global with API’s applicable to different countries or regions, or hosted in different countries or regions, industry best practice is to account for such in XXXXXXXXXXXXXXX API naming convention).
+The Naming Convention will not account for a region or locale in the naming convention because the majority of VA is USA based. (If a company, organization, or enterprise is global with API’s applicable to different countries or regions, or hosted in different countries or regions, industry best practice is to account for such in the API naming convention).
 
-Even for oXXXXXXXXXXXXXXXr regions outside of XXXXXXXXXXXXXXX USA, XXXXXXXXXXXXXXX API Naming conventions does factor in XXXXXXXXXXXXXXX different Organization Name into XXXXXXXXXXXXXXX naming standard and XXXXXXXXXXXXXXXrefore could allow XXXXXXXXXXXXXXX APIs in oXXXXXXXXXXXXXXXr countries to be differentiated by XXXXXXXXXXXXXXX Organization Name
+Even for other regions outside of the USA, the API Naming conventions does factor in the different Organization Name into the naming standard and therefore could allow the APIs in other countries to be differentiated by the Organization Name
 
-Should VA’s business model change XXXXXXXXXXXXXXX future, where XXXXXXXXXXXXXXXre is more globalization and geographic differences outside of XXXXXXXXXXXXXXX USA, XXXXXXXXXXXXXXX Naming Conventions shall be adjusted at that time.
+Should VA’s business model change the future, where there is more globalization and geographic differences outside of the USA, the Naming Conventions shall be adjusted at that time.
 |-
 | 3
 | VA has many Use Cases that involve enterprise systems
-| XXXXXXXXXXXXXXX Naming Conventions shall account for XXXXXXXXXXXXXXX Canonical representation of business objects, such as “Veteran, “Address”, and oXXXXXXXXXXXXXXXrs.
+| The Naming Conventions shall account for the Canonical representation of business objects, such as “Veteran, “Address”, and others.
 |}
 
 === Naming Criteria ===
 
-Following typical best practice guidance for web resource definition, any API URL always consists of XXXXXXXXXXXXXXX protocol, host, port, base path, RESTful operation, and, finally, parameters to XXXXXXXXXXXXXXX API.
+Following typical best practice guidance for web resource definition, any API URL always consists of the protocol, host, port, base path, RESTful operation, and, finally, parameters to the API.
 
-With XXXXXXXXXXXXXXX API URL naming convention, XXXXXXXXXXXXXXX following required and optional criteria should be met:
+With the API URL naming convention, the following required and optional criteria should be met:
 
-# Designate XXXXXXXXXXXXXXX environment hosting XXXXXXXXXXXXXXX API (e.g. dev, qa, production, uat).
+# Designate the environment hosting the API (e.g. dev, qa, production, uat).
 
-Define wheXXXXXXXXXXXXXXXr XXXXXXXXXXXXXXX API is Experience, Process, or System API See: [[03.00 ASG_API Playbook_API Layer_Section]!03.00 ASG_API Playbook_API Layer_Sectio
+Define whether the API is Experience, Process, or System API See: [[03.00 ASG_API Playbook_API Layer_Section]!03.00 ASG_API Playbook_API Layer_Sectio
 
 <ol style="list-style-type: lower-alpha;">
 <li><p>Experience API is targeted to a specific UI platform such as mobile app, desktop portal, or tablet.</p></li>
@@ -87,14 +87,14 @@ Define wheXXXXXXXXXXXXXXXr XXXXXXXXXXXXXXX API is Experience, Process, or System
 <li><p>System API is used to integrate with a back office or external system or platform (e.g., a database or an ERP system), and typically follows a Create/Read/Update/Delete model with system interaction.</p></li></ol>
 
 <ol start="2" style="list-style-type: decimal;">
-<li><p>Distinguish XXXXXXXXXXXXXXX VA Enterprise Organization Name who owns XXXXXXXXXXXXXXX API. For project teams where, multiple teams are developing and contributing to XXXXXXXXXXXXXXX API, XXXXXXXXXXXXXXX Organization Name who has ownership of XXXXXXXXXXXXXXX API should be noted in XXXXXXXXXXXXXXX naming of XXXXXXXXXXXXXXX API. If XXXXXXXXXXXXXXX API is not owned nor is functionally tied to an Organization, XXXXXXXXXXXXXXXn it should not be part of XXXXXXXXXXXXXXX URL. Instead, XXXXXXXXXXXXXXX word “Enterprise” can be substituted for XXXXXXXXXXXXXXX Organization Name.</p></li>
-<li><p>Define XXXXXXXXXXXXXXX VA Enterprise application serving this API (i.e. what system is XXXXXXXXXXXXXXX “Provider” of XXXXXXXXXXXXXXX API?).</p></li>
-<li><p>Identify XXXXXXXXXXXXXXX key Canonical Business Object that XXXXXXXXXXXXXXX API represents for XXXXXXXXXXXXXXX enterprise.</p></li>
-<li><p>Define XXXXXXXXXXXXXXX base API path, /api, needed to differentiate all APIs from oXXXXXXXXXXXXXXXr HTTP resources throughout XXXXXXXXXXXXXXX VA Enterprise.</p></li>
-<li><p>Provide ability by XXXXXXXXXXXXXXX API consumer to easily determine what version of XXXXXXXXXXXXXXX API is being consumed by incorporating version numbering into XXXXXXXXXXXXXXX API URL itself.</p></li>
-<li><p>Define XXXXXXXXXXXXXXX RESTful operation and parameters ('''<span class="underline">See Playbook section: REST Operation Naming Convention section).[[TBD]]</span>'''</p></li></ol>
+<li><p>Distinguish the VA Enterprise Organization Name who owns the API. For project teams where, multiple teams are developing and contributing to the API, the Organization Name who has ownership of the API should be noted in the naming of the API. If the API is not owned nor is functionally tied to an Organization, then it should not be part of the URL. Instead, the word “Enterprise” can be substituted for the Organization Name.</p></li>
+<li><p>Define the VA Enterprise application serving this API (i.e. what system is the “Provider” of the API?).</p></li>
+<li><p>Identify the key Canonical Business Object that the API represents for the enterprise.</p></li>
+<li><p>Define the base API path, /api, needed to differentiate all APIs from other HTTP resources throughout the VA Enterprise.</p></li>
+<li><p>Provide ability by the API consumer to easily determine what version of the API is being consumed by incorporating version numbering into the API URL itself.</p></li>
+<li><p>Define the RESTful operation and parameters ('''<span class="underline">See Playbook section: REST Operation Naming Convention section).[[TBD]]</span>'''</p></li></ol>
 
-Below is a table documenting which criteria are required and which are optional in XXXXXXXXXXXXXXX VA API naming convention standard:
+Below is a table documenting which criteria are required and which are optional in the VA API naming convention standard:
 
 === Naming Convention Summary ===
 
@@ -139,11 +139,11 @@ VistA
 
 Enterprise (Not associated with an Organization)
 
-C4E (owned by XXXXXXXXXXXXXXX API Governance team run by Enterprise Services Archicture Services Group, i.e ASG)
+C4E (owned by the API Governance team run by Enterprise Services Archicture Services Group, i.e ASG)
 |-
 | API Path
 | Required
-| /api in XXXXXXXXXXXXXXX path to differentiate XXXXXXXXXXXXXXX APIs
+| /api in the path to differentiate the APIs
 |-
 | API Version
 | Required
@@ -175,7 +175,7 @@ address
 
 REST APIs use [https://en.wikipedia.org/wiki/Uniform_Resource_Identifier Uniform Resource Identifiers] (URIs) to address resources. REST API designers should create URIs that convey a REST API’s resource model to its potential client developers. When resources are named well, an API is intuitive and easy to use. If done poorly, that same API can feel difficult to use and understand.
 
-Below are visual examples of XXXXXXXXXXXXXXX API URL elements associated with VA standard. XXXXXXXXXXXXXXX convention defined herein shall be used for API’s developed outside of a specific API or vendor platform.
+Below are visual examples of the API URL elements associated with VA standard. The convention defined herein shall be used for API’s developed outside of a specific API or vendor platform.
 
 VA API URL:
 
@@ -183,15 +183,15 @@ Figure 1: VA API Example
 
 [[File:.//media/image1.emf|624x122px]]
 
-Note, XXXXXXXXXXXXXXX naming standard shall enable unique API names across all of VA enterprise.
+Note, the naming standard shall enable unique API names across all of VA enterprise.
 
 === Enviornment Naming Convention ===
 
-XXXXXXXXXXXXXXX naming convention for XXXXXXXXXXXXXXX APIs deployed in VA should incorporate environment names always. An API will always be deployed across multiple environments.
+The naming convention for the APIs deployed in VA should incorporate environment names always. An API will always be deployed across multiple environments.
 
-As an example, XXXXXXXXXXXXXXX environment should be XXXXXXXXXXXXXXX prefix for each of XXXXXXXXXXXXXXX deployed APIs except for Production, which doesn’t have XXXXXXXXXXXXXXX environment prefix. Environments are labeled in XXXXXXXXXXXXXXX URL to signal to XXXXXXXXXXXXXXX developer it is a “non-Production” instance of XXXXXXXXXXXXXXX API, and XXXXXXXXXXXXXXX associated environment it is currently assigned to. Production environments are not labeled because it keeps XXXXXXXXXXXXXXX API name cleaner and more usable across VA or oXXXXXXXXXXXXXXXr agencies.
+As an example, the environment should be the prefix for each of the deployed APIs except for Production, which doesn’t have the environment prefix. Environments are labeled in the URL to signal to the developer it is a “non-Production” instance of the API, and the associated environment it is currently assigned to. Production environments are not labeled because it keeps the API name cleaner and more usable across VA or other agencies.
 
-Normally, XXXXXXXXXXXXXXX continental region is also included in XXXXXXXXXXXXXXX prefix of an API via industry best practice, but since VA predominantly operates in in XXXXXXXXXXXXXXX US, XXXXXXXXXXXXXXX current naming convention doesn’t have any global region requirements (XXXXXXXXXXXXXXX assumption is all APIs are US based. Note, this can be revisited in XXXXXXXXXXXXXXX future when VA has API’s that are not US based.).
+Normally, the continental region is also included in the prefix of an API via industry best practice, but since VA predominantly operates in in the US, the current naming convention doesn’t have any global region requirements (The assumption is all APIs are US based. Note, this can be revisited in the future when VA has API’s that are not US based.).
 
 Table 3: VA Environment Naming Convention Summary
 
@@ -224,7 +224,7 @@ Table 4: API Type applied to API Naming Convention
 ! Example
 |-
 | Experience Application
-| Experience application, targeted to XXXXXXXXXXXXXXX mobile, desktop, or tablet experience
+| Experience application, targeted to the mobile, desktop, or tablet experience
 | '''exp-&lt;Organization Name&gt;'''
 | exp-vet360
 |-
@@ -243,15 +243,15 @@ Table 4: API Type applied to API Naming Convention
 
 === Organization Name ===
 
-XXXXXXXXXXXXXXX main VA Organization Name is always part of XXXXXXXXXXXXXXX API URL path. For example, XXXXXXXXXXXXXXX Organization Name, “Enterprise Services” or “Vet360”, is added as part of XXXXXXXXXXXXXXX API base path.
+The main VA Organization Name is always part of the API URL path. For example, the Organization Name, “Enterprise Services” or “Vet360”, is added as part of the API base path.
 
-XXXXXXXXXXXXXXX framework is flexible in that it allows for any VA Organization Names to be added or subtracted from XXXXXXXXXXXXXXX API path naming convention, if XXXXXXXXXXXXXXX Organization Name is unique*.
+The framework is flexible in that it allows for any VA Organization Names to be added or subtracted from the API path naming convention, if the Organization Name is unique*.
 
-If an API is <span class="underline">not</span> associated, owned, or managed by a single VA Organization, XXXXXXXXXXXXXXXn it must be reflected in XXXXXXXXXXXXXXX naming convention as “Enterprise”. This means multiple teams own XXXXXXXXXXXXXXX API and ownership cannot be delineated to a single VA Organization. If XXXXXXXXXXXXXXX C4E or XXXXXXXXXXXXXXX Integration governance team owns XXXXXXXXXXXXXXX API, XXXXXXXXXXXXXXXn it’s reflected as “C4E” naming convention in place of XXXXXXXXXXXXXXX Organization Name.
+If an API is <span class="underline">not</span> associated, owned, or managed by a single VA Organization, then it must be reflected in the naming convention as “Enterprise”. This means multiple teams own the API and ownership cannot be delineated to a single VA Organization. If the C4E or the Integration governance team owns the API, then it’s reflected as “C4E” naming convention in place of the Organization Name.
 
-In this context, XXXXXXXXXXXXXXX Organizational Names examples for XXXXXXXXXXXXXXX VA and are provided below:
+In this context, the Organizational Names examples for the VA and are provided below:
 
-Examples of Line of Business Team Name for XXXXXXXXXXXXXXX VA, include:
+Examples of Line of Business Team Name for the VA, include:
 
 * Enterprise Services (API URL path element: “/EnterpriseServices”)
 * Vet360 (API URL path element: “/Vet360”)
@@ -259,43 +259,43 @@ Examples of Line of Business Team Name for XXXXXXXXXXXXXXX VA, include:
 * C4E (API URL path element: “/C4E”)
 * No Team or Shared (API URL path element: “/Enterprise”)
 
-(* Note, XXXXXXXXXXXXXXX Organization Name should be unique across teams, but XXXXXXXXXXXXXXX naming conventions framework could still allow for duplicate Organization Names, if API name uniqueness is applied by using anoXXXXXXXXXXXXXXXr parameter from XXXXXXXXXXXXXXX URL path, such as XXXXXXXXXXXXXXX URL elements: “Application”, “Canonical”, or something else in XXXXXXXXXXXXXXX URL path.
+(* Note, the Organization Name should be unique across teams, but the naming conventions framework could still allow for duplicate Organization Names, if API name uniqueness is applied by using another parameter from the URL path, such as the URL elements: “Application”, “Canonical”, or something else in the URL path.
 
 === Major/Minor Versions ===
 
-It is recommended to have only XXXXXXXXXXXXXXX major versions in XXXXXXXXXXXXXXX API Base URL naming convention (e.g., “v1”), as opposed to showing major/minor versions (e.g., “v1.0” or even “v1.0.0”). XXXXXXXXXXXXXXX consumer of XXXXXXXXXXXXXXX API should be able to easily determine by XXXXXXXXXXXXXXX API URL what major version of XXXXXXXXXXXXXXX API is being consumed. XXXXXXXXXXXXXXX consumer of XXXXXXXXXXXXXXX API mostly won’t be concerned with XXXXXXXXXXXXXXX minor release version from XXXXXXXXXXXXXXX actual API URL. This granular version information should be provided to XXXXXXXXXXXXXXX API consumer in XXXXXXXXXXXXXXX detailed release notes, provided to XXXXXXXXXXXXXXX consumer or VA partner via XXXXXXXXXXXXXXX API Portal or via written release notes.
+It is recommended to have only the major versions in the API Base URL naming convention (e.g., “v1”), as opposed to showing major/minor versions (e.g., “v1.0” or even “v1.0.0”). The consumer of the API should be able to easily determine by the API URL what major version of the API is being consumed. The consumer of the API mostly won’t be concerned with the minor release version from the actual API URL. This granular version information should be provided to the API consumer in the detailed release notes, provided to the consumer or VA partner via the API Portal or via written release notes.
 
-XXXXXXXXXXXXXXX API Portal or API Manager should capture additional metadata about each public API, such as major/minor API version, all system integrations for that API, owner of XXXXXXXXXXXXXXX API, examples of consuming XXXXXXXXXXXXXXX API within XXXXXXXXXXXXXXX internal VA platforms, and oXXXXXXXXXXXXXXXr detailed information about XXXXXXXXXXXXXXX API.
+The API Portal or API Manager should capture additional metadata about each public API, such as major/minor API version, all system integrations for that API, owner of the API, examples of consuming the API within the internal VA platforms, and other detailed information about the API.
 
-On XXXXXXXXXXXXXXX contrary, XXXXXXXXXXXXXXX API Base URL should provide clear and targeted information about that API, its owner, line of business, API type, major released version, and XXXXXXXXXXXXXXX application.
+On the contrary, the API Base URL should provide clear and targeted information about that API, its owner, line of business, API type, major released version, and the application.
 
-Note, this “Naming Conventions Framework” content does not replace XXXXXXXXXXXXXXX need for anoXXXXXXXXXXXXXXXr framework for “Version Control Framework”. '''<span class="underline">Please see Playbook section on: Version Control</span>'''
+Note, this “Naming Conventions Framework” content does not replace the need for another framework for “Version Control Framework”. '''<span class="underline">Please see Playbook section on: Version Control</span>'''
 
 === API in Path ===
 
-“/api” will be part of XXXXXXXXXXXXXXX API URL base path as illustrated above as a <span class="underline">required</span> element in XXXXXXXXXXXXXXX API Base URL path. XXXXXXXXXXXXXXX reason for having /api always being part of XXXXXXXXXXXXXXX path is two-fold:
+“/api” will be part of the API URL base path as illustrated above as a <span class="underline">required</span> element in the API Base URL path. The reason for having /api always being part of the path is two-fold:
 
-* Having /api in XXXXXXXXXXXXXXX path helps configure load balancing solutions (i.e., for L7 path-based balancing of load across multiple instances), as well as to configure any type of internal gateway and firewall policies for all VA Enterprise APIs.
-* Having XXXXXXXXXXXXXXX word /api in XXXXXXXXXXXXXXX path instructs XXXXXXXXXXXXXXX consuming applications that this URL is an API URL, which follows certain API configuration and naming standards.
+* Having /api in the path helps configure load balancing solutions (i.e., for L7 path-based balancing of load across multiple instances), as well as to configure any type of internal gateway and firewall policies for all VA Enterprise APIs.
+* Having the word /api in the path instructs the consuming applications that this URL is an API URL, which follows certain API configuration and naming standards.
 
 ==  ==
 
-As described in oXXXXXXXXXXXXXXXr sections, it is recommended to include a version number in XXXXXXXXXXXXXXX base path of an API to provide flexibility when it does come time to upgrade consumers to a latest version.  With a versioned API, you will have XXXXXXXXXXXXXXX option to deploy a latest version of XXXXXXXXXXXXXXX API while continuing to support consumers of XXXXXXXXXXXXXXX outdated version because you don’t have to immediately deprecate XXXXXXXXXXXXXXX outdated version. You can have two concurrent versions of XXXXXXXXXXXXXXX
+As described in other sections, it is recommended to include a version number in the base path of an API to provide flexibility when it does come time to upgrade consumers to a latest version.  With a versioned API, you will have the option to deploy a latest version of the API while continuing to support consumers of the outdated version because you don’t have to immediately deprecate the outdated version. You can have two concurrent versions of the
 
 === Canonical Business Object Name ===
 
-If an API is associated with a Canonical Business Object, that should be captured in XXXXXXXXXXXXXXX API Naming Convention URL path. Some APIs may not be associated with a Canonical Business Object, so this criterion is optional.
+If an API is associated with a Canonical Business Object, that should be captured in the API Naming Convention URL path. Some APIs may not be associated with a Canonical Business Object, so this criterion is optional.
 
-XXXXXXXXXXXXXXX following decision tree can be applied to decide when it is required vs optional:
+The following decision tree can be applied to decide when it is required vs optional:
 
 <ol style="list-style-type: decimal;">
-<li><p>Is XXXXXXXXXXXXXXX API associated with a Canonical Business Object? '''Yes/No'''</p>
+<li><p>Is the API associated with a Canonical Business Object? '''Yes/No'''</p>
 <ol style="list-style-type: lower-alpha;">
-<li><p>'''Yes''' – add XXXXXXXXXXXXXXX Canonical Business Object name to XXXXXXXXXXXXXXX API naming convention</p></li>
-<li><p>'''No''' – don’t add XXXXXXXXXXXXXXX Canonical Business object name into XXXXXXXXXXXXXXX API naming convention</p></li></ol>
+<li><p>'''Yes''' – add the Canonical Business Object name to the API naming convention</p></li>
+<li><p>'''No''' – don’t add the Canonical Business object name into the API naming convention</p></li></ol>
 </li></ol>
 
-XXXXXXXXXXXXXXX full API URL should look like this:
+The full API URL should look like this:
 
 https://dev-exp-vet360.va.gov:8081/api/v1/veteranportal/address (with optional Canonical Business Object element named “address”)
 
@@ -305,15 +305,15 @@ https://dev-exp-vet360.va.gov:8081/api/v1/veteranportal (without optional Canoni
 
 ==== Use Case ====
 
-Provide a consistent and standard naming convention for XXXXXXXXXXXXXXX RAML files.
+Provide a consistent and standard naming convention for the RAML files.
 
 ==== Naming Criteria ====
 
-All RAML files should follow standard naming convention of a standard file prefix “RAML” with XXXXXXXXXXXXXXX rest of XXXXXXXXXXXXXXX name tied to XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX API or application.
+All RAML files should follow standard naming convention of a standard file prefix “RAML” with the rest of the name tied to the name of the API or application.
 
 ==== Naming Convention Summary ====
 
-XXXXXXXXXXXXXXX name of each RAML file should be:
+The name of each RAML file should be:
 
 '''RAML'''-&lt;Organization Name&gt;-&lt;Application Name&gt;
 
@@ -327,27 +327,27 @@ For example:
 
 ==== Use Case ====
 
-Can create a property file for each target API environment and deploy XXXXXXXXXXXXXXX same artifact across multiple environments (e.g., dev, qa, production), without modifying XXXXXXXXXXXXXXX keys of XXXXXXXXXXXXXXX property parameters. Standardize on property file and property key naming conventions.
+Can create a property file for each target API environment and deploy the same artifact across multiple environments (e.g., dev, qa, production), without modifying the keys of the property parameters. Standardize on property file and property key naming conventions.
 
 ==== External Property Placeholders ====
 
-XXXXXXXXXXXXXXX proposed solution externalizes environment specific information to property files located on
+The proposed solution externalizes environment specific information to property files located on
 
-a specific server path (e.g. /opt/mule/mule-ext-configs). XXXXXXXXXXXXXXXse property files can/will be picked up by each API application using a global configuration named: &lt;context:property-placeholder&gt;
+a specific server path (e.g. /opt/mule/mule-ext-configs). These property files can/will be picked up by each API application using a global configuration named: &lt;context:property-placeholder&gt;
 
-In practice, property-placeholders work XXXXXXXXXXXXXXX same as XXXXXXXXXXXXXXX default mule-app.properties file
+In practice, property-placeholders work the same as the default mule-app.properties file
 
 included on every Mule application and properties defined on property files (as key=value pairs)
 
-can be read in XXXXXXXXXXXXXXX same way: ${myproperty}
+can be read in the same way: ${myproperty}
 
 ==== Property File Naming Convention ====
 
-Given XXXXXXXXXXXXXXXse files can contain pretty much anything, it is recommended to define a naming convention that would provide enough granularity, so that each application could reference only what is needed
+Given these files can contain pretty much anything, it is recommended to define a naming convention that would provide enough granularity, so that each application could reference only what is needed
 
 without adding too much complexity.
 
-XXXXXXXXXXXXXXX current approach takes XXXXXXXXXXXXXXX following naming conventions:
+The current approach takes the following naming conventions:
 
 &lt;Organization Name&gt;*-&lt;source&gt;-&lt;source-type&gt;*-&lt;credentials&gt;*-&lt;component&gt;*.properties
 
@@ -370,13 +370,13 @@ Table 6: Mule Property Naming Convention Summary
 * '''Vet360-'''mongodb.propeties
 |-
 | Source
-| Represents XXXXXXXXXXXXXXX source system for which you are externalizing XXXXXXXXXXXXXXX properties (e.g. mongodb)
+| Represents the source system for which you are externalizing the properties (e.g. mongodb)
 | '''Required'''
 |
 * '''mongodb''' .properties
 |-
 | Source-Type
-| Provides ability to specify XXXXXXXXXXXXXXX specific type of source (e.g. amqp with configuration of type A, B or C).
+| Provides ability to specify the specific type of source (e.g. amqp with configuration of type A, B or C).
 | '''Optional'''
 |
 * amqp-'''A'''-producer.properties
@@ -384,9 +384,9 @@ Table 6: Mule Property Naming Convention Summary
 |-
 | Credentials
 |
-For some systems XXXXXXXXXXXXXXXre may be a completely
+For some systems there may be a completely
 
-separate set of credentials for each component being build. In this situation, it is recommended to define multiple credential-specific property files instead of having a full copy of all XXXXXXXXXXXXXXX
+separate set of credentials for each component being build. In this situation, it is recommended to define multiple credential-specific property files instead of having a full copy of all the
 
 configuration for every component
 | '''Optional'''
@@ -399,7 +399,7 @@ properties
 * amqp-'''credentials'''-listener.properties
 |-
 | Component
-| Occasionally, XXXXXXXXXXXXXXXre is a need to have a set of properties per component, in which case it is recommended to define it at XXXXXXXXXXXXXXX end of XXXXXXXXXXXXXXX name.
+| Occasionally, there is a need to have a set of properties per component, in which case it is recommended to define it at the end of the name.
 | '''Optional'''
 |
 * amqp-credentials-'''enricher'''.properties
@@ -416,7 +416,7 @@ Next, each set of related properties should have a sub-header describing that gr
 
 starting with a hashtag (# &lt;description&gt;)
 
-In XXXXXXXXXXXXXXX example below, each property row is a specifically named connection to XXXXXXXXXXXXXXX back-end system. In this example, XXXXXXXXXXXXXXX back-end system is named “cat.csf”
+In the example below, each property row is a specifically named connection to the back-end system. In this example, the back-end system is named “cat.csf”
 
 Example:
 
@@ -442,17 +442,17 @@ cat.wmq.ssl.keyStorePassword=password
 
 ==== Configuration Parameters ====
 
-Configuration parameters are defined inside environment property files or added to XXXXXXXXXXXXXXX runtime configuration of XXXXXXXXXXXXXXX application. In instances where XXXXXXXXXXXXXXXse parameters are defined inside property files, XXXXXXXXXXXXXXXse parameters are commonly entered as key-value pairs.
+Configuration parameters are defined inside environment property files or added to the runtime configuration of the application. In instances where these parameters are defined inside property files, these parameters are commonly entered as key-value pairs.
 
-For example, for VA vet360 API, XXXXXXXXXXXXXXXre is a need to store a configuration parameter for XXXXXXXXXXXXXXX relational database. XXXXXXXXXXXXXXX database has its host, port, username, password, and database instance. All of XXXXXXXXXXXXXXXse variables are considered configuration parameters that are managed eiXXXXXXXXXXXXXXXr in one of XXXXXXXXXXXXXXX environment property files or as runtime arguments when launching an application (e.g., Linux runtime arguments, Java JVM arguments, etc).
+For example, for VA vet360 API, there is a need to store a configuration parameter for the relational database. The database has its host, port, username, password, and database instance. All of these variables are considered configuration parameters that are managed either in one of the environment property files or as runtime arguments when launching an application (e.g., Linux runtime arguments, Java JVM arguments, etc).
 
-'''Important''': Since configuration parameters are managed in Environment Property files, which already are named by specific environment (“dev.configuration”), XXXXXXXXXXXXXXXre is no need to add an environment name into XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX configuration parameter. In fact, it is XXXXXXXXXXXXXXX opposite, no environment-specific indicators, keywords, or flags should be part of XXXXXXXXXXXXXXX name of any configuration parameter. Configuration parameters are reused across environments and, as such, are not tied to a specific environment.
+'''Important''': Since configuration parameters are managed in Environment Property files, which already are named by specific environment (“dev.configuration”), there is no need to add an environment name into the name of the configuration parameter. In fact, it is the opposite, no environment-specific indicators, keywords, or flags should be part of the name of any configuration parameter. Configuration parameters are reused across environments and, as such, are not tied to a specific environment.
 
-With that said, once a configuration parameter is placed in an environment property file tied to a specific environment, XXXXXXXXXXXXXXX value of that parameter becomes specific to that environment.
+With that said, once a configuration parameter is placed in an environment property file tied to a specific environment, the value of that parameter becomes specific to that environment.
 
-For example, '''mule.env'''=dev inside XXXXXXXXXXXXXXX dev.configuration property file. XXXXXXXXXXXXXXX same '''mule.env'''=qa is now inside XXXXXXXXXXXXXXX qa.configuration file.
+For example, '''mule.env'''=dev inside the dev.configuration property file. The same '''mule.env'''=qa is now inside the qa.configuration file.
 
-XXXXXXXXXXXXXXX naming conventions for XXXXXXXXXXXXXXX configuration parameters should reflect XXXXXXXXXXXXXXX following:
+The naming conventions for the configuration parameters should reflect the following:
 
 {|
 ! API Name
@@ -478,7 +478,7 @@ XXXXXXXXXXXXXXX naming conventions for XXXXXXXXXXXXXXX configuration parameters 
 |}
 
 * Application name
-** This will be a short name for XXXXXXXXXXXXXXX application based on XXXXXXXXXXXXXXX APP code that is associated with this property. For example, “vet360” for XXXXXXXXXXXXXXX Vet360 application.
+** This will be a short name for the application based on the APP code that is associated with this property. For example, “vet360” for the Vet360 application.
 * Platform type:
 ** “db” for database
 ** “jms” for JMS queue
@@ -498,7 +498,7 @@ XXXXXXXXXXXXXXX naming conventions for XXXXXXXXXXXXXXX configuration parameters 
 ** “port” for port number
 ** “username” for username
 ** “password” for password
-** “instance” for XXXXXXXXXXXXXXX database instance name
+** “instance” for the database instance name
 ** etc
 
 An example of a full name of a configuration parameter:
@@ -511,28 +511,28 @@ An example of a full name of a configuration parameter:
 
 ==== Optional vs Required Configuration Parameters (i.e. Elements) for Property Files ====
 
-XXXXXXXXXXXXXXX following decision tree can be applied to decide when XXXXXXXXXXXXXXXre are required vs optional elements for Property Files:
+The following decision tree can be applied to decide when there are required vs optional elements for Property Files:
 
 <ol style="list-style-type: decimal;">
-<li><p>Is XXXXXXXXXXXXXXX property file owned and maintained by a single Organization? '''Yes/No'''</p>
+<li><p>Is the property file owned and maintained by a single Organization? '''Yes/No'''</p>
 <ol style="list-style-type: lower-alpha;">
-<li><p>'''Yes''' – add XXXXXXXXXXXXXXX Organization Name to XXXXXXXXXXXXXXX property file naming convention</p></li>
-<li><p>'''No''' – don’t add XXXXXXXXXXXXXXX Organization Name into XXXXXXXXXXXXXXX property file naming convention</p></li></ol>
+<li><p>'''Yes''' – add the Organization Name to the property file naming convention</p></li>
+<li><p>'''No''' – don’t add the Organization Name into the property file naming convention</p></li></ol>
 </li>
-<li><p>Does XXXXXXXXXXXXXXX source of XXXXXXXXXXXXXXX property file have multiple source types associated with that source? For example, mongodb is XXXXXXXXXXXXXXX source but it has multiple source types, based on specific purpose or function. '''Yes/No'''</p>
+<li><p>Does the source of the property file have multiple source types associated with that source? For example, mongodb is the source but it has multiple source types, based on specific purpose or function. '''Yes/No'''</p>
 <ol start="3" style="list-style-type: lower-alpha;">
-<li><p>'''Yes''' – add XXXXXXXXXXXXXXX Source Type to XXXXXXXXXXXXXXX property file naming convention</p></li>
-<li><p>'''No''' – don’t add XXXXXXXXXXXXXXX Source Type to XXXXXXXXXXXXXXX property file naming convention</p></li></ol>
+<li><p>'''Yes''' – add the Source Type to the property file naming convention</p></li>
+<li><p>'''No''' – don’t add the Source Type to the property file naming convention</p></li></ol>
 </li>
-<li><p>Is XXXXXXXXXXXXXXXre a separate set of credentials for this source that requires separate property file to maintain? For example, one set of credentials for service accounts, and XXXXXXXXXXXXXXX oXXXXXXXXXXXXXXXr for users with elevated access rights. '''Yes/No'''</p>
+<li><p>Is there a separate set of credentials for this source that requires separate property file to maintain? For example, one set of credentials for service accounts, and the other for users with elevated access rights. '''Yes/No'''</p>
 <ol start="5" style="list-style-type: lower-alpha;">
-<li><p>'''Yes''' – add XXXXXXXXXXXXXXX Credentials to XXXXXXXXXXXXXXX property file naming convention</p></li>
-<li><p>'''No''' – don’t add XXXXXXXXXXXXXXX Credentials to XXXXXXXXXXXXXXX property file naming convention</p></li></ol>
+<li><p>'''Yes''' – add the Credentials to the property file naming convention</p></li>
+<li><p>'''No''' – don’t add the Credentials to the property file naming convention</p></li></ol>
 </li>
-<li><p>Are XXXXXXXXXXXXXXXre multiple unique components in Mulesoft for this source that requires separate property file to maintain? For example, an Enricher component requiring this source with different properties vs a Selector component, requiring separate set of properties? '''Yes/No'''</p>
+<li><p>Are there multiple unique components in Mulesoft for this source that requires separate property file to maintain? For example, an Enricher component requiring this source with different properties vs a Selector component, requiring separate set of properties? '''Yes/No'''</p>
 <ol start="7" style="list-style-type: lower-alpha;">
-<li><p>'''Yes''' – add XXXXXXXXXXXXXXX Component to XXXXXXXXXXXXXXX property file naming convention</p></li>
-<li><p>'''No''' – don’t add XXXXXXXXXXXXXXX Component to XXXXXXXXXXXXXXX property file naming convention</p></li></ol>
+<li><p>'''Yes''' – add the Component to the property file naming convention</p></li>
+<li><p>'''No''' – don’t add the Component to the property file naming convention</p></li></ol>
 </li></ol>
 
 ==== Configuration Properties Naming Convention Guidelines for Properties Files ====
@@ -540,9 +540,9 @@ XXXXXXXXXXXXXXX following decision tree can be applied to decide when XXXXXXXXXX
 Some general guidelines and rules when choosing naming convention for configuration parameters:
 
 * Shorter names
-* Never have environment specific keywords in XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX parameter (e.g., “dev” or “prod”)
-* Names should be descriptive to clearly indicate which platform or system that parameter is associated with, XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX platform, and XXXXXXXXXXXXXXX type of XXXXXXXXXXXXXXX parameter
-* All parameters across XXXXXXXXXXXXXXX VA organization should be consistently named based on a single canonical model. Example model for XXXXXXXXXXXXXXX parameter names can contain XXXXXXXXXXXXXXXse globally defined parameter types (this is just an example of what XXXXXXXXXXXXXXX model can contain):
+* Never have environment specific keywords in the name of the parameter (e.g., “dev” or “prod”)
+* Names should be descriptive to clearly indicate which platform or system that parameter is associated with, the name of the platform, and the type of the parameter
+* All parameters across the VA organization should be consistently named based on a single canonical model. Example model for the parameter names can contain these globally defined parameter types (this is just an example of what the model can contain):
 ** host
 ** port
 ** instance
@@ -555,21 +555,21 @@ Some general guidelines and rules when choosing naming convention for configurat
 
 Some general guidelines and rules when choosing naming convention standards, which were applied throughout this blueprint, are listed below:
 
-* Names should be descriptive and encode XXXXXXXXXXXXXXX functionality of XXXXXXXXXXXXXXX IT asset being identified.
+* Names should be descriptive and encode the functionality of the IT asset being identified.
 * Shorter names are preferred over longer names to ensure simplicity, less clutter, and avoid byte constraints across systems.
 * Extremely short names such as 1-character names are discouraged.
-* Names should be descriptive so that XXXXXXXXXXXXXXXy can be interpreted and understood quickly, preferably without having to review reference guides often.
-* Any IT asset named should follow CamelCase practices, which is XXXXXXXXXXXXXXX practice of writing compound words or phrases so that each next word or abbreviation begins with a capital letter. CamelCase starts with a capital.
-* Periodically spot check auto generated names from XXXXXXXXXXXXXXX commercial toolsets to ensure XXXXXXXXXXXXXXXre aren’t any names that could be difficult to manage. Take periodic sample sets to spot check so you’re not spending lots of time.
-* Since XXXXXXXXXXXXXXX name of an API deployed within XXXXXXXXXXXXXXX VA domain, it could span VA Clouds or On-Premise environments, but still need to be unique across XXXXXXXXXXXXXXX entire VA domain. Since XXXXXXXXXXXXXXX API will represent a domain name (DNS entry), some care must be taken to ensure XXXXXXXXXXXXXXXse names are unique and orderly across XXXXXXXXXXXXXXX VA enterprise.
-* An API name should not conflict with any well-established concepts in programming languages and XXXXXXXXXXXXXXXir runtime libraries (for example, File). In XXXXXXXXXXXXXXX rare case where an interface name would conflict with anoXXXXXXXXXXXXXXXr name within XXXXXXXXXXXXXXX API, a suffix (for example Api or Service) should be used to disambiguate.
+* Names should be descriptive so that they can be interpreted and understood quickly, preferably without having to review reference guides often.
+* Any IT asset named should follow CamelCase practices, which is the practice of writing compound words or phrases so that each next word or abbreviation begins with a capital letter. CamelCase starts with a capital.
+* Periodically spot check auto generated names from the commercial toolsets to ensure there aren’t any names that could be difficult to manage. Take periodic sample sets to spot check so you’re not spending lots of time.
+* Since the name of an API deployed within the VA domain, it could span VA Clouds or On-Premise environments, but still need to be unique across the entire VA domain. Since the API will represent a domain name (DNS entry), some care must be taken to ensure these names are unique and orderly across the VA enterprise.
+* An API name should not conflict with any well-established concepts in programming languages and their runtime libraries (for example, File). In the rare case where an interface name would conflict with another name within the API, a suffix (for example Api or Service) should be used to disambiguate.
 * Field names should avoid prepositions (e.g. &quot;for&quot;, &quot;during&quot;, &quot;at&quot;), for example:
-* If a date must be represented as a string, it should be in XXXXXXXXXXXXXXX ISO 8601 date format YYYY-MM-DD, e.g. 2014-07-30.
-* If a time of day must be represented as a string, it should be in XXXXXXXXXXXXXXX ISO 8601 24-hour time format HH:MM:SS[.FFF], e.g. 14:55:01.672.
+* If a date must be represented as a string, it should be in the ISO 8601 date format YYYY-MM-DD, e.g. 2014-07-30.
+* If a time of day must be represented as a string, it should be in the ISO 8601 24-hour time format HH:MM:SS[.FFF], e.g. 14:55:01.672.
 
 == MuleSoft specific API Naming Convention ==
 
-XXXXXXXXXXXXXXX MuleSoft Naming Conventions framework includes XXXXXXXXXXXXXXX following MuleSoft components to apply naming standards to:
+The MuleSoft Naming Conventions framework includes the following MuleSoft components to apply naming standards to:
 
 * MuleSoft Application (API) Naming Standards
 * MuleSoft Property File Naming Standards
@@ -578,7 +578,7 @@ XXXXXXXXXXXXXXX MuleSoft Naming Conventions framework includes XXXXXXXXXXXXXXX f
 
 === MuleSoft API Manager ===
 
-Within XXXXXXXXXXXXXXX MuleSoft API Manager, XXXXXXXXXXXXXXXre is API URL field on XXXXXXXXXXXXXXX screen that needs to be populated with XXXXXXXXXXXXXXX API Base URL, following XXXXXXXXXXXXXXX naming convention defined in this document. Examples of sample APIs that could be defined in XXXXXXXXXXXXXXX API Manager are provided below:
+Within the MuleSoft API Manager, there is API URL field on the screen that needs to be populated with the API Base URL, following the naming convention defined in this document. Examples of sample APIs that could be defined in the API Manager are provided below:
 
 Figure 1: VA - API URL setting in MuleSoft API Manager
 
@@ -590,11 +590,11 @@ INSERT SCREENSHOT
 
 ==== Use Case ====
 
-Standardize MuleSoft application names across XXXXXXXXXXXXXXX VA Enterprise. XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX application should be meaningful and should provide as much details about XXXXXXXXXXXXXXX purpose and use of XXXXXXXXXXXXXXX application as possible.
+Standardize MuleSoft application names across the VA Enterprise. The name of the application should be meaningful and should provide as much details about the purpose and use of the application as possible.
 
 ==== Naming Criteria ====
 
-Since all MuleSoft applications are separated into Experience, Process and System applications, XXXXXXXXXXXXXXX naming convention should be aligned to XXXXXXXXXXXXXXXse types of applications.
+Since all MuleSoft applications are separated into Experience, Process and System applications, the naming convention should be aligned to these types of applications.
 
 INSERT SCREENSHOT
 
@@ -602,13 +602,13 @@ INSERT SCREENSHOT
 
 ==== Use Case ====
 
-Standardize Mule module name across XXXXXXXXXXXXXXX VA Enterprise. XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX module should be indicating wheXXXXXXXXXXXXXXXr this is a MuleSoft component, library, or connector, as well as providing a clear indication on XXXXXXXXXXXXXXX purpose and name of that module.
+Standardize Mule module name across the VA Enterprise. The name of the module should be indicating whether this is a MuleSoft component, library, or connector, as well as providing a clear indication on the purpose and name of that module.
 
 ==== Naming Criteria ====
 
 All MuleSoft modules can be separated into libraries (i.e., packaged as JAR) or connectors.
 
-Shared libraries (i.e. compiled binaries) should be packaged as JARs and deployed into a shared module registry, such as Artifactory (3<sup>rd</sup>-party product to MuleSoft). XXXXXXXXXXXXXXX JAR can XXXXXXXXXXXXXXXn be easily integrated (i.e. consumed) into any Mule process flow or sub-flow via Maven or Gradle reference. '''<span class="underline">See Playbook: Shared Components</span>''' for more information on consuming shared modules.
+Shared libraries (i.e. compiled binaries) should be packaged as JARs and deployed into a shared module registry, such as Artifactory (3<sup>rd</sup>-party product to MuleSoft). The JAR can then be easily integrated (i.e. consumed) into any Mule process flow or sub-flow via Maven or Gradle reference. '''<span class="underline">See Playbook: Shared Components</span>''' for more information on consuming shared modules.
 
 ==== Naming Convention Summary ====
 
@@ -635,7 +635,7 @@ Table 5: Mule Module Naming Convention Summary
 
 ==== Use Case ====
 
-Standardize MuleSoft flow and sub-flow naming convention, to allow for consistent naming of XXXXXXXXXXXXXXXm across VA Enterprise MuleSoft projects.
+Standardize MuleSoft flow and sub-flow naming convention, to allow for consistent naming of them across VA Enterprise MuleSoft projects.
 
 ==== Naming Criteria ====
 
@@ -655,17 +655,17 @@ INSERT SCREENSHOT
 
 ==== Use Case ====
 
-Can create a configuration parameter for each target Mulesoft environment and deploy XXXXXXXXXXXXXXX same artifact across multiple environments (e.g., dev, qa, production), without modifying XXXXXXXXXXXXXXX keys of XXXXXXXXXXXXXXX property parameters. Standardize on configuration parameter naming convention.
+Can create a configuration parameter for each target Mulesoft environment and deploy the same artifact across multiple environments (e.g., dev, qa, production), without modifying the keys of the property parameters. Standardize on configuration parameter naming convention.
 
 ==== Global Properties ====
 
-Mule 4 has ability to define global properties. As a developer, you can use XXXXXXXXXXXXXXX &lt;global-property&gt; element to set a placeholder value from within your Mule configuration, such as from within anoXXXXXXXXXXXXXXXr Mule configuration file. Example of a definition of a global property is shown below:
+Mule 4 has ability to define global properties. As a developer, you can use the &lt;global-property&gt; element to set a placeholder value from within your Mule configuration, such as from within another Mule configuration file. Example of a definition of a global property is shown below:
 
 Figure 2: Global Properties Example
 
 [[File:.//media/image2.png|624x70px]]
 
-XXXXXXXXXXXXXXX properties are managed in mule-app.properties file in Mule 3 and Mule 4, but with XXXXXXXXXXXXXXX new 4.x release Mulesoft has also provide an ability to manage global properties inside a YAML file. XXXXXXXXXXXXXXX format of a YAML file allows to structure all properties in a nested tree. For example, instead of XXXXXXXXXXXXXXX above “smtp.host”, we can now store XXXXXXXXXXXXXXX same property inside a YAML file like this:
+The properties are managed in mule-app.properties file in Mule 3 and Mule 4, but with the new 4.x release Mulesoft has also provide an ability to manage global properties inside a YAML file. The format of a YAML file allows to structure all properties in a nested tree. For example, instead of the above “smtp.host”, we can now store the same property inside a YAML file like this:
 
 smtp:
 
@@ -673,21 +673,21 @@ host: “{host name}”,
 
 subject: “{subject name”
 
-With that said, XXXXXXXXXXXXXXX naming conventions for XXXXXXXXXXXXXXX global configuration parameters should still follow XXXXXXXXXXXXXXX naming conventions defined in XXXXXXXXXXXXXXX previous, Technology-Agnostic, section.
+With that said, the naming conventions for the global configuration parameters should still follow the naming conventions defined in the previous, Technology-Agnostic, section.
 
-Mulesoft has many reserved global configuration parameters, which all start with “mule.” in XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX parameter. For example, “mule.env” is reserved to XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX Mule environment. In addition, XXXXXXXXXXXXXXXre are oXXXXXXXXXXXXXXXr reserved Mule properties that are tied to XXXXXXXXXXXXXXX application deployed. For example, “app.name” is XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX application running within XXXXXXXXXXXXXXX Mule runtime.
+Mulesoft has many reserved global configuration parameters, which all start with “mule.” in the name of the parameter. For example, “mule.env” is reserved to the name of the Mule environment. In addition, there are other reserved Mule properties that are tied to the application deployed. For example, “app.name” is the name of the application running within the Mule runtime.
 
-In a Mule process flow, a developer can reference XXXXXXXXXXXXXXXse parameters like this: ${mule.env}, by adding a dollar sign “$” and wrapping XXXXXXXXXXXXXXX parameter name with XXXXXXXXXXXXXXX curly braces. In Mule Expression Language (MEL) used inside an expression such as inside a DataWeave Transformations control, accessing properties is done with a reserved “#p[]”, where you would place XXXXXXXXXXXXXXX name of XXXXXXXXXXXXXXX property inside XXXXXXXXXXXXXXX square brackets. For example, “#p[‘vet360.db.oracle.host’]”.
+In a Mule process flow, a developer can reference these parameters like this: ${mule.env}, by adding a dollar sign “$” and wrapping the parameter name with the curly braces. In Mule Expression Language (MEL) used inside an expression such as inside a DataWeave Transformations control, accessing properties is done with a reserved “#p[]”, where you would place the name of the property inside the square brackets. For example, “#p[‘vet360.db.oracle.host’]”.
 
 ===  ===
 
 = Extension of Naming Convention Blueprint =
 
-Naming conventions can include additional API or integration assets that need a name associated to it that are beyond just XXXXXXXXXXXXXXX API and oXXXXXXXXXXXXXXXr components described herein. For example, 3<sup>rd</sup>-party artifacts and assets, field names, testing tool naming conventions, database naming conventions, all of which are outside of API or XXXXXXXXXXXXXXX API platform, but still should have a standardized naming convention. This blueprint can be extended, and content added to this document to include XXXXXXXXXXXXXXXse oXXXXXXXXXXXXXXXr IT asset names associated with integration initiatives, including but not limited to:
+Naming conventions can include additional API or integration assets that need a name associated to it that are beyond just the API and other components described herein. For example, 3<sup>rd</sup>-party artifacts and assets, field names, testing tool naming conventions, database naming conventions, all of which are outside of API or the API platform, but still should have a standardized naming convention. This blueprint can be extended, and content added to this document to include these other IT asset names associated with integration initiatives, including but not limited to:
 
-* Specific components for additional platforms beyond MuleSoft (EX: API’s built in oXXXXXXXXXXXXXXXr platforms) flows, modules, and applications/packages.
+* Specific components for additional platforms beyond MuleSoft (EX: API’s built in other platforms) flows, modules, and applications/packages.
 * Naming fields in an API Contract or Middleware Canonical
-* Naming supporting databases and structures to support XXXXXXXXXXXXXXX API Platform
+* Naming supporting databases and structures to support the API Platform
 * Naming API Platform environments
 * Naming support assets (certificates, cache stores, queues, etc.)
 * Naming Test Cases in Testing Tools or Unit Test Cases in platform tools.
