@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.10_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:53:31.48 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.10_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:55:49.88 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_09.01 Exception Handling_Section_01.10_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section/09.01 ASG_API Playbook_Exception Handling_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -501,11 +501,11 @@ A requirement of the Error/Fault Message Channel, as alluded to above. Is the ca
 
 An Error/Fault Message Channel will provide the capability for the services that subscribe to be able to receive fault and error messages facilitated by the channel. It is anticipated that errors and faults will be published on one or more asynchronous message channels, and subscribed to by the following
 
-* Logging Services
+• Logging Services
 
 Will would centrally capture errors needed to provide support to services and service consumers. It would associate relevant error and fault information, and provide mechanisms to query this information, and to run analytical reports.
 
-* Monitoring and Triage Services
+• Monitoring and Triage Services
 
 Will enable automated diagnostics and handling of errors, creation of trouble tickets, integration with service desk, SLA management, etc. Design and specification of such services will have to be defined.
 
