@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b> 9:02:06.44 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b> 9:08:45.68 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -30,7 +30,7 @@ Note, the scope of this API Naming Convention document is to focus on the major 
 
 === Discoverability ===
 
-API names should be syntactically valid DNS names (as per [http://www.ietf.org/rfc/rfc1035.txt RFC 1035]) and https://restfulapi.net/resource-naming, which can be resolved to one or more network addresses. If an API is composed of several services or APIs, they should be named in a way to help discoverability. One way to do this is for the API Names to share a common prefix. For example, the services build.VAappname.com and buildresults.VAappnameapis.com are both services that are part of the VAappname Build API.
+API names should be syntactically valid DNS names (as per [http://www.ietf.org/rfc/rfc1035.txt RFC 1035]) and [https://restfulapi.net/resource-naming REST Resource Naming Guide], which can be resolved to one or more network addresses. If an API is composed of several services or APIs, they should be named in a way to help discoverability. One way to do this is for the API Names to share a common prefix. For example, the services build.VAappname.com and buildresults.VAappnameapis.com are both services that are part of the VAappname Build API.
 
 == Vendor Agnostic API Naming Convention ==
 
