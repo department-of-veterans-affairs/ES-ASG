@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>10:43:14.32 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>10:48:34.55 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -73,13 +73,20 @@ Following typical best practice guidance for web resource definition, any API UR
 
 With the API URL naming convention, the following required and optional criteria should be met:
 
-# Designate the environment hosting the API (e.g. dev, qa, production, uat).
-# Distinguish the VA Enterprise Organization Name who owns the API. For project teams where, multiple teams are developing and contributing to the API, the Organization Name who has ownership of the API should be noted in the naming of the API. If the API is not owned nor is functionally tied to an Organization, then it should not be part of the URL. Instead, the word “Enterprise” can be substituted for the Organization Name.
-# Define the VA Enterprise application serving this API (i.e. what system is the “Provider” of the API?).
-# Identify the key Canonical Business Object that the API represents for the enterprise.
-# Define the base API path, /api, needed to differentiate all APIs from other HTTP resources throughout the VA Enterprise.
-# Provide ability by the API consumer to easily determine what version of the API is being consumed by incorporating version numbering into the API URL itself.
-# Define the RESTful operation and parameters ('''<span class="underline">See Playbook section: REST Operation Naming Convention section).[[TBD]]</span>'''
+<ol style="list-style-type: decimal;">
+<li><p>Designate the environment hosting the API (e.g. dev, qa, production, uat).</p>
+<p>Define whether the API is Experience, Process, or System API See: [[03.00 ASG_API Playbook_API Layer_Section]!03.00 ASG_API Playbook_API Layer_Sectio</p>
+<ol style="list-style-type: lower-roman;">
+<li><p>Experience API is targeted to a specific UI platform such as mobile app, desktop portal, or tablet.</p></li>
+<li><p>Process API is used to orchestrate and provide business logic across two or more system APIs.</p></li>
+<li><p>System API is used to integrate with a back office or external system or platform (e.g., a database or an ERP system), and typically follows a Create/Read/Update/Delete model with system interaction.</p></li></ol>
+</li>
+<li><p>Distinguish the VA Enterprise Organization Name who owns the API. For project teams where, multiple teams are developing and contributing to the API, the Organization Name who has ownership of the API should be noted in the naming of the API. If the API is not owned nor is functionally tied to an Organization, then it should not be part of the URL. Instead, the word “Enterprise” can be substituted for the Organization Name.</p></li>
+<li><p>Define the VA Enterprise application serving this API (i.e. what system is the “Provider” of the API?).</p></li>
+<li><p>Identify the key Canonical Business Object that the API represents for the enterprise.</p></li>
+<li><p>Define the base API path, /api, needed to differentiate all APIs from other HTTP resources throughout the VA Enterprise.</p></li>
+<li><p>Provide ability by the API consumer to easily determine what version of the API is being consumed by incorporating version numbering into the API URL itself.</p></li>
+<li><p>Define the RESTful operation and parameters ('''<span class="underline">See Playbook section: REST Operation Naming Convention section).[[TBD]]</span>'''</p></li></ol>
 
 Below is a table documenting which criteria are required and which are optional in the VA API naming convention standard:
 
