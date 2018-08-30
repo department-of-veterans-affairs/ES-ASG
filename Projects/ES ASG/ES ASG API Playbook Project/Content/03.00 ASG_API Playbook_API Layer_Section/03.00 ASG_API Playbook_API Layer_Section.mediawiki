@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.04_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:17:55.74 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.04_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:21:08.98 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.04_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/03.00 ASG_API Playbook_API Layer_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -69,6 +69,8 @@ Figure 2: API Layers Invocation
 == API Layer Decision Tree ==
 
 When determining whether to categorize an API and which corresponding layer it should be aligned with, the following decision tree should be applied.
+
+(Editors Note: This will become a table to resolve Mediawiki issues).
 
 <ol style="list-style-type: decimal;">
 <li><p>Does the system being integrated already provide native APIs that can be invoked to perform system interoperability?</p>
@@ -144,13 +146,9 @@ Figure 6: Canonical Example
 
 = Licenses Considerations =
 
-==  ==
-
 == API License Awareness ==
 
 Because each API has licensing impacts on its associated platform, the team must be judicious on the number of APIs created, to reduce the necessity of procuring more licensing just to comply with the 3-layer design approach described above. The goal is to minimize or keep the number of APIs lower while still maintaining architecture integrity, to keep costs down. Typically, this means only creating “Process” and “Experience” where truly needed. If the design for a specific use case has “Process” and “Experience” APIs that are just wrappers of a “System” API and not providing any additional functionality or logic, it might be best to eliminate these additional layers for the use case, because they will have impacts on the licensing. If building additional APIs has overtly negative impacts on the team’s licensing and causing project cost concerns and the additional APIs aren’t performing any processing outside of wrapping for layer architecture described above, that wouldn’t align with licensing best practices. Therefore, the design for a use case could only call for 1 API layer, the “System API”.
-
-==  ==
 
 == Native System API ==
 
