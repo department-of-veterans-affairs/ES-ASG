@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.06_Published Draft Second Pass.docx</b> on <b>Thu 08/30/2018</b> at <b>14:47:52.15 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.06_Published Draft Second Pass.docx</b> on <b>Thu 08/30/2018</b> at <b>15:07:02.78 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.06_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/03.00 ASG_API Playbook_API Layer_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -72,18 +72,20 @@ When determining whether to categorize an API and which corresponding layer it s
 
 (Editors Note: This will become a table to resolve Mediawiki issues).
 
-# '''Does the '''
-#* Analyze existing API requirements and user stories created by business stakeholders and your target API consumers.
-#* Create an overall sequence flow diagram for the API service and its operations, covering all service integration points and interactions with other services, including parallel/sequential/rollback requirements.
-#* Identify and document key use cases to be supported by this API.
-
-'''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
+# Does the system being integrated already provide native APIs that can be invoked to perform system interoperability?
 
 # Sequence Flow Diagram.
 # RAML or Swagger API Specification for the API.
 # Key Use Cases to support the requirements and user stories
 
 <ol start="2" style="list-style-type: decimal;">
+<li><p>Does the system being integrated already provide native APIs that can be invoked to perform system interoperability?</p></li></ol>
+
+# Sequence Flow Diagram.
+# RAML or Swagger API Specification for the API.
+# Key Use Cases to support the requirements and user stories
+
+<ol start="3" style="list-style-type: decimal;">
 <li><p>'''Mock Phase''' includes creating the Mock service to provide sample request and response in the service endpoint. The service at this point should be deployed in its initial iteration with mock inputs and outputs, for target users to be able to consume that service to integrate with their end user platforms. The mock APIs are only available in Dev and Integration and QA environments, and should never be promoted to Production.</p></li></ol>
 
 '''<span class="underline">Deliverables</span>''' produced by each developer in this phase:
