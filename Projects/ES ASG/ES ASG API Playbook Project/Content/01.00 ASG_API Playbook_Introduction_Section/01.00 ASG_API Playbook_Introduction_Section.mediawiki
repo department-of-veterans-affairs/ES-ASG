@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_01.00 Introduction_Section_01.06_Published Draft Second Pass.docx</b> on <b>Thu 08/30/2018</b> at <b>14:06:31.11 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_01.00 Introduction_Section_01.06_Published Draft Second Pass.docx</b> on <b>Thu 08/30/2018</b> at <b>14:09:05.03 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_01.00 Introduction_Section_01.06_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/01.00 ASG_API Playbook_Introduction_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -93,29 +93,29 @@ Figure 5: API Marketplace and Exchange Concept
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/01.00%20ASG_API%20Playbook_Introduction_Section/media/image6.png|624x347px]]
 
-The Guiding principles of the VA API Marketplace includes:
+== The Guiding principles of the VA API Marketplace includes: ==
 
-== API Portal ==
+=== API Portal ===
 
 Providers and Consumers can interact through a common site. Consumers can onboard, test
 
-== API Exchange and Catalog ==
+=== API Exchange and Catalog ===
 
 The API is discoverable, searchable, and easy to find for re-use.
 
-== API Gateway ==
+=== API Gateway ===
 
 The routing and brokering mechanism for all API invocations.
 
-== Consumer Types ==
+=== Consumer Types ===
 
 There are diverse types of Consumers of the API, such as System (On Premise, Cloud, SaaS); An Application (Mobile, Portal, Web UI); Trading Partner; Developer (Internal or External).
 
-== API Change Management ==
+=== API Change Management ===
 
 Manage API versions, onboarding, off-boarding, deprecation multiple concurrent versions
 
-Analytics
+=== Analytics ===
 
 Visibility into the API performance, statistics, and trends
 
