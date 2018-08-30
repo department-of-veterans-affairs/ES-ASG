@@ -1,12 +1,12 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.07_Published Draft.docx</b> on <b>Thu 08/30/2018</b> at <b>14:15:37.90 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.08_Published Draft Second Pass.docx</b> on <b>Thu 08/30/2018</b> at <b>14:18:25.02 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_02.01 Development Lifecycle_Section_01.07_Published Draft">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_02.01 Development Lifecycle_Section_01.08_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/02.01 ASG_API Playbook_Development Lifecycle_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 
 
-== Standards API Development Lifecycle ==
+= Standards API Development Lifecycle =
 
 There are multiple API development methodologies used by various vendor platforms and development teams. Example methodologies include:
 
@@ -34,7 +34,7 @@ As a result, the recommendation is to follow these key guidelines for VA API dev
 
 Each of the following key guidelines mentioned above is elaborated further in the sections below.
 
-=== Design First instead of Build First ===
+== Design First instead of Build First ==
 
 An API Contract is a common term to describe how API services are brokered among API providers and consumers. It is a standard specification agreement between the provider and consumer. API providers and consumers can enter into an agreement (i.e. the “contract”) for services around a set of resources. Additionally, a provider can publish a codified and machine readable API contract, which a consumer can consume in a self-service way. Examples of an API Contract are a Swagger JSON or YAML file, or an API RAML definition file.
 
@@ -59,7 +59,7 @@ In the case where an API is closely tied to Mulesoft platform, RAML is a natural
 
 When using Mulesoft Anypoint Platform, Design First approach is the best practice approach to all API development. A RAML contract is first created within the Design Center or using Anypoint Studio, published into Anypoint Platform and advertised to API consumers via Exchange. The consumers, at this point, can review the RAML contract and use the API Console to test out the sample inputs and outputs into the API, using Mock API capabilities.
 
-=== Follow Test Driven Development ===
+== Follow Test Driven Development ==
 
 Test-Driven Development (TDD) is an API development process that relies on iterative, short development lifecycles immediately followed by testing what was developed in each iteration. The core process of TDD is:
 
@@ -82,7 +82,7 @@ VA API Implementation projects should follow the TDD approach for all of the API
 <li><p>Testing frameworks such as MUnit, JUnit, Mocha, Jasmine, and Cucumber have a strong fit into the overall microservices architecture.</p>
 <p>In the above TDD development process, an API developer is responsible for documenting the key user stories and corresponding test cases and steps. This upfront test planning will help projects to accelerate their timelines, especially those with dedicated centralized QA teams managing the test plan with test cases and steps. With TDD there is an elevated responsibility put on each API developer to maintain a list of the API user stories and test cases with steps for each API the developer is responsible for.</p></li></ul>
 
-=== Create API Contracts and Mocks Early ===
+== Create API Contracts and Mocks Early ==
 
 Based on the guidelines mentioned above, to follow TDD, creating API contracts and mocks is an essential first step after the API requirements are delivered to your team to create an API. Either an Open API Standards contract such as Swagger 1.x or 2.x, or a RESTful API Modelling Language (RAML) contract is required to be defined and delivered to the development team and to the identified target API consumers.
 
@@ -90,7 +90,7 @@ Mocks of each API are required to be either created manually or, like with some 
 
 Mocking API requests and responses is an important next step, after the API contract is designed. In many API management platforms, this is achieved either automatically using an API Console, or manually, by developing and deploying a mock API based on the defined contract. In other API platforms, it can be also an automated function using SwaggerUI toolset, for example, or a manually developed mock API solution. For manually developed mock APIs, the developer can choose to hard-code a JSON or SOAP-based response for a given API operation, or leverage a mock framework, such as Mockito.
 
-=== Iterate Frequently and Often ===
+== Iterate Frequently and Often ==
 
 API development should be an iterative process, complete with initial requirements and user stories collected, test cases defined, an API contract designed, and mock responses created and published as the initial version of the API. Following this mock API deployment, an actual API should then be developed by replacing mock operation responses with “live” service operations. Each API development iteration should be clearly labelled and versioned in the source code repository and the API Management console. For more details on API versioning, please see section ”API Version Control”
 
@@ -98,13 +98,13 @@ Furthermore, many packaging and build frameworks, such as Maven, have clearly id
 
 With proper API major and minor versioning, an API developer can iterate API development frequently and publish updated API contract versions to the target consumers. For example, a new change to an API contract requires a minor version update. To minimize the impact on API consumers, a developer would update the API packaging and contract definition files (e.g. pom.xml and Swagger or RAML contracts) to iterate the version of an API, and then publish the updates to the API Design Center and API Portal. The target API consumers will review the changes and decide whether they would want to stay on an existing API version or upgrade to the latest version, based on the release notes documented by the API developer.
 
-=== Publish an API and Operate ===
+== Publish an API and Operate ==
 
 Each new iteration of the code and API contract needs to be published to an online API catalog or API portal to be accessible by the target API consumers. The API consumers can subscribe to new notifications of a particular API update and get notified when a new API version is published to the online catalog. A provider API developer should create well-documented release notes for each new API version developed , explaining what changes have been made with this new version and why API consumers should be using this version instead of an older one.
 
 Once an API version is published, it is the responsibility of the API consumer developer to operate and maintain the consumer codebase and managed to the API versions that are actively used by the consumers. API consumers should be made aware of any downtimes or API availability interruptions, as well as any defects discovered with a particular API version.
 
-=== Engage Your API Consumers ===
+== Engage Your API Consumers ==
 
 Engaging the target API service consumers early avoids requirements miscommunication, promotes consumers starting their integration development to consume your API, and allows your team to focus on development and testing.
 
@@ -114,11 +114,11 @@ To engage an API consumer, a developer would publish the API to the API Portal (
 
 Once an API is published, an API developer should ask the API consumers to provide feedback on a particular API version. Certain online API portal tools, such as SwaggerHub, provide the ability for an API consumer to provide feedback and comments on an API contract.
 
-=== Development Lifecycle Stages ===
+== Development Lifecycle Stages ==
 
 Following the above API development guidelines, below are the key stages of the API development. An API developer should follow the above guidelines and complete all stages in the below lifecycle.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image2.png]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/media/image2.png|472x262px]]
 
 # '''Design Phase''' includes the following:
 #* Analyze existing API requirements and user stories created by business stakeholders and your target API consumers.
