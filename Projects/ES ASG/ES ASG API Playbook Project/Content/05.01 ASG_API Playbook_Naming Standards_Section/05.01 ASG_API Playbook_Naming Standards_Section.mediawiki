@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>11:07:34.31 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>11:14:44.39 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -402,19 +402,37 @@ properties
 
 ==== Formatting ====
 
-Each property file should start by defining which system it’s meant for surrounded by
+Each property file should start by defining which system it’s meant for surrounded by triple hashtags (### &lt;system&gt; ###).
 
-triple hashtags (### &lt;system&gt; ###).
-
-Next, each set of related properties should have a sub-header describing that group
-
-starting with a hashtag (# &lt;description&gt;)
+Next, each set of related properties should have a sub-header describing that group starting with a hashtag (# &lt;description&gt;)
 
 In the example below, each property row is a specifically named connection to the back-end system. In this example, the back-end system is named “cat.csf”
 
 Example:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image2.png|864x184px]]
+&lt;pre&gt;
+
+### Vet360 amq ###
+
+# Connection to System Properties
+
+cat.csf.connectionNameList=svm2038pdv.dev.va.gov(1414),svm2038pdv.dev.va.gov(1415),svm2038pdv.dev.va.gov(1416)
+
+cat.csf.clientReconnectTimeout=3600
+
+cat.csf.queueManager=SVM2038PDV
+
+cat.csf.transportType=1
+
+cat.csf.targetClientMatching=true
+
+# Vet360 SSL Config
+
+cat.wmq.sSLCipherSuite=TLS_RSA_WITH_AES_256_CBC_SHA256
+
+cat.wmq.ssl.keyStorePassword=password
+
+&lt;/pre&gt;
 
 ==== Configuration Parameters ====
 
@@ -639,7 +657,7 @@ Mule 4 has ability to define global properties. As a developer, you can use the�
 
 Figure 2: Global Properties Example
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image3.png|624x70px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image2.png|624x70px]]
 
 The properties are managed in mule-app.properties file in Mule 3 and Mule 4, but with the new 4.x release Mulesoft has also provide an ability to manage global properties inside a YAML file. The format of a YAML file allows to structure all properties in a nested tree. For example, instead of the above “smtp.host”, we can now store the same property inside a YAML file like this:
 
