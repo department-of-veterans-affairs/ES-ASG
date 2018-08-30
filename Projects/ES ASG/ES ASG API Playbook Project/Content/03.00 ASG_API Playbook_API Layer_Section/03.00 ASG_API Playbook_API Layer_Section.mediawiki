@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.06_Published Draft Second Pass.docx</b> on <b>Thu 08/30/2018</b> at <b>16:22:23.28 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.06_Published Draft Second Pass.docx</b> on <b>Thu 08/30/2018</b> at <b>16:25:27.44 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.06_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/03.00 ASG_API Playbook_API Layer_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -73,36 +73,25 @@ When determining whether to categorize an API and which corresponding layer it s
 (Editors Note: This will become a table to resolve Mediawiki issues).
 
 {|
-! 1. Does the system being integrated already provide native APIs that can be invoked to perform system interoperability?
-! a. If yes…. Use the native System API and don’t develop a new one in the API Platform
-|-
-|
-
+| 1. Does the system being integrated already provide native APIs that can be invoked to perform system interoperability?
+| a. If yes…. Use the native System API and don’t develop a new one in the API Platform
 | b. If no…. Proceed to 2.
 |-
 | 2. Is the API performing an Insert, Update, Read, or Delete on a specific system (EX: Oracle, SFDC, Workday) without applying business rules?
-|
-a. If yes… System API.
-
-b. If No…. Proceed to 3.
+| a. If yes… System API.
+| b. If No…. Proceed to 3.
 |-
 | 3. Is the API orchestrating a process or require invoking other API(s)?
-|
-a. If yes… Process API.
-
-b. If No… Proceed to 4.
+| a. If yes… Process API.
+| b. If No… Proceed to 4.
 |-
 | 4. Is the API performing transformation or business rules to prepare for system interoperability?
-|
-a. If yes… Process API.
-
-b. If No…Proceed to 5.
+| a. If yes… Process API.
+| b. If No…Proceed to 5.
 |-
 | 5. Is the API being consumed or invoked by a User Interface?
-|
-a. If yes… Experience API
-
-b. If No…. Proceed to #1 and check through the rules
+| a. If yes… Experience API
+| b. If No…. Proceed to #1 and check through the rules
 |}
 
 = Loose Coupling =
