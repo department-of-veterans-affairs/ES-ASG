@@ -1,51 +1,9 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.04_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:07:51.07 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.04_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:17:55.74 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.04_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/03.00 ASG_API Playbook_API Layer_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
-=  =
-
 = Concept =
 
 Microservices architecture forms the core of this model in that the services deployed in each of these layers are autonomous, loosely coupled, scalable and adaptable for use in multiple contexts. This is particularly true for the System APIs that expose the underlying systems as a set of granular services that can be mashed up to service various use case scenarios. These services communicate with each other using either REST-style synchronous protocol such as HTTP(S) or asynchronous protocol such as JMS or AMQP. There could be file based protocols such as FTP should a use case demand.
@@ -157,7 +115,7 @@ Figure 3: Separation of Concerns
 
 <span class="underline">Leverage the Reliability Pattern as a mediation layer between API Process flows that invoke in each other (i.e. Composite Processes).</span>
 
-The Reliability Pattern The Reliability Pattern documented by MuleSoft, Inc, allows APIs to communicate with each other through a mediation layer—the queue—so that APIs are not invoking each other. The queue provides a mediation layer to “loosely couple” the API flows together. Non- persistent queues can be used so not to impact runtime performance latency of the message flows.
+The Reliability Pattern The [https://docs.mulesoft.com/mule-user-guide/v/3.9/reliability-patterns Reliability Pattern] documented by MuleSoft, Inc, allows APIs to communicate with each other through a mediation layer—the queue—so that APIs are not invoking each other. The queue provides a mediation layer to “loosely couple” the API flows together. Non- persistent queues can be used so not to impact runtime performance latency of the message flows.
 
 Figure 4: Reliability Pattern for Loose Coupling
 
