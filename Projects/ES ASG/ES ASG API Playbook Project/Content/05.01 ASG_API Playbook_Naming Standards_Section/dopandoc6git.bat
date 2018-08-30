@@ -58,7 +58,7 @@ powershell -Command "'<p>This page was generated from <b>' + '%aFile%' + '.docx<
 
 rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above. Remove <blockquote> as it seems to cause problems
 rem powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' -replace 'rel=' + (34 -as [char]) + 'nofollow' + (34 -as [char]) +'>', 'target=' + (34 -as [char]) +'blank' + (34 -as [char]) + '>' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
-powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace 'rel=', 'XXXXXXXXXXXXXXX' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace 'r', 'XXXXXXXXXXXXXXX' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 
 
