@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Wed 08/29/2018</b> at <b>15:42:01.61 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b> 8:58:13.56 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -6,11 +6,9 @@
 <p>__TOC__</p>
 = API Naming Convention =
 
-===  ===
-
 == Objective ==
 
-This naming convention section defines an API naming convention for the VA Enterprise, supporting all middleware and API management solutions and supporting all VA organization units and lines of businesses. Most importantly, define an API URL standard.
+This section defines an API naming convention for the VA Enterprise, supporting all middleware and API management solutions and supporting all VA organization units and lines of businesses. Most importantly, define an API URL standard.
 
 === Global and Enterprise Impacts of Naming Convention Standards ===
 
@@ -28,7 +26,7 @@ The VA naming convention guideline requires the API name to be unique no matter 
 
 Note, whether an API is Internal facing, External facing, or both for Consumer use, is addressed and controlled via API policies, and not addressed via API naming conventions. For more information please see '''<span class="underline">Playbook: API Policies framework.[[TBD]]</span>'''
 
-Note, the scope of this API Naming Convention document is to focus on the major API naming convention elements, including and up to the application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such.</span>''''''<span class="underline">[[TBD]]</span>'''
+Note, the scope of this API Naming Convention document is to focus on the major API naming convention elements, including and up to the application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such</span>''''''<span class="underline">[[TBD]]</span>'''
 
 === Discoverability ===
 
@@ -38,8 +36,6 @@ API names should be syntactically valid DNS names (as per [http://www.ietf.or
 
 === To provide consistent developer experience across many APIs and over an extended period, all names used by an API should be: ===
 
-===  ===
-
 <ul>
 <li>=== simple ===
 </li>
@@ -47,8 +43,6 @@ API names should be syntactically valid DNS names (as per [http://www.ietf.or
 </li>
 <li>=== consistent ===
 </li></ul>
-
-===  ===
 
 === VA Background Requirements ===
 

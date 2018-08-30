@@ -84,3 +84,6 @@ for /R %%f in (*.gif) do (
 	magick %%~nf.gif %%~nf.png
 )
 
+cd C:\GitHub
+gitSync
+
