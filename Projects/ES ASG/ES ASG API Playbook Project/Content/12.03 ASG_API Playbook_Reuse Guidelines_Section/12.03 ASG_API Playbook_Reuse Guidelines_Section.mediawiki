@@ -1,14 +1,14 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.06_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:35:12.44 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.06_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>13:14:19.29 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.03 Reusability Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/12.03 ASG_API Playbook_Reuse Guidelines_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-= INTRODUCTION =
+= Introduction =
 
 Implementing software reuse at a corporate level represents one of the most promising means of addressing the rising costs that are plaguing the software industry. A series of mechanisms are needed for shortening development cycles and providing reliable software of high quality which will be more maintainable and flexible for future extensions. API driven solutions can leverage these approaches, so that the VA solutions built on APIs can follow a “Re-Use First” approach to solution design.
 
-This section describes guidelines for implementing an API reuse methodology, focusing on a reusable API artifact library system and its role inside the reuse program. The goal for a reuse program is to make API reuse a significant and systematic part of the software development process. To institutionalize an API reuse process that incorporates reuse-specific activities all along the object oriented software development process, drawing heavily on a reusable software artifact library system which has been designed to support the classification, management and search for artifacts to be employed in reuse efforts. [Seriously long sentence framgment]
+This section describes guidelines for implementing an API reuse methodology, focusing on a reusable API artifact library system and its role inside the reuse program. The goal for a reuse program is to make API reuse a significant and systematic part of the software development process. To institutionalize an API reuse process that incorporates reuse-specific activities all along the object oriented software development process, drawing heavily on a reusable software artifact library system which has been designed to support the classification, management and search for artifacts to be employed in reuse efforts. (Editor’s Note: This is a long and fragmented sentence)
 
 The API implementation patterns are mainstream, and engineers can effectively take advantage of reusable components without having to tightly couple or make a duplicate copy of code for basic reuse. The primary consideration shifts from “What to do to enable software reuse” to “How to instrument and measure software reuse.”
 
@@ -91,14 +91,13 @@ The three classification methodologies implemented in the reusability framework 
 # For the free text classification, the artifacts are classified associating them with a text-description of arbitrary length which describes the artifacts themselves.
 # In the keywords classification, each artifact in the system is associated with a set of keywords that characterize the artifact itself and are chosen from a well-defined dictionary. The dictionary can be expanded by the system administrator, who has the capability to remove unused keywords
 
-= <br />
-Retrieval of an artifact  =
+= Retrieval of an artifact  =
 
 # An artifact stored using the reusability can be retrieved by navigating through the relations established between the artifacts or performing a search based upon one of the classification methodologies implemented in the system.
 # The search is fundamental even when navigating through the relations in fact, it is necessary to find an initial artifact from which to start the navigation. The search is done in different ways depending on the classification it uses:
 #* The user has to do a query in a format which depends on the different kinds of classification. If the results of the search are not satisfactory, the query can be relaxed or modified in some way and the search
 
-= APPROACHES FOR REUSE =
+= Approaches for Reuse =
 
 Reuse approach can be of two types:
 
@@ -111,7 +110,7 @@ Reuse approach can be of two types:
 
  [https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/ API-led transformations] have demonstrably unlocked both code and component reuse for enterprises and small shops alike, a set of easily understandable KPIs have begun to emerge to measure how well an IT shop has integrated the ethic of software reuse.
 
-= STORING ARTIFACTS IN MODULES =
+= Storing Artifacts in Modules =
 
 * To reuse artifacts in a module, existing artifacts should be added to a module or create new artifacts in the module. The artifact can be reused by copying it from one module and pasting into another module.
 * After addition or creation of artifacts in modules, work can be done with the artifacts in the module or on the Artifacts page. When you work with an artifact outside a module, you are working with the ''base'' artifact. Changes to the artifact name, content, and attributes are reflected in all contexts: in the base artifact and in all modules that include the artifact.
@@ -131,7 +130,7 @@ If user Include links, tags and comments from base artifacts, an indication must
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/media/image5.png|521x124px|screen cap showing blue arrow link from base artifact]]
 
-= GENERAL GUIDELINE: =
+= General Guideline: =
 
 * When user creates links, tags, and comments for ''base'' artifacts, those elements apply to the artifact in all contexts in the project. However, those elements should not be shown by default in modules.
 * The user should be able to override the default display settings in a module and show the links, tags, and comments for the base artifacts in addition to the links, tags, and comments that are created in the module.
@@ -145,9 +144,7 @@ If user Include links, tags and comments from base artifacts, an indication must
 * Must have requirements: Tracking and driving reuse through instrumented sources is necessary to help drive the spread between productivity and labor curves for a technology shop; this is because reuse is a prime method of growing revenue at lower incremental costs. This widening of the spread between these curves serves to fend off [http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/perpetual-evolution-the-management-approach-required-for-digital-transformation digital disruption] from competitors who are no longer bound by historical barriers to entry.
 * Tracking and driving technology health metrics through instrumented sources including, but not limited to, speed, quality, reuse, cost per feature and others is necessary to build and maintain trust between organizations with different near-term goals and objectives.
 
-= REUSABILITY FRAMEWORK =
-
-\
+= Reusability Framework =
 
 = Feedback: =
 
