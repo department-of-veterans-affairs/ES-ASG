@@ -57,11 +57,7 @@ rem Generated Timestamp
 powershell -Command "'<p>This page was generated from <b>' + '%aFile%' + '.docx</b> on <b>' + '%date%' + '</b> at <b>' + '%time%' + ' Eastern Time Zone</b>.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above. Remove <blockquote> as it seems to cause problems
-powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' -replace 'rel=' + (34 -as [char]) + 'nofollow' + (34 -as [char]) +'>', 'target=' + (34 -as [char]) +'blank' + (34 -as [char]) + '>' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
-
-rem powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace 'r', 'XXXXXXXXXXXXXXX' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
-rem <a href="http://www.ietf.org/rfc/rfc1035.txt" rel="nofollow">RFC 1035</a>
-
+powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Move Wiki for publishing
 copy "%aFolder%.mediawiki" "C:\GitHub\ES-ASG.wiki"
