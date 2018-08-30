@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>11:25:05.58 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>11:33:23.12 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -410,8 +410,6 @@ In the example below, each property row is a specifically named connection to th
 
 Example:
 
-<pre>
-
 ### Vet360 amq ###
 
 # Connection to System Properties
@@ -431,8 +429,6 @@ cat.csf.targetClientMatching=true
 cat.wmq.sSLCipherSuite=TLS_RSA_WITH_AES_256_CBC_SHA256
 
 cat.wmq.ssl.keyStorePassword=password
-
-</pre>
 
 ==== Configuration Parameters ====
 
