@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>11:47:11.11 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}.docx</b> on <b>Thu 08/30/2018</b> at <b>11:48:22.69 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.08_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -491,7 +491,11 @@ The following decision tree can be applied to decide when there are required vs 
 <li><p>Yes – add the Organization Name to the property file naming convention</p></li>
 <li><p>No – don’t add the Organization Name into the property file naming convention</p></li></ol>
 </li>
-<li><p>Does the source of the property file have multiple source types associated with that source? For example, mongodb is the source but it has multiple source types, based on specific purpose or function. Yes/No</p></li>
+<li><p>Does the source of the property file have multiple source types associated with that source? For example, mongodb is the source but it has multiple source types, based on specific purpose or function. Yes/No</p>
+<ol start="3" style="list-style-type: lower-alpha;">
+<li><p>Yes – add the Source Type to the property file naming convention</p></li>
+<li><p>No – don’t add the Source Type to the property file naming convention</p></li></ol>
+</li>
 <li><p>Is there a separate set of credentials for this source that requires separate property file to maintain? For example, one set of credentials for service accounts, and the other for users with elevated access rights. Yes/No</p></li>
 <li><p>Are there multiple unique components in Mulesoft for this source that requires separate property file to maintain? For example, an Enricher component requiring this source with different properties vs a Selector component, requiring separate set of properties? Yes/No</p></li></ol>
 
