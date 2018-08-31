@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}.docx</b> on <b>Fri 08/31/2018</b> at <b>12:37:21.12 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}.docx</b> on <b>Fri 08/31/2018</b> at <b>13:08:29.86 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.05 Middleware Artifacts_Section_01.01_Initial Draft {max girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section/05.05 ASG_API Playbook_Middleware Artifacts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>

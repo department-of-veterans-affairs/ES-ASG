@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_12.02 How To Create Shared Components_Section_01.04_Published Draft.docx</b> on <b>Fri 08/31/2018</b> at <b>12:37:55.03 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_12.02 How To Create Shared Components_Section_01.05_Published Draft Second Pass.docx</b> on <b>Fri 08/31/2018</b> at <b>13:09:05.01 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.02 How To Create Shared Components_Section_01.04_Published Draft">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.02 How To Create Shared Components_Section_01.05_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.02%20ASG_API%20Playbook_How%20to%20Create%20Shared%20Components_Section/12.02 ASG_API Playbook_How to Create Shared Components_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.02%20ASG_API%20Playbook_How%20to%20Create%20Shared%20Components_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
