@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass.docx</b> on <b>Fri 08/31/2018</b> at <b> 9:20:50.90 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass.docx</b> on <b>Fri 08/31/2018</b> at <b> 9:23:41.89 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/06.00 ASG_API Playbook_Configuration Management_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -42,7 +42,10 @@ Short high-level descriptions (mostly of the marketing variety) of the products 
 
 Gradle and Maven are more recent build automation products. ANT is a product that has been in use for several years. Maven has a larger user base as compared to Gradle and is the recommended product. The ''ASG_API_Playbook_08.00 Developer Setup Section'' has a detailed description of Maven.
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/media/image2.png|164px]]
+{|
+|
+
+|}
 
 '''Source Code Management Products'''
 
@@ -55,6 +58,11 @@ Git is not better or worse than SVN, it's just different. If there is a need for
 
 Because of the growing acceptance of Git and GitHub, Git is the recommended product.
 
+{|
+|
+
+|}
+
 '''Continuous Integration'''
 
 * Jenkins
@@ -65,11 +73,21 @@ Jenkins is an open Continuous Integration Source Automation platform. Organizati
 
 OpenShift provides a Jenkins Container as the CI/CD tool to run on an OpenShift cluster. This Jenkins Container is used to set up a configuration pipeline to deploy applications to an OpenShift cluster. This is an integrated solution that is different from running Jenkins outside OpenShift that deploys applications to an OpenShift cluster.
 
+{|
+|
+
+|}
+
 '''Binary Repository Manager'''
 
 * Artifactory
 
 Artifactory (short for Artifact Repository) is a product that serves as a binary repository manager. The binary repository is a natural extension to a source code repository. It will store the outcome of a build process sometime known as artifacts. For example, artifacts in the Java world are jar, ear, war etc.
+
+{|
+|
+
+|}
 
 '''Highly Available OpenShift Cluster Deployment'''
 
@@ -77,17 +95,32 @@ Artifactory (short for Artifact Repository) is a product that serves as a binary
 
 Ansible is product that automates software provisioning, configuration management, and application deployments. It automates cloud provisioning, configuration management, application deployment, intra-service orchestration plus other IT needs.
 
+{|
+|
+
+|}
+
 '''Platform-As-A-Service Application Hosting Platform'''
 
 * OpenShift
 
 OpenShift Container Platform offers a full enterprise enterprises level control over Kubernetes environments, whether they’re on-premise or in the public cloud, this provides the capability to build and run applications anywhere.
 
+{|
+|
+
+|}
+
 '''Container Orchestration and Management'''
 
 * Kubernetes
 
 Kubernetes is a product for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.
+
+{|
+|
+
+|}
 
 '''Application Containers'''
 
