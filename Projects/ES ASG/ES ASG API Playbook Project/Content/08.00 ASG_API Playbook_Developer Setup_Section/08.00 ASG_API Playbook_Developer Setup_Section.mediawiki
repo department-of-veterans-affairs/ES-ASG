@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_02.00_SME Review{Ron O.}.docx</b> on <b>Thu 08/30/2018</b> at <b>12:34:35.34 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_02.01_SME Review Resolution {Frank Burgos}.docx</b> on <b>Fri 08/31/2018</b> at <b>12:37:34.45 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_02.00_SME Review{Ron O.}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_02.01_SME Review Resolution {Frank Burgos}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/08.00 ASG_API Playbook_Developer Setup_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -50,7 +50,7 @@ As has been stated at the beginning of this document, this is a high-level overv
 
 Again, for a full understanding of the Maven product refer to the '''''Apache Maven Getting Started Guide''''' web site
 
-==== .m2 Repository Directory  ====
+==== 2.1.2.1. .m2 Repository Directory ====
 
 The maven local repository is a local folder that is used to store a developers’ s project’s dependencies (plugin jars and other files which are downloaded by Maven). When you build a Maven project, all dependency files will be stored in your Maven local repository. For example, when the '''''mvn clean install'''''
 
@@ -63,7 +63,7 @@ The contents of .m2 are directory are:
 
 The .m2 directory is typically located at ''USER_HOME''/.m2
 
-==== Pom.xml ====
+==== 2.1.2.2. Pom.xml ====
 
 The pom.xml contains the Project Object Model (POM) for this project. The POM is the basic unit of work in Maven. This is important to remember because Maven is inherently project-centric in that everything revolves around the notion of a project. In short, the POM contains every important piece of information about a project and is essentially one-stop-shopping for finding anything related to the project.
 
@@ -159,7 +159,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
 
 &lt;/project&gt;
 
-==== Settings.xml ====
+==== 2.1.2.3. Settings.xml ====
 
 The settings element in the settings.xml file contains elements used to define values which configure Maven execution in various ways, like the pom.xml, but should not be bundled to any specific project (i.e. it is Maven specific).
 
@@ -271,7 +271,7 @@ xsi:schemaLocation=&quot;http://maven.apache.org/SETTINGS/1.1.0 http://maven.apa
 
 &lt;/settings&gt;
 
-==== Maven Archetypes ====
+==== 2.1.2.4. Maven Archetypes ====
 
 A Maven Archetype is a Maven plugin that provides the facility the create a Maven Project Structure whose specifics are defined by the specific archetype utilized.
 
@@ -355,7 +355,7 @@ A good reference guide for the creation of more sophisticated JUnit test cases c
 
 https://www.ibm.com/developerworks/java/tutorials/j-junit4/index.html
 
-==== JUnit Test Class Creation ====
+==== 2.3.1.1. JUnit Test Class Creation ====
 
 Using Eclipse, a HelloWorld java class will be created followed by the creation of a corresponding HelloWorldTest java class. The creation of the of the Eclipse Project, the HelloWorld java class and the srcTest folder will not be described, only the creation and processing of the HelloWorldTest java class.
 
@@ -395,8 +395,6 @@ Click '''''Finish''''' and the HellowWorldTest class is generated
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image16.png|624x336px]]
 
-
-
 Highlight the hellowWorldTest class as shown above, Right mouse click on hellowWorldTest class then select '''''Run AS''''' then select '''''2 JUnit Test''''' then the following screen appears:
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image17.png|624x336px]]
@@ -405,14 +403,14 @@ Notice that the '''setUp executed''' and '''tearDown executed''' messages were d
 
 = MuleSoft Developer Setup =
 
-== '''VA’s MuleSoft DVP Platform''' ==
+== VA’s MuleSoft DVP Platform ==
 
 The VA Enterprise Services Organization currently offers VA API development teams access to its AnyPoint MuleSoft platform currently hosted on it VA Gov. Cloud environment. Development teams will need to follow the sequence of steps outlined below to gain access to these API tools. The following 4 steps are required to request, provision, and configure your team’s VA MuleSoft API tools.
 
 {|
 ! Step
-! '''Activities'''
-! '''Roles'''
+! Activities
+! Roles
 |-
 | 3.1.1
 | Request DVP Access
@@ -435,8 +433,8 @@ The VA Enterprise Services Organization currently offers VA API development team
 
 {|
 ! Step
-! '''Activities'''
-! '''Roles'''
+! Activities
+! Roles
 |-
 | 3.1.1.1
 | Submit a DVP Access Request
@@ -487,23 +485,21 @@ The VA Enterprise Services Organization currently offers VA API development team
 
 ==== Determine team structure &amp; roles [Add steps from C4E team] ====
 
-= Request VA Security Groups  =
+=== Request VA Security Groups  ===
 
 Once your team is granted approval from the DVP management team please follow the instructions below to create your VA MuleSoft Security Group’s
 
-=== Prerequisites  ===
+==== Prerequisites  ====
 
 * PIV card
 * VA email address
 * GFE or CAG client
 
-=== Estimated Completion Time ===
+==== Estimated Completion Time ====
 
 * 1-2 weeks
 
-=== Instructions ===
-
-# 
+==== Instructions ====
 
 Request your Security Groups on Service Now
 
@@ -519,8 +515,8 @@ Request your Security Groups on Service Now
 <p>Please update your incident request with the information listed below:</p></li></ol>
 
 {|
-| '''SN Field Name:'''
-| '''Selection/Content:'''
+| SN Field Name:
+| Selection/Content:
 |-
 | Category
 | Service
@@ -552,7 +548,7 @@ In care of:
 Rachelle Mann and Denver Griffith
 |}
 
-= ePAS request access to new security groups =
+== ePAS request access to new security groups ==
 
 === Prerequisites  ===
 
@@ -595,7 +591,7 @@ Access to your DVP security groups requires your team members to submit a reques
 
 [Section is awaiting inputs from the MuleSoft C4E team]
 
-==  Maven with MuleSoft ==
+=  Maven with MuleSoft =
 
 Maven is a project management utility that you can use to develop projects in MuleSoft.
 
@@ -603,7 +599,7 @@ Refer to section 1.1 Maven for a more a generic (non-MuleSoft) description of Ma
 
 The following sections are a summation of the numerous Maven web pages with MuleSoft documentation
 
-=== Maven Reference  ===
+== Maven Reference  ==
 
 These pages summarize reference information that is helpful for working with Maven and Mule and is pointed to by this URL:
 
@@ -619,7 +615,7 @@ Topics include:
 * Useful Commands
 * External Resources
 
-=== Using Maven with MuleSoft (High Level) ===
+== Using Maven with MuleSoft (High Level) ==
 
 These pages are a high-level Maven/MuleSoft description and is pointed to by this URL:
 
@@ -632,7 +628,7 @@ Topics include:
 * Options for Using Maven with Mule
 * Tips
 
-=== Using Maven in Mule ===
+== Using Maven in Mule ==
 
 These pages detail how to use Maven outside of AnyPoint Studio, working directly with Mule. The Mule plugins helps to develop Mule applications within Maven, and to control Mule instances from within a Maven environment description and is pointed to by this URL:
 
@@ -640,13 +636,15 @@ https://docs.mulesoft.com/mule-user-guide/v/3.9/using-maven-in-mule-esb
 
 Sub Links include:
 
-* Maven Tools for Mule
-* Mule Plugin for Maven
-* Configuring Maven to Work with Mule
+Maven Tools for Mule
+
+Mule Plugin for Maven
+
+Configuring Maven to Work with Mule
 
 These sub links are detailed below:
 
-==== Maven Tools for Mule ====
+=== Maven Tools for Mule Tools for Mule ===
 
 Maven Tools for Mule is a plugin for Maven that allows you to develop Mule applications using Maven tooling. The kit provided by the plugin includes archetypes for building regular Mule applications, Mule domains, and Mule domain bundles and is pointed to by this URL:
 
@@ -661,7 +659,7 @@ Topics include:
 * Creating a Complete Mule Domain Project
 * Available Parameters
 
-==== Mule Plugin for Maven ====
+=== Mule Plugin for Maven ===
 
 These pages detail how the mule-maven-plugin allows the deployment of Mule applications to different kinds of servers: Standalone (both Community and Enterprise), clustered, Anypoint Runtime Manager and CloudHub. It is part of the framework for developing Mule applications with Maven. The most important capabilities provided by the plugin are running integration tests, and deploying applications to different environments and is pointed to by this URL:
 
@@ -684,7 +682,7 @@ Topics include:
 * Anypoint Runtime Manager On Premises TLS Errors
 * Full List of Parameters
 
-==== Configuring Maven to Work with Mule ====
+=== Configuring Maven to Work with Mule ===
 
 These pages detail when working with Maven to build Mule applications outside of Anypoint Studio, there is a need to configure the Maven installation to work successfully with Mule. This page covers how to maintain the POM file to add or adjust dependencies and point to the correct MuleSoft repositories, and how to modify the Maven settings.xml file to include credentials and profiles for Enterprise repositories and is pointed to by this URL:
 
@@ -695,7 +693,7 @@ Topics include:
 * Setup Overview
 * Configuring Your Maven Installation for Mule
 
-=== Using Maven in Anypoint Studio ===
+== Using Maven in Anypoint Studio ==
 
 These pages describe Maven integration with Anypoint Studio, including building applications, importing Maven projects or &quot;mavenizing&quot; existing projects description and is pointed to by this URL:
 
@@ -711,7 +709,7 @@ Sub Links include:
 
 These sub links are detailed below:
 
-==== Maven Support in Anypoint Studio ====
+=== Maven Support in Anypoint Studio ===
 
 These pages describe how to enable or disable Maven support for your projects in Anypoint Studio and is pointed to by this URL:
 
@@ -722,7 +720,7 @@ Topics include:
 * Setting Your Maven Preferences
 * Disabling Maven Support in a Single Studio Project
 
-==== Building a Mule Application with Maven in Studio ====
+=== Building a Mule Application with Maven in Studio ===
 
 These pages walk one through creating a Mavenized Mule Application project from scratch. It covers providing the project with unit tests, maintaining its POM file, then building and deploying the project and is pointed to by this URL:
 
@@ -738,7 +736,7 @@ Topics include:
 * Managing Dependencies
 * Troubleshooting
 
-==== Enabling Maven Support for a Studio Project ====
+=== Enabling Maven Support for a Studio Project ===
 
 These pages take a Mule project that was already created in Anypoint Studio (i.e. the &quot;mavenization&quot; of a Mule project) and add Maven functionality to it. Maven can make a project more easily shareable with other developers as it takes care of its dependencies and helps automate the project’s build process project and is pointed to by this URL:
 
@@ -750,7 +748,7 @@ Topics include:
 * Running a Mavenized Project
 * Running Maven Life-Cycle Commands
 
-==== Importing a Maven Project into Studio ====
+=== Importing a Maven Project into Studio ===
 
 These pages describe a Mule project that was built using Maven outside Anypoint Studio, you can still import it into Studio and continue to work on it with the benefits of the Studio IDE and is pointed to by this URL:
 
@@ -800,7 +798,7 @@ A detailed description Using Maven with MUnit is pointed to by this URL:
 
 https://docs.mulesoft.com/munit/v/2.1/
 
-==== MUnit Event Processors ====
+=== MUnit Event Processors ===
 
 MUnit has a set of dedicated Event Processors aimed to validate, assert and mock the content and status of the Mule event so you can run automatic tests against your Mule application.
 

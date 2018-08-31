@@ -1,4 +1,4 @@
-rem This is located in a separate batch fail, mainly because it wouldn't work correctly when combined with buildIndex6.bat
+﻿rem This is located in a separate batch fail, mainly because it wouldn't work correctly when combined with buildIndex6.bat
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 
@@ -14,4 +14,3 @@ echo "<li><a href='%aFile2%' target='_blank'>%aFile1%</a>">>"C:\GitHub\ES-ASG\Pr
 call "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\dopandoc6"
 
 )
-			

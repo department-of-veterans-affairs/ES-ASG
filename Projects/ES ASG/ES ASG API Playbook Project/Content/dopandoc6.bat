@@ -1,4 +1,4 @@
-rem This .bat file handles the transformation of .docx to .mediawiki files
+﻿rem This .bat file handles the transformation of .docx to .mediawiki files
 
 rem Note:  If you're just working on one file...you may place this .bat in the folder containing the .docx file and it will only generate that one document.
 rem You will need to perform a GitHub sync yourself.
@@ -57,7 +57,7 @@ rem Generated Timestamp
 powershell -Command "'<p>This page was generated from <b>' + '%aFile%' + '.docx</b> on <b>' + '%date%' + '</b> at <b>' + '%time%' + ' Eastern Time Zone</b>.</p>' + (13 -as [char]) + (10 -as [char]) + (gc '%aFolder%.mediawiki' -encoding UTF8 | Out-String) | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Fix up image URLs: replacing image types .emf, .jpeg, .jpg, .gif, .tmp with .png; replace File: URL with current section set as aImage above. Remove <blockquote> as it seems to cause problems
-powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
+powershell -Command "(gc '%aFolder%.mediawiki' -encoding UTF8) -replace '.emf', '.png' -replace '.jpeg', '.png' -replace '.jpg', '.png' -replace '.gif', '.png' -replace '.tmp', '.png' -replace 'File:.//media/', '%aImage%' -replace '<blockquote>', '' -replace '</blockquote>', '' -replace '{blankline}', '<p> </p>' | Out-File '%aFolder%.mediawiki'" -encoding UTF8
 
 rem Move Wiki for publishing
 copy "%aFolder%.mediawiki" "C:\GitHub\ES-ASG.wiki"
@@ -84,3 +84,5 @@ for /R %%f in (*.gif) do (
 	magick %%~nf.gif %%~nf.png
 )
 
+rem cd C:\GitHub
+rem gitSync

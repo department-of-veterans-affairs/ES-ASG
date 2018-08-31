@@ -1,4 +1,4 @@
-rem This is the primary .bat file to execute.
+﻿rem This is the primary .bat file to execute.
 
 rem Dependency AutoHotKeyU64.exe
 
@@ -55,4 +55,3 @@ cd "C:\GitHub\ES-ASG.wiki"
 git add -f --all
 git commit -m "Publish"
 git push --all
-
