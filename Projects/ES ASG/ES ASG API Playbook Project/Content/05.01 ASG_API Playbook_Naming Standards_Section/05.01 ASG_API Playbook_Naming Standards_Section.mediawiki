@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.01 Naming Standards_Section_01.10_Published Draft Second Pass.docx</b> on <b>Fri 08/31/2018</b> at <b> 9:03:48.92 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ZZ.docx</b> on <b>Fri 08/31/2018</b> at <b>10:48:23.36 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.01 Naming Standards_Section_01.10_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ZZ">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/05.01 ASG_API Playbook_Naming Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -26,7 +26,7 @@ The VA naming convention guideline requires the API name to be unique no matter 
 
 Note: whether an API is Internal facing, External facing, or both for Consumer use, is addressed and controlled via API policies, and not addressed via API naming conventions. For more information please see '''<span class="underline">Playbook: API Policies framework [[TBD]]</span>'''
 
-Note: the scope of this API Naming Convention document is to focus on the major API naming convention elements, including and up to the application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such</span>''' <span class="underline"> '''[[TBD]]'''</span>
+Note: the scope of this API Naming Convention document is to focus on the major API naming convention elements, including and up to the application name. This blueprint document does not address granular SOAP and REST operation naming conventions. '''<span class="underline">Please see Playbook API Operations for guidelines on such</span>''' '''<span class="underline">[[TBD]]</span>'''
 
 === Discoverability ===
 
@@ -175,7 +175,7 @@ VA API URL:
 
 Figure 1: VA API Example
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image1.png|624x122px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image1.png|619x121px]]
 
 Note: the naming standard shall enable unique API names across all of VA enterprise.
 
@@ -410,7 +410,7 @@ In the example below, each property row is a specifically named connection to th
 
 Example:
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image2.png|785x167px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image2.png|786x168px]]
 
 ==== Configuration Parameters ====
 
@@ -631,7 +631,7 @@ Mule 4 has ability to define global properties. As a developer, you can use the�
 
 Figure 2: Global Properties Example
 
-[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image3.png|624x70px]]
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.01%20ASG_API%20Playbook_Naming%20Standards_Section/media/image3.png|618x70px]]
 
 The properties are managed in mule-app.properties file in Mule 3 and Mule 4, but with the new 4.x release Mulesoft has also provide an ability to manage global properties inside a YAML file. The format of a YAML file allows to structure all properties in a nested tree. For example, instead of the above “smtp.host”, we can now store the same property inside a YAML file like this:
 
