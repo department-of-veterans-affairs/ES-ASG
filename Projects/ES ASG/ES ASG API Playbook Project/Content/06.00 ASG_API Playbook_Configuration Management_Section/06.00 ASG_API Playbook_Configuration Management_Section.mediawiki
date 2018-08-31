@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass.docx</b> on <b>Fri 08/31/2018</b> at <b>12:10:06.44 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass.docx</b> on <b>Fri 08/31/2018</b> at <b>12:10:53.53 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/06.00 ASG_API Playbook_Configuration Management_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -40,61 +40,61 @@ Short high-level descriptions (mostly of the marketing variety) of the products 
 * Ant
 * Gradle
 
-<blockquote>Gradle and Maven are more recent build automation products. ANT is a product that has been in use for several years. Maven has a larger user base as compared to Gradle and is the recommended product. The ''ASG_API_Playbook_08.00 Developer Setup Section'' has a detailed description of Maven.
-</blockquote>
-{blankline}
+Gradle and Maven are more recent build automation products. ANT is a product that has been in use for several years. Maven has a larger user base as compared to Gradle and is the recommended product. The ''ASG_API_Playbook_08.00 Developer Setup Section'' has a detailed description of Maven.
+
+<p> </p>
 
 '''Source Code Management Products'''
 
 * Git/GitHub
 * Subversion (SVN)
 
-<blockquote>Git is a distributed version control system that has many enhanced features like branching and merging. SVN is a centralized system that has been is use for some time.
+Git is a distributed version control system that has many enhanced features like branching and merging. SVN is a centralized system that has been is use for some time.
 
 Git is not better or worse than SVN, it's just different. If there is a need for Offline Source Control and the willingness to spend some extra time learning it, then Git is a good choice. But if there is a need for a strictly centralized Source Control then the simplicity and excellent Windows based tooling of SVN works well.
 
 Because of the growing acceptance of Git and GitHub, Git is the recommended product.
-</blockquote>
+
 '''Continuous Integration'''
 
 * Jenkins
 
-<blockquote>Jenkins is an open Continuous Integration Source Automation platform. Organizations can accelerate the software development flow by automating the steps of the process. Jenkins manages and controls software delivery processes throughout the entire lifecycle, including such tasks as build, document, test, package, stage, deployment, and static code analysis.
-</blockquote>
+Jenkins is an open Continuous Integration Source Automation platform. Organizations can accelerate the software development flow by automating the steps of the process. Jenkins manages and controls software delivery processes throughout the entire lifecycle, including such tasks as build, document, test, package, stage, deployment, and static code analysis.
+
 * OpenShift Pipeline Jenkins Plugin
 
-<blockquote>OpenShift provides a Jenkins Container as the CI/CD tool to run on an OpenShift cluster. This Jenkins Container is used to set up a configuration pipeline to deploy applications to an OpenShift cluster. This is an integrated solution that is different from running Jenkins outside OpenShift that deploys applications to an OpenShift cluster.
-</blockquote>
+OpenShift provides a Jenkins Container as the CI/CD tool to run on an OpenShift cluster. This Jenkins Container is used to set up a configuration pipeline to deploy applications to an OpenShift cluster. This is an integrated solution that is different from running Jenkins outside OpenShift that deploys applications to an OpenShift cluster.
+
 '''Binary Repository Manager'''
 
 * Artifactory
 
-<blockquote>Artifactory (short for Artifact Repository) is a product that serves as a binary repository manager. The binary repository is a natural extension to a source code repository. It will store the outcome of a build process sometime known as artifacts. For example, artifacts in the Java world are jar, ear, war etc.
-</blockquote>
+Artifactory (short for Artifact Repository) is a product that serves as a binary repository manager. The binary repository is a natural extension to a source code repository. It will store the outcome of a build process sometime known as artifacts. For example, artifacts in the Java world are jar, ear, war etc.
+
 '''Highly Available OpenShift Cluster Deployment'''
 
 * Ansible
 
-<blockquote>Ansible is product that automates software provisioning, configuration management, and application deployments. It automates cloud provisioning, configuration management, application deployment, intra-service orchestration plus other IT needs.
-</blockquote>
+Ansible is product that automates software provisioning, configuration management, and application deployments. It automates cloud provisioning, configuration management, application deployment, intra-service orchestration plus other IT needs.
+
 '''Platform-As-A-Service Application Hosting Platform'''
 
 * OpenShift
 
-<blockquote>OpenShift Container Platform offers a full enterprise enterprises level control over Kubernetes environments, whether they’re on-premise or in the public cloud, this provides the capability to build and run applications anywhere.
-</blockquote>
+OpenShift Container Platform offers a full enterprise enterprises level control over Kubernetes environments, whether they’re on-premise or in the public cloud, this provides the capability to build and run applications anywhere.
+
 '''Container Orchestration and Management'''
 
 * Kubernetes
 
-<blockquote>Kubernetes is a product for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.
-</blockquote>
+Kubernetes is a product for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.
+
 '''Application Containers'''
 
 * Dockers
 
-<blockquote>Docker is producer that performs operating-system-level virtualization, also known as &quot;containerization&quot;. It helps create and deploy software within containers. It’s a collection of tools that help you “Build, Ship, and Run any App, Anywhere”
-</blockquote>
+Docker is producer that performs operating-system-level virtualization, also known as &quot;containerization&quot;. It helps create and deploy software within containers. It’s a collection of tools that help you “Build, Ship, and Run any App, Anywhere”
+
 == API Versioning ==
 
 A viable versioning strategy for software artifacts is a crucial consideration within configuration management. This section will detail versioning, when deploying APIs, using the RESTful architecture and its implementation from a HTTP Request and Response perspective.
@@ -150,8 +150,8 @@ If the API is to be used internally only, the vnd MINE type should not be an iss
 
 * '''Accept''': application/vnd. mycompany.myapp.resource-v1+json
 
-<blockquote>or using a v=1 qualifier:
-</blockquote>
+or using a v=1 qualifier:
+
 * '''Accept''': application/vnd. mycompany.myapp.resource+json;v=1
 
 ==== HTTP Response Content-Type Examples: ====
@@ -213,13 +213,13 @@ Simply stated a branch is required when a feature hosted in the high-level branc
 
 # Creating a new branch:
 
-<blockquote>Execute the Git '''''branch''''' &lt;new branch name'''&gt;''' followed by Git '''''checkout''''' &lt;new branch name'''''&gt;.''''' These two commands can be combined into one by using the checkout command with the -b switch - git '''''checkout -b''''' &lt;new branch name'''&gt;.'''
-</blockquote>
+Execute the Git '''''branch''''' &lt;new branch name'''&gt;''' followed by Git '''''checkout''''' &lt;new branch name'''''&gt;.''''' These two commands can be combined into one by using the checkout command with the -b switch - git '''''checkout -b''''' &lt;new branch name'''&gt;.'''
+
 <ol start="2" style="list-style-type: decimal;">
 <li><p>Removing a branch</p></li></ol>
 
-<blockquote>Branches are typical removed after their contents have been merged to a higher-level branch and is good practice. Execute the Git branch command with the -d switch - Git '''''branch -d''''' &lt;branch name'''&gt;.'''
-</blockquote>
+Branches are typical removed after their contents have been merged to a higher-level branch and is good practice. Execute the Git branch command with the -d switch - Git '''''branch -d''''' &lt;branch name'''&gt;.'''
+
 === GitHub Merging  ===
 
 GIT merging facilitates consolidates the migration of a forked branch or branches back to a common branch. The Git '''''merge''''' command accomplishes this task.
@@ -236,18 +236,18 @@ Before performing a merge, there are several preparation steps needed to ensure 
 
 # Confirm the receiving branch of the merge:
 
-<blockquote>Execute Git '''''status''''' to ensure that HEAD (think of the HEAD as the &quot;current branch&quot;) is pointing to the correct merge-receiving branch. If needed, execute Git '''''checkout''''' &lt;receiving branch&gt; to switch to the receiving branch. In this case execute git '''''checkout''''' '''''master'''''
-</blockquote>
+Execute Git '''''status''''' to ensure that HEAD (think of the HEAD as the &quot;current branch&quot;) is pointing to the correct merge-receiving branch. If needed, execute Git '''''checkout''''' &lt;receiving branch&gt; to switch to the receiving branch. In this case execute git '''''checkout''''' '''''master'''''
+
 <ol start="2" style="list-style-type: decimal;">
 <li><p>Fetch latest remote commits:</p></li></ol>
 
-<blockquote>Insure that the receiving branch and the merging branch are up-to-date with the latest remote changes. Pull the latest remote commits by executing Git '''''fetch'''''. Execute Git '''''pull''''' once the fetch is completed to ensure the master branch has the latest updates
-</blockquote>
+Insure that the receiving branch and the merging branch are up-to-date with the latest remote changes. Pull the latest remote commits by executing Git '''''fetch'''''. Execute Git '''''pull''''' once the fetch is completed to ensure the master branch has the latest updates
+
 <ol start="3" style="list-style-type: decimal;">
 <li><p>Perform the merge:</p></li></ol>
 
-<blockquote>Once steps 1 and 2 have been taken place, a merge can be initiated by executing Git '''''merge''''' &lt;branch name&gt; where &lt;branch name&gt; is the name of the branch that will be merged into the receiving branch which in this scenario is Master.
-</blockquote>
+Once steps 1 and 2 have been taken place, a merge can be initiated by executing Git '''''merge''''' &lt;branch name&gt; where &lt;branch name&gt; is the name of the branch that will be merged into the receiving branch which in this scenario is Master.
+
 ==== Resolving GitHub Merging Conflicts ====
 
 If the two branches both changed the same part of the same file, Git won't be able to determine which version to use. When this a situation occurs, it stops right before the merge commit so the conflict can be resolved manually. When a merge conflict is encountered, running the Git '''''status''''' command shows which files need to be resolved.
