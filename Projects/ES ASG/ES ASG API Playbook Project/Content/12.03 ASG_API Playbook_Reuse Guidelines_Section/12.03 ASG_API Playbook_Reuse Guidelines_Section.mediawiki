@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.07_Published Draft.docx</b> on <b>Fri 08/31/2018</b> at <b>13:09:09.42 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.07_Published Draft.docx</b> on <b>Tue 09/04/2018</b> at <b>14:12:28.73 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.03 Reusability Section_01.07_Published Draft">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/12.03 ASG_API Playbook_Reuse Guidelines_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -6,9 +6,7 @@
 <p>__TOC__</p>
 = Introduction =
 
-Implementing software reuse at a corporate level represents one of the most promising means of addressing the rising costs that are plaguing the software industry. A series of mechanisms are needed for shortening development cycles and providing reliable software of high quality which will be more maintainable and flexible for future extensions. API driven solutions can leverage these approaches, so that the VA solutions built on APIs can follow a “Re-Use First” approach to solution design.
-
-This section describes guidelines for implementing an API reuse methodology, focusing on a reusable API artifact library system and its role inside the reuse program. The goal for a reuse program is to make API reuse a significant and systematic part of the software development process. To institutionalize an API reuse process that incorporates reuse-specific activities all along the object oriented software development process, drawing heavily on a reusable software artifact library system which has been designed to support the classification, management and search for artifacts to be employed in reuse efforts. (Editor’s Note: This is a long and fragmented sentence)
+Implementing software reuse at a corporate level represents one of the most promising means of addressing the rising costs that are plaguing the software industry. A series of mechanisms are needed for shortening development cycles and providing reliable software of high quality which will be more maintainable and flexible for future extensions. API driven solutions can leverage these approaches, so that the VA solutions built on APIs can follow a “Re-Use First” approach to solution design. The goal for a reuse program is to make API reuse a significant and systematic part of the software development process.
 
 The API implementation patterns are mainstream, and engineers can effectively take advantage of reusable components without having to tightly couple or make a duplicate copy of code for basic reuse. The primary consideration shifts from “What to do to enable software reuse” to “How to instrument and measure software reuse.”
 
@@ -26,8 +24,6 @@ The Javascript world has recently been adopting the culture of actively building
 
 Micro-services are built with the same narrative of separating concerns; combining small parts of a system, collectively forming the larger whole rather than producing a distributed monolith. Again different developers can work on different micro-services of the same application/back-end and integrate these independent services with a message bus or via HTTP APIs. This separation brings about independent governance on the state and future of a service, leaving all the design authority to the developer or team responsible for that service.
 
-&lt;&lt;Editor’s Note: Standards Review stops here&gt;&gt;
-
 There are similarities in different projects, (for example user management &amp; messaging) or similar tasks that developers easily overlook. Building a bulk SMS API (like Frello) from scratch for a single project. There is some necessary code that needs to be rewritten with every project to connect the relevant APIs, and depending on the nature of the projects.
 
 = Reusable Micro-services approach =
@@ -41,21 +37,21 @@ This will make an independent service is up and running and ready to be deployed
 
 <p> </p>
 
-* Microservice capabilities are expressed formally with [https://www.mulesoft.com/platform/api business-oriented APIs]. They encapsulate a core business capability, and as such are valuable assets to the business. The implementation of the service, which may involve integrations with systems of record, is completely hidden as the interface is defined purely in business terms. The positioning of services as valuable assets to the business implicitly promotes them as adaptable for use in multiple contexts. The same service can be reused in more than one business process or over different business channels or digital touchpoints, depending on need. Dependencies between services and their consumer are minimized by applying the principle of loose coupling. By standardizing on contracts expressed through business oriented APIs, consumers are not impacted by changes in the implementation of the service. This allows service owners to change the implementation and modify the systems of record or service compositions which may lie behind the interface and replace them without any downstream impact. If microservices’ interfaces are exposed with a standard protocol, such as a RESTful API, they can be consumed and reused by other services and applications without direct coupling through language bindings or shared libraries. Project teams need to easily discover services as potential reuse candidates. These services should provide documentation, test consoles, etc so re-using is significantly easier than building from scratch.
+* Microservice capabilities are expressed formally with [https://www.mulesoft.com/platform/api business-oriented APIs]. They encapsulate a core business capability, and as such are valuable assets to the business. The implementation of the service, which may involve integrations with systems of record, is completely hidden as the interface is defined purely in business terms. The positioning of services as valuable assets to the business implicitly promotes them as adaptable for use in multiple contexts. The same service can be reused in more than one business process or over different business channels or digital touchpoints, depending on need. Dependencies between services and their consumer are minimized by applying the principle of loose coupling. By standardizing on contracts expressed through business-oriented APIs, consumers are not impacted by changes in the implementation of the service. This allows service owners to change the implementation and modify the systems of record or service compositions which may lie behind the interface and replace them without any downstream impact. If microservices’ interfaces are exposed with a standard protocol, such as a RESTful API, they can be consumed and reused by other services and applications without direct coupling through language bindings or shared libraries. Project teams need to easily discover services as potential reuse candidates. These services should provide documentation, test consoles, etc so re-using is significantly easier than building from scratch.
 
 = Software Process for Reuse  =
 
-Software process for reuse includes the set of activities that allow, during the course of a project, the early identification of artifacts to be developed that might exhibit a high reuse potential either within or in other iterations of projects. Besides, added costs and time (incurred for reuse addressed specific activities) estimation techniques will be defined. We will discuss two types of reuse here:
+Software process for reuse includes the set of activities that allow, during a project, the early identification of artifacts to be developed that might exhibit a high reuse potential either within or in other iterations of projects. Besides, added costs and time (incurred for reuse addressed specific activities) estimation techniques will be defined. We will discuss two types of reuse here:
 
 * Vertical reuse (i.e., the reuse of software artifacts within a specific domain or application area)
 * Horizontal reuse (i.e., the reuse of software artifacts across domains or application area).
 
-However, it puts a major emphasis on the latter, since horizontal reuse provides the highest payoff. The reusable components can be organized into a hierarchy, in a number of product layers, each playing a well-defined technical and market role. This reusability framework goal is to set the strategic direction for structuring organization’s software products to support reuse activities. The four layers are defined as below:
+However, it puts a major emphasis on the latter, since horizontal reuse provides the highest payoff. The reusable components can be organized into a hierarchy, in several product layers, each playing a well-defined technical and market role. This reusability framework goal is to set the strategic direction for structuring organization’s software products to support reuse activities. The four layers are defined as below:
 
 * Operating Environment (layer 1): it addresses the technological foundation of the software products. The architectural components of this layer reflect the selection of basic database, graphics, and communications enabling technologies for the Operating Environment.
-* Application (layer 2): it characterizes software components specifically designed to solve application problems for a broad telecommunication market (e.g., Billing, Service Pro-visioning, Customer Network Management, etc.). This layer is likely to contain a large number of reusable software components.
+* Application (layer 2): it characterizes software components specifically designed to solve application problems for a broad telecommunication market (e.g., Billing, Service Pro-visioning, Customer Network Management, etc.). This layer is likely to contain many reusable software components.
 * Market Segment Specific (layer 3): it reflects the specificity of a market segment related to a specific problem-domain (e.g., the Service Provisioning Application can be customized for small PTfs, large end-users, and mobile telephony market segments).
-* Customer Specific (layer 4): it represents those software components which are highly specialized to address application features specific to a particular customer. Components at this layer have typically a low reuse potential.
+* Customer Specific (layer 4): it represents those software components which are highly specialized to address application features specific to a customer. Components at this layer have typically a low reuse potential.
 
 As is shown below, moving beyond point-to-point connectivity requires an approach centered around the development of connectivity assets that are both reusable across different projects and contexts, and discoverable by the teams that need them. In our experience, enabling that approach requires that monolithic services be broken down into smaller, constituent microservices. Agencies that employ this approach simultaneously realize greater project delivery speed and security, but only if they do so in such a way that drives reuse of these microservices across the enterprise.
 
@@ -68,9 +64,9 @@ Microservices promotes reuse by exposing their functionality through a standardi
 The framework defines and enacts the policies to disseminate the reuse culture and to encourage the adoption of reuse practices among project teams. It is principally through this mechanism that the organization learns how to &quot;reuse&quot; effectively.
 
 * ''Provide expertise:'' whenever possible, engineers work with the project teams to better support them in achieving both development &quot;for reuse&quot; and &quot;with reuse&quot;.
-* ''Development of reusable components:'' dedicated teams are in charge of producing reusable components by either re-engineering the &quot;normal&quot; software components or by developing new components whose reuse potential has been assessed during domain analysis. The act of developing reusable components asynchronously with project team activities is called an &quot;a-posteriori (or backroom)&quot;approach.
+* ''Development of reusable components:'' dedicated teams oversee producing reusable components by either re-engineering the &quot;normal&quot; software components or by developing new components whose reuse potential has been assessed during domain analysis. The act of developing reusable components asynchronously with project team activities is called an &quot;a-posteriori (or backroom)&quot;approach.
 * ''Maintenance of reusable components:'' reusable components may change as flaws are corrected and enhancements are made.
-* ''Maintenance and administration of the framework'': the central repository is managed by a single team which controls the nature and quality of the information stored in the repository. This activity also deals with the population of the library of artifact descriptors, including setting policies for artifact acquisition and maintenance (e.g., evaluation, certification, classification, and weeding). In addition, it has to define and maintain a coherent classification scheme for the stored artifacts, weeding old artifacts, announcing incoming ones, user management (e.g., add/delete users, set user privileges), and reporting on artifact usage.
+* ''Maintenance and administration of the framework'': the central repository is managed by a single team which controls the nature and quality of the information stored in the repository. This activity also deals with the population of the library of artifact descriptors, including setting policies for artifact acquisition and maintenance (e.g., evaluation, certification, classification, and weeding). In addition, it must define and maintain a coherent classification scheme for the stored artifacts, weeding old artifacts, announcing incoming ones, user management (e.g., add/delete users, set user privileges), and reporting on artifact usage.
 
 = Classification of an artifact  =
 
@@ -83,8 +79,8 @@ The three classification methodologies implemented in the reusability framework 
 = Retrieval of an artifact  =
 
 # An artifact stored using the reusability can be retrieved by navigating through the relations established between the artifacts or performing a search based upon one of the classification methodologies implemented in the system.
-# The search is fundamental even when navigating through the relations in fact, it is necessary to find an initial artifact from which to start the navigation. The search is done in different ways depending on the classification it uses:
-#* The user has to do a query in a format which depends on the different kinds of classification. If the results of the search are not satisfactory, the query can be relaxed or modified in some way and the search
+# The search is fundamental even when navigating through the relations in fact, it is necessary to find an initial artifact from which to start the navigation. The search is done in diverse ways depending on the classification it uses:
+#* The user must do a query in a format which depends on the different kinds of classification. If the results of the search are not satisfactory, the query can be relaxed or modified in some way and the search
 
 = Approaches for Reuse =
 
@@ -127,7 +123,7 @@ If user Include links, tags and comments from base artifacts, an indication must
 * If you create links between ''base'' artifacts, those links are available in every module that the base artifacts are used in.
 * If you create links between artifacts in the context of a module, the links exist only in that module and in any copies you make of the module.
 * If you want to link to an artifact that is reused, when you create the link, you can access the artifact by selecting from the '''Rows in the module''' list.
-* To help new developers get started and to make sure that they are productive as soon as possible, you can assist them with a few useful code templates. These are not meant to hamper innovation by helping them get started and quickly get over potential initial problems that would be counter productive. Code templates can also be used for various simple functions that needs to be performed on each Microservice, which would not only help developers to avoid doing repeatable work, but also make sure that the most efficient function is used and reused for this functionality.
+* To help new developers get started and to make sure that they are productive as soon as possible, you can assist them with a few useful code templates. These are not meant to hamper innovation by helping them get started and quickly get over potential initial problems that would be counterproductive. Code templates can also be used for various simple functions that needs to be performed on each Microservice, which would not only help developers to avoid doing repeatable work, but also make sure that the most efficient function is used and reused for this functionality.
 * Measure the software reuse across a portfolio of assets, but with the proliferation of API-led transformations, enterprise IT shops have never been as poised as they are right now to enact and measure the concept of software reuse across an enterprise.
 
 * Must have requirements: Tracking and driving reuse through instrumented sources is necessary to help drive the spread between productivity and labor curves for a technology shop; this is because reuse is a prime method of growing revenue at lower incremental costs. This widening of the spread between these curves serves to fend off [http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/perpetual-evolution-the-management-approach-required-for-digital-transformation digital disruption] from competitors who are no longer bound by historical barriers to entry.
@@ -136,16 +132,6 @@ If user Include links, tags and comments from base artifacts, an indication must
 = Reusability Framework =
 
 (Editor’s Note: Needs picture)
-
-= Feedback: =
-
-Need content on using an API Catalog/Exchange/Marketplace. How to Providers put APIs in Catalog. How do Consumers get API’s in Catalog. What is the governance mechanism between the Provider, Consumer, and the API Custodian (i.e. Administrator) during the “Reuse process”. How do Consumers find and browse API’s that are reusable?
-
-How to leverage an API Contract during “Reuse process”
-
-Need content on using Shared Libraries and Common Re-Use. Examples, such as Error Handling, Logging, and other utilities.
-
-I killed the section on 3 API Layers because we have content already defining the 3 API Layers. But, more importantly, how are API’s at each layer made reusable and how are they typically reused?
 
 
 
