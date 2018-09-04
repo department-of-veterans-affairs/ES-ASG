@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.12_Published Draft Second Pass.docx</b> on <b>Fri 08/31/2018</b> at <b>13:08:49.22 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_09.01 Exception Handling_Section_01.12_Published Draft Second Pass.docx</b> on <b>Tue 09/04/2018</b> at <b>12:46:28.73 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_09.01 Exception Handling_Section_01.12_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/09.01%20ASG_API%20Playbook_Exception%20Handling_Section/09.01 ASG_API Playbook_Exception Handling_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -387,17 +387,15 @@ The alternate course processing if a failure occurred in the second account woul
 
 As was alluded to in in section 1.4 Transactional Exceptions and API Development '''[hyperlink here]''' RESTful web service processing, even those of the non-transactional variety should not compromise the conceptual RESTful model. The RESTful model is predicated on correctly representing the state related transition(s) of the RESTful resource. The processing of exceptions should include notifying the end client of errors, and, just as important, ensure the state of the resource is not negatively impacted by the error scenario.
 
-(Editor’s Note: Standards Review stops here)
+The processing of the scenarios defined in section 1.4 Transactional Exceptions and API Development should be applied to RESTful web services that perform more simplistic single resource processing, even though they involve multiple state transition processing
 
-The processing of the scenarios defined in section 1.4 Transactional Exceptions and API Development even though they involved multiple state transition processing, should be applied to RESTful web services that perform more simplistic single resource processing. There is no need to re-iterate the processing steps as they are applicable to non-transactional scenarios.
-
-
+As the processing steps are applicable to non-transaction scenarios, they will not be reiterated here.
 
 == Global Exceptions and API Development ==
 
-Global Exception processing is necessitated when multi components of an API configured in different layers of a processing stack. This section will discuss Global Exception processing using the Multi-Level API Processing Stack defined by the diagram below.
+Global Exception processing is necessitated when multi components of an API are configured in different layers of a processing stack. This section will discuss Global Exception processing using the Multi-Level API Processing Stack defined by the diagram below.
 
-The following diagram depicts the Multi-Level Processing Stack that will be used to describe the Error Processing philosophy as faults/exceptions occur and propagate up to the Consuming Application Level. The diagram is a conceptual view of the processing stack, actual physical components within each level are not detailed as to not complicate the discussion.
+The following diagram depicts the Multi-Level Processing Stack that will be used to describe the Error Processing philosophy as faults/exceptions occur and propagate up to the Consuming Application Level. The diagram is a conceptual view of the processing stack, thus actual physical components within each level are not detailed to keep the diagram abstract.
 
 Additionally, this section will describe service orchestration and how multiple layers of service calls can affect the handling of exceptions and management of faults.
 
@@ -405,13 +403,13 @@ Figure 6 Multi Level API Processing Stack
 
 A brief description of the levels in the above diagram follow:
 
-* The Experience API Layer enables users (Consuming Applications) to interact with an IT ecosystem of a business.
-* Process API Layer, which pulls content from System API Layer, applies business logic to process the content and pushes the content in any desired format asked by the Experience API Layer.
-* The System API Layer houses the core systems in an IT ecosystem.
+* The Experience API Layer enables users (i.e. Consuming Applications) to interact with an IT ecosystem of the business.
+* The Process API Layer, which pulls content from the System API Layer, applies business logic to process the content and pushes the content in any desired format configured by the Experience API Layer.
+* The System API Layer exposes the core systems in an IT ecosystem.
 
 === System API Level Exceptions ===
 
-For the purposed of brevity, the System API Level layer will incorporate invocation and/or integration with legacy application infrastructures, Software as A Service component, as well as database access utilizing existing data store access mechanisms (JDBC, ODBC, Relational Mapping products such as Hibernate etc.).
+For simplicity in this discussion, the System API Level layer incorporates invocation and/or integration with legacy application infrastructures, Software as a Service (SaaS) component, as well as database access utilizing existing data store access mechanisms (JDBC, ODBC, Relational Mapping products such as Hibernate).
 
 The following are the processing steps with positive and negative procedures for handling a fault thrown by a component below the System API Level
 
