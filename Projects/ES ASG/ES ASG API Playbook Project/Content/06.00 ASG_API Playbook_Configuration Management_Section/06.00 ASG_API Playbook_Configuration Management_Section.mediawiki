@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass.docx</b> on <b>Tue 09/04/2018</b> at <b>10:58:40.09 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass.docx</b> on <b>Tue 09/04/2018</b> at <b>11:33:39.90 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_06.00 Configuration Management_Section_01.07_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/06.00 ASG_API Playbook_Configuration Management_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -28,13 +28,11 @@ The following diagram depicts products that have gained wide acceptance in the c
 
 A point should be raised regarding the Configuration Management Automation subject matter covered in this section: The creation of a complex automation eco-system, as detailed in the following diagram, is the culmination of design efforts by many senior technical personnel. Typically, an API developer would not be part of this technical effort, but the intent is to provide the developer with an understandable view of the overall automation eco-system integrations and flows.
 
-(Editor’s Note: Standards review stops here)
-
 Figure 1 Configuration Management Automation Example
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/06.00%20ASG_API%20Playbook_Configuration%20Management_Section/media/image1.png|618x536px]]
 
-Short high-level descriptions (mostly of the marketing variety) of the products depicted in the above diagram follow. Certain component groupings contained multiple product choices. A grouping that have multiple choices will contain a reference to the desirable component.
+Short high-level descriptions of the products depicted in the above diagram follow. These were current at the time of this writing. Certain component groupings contained multiple product choices. A grouping that has multiple choices will contain a reference to the desirable component.
 
 '''Build Automation Products'''
 
@@ -42,20 +40,20 @@ Short high-level descriptions (mostly of the marketing variety) of the products 
 * Ant
 * Gradle
 
-Gradle and Maven are more recent build automation products. ANT is a product that has been in use for several years. Maven has a larger user base as compared to Gradle and is the recommended product. The ''ASG_API_Playbook_08.00 Developer Setup Section'' has a detailed description of Maven.
+Gradle and Maven are more recent build automation products. ANT is a product that has been in use for more years. Maven has a larger user base as compared to Gradle and is currently the recommended product. The ''ASG_API_Playbook_08.00 Developer Setup Section'' has a detailed description of Maven.
 
 <p> </p>
 
 '''Source Code Management Products'''
 
-* Git/GitHub
+* Git and its variants (e.g. GitHub which is currently VA approved for use)
 * Subversion (SVN)
 
-Git is a distributed version control system that has many enhanced features like branching and merging. SVN is a centralized system that has been is use for some time.
+Git is a distributed version control system that has many enhanced features like branching and merging. SVN is a centralized system that has been is use for many years.
 
-Git is not better or worse than SVN, it's just different. If there is a need for Offline Source Control and the willingness to spend some extra time learning it, then Git is a good choice. But if there is a need for a strictly centralized Source Control then the simplicity and excellent Windows based tooling of SVN works well.
+Git is not better or worse than SVN, it's just different. If there is a need for Offline Source Control and the willingness to spend some extra time learning it, then Git is a desirable choice. But if there is a need for a strictly centralized Source Control then the simplicity and excellent Windows based tooling of SVN is an acceptable choice.
 
-Because of the growing acceptance of Git and GitHub, Git is the recommended product.
+Because of the growing acceptance of GitHub in the VA, it is the recommended product for API development.
 
 '''Continuous Integration'''
 
@@ -97,7 +95,7 @@ OpenShift Container Platform offers a full enterprise enterprises level control 
 
 * Kubernetes
 
-Kubernetes is a product for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.
+Kubernetes is a product for automating deployment, scaling, and management of containerized applications. It groups containers into logical units that form an application for easy management and discovery.
 
 <p> </p>
 
@@ -105,7 +103,7 @@ Kubernetes is a product for automating deployment, scaling, and management of co
 
 * Dockers
 
-Docker is producer that performs operating-system-level virtualization, also known as &quot;containerization&quot;. It helps create and deploy software within containers. It’s a collection of tools that help you “Build, Ship, and Run any App, Anywhere”
+Docker is a producer that performs operating-system-level virtualization, also known as &quot;containerization&quot;. It enables creating and deploying software within containers. It’s a collection of tools that help you “Build, Ship, and Run any App, Anywhere”
 
 == API Versioning ==
 
@@ -113,10 +111,10 @@ A viable versioning strategy for software artifacts is a crucial consideration w
 
 === When to Version ===
 
-APIs only need to be up-versioned when a breaking change is made. Breaking changes include:
+APIs should be up-versioned on the major version number when a breaking change is made. Breaking changes include:
 
 * A change in the format of the response data for one or more calls
-* A change in the response type (i.e. changing an integer to a float)
+* A change in the response type (e.g. changing an integer to a float)
 * Removing any part of the API.
 
 Breaking changes should always result in a change to the major version number for an API or content response type.
@@ -125,7 +123,7 @@ Non-breaking changes, such as adding new endpoints or new response parameters, d
 
 === Versioning Guidelines ===
 
-There is substantial discussion documentation on the web regarding RESTful versioning. This document will detail '''two''' options that for the most part have been overwhelmingly referenced in these discussions:
+There is substantial discussion documentation on the web regarding RESTful versioning. This document will detail '''two''' options that are referenced in these discussions:
 
 * URI Versioning – version the URI space using version indicators
 * Media Type Versioning – version the Representation of the Resource
@@ -136,14 +134,14 @@ Pros and cons of each option will be noted.
 
 The first recommendation addresses how to handle versioning if the development community views the URL as the most important facet which make the URL the center of the versioning efforts. Developers who are familiar with versioning with WS-* Web services tend to be more comfortable with changing the URL when versions change.
 
-Like most other problems with REST, a common flawed approach to API versioning stems from misunderstanding of the URI. This popular way simply adds a version number as a segment in the resource identifiers
+Like most other problems with REST, a common flawed approach to API versioning stems from misunderstanding of the URI. This popular alternative to versioning simply adds a version number as a segment in the resource identifiers
 
 Adding, removing, reordering, and renaming fields constitutes a breaking change for a client which philosophically is a departure from REST. Creating a new version in this scenario, changes the URL structure. The resource object version for 1.0 and 2.0 looks like this:
 
 * http://www. mycompany.com/myapp /resource1.0
 * http://www. mycompany.com/myapp /resource2.0
 
-In the above examples it is most likely the behavior of the resource that changes and not the actual resource. In other words, it is the contract that changed. The two identifiers are used to access the same resource. This is the most common argument why this approach is somewhat problematic but it is simple and will never break any cache constraints.
+In the above examples it is most likely the behavior of the resource that changes and not the actual resource. In other words, it is the contract that changed. The two identifiers are used to access the same resource. This is the most common argument why this approach is somewhat problematic, but it is simple and will never break any cache constraints.
 
 By convention, the default value for format is json. Examples:
 
@@ -154,7 +152,7 @@ Some developers tend to prefer versioning by URL which allows them to determine 
 
 === Media Type Versioning  ===
 
-The REST API would make use of custom vendor Multipurpose Internet Mail Extensions or MIME media types instead of generic media types such as application/json. It is these media types that are going to be versioned instead of the URIs. The media type versioning philosophy makes use of the MIME sub type of vnd which is vendor-specific. The Internet Assigned Numbers Authority (IANA) is the official authority for the standardization and publication of these vendor classifications.
+The REST API could make use of custom vendor Multipurpose Internet Mail Extensions or MIME media types instead of generic media types such as application/json. It is these media types that are going to be versioned instead of the URIs. The media type versioning philosophy makes use of the MIME sub type of vnd (i.e. vendor specific). The Internet Assigned Numbers Authority (IANA) is the official authority for the standardization and publication of these vendor classifications.
 
 If the API is to be used internally only, the vnd MINE type should not be an issue. If an external presence is desired, thought should be given with registering it with the IANA This is a standard way for sharing out-of-band information with potential clients.
 
@@ -170,7 +168,7 @@ or using a v=1 qualifier:
 
 * '''Content-Type''': application/vnd. mycompany.v1+json
 
-What is important to understand here is that the client makes no assumptions about the structure of the response beyond what is defined in the media type. Therefore, generic media types are not ideal as they do not provide enough semantic information and force the client to use additional hints to process the actual representation of the resource.
+It is important to understand that the client makes no assumptions about the structure of the response beyond what is defined in the media type. Therefore, generic media types are not ideal as they do not provide enough semantic information and force the client to use additional hints to process the actual representation of the resource.
 
 The Accept header in the request tells the server the content types that the client is expecting in the response body.
 
@@ -178,13 +176,13 @@ Content negotiation preserves clean set of URLs but there is still the task of h
 
 === URI Versioning and Media Type Versioning Evaluation ===
 
-If the development community is more RESTful architecturally minded and aware, REST API versioning should be accommodated by using version data representations in the MIME types in the HTTP Application Accepts. If development community views the URL as the most important facet then changing the URL should be used when versions change.
+If the development community is more RESTful architecturally minded and aware, REST API versioning should be accommodated by using version data representations in the MIME types in the HTTP Application Accepts. If development community views the URL as the most important facet, then changing the URL should be used when versions change.
 
-Both mechanisms are valid. You need to know your consumer to know which path to follow. In general, working in an enterprises minded environment tends to point developers towards REST versioning using the MIME philosophy.
+Both mechanisms are valid. You need to know your consumer to know which path to follow. In general, working in an enterprise minded environment tends to point developers towards REST versioning using the MIME philosophy.
 
 == GitHub Integration ==
 
-Git is a distributed software configuration management (SCM) version control system that as the name implies facilitates the versioning of software artifacts. GitHub currently hosts the source code for numerous open source projects.
+Git is a distributed software configuration management (SCM) version control system that, as the name implies, facilitates the versioning of software artifacts. GitHub currently hosts the source code for numerous open source projects.
 
 An in-depth discussion on the pros and cons of Git compared to centralized source code control systems will not be a part of this discussion as Git and GitHub is the VA’s recommended SCM alternative.
 
@@ -192,17 +190,17 @@ Because of the recommendation of GitHub as the VA alternative, a discussion of t
 
 === The GIT Command Line ===
 
-There are a lot of different ways to use Git. There are the original command-line tools, and there are many graphical user interfaces of varying capabilities. The command line is the only place where all Git commands can be executed. Most of the GUIs (e.g. Bit Bucket) implement only a subset of Git functionality for simplicity and the choice of a graphical client is a matter of personal taste. For purposes of clarity only GIT command lines features will be discussed in this section of the document.
+There are several alternative ways to use Git and GitHub, including the original command line tools, web graphical tools and a growing list of capabilities in the market. Currently, the command line tools is the only place where all Git commands can be executed. Most of the GUIs (e.g. Bit Bucket, GitHub Desktop) implement only a subset of Git functionality for simplicity and the choice of a graphical client is a matter of personal taste. For purposes of clarity only GIT command lines features will be discussed in this section of the document.
 
-=== GitHub Branching and Merging ===
+=== Git Branching and Merging ===
 
-It can be argued that Git changed the way developers think of merging and branching. From the classic CVS/Subversion world where merging/branching has always been considered a bit daunting and something you only do when it was necessary.
+It can be argued that Git changed the way developers think of merging and branching compared to the classic CVS/Subversion model where merging/branching has always been considered an exception to the rule as much as possible, due to complexities involved.
 
-With Git, merging and branching actions are simple, and they are considered one of the core parts of a daily development workflow, for example, in the world of CVS/Subversion, branching and merging is treated as an advanced concept, while in Git they are considered basic concepts.
+With Git, merging and branching actions are simple, and they are considered one of the core parts of a daily development workflow. For example, in the world of CVS/Subversion, branching and merging is treated as an advanced concept, while in Git it is considered fundamental, along with Pull Requests.
 
 This section of the document will cover GitHub Branching and Merging commands at a somewhat low level using Git command lines as part of the discussion. A detailed philosophical discussion of Branching and Merging is better left to the configuration management strategies of individual development teams.
 
-=== GitHub Branching ===
+=== Git Branching ===
 
 Software development generally occurs using multiple branches in parallel. For example, a software artifact may be under development/modification by multiple developers on different branches.
 
@@ -219,7 +217,7 @@ The ''merge/release strategy'' alluded to above means that when code is ready to
 
 Choosing where to branch off from and target a pull request depends on an assessment of three factors: how urgent the fix/feature is, how risky (in terms of introducing other bugs) the required changes are, and how long it will take to develop. A good heuristic is to see how urgent the code that is being committed versus how risky or potentially breaking it is:
 
-==== GitHub Branching and Related Command Lines ====
+==== Git Branching and Related Command Lines ====
 
 Simply stated a branch is required when a feature hosted in the high-level branch must be modified and/or added. A branch which will host the development of the new feature, must be created from an upper level branch, which is typically the Master. This section will focus solely on the branch creation process only. Subsequent process flow commands such as commits and check-ins are not part of this discussion. The following are typical steps used in creating and removing a branch:
 
@@ -232,17 +230,17 @@ Execute the Git '''''branch''''' &lt;new branch name'''&gt;''' followed by Git '
 
 Branches are typical removed after their contents have been merged to a higher-level branch and is good practice. Execute the Git branch command with the -d switch - Git '''''branch -d''''' &lt;branch name'''&gt;.'''
 
-=== GitHub Merging  ===
+=== Git Merging  ===
 
 GIT merging facilitates consolidates the migration of a forked branch or branches back to a common branch. The Git '''''merge''''' command accomplishes this task.
 
-The current branch will be updated to reflect the merge, but the target branch will be completely unaffected. GIT '''''merge''''' is often used in conjunction with Git '''''checkout''''' for selecting the current branch and Git '''''branch -d''''' for deleting the merged branch target branch
+The current branch will be updated to reflect the merge, but the target branch will be completely unaffected. Git '''''merge''''' is often used in conjunction with Git '''''checkout''''' for selecting the current branch and Git '''''branch -d''''' for deleting the merged branch target branch
 
 Typically, Git '''''merge''''' is used to combine two branches. The following examples will focus on this branch merging pattern. Git '''''merge''''' takes two commit pointers, usually the branch tips which are the last commit or most recent commit on a branch, and will find a common base commit between them. Once Git finds a common base commit it will create a new &quot;merge commit&quot; that combines the changes of each queued merge commit sequence
 
 Here is the scenario: a branch containing a new feature that is based off the master branch. This feature branch needs to be merged back into the Master Branch. Invoking this command will merge the specified branch feature into the current branch, which in this case is Master. Git will determine the merge algorithm automatically.
 
-==== GitHub Merging and Related Command Lines ====
+==== Git Merging and Related Command Lines ====
 
 Before performing a merge, there are several preparation steps needed to ensure the merge is performed correctly.
 
@@ -260,7 +258,7 @@ Insure that the receiving branch and the merging branch are up-to-date with the 
 
 Once steps 1 and 2 have been taken place, a merge can be initiated by executing Git '''''merge''''' &lt;branch name&gt; where &lt;branch name&gt; is the name of the branch that will be merged into the receiving branch which in this scenario is Master.
 
-==== Resolving GitHub Merging Conflicts ====
+==== Resolving Git Merging Conflicts ====
 
 If the two branches both changed the same part of the same file, Git won't be able to determine which version to use. When this a situation occurs, it stops right before the merge commit so the conflict can be resolved manually. When a merge conflict is encountered, running the Git '''''status''''' command shows which files need to be resolved.
 
