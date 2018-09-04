@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.03_SME Review Resolved {max.girin}.docx</b> on <b>Fri 08/31/2018</b> at <b>13:08:08.49 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.03_SME Review Resolved {max.girin}.docx</b> on <b>Tue 09/04/2018</b> at <b>14:56:12.90 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.03_SME Review Resolved {max.girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/04.00 ASG_API Playbook_API Contracts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
