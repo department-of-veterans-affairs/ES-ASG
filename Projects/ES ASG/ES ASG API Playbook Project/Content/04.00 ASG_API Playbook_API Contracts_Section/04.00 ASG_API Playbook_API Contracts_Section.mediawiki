@@ -1,25 +1,25 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.04_pre-Standards Review {Marshall}.docx</b> on <b>Wed 09/05/2018</b> at <b> 9:39:55.04 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.04_Standards Review {Marshall}.docx</b> on <b>Wed 09/05/2018</b> at <b>10:11:45.01 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.04_pre-Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.04_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/04.00 ASG_API Playbook_API Contracts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = API Contracts =
 
-An API contract is a definition of how API services are to be consumed by the API consumers. In the first stages of API development, as instructed in previous Section 2.1, Development Lifecycle, an API contract is to be drawn up between the API provider and API consumer. Creating such an API contract (or service definition) is an important initial step in API development that is often overlooked. API definitions (sometimes referred to as API specifications) are designed to provide a format for describing APIs that is readable by both humans and machines. They are language-agnostic and commonly based on a widely agreed-upon format such as OpenAPI Specification (aka Swagger), WSDL (in a case of SOAP services), or RAML. 
+An API contract is a definition of how API services are to be consumed. In the first stages of API development, as instructed in previous Section 2.1, Development Lifecycle, an API contract is to be developed between the API provider and API consumer. Creating such an API contract (or service definition) is an important initial step in API development that is often overlooked. API definitions (sometimes referred to as API specifications) are designed to provide a format for describing APIs that is both human and machine readable. They are language-agnostic and commonly based on a widely agreed-upon format, such as OpenAPI Specification (i.e. Swagger), WSDL (in the case of SOAP services), or RAML. 
 
 One of the most important aspects of microservices architecture is the ability to deploy microservices independently of one another. To achieve such microservice independence, each microservice must provide a '''<span class="underline">versioned, well-defined contract</span>''' to its consumers. Each service must not break these versioned contracts until it's known that no other service consumer relies on a particular, versioned contract.
 
 Therefore, the following architecture aspects are critical when thinking about API contract design:
 
-* Create the API contract early on in your design of the microservice or an API service
-* Define API contract format and adherence to a particular well-established contract standard, such as OpenAPI, WSDL, or RAML
-* Version your API contract and notify your API/microservice consumer when a new version is released
-* Don’t take down an API contract version unless you know that no other service consumer relies on that particular contract version
+* Create the API contract early in your design of the microservice or an API service
+* Define an API contract format and adherence to a particular well-established contract standard, such as OpenAPI, WSDL, or RAML
+* Version each API contract and notify API/microservice consumers when a new version is released
+* Don’t remove an API contract version without verifying that no service consumer relies on that contract version
 
 == Design First Methodology ==
 
-The Design First methodology instructs that we ought to create an API contract or service definition before even starting our first line of development. Creating such an API contract is a key part of the design phase, hence following this methodology, we are creating the API contracts first, publish them to the API Developer Portal, mock the APIs, and only then start full development of “live” API service operations.
+The Design First methodology instructs that we ought to create an API contract or service definition before starting our first line of development. Creating such an API contract is a key part of the design phase, hence following this methodology, we are creating the API contracts first, publishing them to the API Developer Portal, mocking the APIs, and only then start full development of “live” API service operations.
 
 An API Contract is created in the initial design phase of any microservice API development. Following the Development Lifecycle, defined in Section 2.1, API Contract is to be initially drafted in the very first phase of API development lifecycle, the “Design” stage. Design First methodology instructs the developer to design their API first by creating an API contract and socializing that contract with any potential API consumer or other microservice developers who would be integrating their services with yours.
 
