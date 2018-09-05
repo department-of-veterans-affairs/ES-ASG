@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.04_Standards Review {Marshall}.docx</b> on <b>Wed 09/05/2018</b> at <b>17:01:05.14 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.04_Standards Review {Marshall}.docx</b> on <b>Wed 09/05/2018</b> at <b>17:04:19.60 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.04_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/04.00 ASG_API Playbook_API Contracts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -57,26 +57,26 @@ As an example, a developer, is given a business use case to retrieve a data obje
 <li><p>API Services to be consumed by service consumers (e.g., “xyz-database-retrieval-service”)</p></li>
 <li><p>Service Operations (e.g., Retrieve single record, Retrieve a collection, Insert New Record, Update a Record)</p>
 <ol style="list-style-type: lower-alpha;">
-<li><p>Test</p></li>
-<li><p>Test</p></li></ol>
+<li><p>For REST APIs, express these operations as HTTP/REST operations such as GET, POST, PUT, DELETE</p></li>
+<li><p>For SOAP APIs, express these operations as separate SOAP Operations inside a service definition WSDL file</p></li></ol>
 </li>
 <li><p>Request Requirements</p>
 <ol style="list-style-type: lower-alpha;">
-<li><p>Test</p></li>
-<li><p>Test</p></li>
-<li><p>Test</p></li></ol>
+<li><p>Identify expected inputs for each service operation (e.g., a unique Customer ID to fetch customer details from the database)</p></li>
+<li><p>Identify which inputs are required</p></li>
+<li><p>Identify input data types</p></li></ol>
 </li>
 <li><p>Response Requirements</p>
 <ol style="list-style-type: lower-alpha;">
-<li><p>T</p></li>
-<li><p>T</p></li>
-<li><p>t</p></li></ol>
+<li><p>Identify expected outputs for each service operation</p></li>
+<li><p>Identify output data types</p></li>
+<li><p>Provide an example of a data items returned (provide dummy data sets for people, never provide information that corresponds to a real person; Code lists, such as States or Diagnosis Codes may contain real data))</p></li></ol>
 </li>
-<li><p>test</p>
+<li><p>Service Security Requirements</p>
 <ol style="list-style-type: lower-alpha;">
-<li><p>za</p></li>
-<li><p>t</p></li>
-<li><p>t</p></li></ol>
+<li><p>Identify if the service expects an OAuth 2.0 Bearer token</p></li>
+<li><p>Identify if the service expects an WSSE Security Header (for SOAP services)</p></li>
+<li><p>Identify if the service expects a Basic Auth user name and password</p></li></ol>
 </li></ol>
 
 Once the contract is defined, you can proceed to socialize it the contract with the potential consumers of your microservice. To socialize the API Contract, it should be published in an API Portal. An API Portal is a web-based publishing platform which allows developers to share API Contract definitions, inform others of new APIs that are to be developed, find new APIs, and share API Contracts with external partners and consumers.
