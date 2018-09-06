@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.04_Standards Review {Marshall}.docx</b> on <b>Wed 09/05/2018</b> at <b>17:04:19.60 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.05_Publication Review {Marshall}.docx</b> on <b>Thu 09/06/2018</b> at <b>13:30:38.21 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.04_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.05_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/04.00 ASG_API Playbook_API Contracts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -28,29 +28,24 @@ Example
 As an example, a developer, is given a business use case to retrieve a data object from the source system, such as a relational database, via a programming language of choice (.NET, Java, NodeJS, Python) and expose this database object in a form of a JSON object to be sent over HTTP/REST to an external data consumer. The developer should first develop an API Contract by defining the JSON schema of an object to be fetched via the microservice to be consumed by other microservices or platforms. To draft such a contract, the following should be defined:
 
 <ol style="list-style-type: decimal;">
-<li><p>API Services to be consumed by service consumers (e.g., “xyz-database-retrieval-service”)</p></li>
-<li><p>Service Operations (e.g., Retrieve single record, Retrieve a collection, Insert New Record, Update a Record)</p>
-<ol style="list-style-type: lower-alpha;">
-<li><p>For REST APIs, express these operations as HTTP/REST operations such as GET, POST, PUT, DELETE</p></li>
-<li><p>For SOAP APIs, express these operations as separate SOAP Operations inside a service definition WSDL file</p></li></ol>
+<li></li>
+<li><ol style="list-style-type: lower-alpha;">
+<li></li>
+<li></li></ol>
 </li>
-<li><p>Request Requirements</p>
-<ol start="3" style="list-style-type: lower-alpha;">
-<li><p>Identify expected inputs for each service operation (e.g., a unique Customer ID to fetch customer details from the database)</p></li>
-<li><p>Identify which inputs are required</p></li>
-<li><p>Identify input data types</p></li></ol>
+<li><ol start="3" style="list-style-type: lower-alpha;">
+<li></li>
+<li></li>
+<li></li></ol>
 </li>
-<li><p>Response Requirements</p>
-<ol start="6" style="list-style-type: lower-alpha;">
-<li><p>Identify expected outputs for each service operation</p></li>
-<li><p>Identify output data types</p></li>
-<li><p>Provide an example of a data items returned (provide dummy data sets for people, never provide information that corresponds to a real person; Code lists, such as States or Diagnosis Codes may contain real data))</p></li></ol>
+<li><ol start="6" style="list-style-type: lower-alpha;">
+<li></li>
+<li></li>
+<li></li></ol>
 </li>
-<li><p>Service Security Requirements</p>
-<ol start="9" style="list-style-type: lower-alpha;">
-<li><p>Identify if the service expects an OAuth 2.0 Bearer token</p></li>
-<li><p>Identify if the service expects an WSSE Security Header (for SOAP services)</p></li>
-<li><p>Identify if the service expects a Basic Auth user name and password</p></li></ol>
+<li><ol start="9" style="list-style-type: lower-alpha;">
+<li></li>
+<li></li></ol>
 </li></ol>
 
 <ol style="list-style-type: decimal;">
@@ -115,7 +110,7 @@ OpenAPI Specification (OAS) is a specification for machine-readable interface 
 
 RAML
 
-While Mulesoft has recently joined OAS and now actively supports Swagger, Mulesoft continues to maintain its own API Contract Standard called RESTful API Modelling Language (RAML). Mulesoft provides funding for the RAML initiative, but the RAML itself is considered to also be open to the API development community for contributing to the RAML specification.
+While Mulesoft has recently joined OAS and now actively supports Swagger, Mulesoft continues to maintain its own API Contract Standard called RESTful API Modelling Language (RAML). Mulesoft provides funding for the RAML initiative, but the RAML is also considered to open to the API development community for contributing to the RAML specification.
 
 SOAP
 
@@ -129,7 +124,7 @@ When developing an API Contract, follow these key guidelines to make sure to inc
 
 API Service Operations
 
-Define all API Services to be consumed by your service consumers (e.g., “xyz-database-retrieval-service”). Then, define all Service Operations within each service (e.g., Retrieve single record, Retrieve a collection, Insert New Record, Update a Record, etc).
+Define all API Services to be consumed by your service consumers (e.g., “xyz-database-retrieval-service”). Then, define all Service Operations within each service (e.g. Retrieve single record, Retrieve a collection, Insert New Record, Update a Record).
 
 * In REST APIs, express these operations as HTTP/REST operations such as GET, POST, PUT, DELETE
 * In SOAP APIs, express these operations as separate SOAP Operations inside a service definition WSDL file
@@ -140,7 +135,7 @@ An example of a service operation is provided below for a RESTful operation:
 
 Request Requirements
 
-In the request section of the API Contract, list all inputs, their data types, whether they are required, and how they are expected to be passed in (in header, part of the path, on a querystring, or in the request body for POST and PUT requests).
+In the request section of the API Contract, list all inputs, their data types, whether they are required, and how they are expected to be passed (in header, part of the path, on a querystring, or in the request body for POST and PUT requests).
 
 An example of a request definition in the API Contract is provided below:
 
@@ -148,7 +143,7 @@ An example of a request definition in the API Contract is provided below:
 
 Response Requirements
 
-In the response section of the API Contract, list all structures and attributes expected to be returned back in the response for each operation. In the case of RESTful services returning JSON, define the JSON schema files and reference those schema files inside your Swagger or RAML contract definition. In the case of SOAP, define all outputs as part of WSDL contract.
+In the response section of the API Contract, list all structures and attributes expected to be returned in the response for each operation. In the case of RESTful services returning JSON, define the JSON schema files and reference those schema files inside your Swagger or RAML contract definition. In the case of SOAP, define all outputs as part of WSDL contract.
 
 For JSON-based responses, define the following:
 
@@ -159,7 +154,7 @@ For JSON-based responses, define the following:
 <li><p>Each attribute listed should contain the following:</p>
 <ol style="list-style-type: lower-alpha;">
 <li><p>Data Type (e.g., string, number, date, boolean, array)</p></li>
-<li><p>Example (i.e., provide a concrete example for each data item returned, with any sensitive information scrubbed or replaced with dummy data for an example)</p></li>
+<li><p>Example (i.e. provide a concrete example for each data item returned, with any sensitive information scrubbed or replaced with dummy data)</p></li>
 <li><p>Formatting required (e.g., whether special formatting for emails, phones, dates is required)</p></li></ol>
 </li></ul>
 
@@ -187,9 +182,9 @@ An example RAML contract is provided below:
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/media/image7.png|252x373px|Image result for raml for pet store]]
 
-Both Swagger and RAML are very similar, especially if using YAML to define both. There are some slight differences between the two contract definition languages but they are very minor.
+Both Swagger and RAML are very similar, especially if using YAML to define both. There are some slight, minor differences between the two contract definition languages.
 
-As a result, Mulesoft has worked on a conversion utility that allows to convert from OAS Swagger to RAML, to help migrate any non-Mulesoft APIs onto the Mulesoft platform. The utility also allows converting from RAML into OAS Swagger.
+As a result, Mulesoft has worked on a utility that allows conversion from OAS Swagger to RAML, to automate migration from non-Mulesoft APIs onto the Mulesoft platform. The utility also allows converting from RAML into OAS Swagger.
 
 ==== Conversions ====
 
@@ -215,9 +210,9 @@ The completed RAML contract can be saved and published to the Exchange from the 
 
 The developer can also switch the tab on the top-right hand corner of the Design Center to convert the API to a mock API. Once that toggle is switched to “mock” mode, Mulesoft assigns a mock URI endpoint to this API, which can then be accessed via browser, SoapUI or Postman, to return mock responses from this API.
 
-As a developer, you should start creating all of your API Contracts on Mulesoft platform within the Design Center. Once the API Contract is created, save the contract and publish the RAML to the Exchange of your organizational unit within VA parent organization. Then, you should convert the API to a mock API initially, following the Design First strategy to expose the API Contract and mock to your API consumers. Once the mock API is up and running, inform your API consumers to start testing their client applications and microservices to consume your mock API. Only after you have completed your “live” microservice development and validated your API live requests and responses, you can publish your API to Exchange and Mulesoft runtimes, and update the API Contract definition inside the Design Center to no longer return mock responses.
+Developers should create all API Contracts on Mulesoft platform within the Design Center. Once the API Contract is created, save the contract and publish the RAML to the Exchange of your organizational unit within VA parent organization. Then, convert the API to a mock API initially, following the Design First strategy to expose the API Contract and mock to API consumers. Once the mock API is up and running, inform API consumers to start testing their client applications and microservices to consume the mock API. Only after completion of “live” microservice development and validation of API live requests and responses, then publish the API to Exchange and Mulesoft runtimes, and update the API Contract definition inside the Design Center to no longer return mock responses.
 
-Once any new API Contract changes are made to the RAML contract, make sure to version your contract by iterating the version number on the RAML contract. Start with 0.1 version initially and iterate minor versions for minor defects or hotfixes. Iterate major contract versions for significant operation changes. For example, if a new field needs to be added to the response, but the operation remains the same, iterate a minor version (e.g., from 0.1 to 0.2). If there is a change in the operation signature itself (e.g. the URI now has a new path parameter), iterate a major version (from 0.2 to 1.0).
+Once any new API Contract changes are made to the RAML contract, version the contract by iterating the version number on the RAML contract. Start with 0.1 version initially and iterate minor versions for minor defects or hotfixes. Iterate major contract versions for significant operation changes. For example, if a new field needs to be added to the response, but the operation remains the same, iterate a minor version (e.g., from 0.1 to 0.2). If there is a change in the operation signature itself (e.g. the URI now has a new path parameter), iterate a major version (from 0.2 to 1.0).
 
 
 

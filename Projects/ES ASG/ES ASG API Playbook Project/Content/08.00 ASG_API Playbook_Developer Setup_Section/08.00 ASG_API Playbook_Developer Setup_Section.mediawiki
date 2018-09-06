@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_02.01_SME Review Resolution {Frank Burgos}.docx</b> on <b>Wed 09/05/2018</b> at <b>10:13:42.30 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_02.02_SME Review{Ron O.}.docx</b> on <b>Thu 09/06/2018</b> at <b>13:31:23.42 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_02.01_SME Review Resolution {Frank Burgos}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_02.02_SME Review{Ron O.}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/08.00 ASG_API Playbook_Developer Setup_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -50,7 +50,7 @@ As has been stated at the beginning of this document, this is a high-level overv
 
 Again, for a full understanding of the Maven product refer to the '''''Apache Maven Getting Started Guide''''' web site
 
-==== 2.1.2.1. .m2 Repository Directory ====
+==== .m2 Repository Directory ====
 
 The maven local repository is a local folder that is used to store a developers’ s project’s dependencies (plugin jars and other files which are downloaded by Maven). When you build a Maven project, all dependency files will be stored in your Maven local repository. For example, when the '''''mvn clean install'''''
 
@@ -63,7 +63,7 @@ The contents of .m2 are directory are:
 
 The .m2 directory is typically located at ''USER_HOME''/.m2
 
-==== 2.1.2.2. Pom.xml ====
+==== Pom.xml ====
 
 The pom.xml contains the Project Object Model (POM) for this project. The POM is the basic unit of work in Maven. This is important to remember because Maven is inherently project-centric in that everything revolves around the notion of a project. In short, the POM contains every important piece of information about a project and is essentially one-stop-shopping for finding anything related to the project.
 
@@ -159,7 +159,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
 
 &lt;/project&gt;
 
-==== 2.1.2.3. Settings.xml ====
+==== Settings.xml ====
 
 The settings element in the settings.xml file contains elements used to define values which configure Maven execution in various ways, like the pom.xml, but should not be bundled to any specific project (i.e. it is Maven specific).
 
@@ -271,7 +271,7 @@ xsi:schemaLocation=&quot;http://maven.apache.org/SETTINGS/1.1.0 http://maven.apa
 
 &lt;/settings&gt;
 
-==== 2.1.2.4. Maven Archetypes ====
+==== Maven Archetypes ====
 
 A Maven Archetype is a Maven plugin that provides the facility the create a Maven Project Structure whose specifics are defined by the specific archetype utilized.
 
@@ -403,14 +403,14 @@ Notice that the '''setUp executed''' and '''tearDown executed''' messages were d
 
 = MuleSoft Developer Setup =
 
-== VA’s MuleSoft DVP Platform ==
+== '''VA’s MuleSoft DVP Platform''' ==
 
 The VA Enterprise Services Organization currently offers VA API development teams access to its AnyPoint MuleSoft platform currently hosted on it VA Gov. Cloud environment. Development teams will need to follow the sequence of steps outlined below to gain access to these API tools. The following 4 steps are required to request, provision, and configure your team’s VA MuleSoft API tools.
 
 {|
 ! Step
-! Activities
-! Roles
+! '''Activities'''
+! '''Roles'''
 |-
 | 3.1.1
 | Request DVP Access
@@ -433,8 +433,8 @@ The VA Enterprise Services Organization currently offers VA API development team
 
 {|
 ! Step
-! Activities
-! Roles
+! '''Activities'''
+! '''Roles'''
 |-
 | 3.1.1.1
 | Submit a DVP Access Request
@@ -455,11 +455,74 @@ The VA Enterprise Services Organization currently offers VA API development team
 
 ==== Submit a DVP Access Request [Additional steps to be provided by DVP MuleSoft Business Sponsor] ====
 
-==== Meet w/ MuleSoft C4E Team [Additional steps to be provided by C4E team] ====
+==== Meet w/ MuleSoft C4E  ====
+
+Mulesoft C4E team conducts series of meetings with stakeholders and technical teams who is being onboarded. The meetings are primarily grouped in following categories
+
+===== Pre-Onboarding =====
+
+* Activities
+** Project discovery and stakeholder vision discussion
+** Anypoint platform demo
+** DVP Platform walkthrough and current update
+** Identifying capacity requirements
+** Identifying AD groups
+** Identifying connectivity’s required
+* Outcomes
+** Approval on capacity from VA
+*** '''Owner: Project stakeholder'''
+** AD groups established
+*** '''Owner: Project stakeholder'''
+** AD groups to Anypoint roles mappings
+*** '''Owner : MuleSoft C4E team'''
+** Sandbox creation
+*** '''Owner : MuleSoft C4E team'''
+
+===== Requirement, Design &amp; Implementation phase =====
+
+* Activities
+** Architecture/Design discussion/review
+** API review
+** Code review
+** Best practices discussions
+** Mule Studio with Maven &amp; Git setup(if applicable)
+** Deliverables &amp; Timelines
+** Deploy to sandbox
+** Connectivity setup, testing &amp; validation
+* Outcomes
+** Requirement document
+*** Owner: Project team
+** Development
+*** Owner: Depends
+** API &amp; Code review
+*** Owner: Mulesoft C4E team
+** Deliverables &amp; timelines
+*** Owner: Project team
+** Best practice documents published
+*** Owner : Mulesoft C4E team
+** ESCCB requests for Connectivity
+*** Owner: Project team
+** Connectivity validation
+*** Owner: Mulesoft C4E team
+
+===== Deployment, Promotion &amp; Go-live =====
+
+* Activities
+** ATO related discussions
+** Path to production
+** Deployments
+** Environment required
+* Outcomes
+** Obtain required ATO approvals
+*** Owner: Project team
+** Environment setup &amp; deployment assistance
+*** Owners: Project &amp; Mulesoft C4E teams
+** Performance testing
+*** Owners: Project &amp; Mulesoft C4E teams
 
 ==== Identify Anypoint Organization Names ====
 
-==== AnyPoint provides role based access functions to its users based on the following 5 API Development organizational roles: ====
+AnyPoint provides role based access functions to its users based on the following 5 API Development organizational roles:
 
 <ul>
 <li><p>Developers</p></li>
@@ -483,23 +546,36 @@ The VA Enterprise Services Organization currently offers VA API development team
 <li><p>OIT VAEC DVP ASG API OrgAdmin</p></li></ul>
 </li></ul>
 
-==== Determine team structure &amp; roles [Add steps from C4E team] ====
+==== Determine team structure &amp; roles  ====
 
-=== Request VA Security Groups  ===
+Depending on project size, technical maturity and customer demands an API project may have following roles. Although large projects may have most of these roles small projects may have a smaller subset. Also some of the platform &amp; C4E folks will be shared across projects
+
+* Platform architect
+* Delivery manager
+* Platform Engineer
+* API Developers
+* C4E Lead
+* C4E Devops
+
+========  ========
+
+= Request VA Security Groups  =
 
 Once your team is granted approval from the DVP management team please follow the instructions below to create your VA MuleSoft Security Group’s
 
-==== Prerequisites  ====
+=== Prerequisites  ===
 
 * PIV card
 * VA email address
 * GFE or CAG client
 
-==== Estimated Completion Time ====
+=== Estimated Completion Time ===
 
 * 1-2 weeks
 
-==== Instructions ====
+=== Instructions ===
+
+# 
 
 Request your Security Groups on Service Now
 
@@ -515,8 +591,8 @@ Request your Security Groups on Service Now
 <p>Please update your incident request with the information listed below:</p></li></ol>
 
 {|
-| SN Field Name:
-| Selection/Content:
+| '''SN Field Name:'''
+| '''Selection/Content:'''
 |-
 | Category
 | Service
@@ -548,7 +624,7 @@ In care of:
 Rachelle Mann and Denver Griffith
 |}
 
-== ePAS request access to new security groups ==
+= ePAS request access to new security groups =
 
 === Prerequisites  ===
 
@@ -567,7 +643,7 @@ Rachelle Mann and Denver Griffith
 
 === Instructions ===
 
-Access to your DVP security groups requires your team members to submit a request on the VA’s ePAS site here: https://epas.r02.med.va.gov/apps/myva/. Each team member will be required to submit their own ePAS request and be directed to specify which security groups they will need to access to. Please refer to your MuleSoft support team to address which individuals should have access to which security groups. Please select the follow link and follow these step-by-step instructions on how to complete your MYVA Elevated Privilege request (see MYVA EP)
+Access to your DVP security groups requires your team members to submit a request on the VA’s ePAS site here: https://epas.r02.med.va.gov/apps/myva/. Each team member will be required to submit their own ePAS request and be directed to specify which security groups they will need to access to. Please refer to your MuleSoft support team to address which individuals should have access to which security groups. Please select the follow link and follow these step-by-step instructions on how to complete your MYVA Elevated Privilege request [http://vaww.project.portal.va.gov/paopwa/1603-002/Drafts/Guides/MYVA%20ePAS%20User%20Guide%20VAECloud%20System%20Access.docx '''(see MYVA EP)''']
 
 = Configuration and Testing Your Account =
 
@@ -589,9 +665,15 @@ Access to your DVP security groups requires your team members to submit a reques
 | Project &amp; C4E teams
 |}
 
-[Section is awaiting inputs from the MuleSoft C4E team]
+Once the AD groups are created and they are mapped to roles in Anypoint platform you can verify the access by logging into the platform. The URL to login is
 
-=  Maven with MuleSoft =
+https://anypoint.lighthouse.va.gov/accounts/login/veterans-affairs
+
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image22.png|362x208px]]
+
+This will automatically redirect you to IAM page and will prompt for your PIV. Once you enter the PIV pin, you will be taken back to the Mulesoft Anypoint platform home page to your organization.
+
+= Maven with MuleSoft =
 
 Maven is a project management utility that you can use to develop projects in MuleSoft.
 
@@ -652,14 +734,17 @@ https://docs.mulesoft.com/mule-user-guide/v/3.9/maven-tools-for-mule-esb
 
 Topics include:
 
-* Assumptions
-* Adding the Plugin to Maven
-* Creating a Mule Application
-* Creating a Mule Domain
-* Creating a Complete Mule Domain Project
-* Available Parameters
-
-=== Mule Plugin for Maven ===
+<ul>
+<li><p>Assumptions</p></li>
+<li><p>Adding the Plugin to Maven</p></li>
+<li><p>Creating a Mule Application</p></li>
+<li><p>Creating a Mule Domain</p></li>
+<li><p>Creating a Complete Mule Domain Project</p></li>
+<li><p>Available Parameters</p>
+<ol start="8" style="list-style-type: decimal;">
+<li>=== Mule Plugin for Maven ===
+</li></ol>
+</li></ul>
 
 These pages detail how the mule-maven-plugin allows the deployment of Mule applications to different kinds of servers: Standalone (both Community and Enterprise), clustered, Anypoint Runtime Manager and CloudHub. It is part of the framework for developing Mule applications with Maven. The most important capabilities provided by the plugin are running integration tests, and deploying applications to different environments and is pointed to by this URL:
 
@@ -667,22 +752,25 @@ https://docs.mulesoft.com/mule-user-guide/v/3.9/mule-maven-plugin
 
 Topics include:
 
-* Prerequisites
-* Adding the Plugin
-* A Simple Example
-* Deploying to Anypoint Runtime Manager
-* Deploying to CloudHub
-* Using a Mule Server Instead of Downloading Mule Dependency
-* Deploying to a Mule Server Using the Agent
-* Running Integration Tests
-* Full Example
-* Deploying to a Local Mule Cluster
-* Deploying Multiple Applications
-* Skipping Plugin Execution
-* Anypoint Runtime Manager On Premises TLS Errors
-* Full List of Parameters
-
-=== Configuring Maven to Work with Mule ===
+<ul>
+<li><p>Prerequisites</p></li>
+<li><p>Adding the Plugin</p></li>
+<li><p>A Simple Example</p></li>
+<li><p>Deploying to Anypoint Runtime Manager</p></li>
+<li><p>Deploying to CloudHub</p></li>
+<li><p>Using a Mule Server Instead of Downloading Mule Dependency</p></li>
+<li><p>Deploying to a Mule Server Using the Agent</p></li>
+<li><p>Running Integration Tests</p></li>
+<li><p>Full Example</p></li>
+<li><p>Deploying to a Local Mule Cluster</p></li>
+<li><p>Deploying Multiple Applications</p></li>
+<li><p>Skipping Plugin Execution</p></li>
+<li><p>Anypoint Runtime Manager On Premises TLS Errors</p></li>
+<li><p>Full List of Parameters</p>
+<ol start="9" style="list-style-type: decimal;">
+<li>=== Configuring Maven to Work with Mule ===
+</li></ol>
+</li></ul>
 
 These pages detail when working with Maven to build Mule applications outside of Anypoint Studio, there is a need to configure the Maven installation to work successfully with Mule. This page covers how to maintain the POM file to add or adjust dependencies and point to the correct MuleSoft repositories, and how to modify the Maven settings.xml file to include credentials and profiles for Enterprise repositories and is pointed to by this URL:
 
@@ -717,10 +805,13 @@ https://docs.mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio
 
 Topics include:
 
-* Setting Your Maven Preferences
-* Disabling Maven Support in a Single Studio Project
-
-=== Building a Mule Application with Maven in Studio ===
+<ul>
+<li><p>Setting Your Maven Preferences</p></li>
+<li><p>Disabling Maven Support in a Single Studio Project</p>
+<ol start="11" style="list-style-type: decimal;">
+<li>=== Building a Mule Application with Maven in Studio ===
+</li></ol>
+</li></ul>
 
 These pages walk one through creating a Mavenized Mule Application project from scratch. It covers providing the project with unit tests, maintaining its POM file, then building and deploying the project and is pointed to by this URL:
 
@@ -728,15 +819,18 @@ https://docs.mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-m
 
 Topics include:
 
-* Prerequisites
-* Creating a Maven Project
-* Build a Simple Project
-* Adding a Unit Test
-* Running the Application with Maven
-* Managing Dependencies
-* Troubleshooting
-
-=== Enabling Maven Support for a Studio Project ===
+<ul>
+<li><p>Prerequisites</p></li>
+<li><p>Creating a Maven Project</p></li>
+<li><p>Build a Simple Project</p></li>
+<li><p>Adding a Unit Test</p></li>
+<li><p>Running the Application with Maven</p></li>
+<li><p>Managing Dependencies</p></li>
+<li><p>Troubleshooting</p>
+<ol start="12" style="list-style-type: decimal;">
+<li>=== Enabling Maven Support for a Studio Project ===
+</li></ol>
+</li></ul>
 
 These pages take a Mule project that was already created in Anypoint Studio (i.e. the &quot;mavenization&quot; of a Mule project) and add Maven functionality to it. Maven can make a project more easily shareable with other developers as it takes care of its dependencies and helps automate the project’s build process project and is pointed to by this URL:
 
@@ -744,11 +838,14 @@ https://docs.mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studi
 
 Topics include:
 
-* Mavenizing an Existing Mule Project
-* Running a Mavenized Project
-* Running Maven Life-Cycle Commands
-
-=== Importing a Maven Project into Studio ===
+<ul>
+<li><p>Mavenizing an Existing Mule Project</p></li>
+<li><p>Running a Mavenized Project</p></li>
+<li><p>Running Maven Life-Cycle Commands</p>
+<ol start="13" style="list-style-type: decimal;">
+<li>=== Importing a Maven Project into Studio ===
+</li></ol>
+</li></ul>
 
 These pages describe a Mule project that was built using Maven outside Anypoint Studio, you can still import it into Studio and continue to work on it with the benefits of the Studio IDE and is pointed to by this URL:
 

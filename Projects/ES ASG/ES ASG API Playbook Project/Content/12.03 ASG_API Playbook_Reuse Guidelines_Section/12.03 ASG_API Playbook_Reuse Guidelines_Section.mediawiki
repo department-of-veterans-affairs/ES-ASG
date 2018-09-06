@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.08_Published Draft Second Pass.docx</b> on <b>Wed 09/05/2018</b> at <b>10:14:09.30 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_12.03 Reusability Section_01.08_Published Draft Second Pass.docx</b> on <b>Thu 09/06/2018</b> at <b>13:31:53.87 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.03 Reusability Section_01.08_Published Draft Second Pass">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.03%20ASG_API%20Playbook_Reuse%20Guidelines_Section/12.03 ASG_API Playbook_Reuse Guidelines_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>

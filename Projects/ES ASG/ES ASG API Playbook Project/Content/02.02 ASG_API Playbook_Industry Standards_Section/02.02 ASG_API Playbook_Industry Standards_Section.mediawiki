@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API_Playbook_02.02 Industry Standards_Section_01.02_Iniitial Draft {Frank Burgos}.docx</b> on <b>Wed 09/05/2018</b> at <b>10:13:01.86 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API_Playbook_02.02 Industry Standards_Section_01.02_Iniitial Draft {Frank Burgos}.docx</b> on <b>Thu 09/06/2018</b> at <b>13:30:26.27 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API_Playbook_02.02 Industry Standards_Section_01.02_Iniitial Draft {Frank Burgos}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/02.02 ASG_API Playbook_Industry Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
