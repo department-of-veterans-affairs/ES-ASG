@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.09_Published Draft Verify Links.docx</b> on <b>Thu 09/06/2018</b> at <b>16:52:54.52 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.09_Published Draft Verify Links.docx</b> on <b>Thu 09/06/2018</b> at <b>17:04:50.15 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_02.01 Development Lifecycle_Section_01.09_Published Draft Verify Links">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/02.01 ASG_API Playbook_Development Lifecycle_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -36,7 +36,7 @@ Each of the following key guidelines mentioned above is elaborated further in th
 
 == Design First instead of Build First ==
 
-An API Contract is a common term to describe how API services are brokered among API providers and consumers. It is a standard specification agreement between the provider and consumer. API providers and consumers can enter into an agreement (i.e. the “contract”) for services around a set of resources. Additionally, a provider can publish a codified and machine readable API contract, which a consumer can consume in a self-service way. Examples of an API Contract are a Swagger JSON or YAML file, or an API RAML definition file.
+An API Contract is a common term to describe how API services are brokered among API providers and consumers. It is a standard specification agreement between the provider and consumer. API providers and consumers can enter into an agreement (i.e. the “contract”) for services around a set of resources. Additionally, a provider can publish a codified and machine-readable API contract, which a consumer can consume in a self-service way. Examples of an API Contract are a Swagger JSON or YAML file, or an API RAML definition file.
 
 There are two well-established approaches when it comes to API development:
 
@@ -93,6 +93,8 @@ Mocking API requests and responses is an important next step, after the API cont
 == Iterate Frequently and Often ==
 
 API development should be an iterative process, complete with initial requirements and user stories collected, test cases defined, an API contract designed, and mock responses created and published as the initial version of the API. Following this mock API deployment, an actual API should then be developed by replacing mock operation responses with “live” service operations. Each API development iteration should be clearly labelled and versioned in the source code repository and the API Management console. For more details on API versioning, please see section ”API Version Control”
+
+[[06.00-ASG_API-Playbook_Configuration-Management_Section#API_Versioning |API Versioning]]
 
 Furthermore, many packaging and build frameworks, such as Maven, have clearly identified version tags for each new API iteration. In Maven, pom.xml should be modified to iterate a new API version as a Maven artifact version Id.
 
