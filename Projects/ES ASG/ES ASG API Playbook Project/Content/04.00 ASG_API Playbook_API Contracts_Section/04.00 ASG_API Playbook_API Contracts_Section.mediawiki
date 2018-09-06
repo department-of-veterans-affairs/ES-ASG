@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.05_Publication Review {Marshall}.docx</b> on <b>Thu 09/06/2018</b> at <b>13:30:38.21 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.05_Publication Review {Marshall}.docx</b> on <b>Thu 09/06/2018</b> at <b>14:11:40.96 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.05_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/04.00 ASG_API Playbook_API Contracts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -26,27 +26,6 @@ An API Contract is created in the initial design phase of any microservice API d
 Example
 
 As an example, a developer, is given a business use case to retrieve a data object from the source system, such as a relational database, via a programming language of choice (.NET, Java, NodeJS, Python) and expose this database object in a form of a JSON object to be sent over HTTP/REST to an external data consumer. The developer should first develop an API Contract by defining the JSON schema of an object to be fetched via the microservice to be consumed by other microservices or platforms. To draft such a contract, the following should be defined:
-
-<ol style="list-style-type: decimal;">
-<li></li>
-<li><ol style="list-style-type: lower-alpha;">
-<li></li>
-<li></li></ol>
-</li>
-<li><ol start="3" style="list-style-type: lower-alpha;">
-<li></li>
-<li></li>
-<li></li></ol>
-</li>
-<li><ol start="6" style="list-style-type: lower-alpha;">
-<li></li>
-<li></li>
-<li></li></ol>
-</li>
-<li><ol start="9" style="list-style-type: lower-alpha;">
-<li></li>
-<li></li></ol>
-</li></ol>
 
 <ol style="list-style-type: decimal;">
 <li><p>API Services to be consumed by service consumers (e.g., “xyz-database-retrieval-service”)</p></li>
