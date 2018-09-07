@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.07_Published Draft Verify Links.docx</b> on <b>Thu 09/06/2018</b> at <b>15:03:57.86 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_03.00 API Layer_Section_01.08_Published Draft Links Verified.docx</b> on <b>Fri 09/07/2018</b> at <b>10:45:18.53 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.07_Published Draft Verify Links">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_03.00 API Layer_Section_01.08_Published Draft Links Verified">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section/03.00 ASG_API Playbook_API Layer_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/03.00%20ASG_API%20Playbook_API%20Layer_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -33,14 +33,14 @@ If needed by the functional or technical requirement, System APIs can perform fi
 
 == Process APIs ==
 
-A Process API is a microservice that pulls together many other microservice APIs into a coherent piece of business functionality. Process APIs are built to manage the meshing of microservices. The key value add of a Process API is to prevent business-level functions from becoming large monolithic applications. While System APIs can be implemented in either an API platform or native technologies, in most cases Process APIs will be built as an API in an API platform that has orchestration, workflow, or instrumentation features, and has the ability that API’s can consumes other API (i.e. “Composite API’s).
+A Process API is a microservice that pulls together many other microservice APIs into a coherent piece of business functionality. Process APIs are built to manage the meshing of microservices. The key value add of a Process API is to prevent business-level functions from becoming large monolithic applications. While System APIs can be implemented in either an API platform or native technologies, in most cases Process APIs will be built as an API in an API platform that has orchestration, workflow, or instrumentation features, and has the ability that APIs can consumes other API (i.e. “Composite APIs).
 
 An encapsulation of a business entity capability, like case, customer, or equipment is a digital asset for any organization. The process APIs or process-level microservices are in line with the concept of an autonomous service which has been designed with enough abstraction to hide the underlying systems of record. None of the system details are leaked through the API. The responsibility of these APIs is discrete and agnostic to any business process.
 
 Aggregate Process APIs are formed by composable System APIs and other APIs. The composition of system APIs can take the form of explicit API orchestration (direct calls) or through the more reliable API choreography by which they are driven by business events relevant to the context of the composition (order fulfillment, for example).
 
 * They orchestrate and choreograph the invocation across multiple System APIs.  
-* The orchestrations may perform data aggregation (e.g. split-join), conditional routing (e.g. if Region=APAC then do this…), looping, or filtering (e.g. Only show available orders), and more. Filtering could also be performed at the other API layers, such as Experience and System API’s if needed.
+* The orchestrations may perform data aggregation (e.g. split-join), conditional routing (e.g. if Region=APAC then do this…), looping, or filtering (e.g. Only show available orders), and more. Filtering could also be performed at the other API layers, such as Experience and System APIs if needed.
 * Business Rules are applied at the Process APIs
 
 == Experience APIs ==
@@ -71,6 +71,10 @@ Figure 2: API Layers Invocation
 When determining whether to categorize an API and which corresponding layer it should be aligned with, the following decision tree should be applied.
 
 {|
+! Condition
+! Yes
+! No
+|-
 | 1. Does the system being integrated already provide native APIs that can be invoked to perform system interoperability?
 | a. If yes…. Use the native System API and don’t develop a new one in the API Platform
 | b. If no…. Proceed to 2.
@@ -102,7 +106,7 @@ Each API is categorized into Experience, Process, or System API and managed acco
 
 <span class="underline">Separate Provider API Logic from Consumer API Logic</span>
 
-Sometimes referred to as “Separation of Concerns,” separate API’s and flows logically. Separate provider and consumer logic. Separation of Concerns provides a logical architecture whereby IT assets (such as APIs, queues, or other architecture components) are separated and categorized for providers and consumers, and are connected through an independent mediation component (API, queue, or other). It creates an architecture whereby provider and consumer never directly communicate
+Sometimes referred to as “Separation of Concerns,” separate APIs and flows logically. Separate provider and consumer logic. Separation of Concerns provides a logical architecture whereby IT assets (such as APIs, queues, or other architecture components) are separated and categorized for providers and consumers, and are connected through an independent mediation component (API, queue, or other). It creates an architecture whereby provider and consumer never directly communicate
 
 Figure 3: Separation of Concerns
 
@@ -126,12 +130,12 @@ Figure 5: Provider/Consumer Separation
 
 A well-designed Canonical has the following characteristics:
 
-* At a technical definition: it’s an object that is solely comprised of constrained attributes, data structures, and their hierarchical relationships..
+* At a technical definition: it’s an object that is solely comprised of constrained attributes, data structures, and their hierarchical relationships.
 * At a business definition: It’s a super-set of all attributes required for a specific business process to be defined and executed across a range of technologies, processes, and external and internal entities.
 * Process and result of pre-defining an enterprise data structure and model that will encompass all information required for a business process.
 * Enterprise representation of a Business Object.
-* Also referred to as: Universal Data Model (UDM), Common Object Model (COM), Common Information Model (CIM)
-* Virtual Meta Data
+* Also referred to as: Universal Data Model (UDM), Common Object Model (COM), Common Information Model (CIM).
+* Virtual Meta Data.
 
 Figure 6: Canonical Example
 
@@ -145,7 +149,7 @@ Because each API has licensing impacts on its associated platform, the team must
 
 == Native System API ==
 
-The other licensing consideration is if the system being integrated already provides a “System API.” For example, Salesforce.com provides out-of-the-box system APIs. Other systems, also provide out-of-the-box system APIs. Therefore, in the API platform, you would only design “Process API” to invoke, orchestrate, and map to the already provided native System APIs provided by the system itself. Creating another System API layer on the already provided System API by the system vendor would increase API Management and impact license cost too (i.e. “API Frugality” must be observed).
+The other licensing consideration is if the system being integrated already provides a “System API.” For example, Salesforce.com provides out-of-the-box system APIs. Other systems also provide out-of-the-box system APIs. Therefore, in the API platform, you would only design “Process API” to invoke, orchestrate, and map to the already provided native System APIs provided by the system itself. Creating another System API layer on the already provided System API by the system vendor would increase API Management and impact license cost too (i.e. “API Frugality” must be observed).
 
 = API Layer Best Practices =
 

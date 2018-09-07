@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.09_Published Draft Verify Links.docx</b> on <b>Thu 09/06/2018</b> at <b>17:06:28.50 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_02.01 Development Lifecycle_Section_01.10_Published Draft Links Verified.docx</b> on <b>Fri 09/07/2018</b> at <b>10:45:10.29 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_02.01 Development Lifecycle_Section_01.09_Published Draft Verify Links">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_02.01 Development Lifecycle_Section_01.10_Published Draft Links Verified">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section/02.01 ASG_API Playbook_Development Lifecycle_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.01%20ASG_API%20Playbook_Development%20Lifecycle_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -100,9 +100,9 @@ With proper API major and minor versioning, an API developer can iterate API dev
 
 == Publish an API and Operate ==
 
-Each new iteration of the code and API contract needs to be published to an online API catalog or API portal to be accessible by the target API consumers. The API consumers can subscribe to new notifications of a particular API update and get notified when a new API version is published to the online catalog. A provider API developer should create well-documented release notes for each new API version developed , explaining what changes have been made with this new version and why API consumers should be using this version instead of an older one.
+Each new iteration of the code and API contract needs to be published to an online API catalog or API portal to be accessible by the target API consumers. The API consumers can subscribe to new notifications of an API update and get notified when a new API version is published to the online catalog. A provider API developer should create well-documented release notes for each new API version developed , explaining what changes have been made with a new version and why API consumers should be using the new version.
 
-Once an API version is published, it is the responsibility of the API consumer developer to operate and maintain the consumer codebase and managed to the API versions that are actively used by the consumers. API consumers should be made aware of any downtimes or API availability interruptions, as well as any defects discovered with a particular API version.
+Once an API version is published, it is the responsibility of the API consumer developer to operate and maintain the consumer codebase and managed to the API versions that are actively used by the consumers. API consumers should be made aware of any downtime, API availability interruptions, or defects discovered with an API version.
 
 == Engage Your API Consumers ==
 

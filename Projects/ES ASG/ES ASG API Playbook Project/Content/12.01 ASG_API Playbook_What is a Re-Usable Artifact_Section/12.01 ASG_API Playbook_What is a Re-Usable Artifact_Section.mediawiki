@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_12.01_What is a Re-Usable Artifact_Section_01.01_Initial Draft {max.girin}.docx</b> on <b>Thu 09/06/2018</b> at <b>15:04:52.11 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_12.01_What is a Re-Usable Artifact_Section_01.01_Initial Draft {max.girin}.docx</b> on <b>Fri 09/07/2018</b> at <b>10:46:09.37 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_12.01_What is a Re-Usable Artifact_Section_01.01_Initial Draft {max.girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/12.01%20ASG_API%20Playbook_What%20is%20a%20Re-Usable%20Artifact_Section/12.01 ASG_API Playbook_What is a Re-Usable Artifact_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
