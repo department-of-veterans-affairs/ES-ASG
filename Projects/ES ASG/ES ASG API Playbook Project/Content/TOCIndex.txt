@@ -1,5 +1,5 @@
 "<!-- Index Start -->"
-"<h4>Last Generated: [Tue 09/11/2018, 12:27:33.26] Eastern Time Zone</h4>"
+"<h4>Last Generated: [Tue 09/11/2018, 13:23:34.27] Eastern Time Zone</h4>"
 "<ul>"
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/01.00-ASG_API-Playbook_Introduction_Section' target='_blank'>01.00 ASG_API Playbook_Introduction_Section</a>"
 "<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/02.01-ASG_API-Playbook_Development-Lifecycle_Section' target='_blank'>02.01 ASG_API Playbook_Development Lifecycle_Section</a>"
