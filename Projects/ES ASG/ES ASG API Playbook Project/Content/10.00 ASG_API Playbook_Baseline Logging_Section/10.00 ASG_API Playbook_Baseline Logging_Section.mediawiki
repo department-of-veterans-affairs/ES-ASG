@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.03_SME_ Review Resolution {Frank Burgos}.docx</b> on <b>Tue 09/11/2018</b> at <b>13:24:28.70 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/17/2018</b> at <b>11:24:12.72 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.03_SME_ Review Resolution {Frank Burgos}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/10.00 ASG_API Playbook_Baseline Logging_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -365,6 +365,20 @@ Key Features:
 * Drilling algorithm for finding anomalies and familiar patterns across log files.
 * Monitoring and alert system for keeping an eye on important events and actions.
 * Visual reporting using an automated dashboard output.
+
+== Mule API Logging ==
+
+Mulesoft provides built-in logging capabilities built on top of Apache Log4j 2.0. Any Mule API project created within Anypoint Studio will have log4j2.xml file available inside /src/main/resources and /src/test/resources for developers to configure and customize. Using standard Apache log4j 2.0 configurations inside those log configuration files, a developer can instruct where to log messages to (file, console, Windows Events, etc). A developer can also instruct what each logged message should contain, such as class name, date/time stamp, line number, etc.
+
+In addition to using the default log4j 2.0, there is an option in Mule 3 to leverage an open-source Mule JSON Logger, developed by Mulesoft Professional Services and published online for any developer to use free of licensing. The details on the logger can be found here:
+
+https://github.com/mulesoft-consulting/json-logger
+
+The logger can be integrated with any Mule 3.x project as a third-party dependency. Recommended to first download and install the JSON Logger into a corporate dependency management platform (e.g., Artifactory or private Maven repository) and use it as a dependency inside Mule pom.xml.
+
+However, the JSON Logger is no longer supported in Mule 4.x and will fail to be configured and integrated into Mule 4.x process flows. Instead, to implement a JSON logging solution, it is recommended to create a Dataweave reusable transformation to write log statements in JSON format.
+
+Bottom line, with either solution there is an option of writing log statements from Mule process flows in a form of JSON. This is very useful especially when integrating Mule logs with Splunk or SumoLogic.
 
 
 

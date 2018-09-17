@@ -1,19 +1,30 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_02.02_SME Review{Ron O.}.docx</b> on <b>Tue 09/11/2018</b> at <b>13:24:20.72 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_02.03_SME Review{Max Girin}.docx</b> on <b>Mon 09/17/2018</b> at <b>11:24:04.01 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_02.02_SME Review{Ron O.}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_02.03_SME Review{Max Girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/08.00 ASG_API Playbook_Developer Setup_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = Developer Setup =
 
-This document will detail steps for the setting up of a development environment form a generic perspective to a MuleSoft specific perspective. The generic tools selected for discussion have a wide acceptance throughout the development community plus the MuleSoft tools that are part of the MuleSoft development philosophy.
+This document will detail steps for the setting up of a development environment form a generic perspective to a Mulesoft specific perspective. The generic tools selected for discussion have a wide acceptance throughout the development comMUnity plus the Mulesoft tools that are part of the Mulesoft development philosophy.
 
-The following tools products will be discussed:
+= Tools for API Development =
+
+For API development, commonly used development tools include the following:
+
+* An Integrated Development Environment (IDE), installed and configured on a developer workstation and used for designing, developing, unit testing, and publishing the APIs to a target Development and Integration environments. Widely used IDE tools include Mulesoft Anypoint Studio for Mulesoft development, JetBrains IDEA or Eclipse for Java-based API development, Webstorm or Visual Studio Code for NodeJS API development, and Visual Studio .NET for Microsoft .NET Web APIs.
+* A source control and versioning platform used to check in the development artifacts, check out existing developed code, branch out development, and merge changes into existing code base. Widely used source control and versioning platforms are GitHub or Bitbucket (hosted cloud-based source control repositories), Git (on-premise source control), Subversion, or Microsoft Team Foundation Server.
+* Dependency management and versioning platform to manage in-house developed and third-party dependencies required for Java, Mulesoft, .NET, and NodeJS API development. Like with the source control and versioning platforms, there are hosted cloud solutions and on-premise platforms. Commonly used dependency management platforms are JFrog Artifactory, Maven private and public repositories, and NuGet Package Management for Microsoft .NET development.
+* There are other API development tools that are commonly used for peer code reviews, defect management, work task organization, etc.
+
+Out of the wide range of the API development tools, the core development tools covered in this section include:
 
 * Eclipse Integrated Development Environment
-* MuleSoft AnyPoint Studio version build on the Eclipse platform.
+* Mulesoft AnyPoint Studio version build on the Eclipse platform
 * Maven
-* Git and GitHub.
+* Git and GitHub
+
+The above are mostly used for Java and Mulesoft API development, which is most relevant to what is being developed within the Veterans Affairs technology groups.
 
 = Generic Developer Setup =
 
@@ -401,11 +412,11 @@ Highlight the hellowWorldTest class as shown above, Right mouse click on hellowW
 
 Notice that the '''setUp executed''' and '''tearDown executed''' messages were displayed and that the test failed as expected.
 
-= MuleSoft Developer Setup =
+= Mulesoft Developer Setup =
 
-== '''VA’s MuleSoft DVP Platform''' ==
+== '''VA’s Mulesoft DVP Platform''' ==
 
-The VA Enterprise Services Organization currently offers VA API development teams access to its AnyPoint MuleSoft platform currently hosted on it VA Gov. Cloud environment. Development teams will need to follow the sequence of steps outlined below to gain access to these API tools. The following 4 steps are required to request, provision, and configure your team’s VA MuleSoft API tools.
+The VA Enterprise Services Organization currently offers VA API development teams access to its AnyPoint Mulesoft platform currently hosted on it VA Gov. Cloud environment. Development teams will need to follow the sequence of steps outlined below to gain access to these API tools. The following 4 steps are required to request, provision, and configure your team’s VA Mulesoft API tools.
 
 {|
 ! Step
@@ -441,7 +452,7 @@ The VA Enterprise Services Organization currently offers VA API development team
 | Dev. Team
 |-
 | 3.1.1.2
-| Meet w/ MuleSoft C4E team
+| Meet w/ Mulesoft C4E team
 | Dev. Team &amp; C4E teams
 |-
 | 3.1.1.3
@@ -453,9 +464,9 @@ The VA Enterprise Services Organization currently offers VA API development team
 | Dev. Team &amp; C4E teams
 |}
 
-==== Submit a DVP Access Request [Additional steps to be provided by DVP MuleSoft Business Sponsor] ====
+==== Submit a DVP Access Request [Additional steps to be provided by DVP Mulesoft Business Sponsor] ====
 
-==== Meet w/ MuleSoft C4E  ====
+==== Meet w/ Mulesoft C4E  ====
 
 Mulesoft C4E team conducts series of meetings with stakeholders and technical teams who is being onboarded. The meetings are primarily grouped in following categories
 
@@ -474,9 +485,9 @@ Mulesoft C4E team conducts series of meetings with stakeholders and technical te
 ** AD groups established
 *** '''Owner: Project stakeholder'''
 ** AD groups to Anypoint roles mappings
-*** '''Owner : MuleSoft C4E team'''
+*** '''Owner : Mulesoft C4E team'''
 ** Sandbox creation
-*** '''Owner : MuleSoft C4E team'''
+*** '''Owner : Mulesoft C4E team'''
 
 ===== Requirement, Design &amp; Implementation phase =====
 
@@ -530,7 +541,7 @@ AnyPoint provides role based access functions to its users based on the followin
 <li><p>Production Development Operations</p></li>
 <li><p>Non-Production Development Operations</p></li>
 <li><p>Organization Administrators</p>
-<p>For the AnyPoint tools to be configured for your team. Each new VA Developer team must create 5 Each Business group which correspond to the 5 API management groups MuleSoft PaaS uses to develop and administer APIs.</p>
+<p>For the AnyPoint tools to be configured for your team. Each new VA Developer team must create 5 Each Business group which correspond to the 5 API management groups Mulesoft PaaS uses to develop and administer APIs.</p>
 <ul>
 <li><p>OIT VAEC DVP {bg} Developer</p></li>
 <li><p>OIT VAEC DVP {bg} Architect</p></li>
@@ -561,7 +572,7 @@ Depending on project size, technical maturity and customer demands an API projec
 
 = Request VA Security Groups  =
 
-Once your team is granted approval from the DVP management team please follow the instructions below to create your VA MuleSoft Security Group’s
+Once your team is granted approval from the DVP management team please follow the instructions below to create your VA Mulesoft Security Group’s
 
 === Prerequisites  ===
 
@@ -605,7 +616,7 @@ Request your Security Groups on Service Now
 |-
 | Detailed Description
 |
-Requesting the creation of the following 5 security groups in the VA AWS Cloud environment. These security groups are required by [your organization name]to access the VA’s MuleSoft tools suite.
+Requesting the creation of the following 5 security groups in the VA AWS Cloud environment. These security groups are required by [your organization name]to access the VA’s Mulesoft tools suite.
 
 Requested Security Group Names:
 
@@ -643,7 +654,7 @@ Rachelle Mann and Denver Griffith
 
 === Instructions ===
 
-Access to your DVP security groups requires your team members to submit a request on the VA’s ePAS site here: https://epas.r02.med.va.gov/apps/myva/. Each team member will be required to submit their own ePAS request and be directed to specify which security groups they will need to access to. Please refer to your MuleSoft support team to address which individuals should have access to which security groups. Please select the follow link and follow these step-by-step instructions on how to complete your MYVA Elevated Privilege request [http://vaww.project.portal.va.gov/paopwa/1603-002/Drafts/Guides/MYVA%20ePAS%20User%20Guide%20VAECloud%20System%20Access.docx '''(see MYVA EP)''']
+Access to your DVP security groups requires your team members to submit a request on the VA’s ePAS site here: https://epas.r02.med.va.gov/apps/myva/. Each team member will be required to submit their own ePAS request and be directed to specify which security groups they will need to access to. Please refer to your Mulesoft support team to address which individuals should have access to which security groups. Please select the follow link and follow these step-by-step instructions on how to complete your MYVA Elevated Privilege request [http://vaww.project.portal.va.gov/paopwa/1603-002/Drafts/Guides/MYVA%20ePAS%20User%20Guide%20VAECloud%20System%20Access.docx '''(see MYVA EP)''']
 
 = Configuration and Testing Your Account =
 
@@ -673,35 +684,45 @@ https://anypoint.lighthouse.va.gov/accounts/login/veterans-affairs
 
 This will automatically redirect you to IAM page and will prompt for your PIV. Once you enter the PIV pin, you will be taken back to the Mulesoft Anypoint platform home page to your organization.
 
-= Maven with MuleSoft =
+= Anypoint Studio Setup =
 
-Maven is a project management utility that you can use to develop projects in MuleSoft.
+Anypoint Studio 6.x has been released and targeted for Mule 3.x development. With the new version 4 of Mule, the new Anypoint Studio 7.x has become available for Mule API developers. The major difference between the two versions of the Studio is that Anypoint Studio 7 has a new look and menu options for Mule flow development, as shown below:
 
-Refer to section 1.1 Maven for a more a generic (non-MuleSoft) description of Maven.
+[[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/media/image23.png|368x374px|anypoint studio 7]]
 
-The following sections are a summation of the numerous Maven web pages with MuleSoft documentation
+Another important upgrade with Anypoint Studio 7 is that Maven dependency management is now done mostly automatically, without having a developer manually add or update dependencies in the Maven POM.xml file. Whenever a developer adds a new connector or core module or task into any project flow, Anypoint Studio 7 automatically updates the pom.xml file with the new dependencies. This automatic Maven dependency management solution avoids a lot of issues previously seen when API developers had to manually manage Maven dependencies.
+
+Finally, the developers have new Metadata model and Dataweave Transformations engine, where developers can create reusable Transformations functions, save them into .dw shared functions and leverage them as imports in their Dataweave transformations.
+
+= Maven with Mulesoft =
+
+Maven is a project management utility that you can use to develop projects in Mulesoft.
+
+Refer to section 1.1 Maven for a more a generic (non-Mulesoft) description of Maven.
+
+The following sections are a summation of the numerous Maven web pages with Mulesoft documentation
 
 == Maven Reference  ==
 
 These pages summarize reference information that is helpful for working with Maven and Mule and is pointed to by this URL:
 
-https://docs.mulesoft.com/mule-user-guide/v/3.9/maven-reference
+[https://docs.mulesoft.com/mule-user-guide/v/3.9/maven-reference https://docs.Mulesoft.com/mule-user-guide/v/3.9/maven-reference]
 
 Topics include:
 
 * Populating the Maven Repositories from the Command Line
 * Deploying Mule Artifacts to a Central Maven Repository
-* Referencing MuleSoft’s Enterprise Repositories
+* Referencing Mulesoft’s Enterprise Repositories
 * Checking JARs Included in a Project
 * Files
 * Useful Commands
 * External Resources
 
-== Using Maven with MuleSoft (High Level) ==
+== Using Maven with Mulesoft (High Level) ==
 
-These pages are a high-level Maven/MuleSoft description and is pointed to by this URL:
+These pages are a high-level Maven/Mulesoft description and is pointed to by this URL:
 
-https://docs.mulesoft.com/mule-user-guide/v/3.9/using-maven-with-mule
+[https://docs.mulesoft.com/mule-user-guide/v/3.9/using-maven-with-mule https://docs.Mulesoft.com/mule-user-guide/v/3.9/using-maven-with-mule]
 
 Topics include:
 
@@ -714,7 +735,7 @@ Topics include:
 
 These pages detail how to use Maven outside of AnyPoint Studio, working directly with Mule. The Mule plugins helps to develop Mule applications within Maven, and to control Mule instances from within a Maven environment description and is pointed to by this URL:
 
-https://docs.mulesoft.com/mule-user-guide/v/3.9/using-maven-in-mule-esb
+[https://docs.mulesoft.com/mule-user-guide/v/3.9/using-maven-in-mule-esb https://docs.Mulesoft.com/mule-user-guide/v/3.9/using-maven-in-mule-esb]
 
 Sub Links include:
 
@@ -730,7 +751,7 @@ These sub links are detailed below:
 
 Maven Tools for Mule is a plugin for Maven that allows you to develop Mule applications using Maven tooling. The kit provided by the plugin includes archetypes for building regular Mule applications, Mule domains, and Mule domain bundles and is pointed to by this URL:
 
-https://docs.mulesoft.com/mule-user-guide/v/3.9/maven-tools-for-mule-esb
+[https://docs.mulesoft.com/mule-user-guide/v/3.9/maven-tools-for-mule-esb https://docs.Mulesoft.com/mule-user-guide/v/3.9/maven-tools-for-mule-esb]
 
 Topics include:
 
@@ -746,9 +767,9 @@ Topics include:
 </li></ol>
 </li></ul>
 
-These pages detail how the mule-maven-plugin allows the deployment of Mule applications to different kinds of servers: Standalone (both Community and Enterprise), clustered, Anypoint Runtime Manager and CloudHub. It is part of the framework for developing Mule applications with Maven. The most important capabilities provided by the plugin are running integration tests, and deploying applications to different environments and is pointed to by this URL:
+These pages detail how the mule-maven-plugin allows the deployment of Mule applications to different kinds of servers: Standalone (both ComMUnity and Enterprise), clustered, Anypoint Runtime Manager and CloudHub. It is part of the framework for developing Mule applications with Maven. The most important capabilities provided by the plugin are running integration tests, and deploying applications to different environments and is pointed to by this URL:
 
-https://docs.mulesoft.com/mule-user-guide/v/3.9/mule-maven-plugin
+[https://docs.mulesoft.com/mule-user-guide/v/3.9/mule-maven-plugin https://docs.Mulesoft.com/mule-user-guide/v/3.9/mule-maven-plugin]
 
 Topics include:
 
@@ -772,9 +793,9 @@ Topics include:
 </li></ol>
 </li></ul>
 
-These pages detail when working with Maven to build Mule applications outside of Anypoint Studio, there is a need to configure the Maven installation to work successfully with Mule. This page covers how to maintain the POM file to add or adjust dependencies and point to the correct MuleSoft repositories, and how to modify the Maven settings.xml file to include credentials and profiles for Enterprise repositories and is pointed to by this URL:
+These pages detail when working with Maven to build Mule applications outside of Anypoint Studio, there is a need to configure the Maven installation to work successfully with Mule. This page covers how to maintain the POM file to add or adjust dependencies and point to the correct Mulesoft repositories, and how to modify the Maven settings.xml file to include credentials and profiles for Enterprise repositories and is pointed to by this URL:
 
-https://docs.mulesoft.com/mule-user-guide/v/3.9/configuring-maven-to-work-with-mule-esb
+[https://docs.mulesoft.com/mule-user-guide/v/3.9/configuring-maven-to-work-with-mule-esb https://docs.Mulesoft.com/mule-user-guide/v/3.9/configuring-maven-to-work-with-mule-esb]
 
 Topics include:
 
@@ -785,7 +806,7 @@ Topics include:
 
 These pages describe Maven integration with Anypoint Studio, including building applications, importing Maven projects or &quot;mavenizing&quot; existing projects description and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/using-maven-in-anypoint-studio
+[https://docs.mulesoft.com/anypoint-studio/v/6/using-maven-in-anypoint-studio https://docs.Mulesoft.com/anypoint-studio/v/6/using-maven-in-anypoint-studio]
 
 Sub Links include:
 
@@ -801,7 +822,7 @@ These sub links are detailed below:
 
 These pages describe how to enable or disable Maven support for your projects in Anypoint Studio and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio
+[https://docs.mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio https://docs.Mulesoft.com/anypoint-studio/v/6/maven-support-in-anypoint-studio]
 
 Topics include:
 
@@ -815,7 +836,7 @@ Topics include:
 
 These pages walk one through creating a Mavenized Mule Application project from scratch. It covers providing the project with unit tests, maintaining its POM file, then building and deploying the project and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-maven-in-studio
+[https://docs.mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-maven-in-studio https://docs.Mulesoft.com/anypoint-studio/v/6/building-a-mule-application-with-maven-in-studio]
 
 Topics include:
 
@@ -834,7 +855,7 @@ Topics include:
 
 These pages take a Mule project that was already created in Anypoint Studio (i.e. the &quot;mavenization&quot; of a Mule project) and add Maven functionality to it. Maven can make a project more easily shareable with other developers as it takes care of its dependencies and helps automate the project’s build process project and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studio-project
+[https://docs.mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studio-project https://docs.Mulesoft.com/anypoint-studio/v/6/enabling-maven-support-for-a-studio-project]
 
 Topics include:
 
@@ -849,7 +870,7 @@ Topics include:
 
 These pages describe a Mule project that was built using Maven outside Anypoint Studio, you can still import it into Studio and continue to work on it with the benefits of the Studio IDE and is pointed to by this URL:
 
-https://docs.mulesoft.com/anypoint-studio/v/6/importing-a-maven-project-into-studio
+[https://docs.mulesoft.com/anypoint-studio/v/6/importing-a-maven-project-into-studio https://docs.Mulesoft.com/anypoint-studio/v/6/importing-a-maven-project-into-studio]
 
 Topics include:
 
@@ -859,19 +880,19 @@ Topics include:
 
 == GitHub Plugin ==
 
-Refer to section 2.2Eclipse Git Plugin (Egit) for a more a generic (non-MuleSoft) description of Git.
+Refer to section 2.2Eclipse Git Plugin (Egit) for a more a generic (non-Mulesoft) description of Git.
 
 This page provides a description Using Maven with GIT and is pointed to by this URL:
 
-https://docs.archive.mulesoft.com/mule-user-guide/v/3.3/using-git-with-studio
+[https://docs.archive.mulesoft.com/mule-user-guide/v/3.3/using-git-with-studio https://docs.archive.Mulesoft.com/mule-user-guide/v/3.3/using-git-with-studio]
 
 This page provides a suite of Mule example materials to help you learn more about building applications in Anypoint Studio and Mule ESB Standalone and is pointed to by this URL:
 
-https://github.com/mulesoft/mulesoft-docs/blob/master/mule-user-guide/v/3.5/mule-examples.adoc
+[https://github.com/mulesoft/mulesoft-docs/blob/master/mule-user-guide/v/3.5/mule-examples.adoc https://github.com/Mulesoft/Mulesoft-docs/blob/master/mule-user-guide/v/3.5/mule-examples.adoc]
 
 == Unit Testing Frameworks ==
 
-=== Munit Setup ===
+=== MUnit Setup ===
 
 MUnit is a Mule application testing framework that allows you to easily build automated tests for your integrations and APIs. It provides a full suite of integration and unit test capabilities and is fully integrated with Maven and Surefire for integration with your continuous deployment environment. MUnit is fully integrated with Anypoint Studio, allowing you to create, design and run MUnit tests just like you would Mule applications.
 
@@ -893,7 +914,7 @@ MUnit is divided in two main sub modules:
 
 A detailed description Using Maven with MUnit is pointed to by this URL:
 
-https://docs.mulesoft.com/munit/v/2.1/
+[https://docs.mulesoft.com/munit/v/2.1/ https://docs.Mulesoft.com/MUnit/v/2.1/]
 
 === MUnit Event Processors ===
 
@@ -907,7 +928,7 @@ MUnit has a set of dedicated Event Processors aimed to validate, assert and mock
 
 A description Using Maven with MUnit Event Processors are pointed to by this URL:
 
-https://docs.mulesoft.com/munit/v/2.1/message-processors
+[https://docs.mulesoft.com/munit/v/2.1/message-processors https://docs.Mulesoft.com/MUnit/v/2.1/message-processors]
 
 
 
