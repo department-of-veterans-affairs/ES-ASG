@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/17/2018</b> at <b>11:24:12.72 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/17/2018</b> at <b>16:48:07.53 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/10.00 ASG_API Playbook_Baseline Logging_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -8,7 +8,7 @@
 
 == Logging Overview ==
 
-This document will detail guidelines and components that facilitate the creation of an API logging philosophy although non-API type applications can be implemented using these logging concepts as well.
+This detail guidelines and components that facilitate the creation of an API logging philosophy although non-API type applications can be implemented using these logging concepts as well.
 
 == Logging Framework Used within Each API ==
 
@@ -16,9 +16,9 @@ This section will discuss logging framework capabilities for two of the more pre
 
 == Logging with Java supported API implementations ==
 
-This article discusses the most popular java logging frameworks:
+This discusses the most popular java logging frameworks:
 
-* '''Simple Logging Facade for Java''' (SLF4J) which is a logging facade that provides a common interface for different logging frameworks,
+* '''Simple Logging Facade for Java''' (SLF4J) which is a logging facade that provides a common interface for different logging frameworks
 * '''Log4j 2''' and its predecessor Log4J and Logback.
 
 === Simple Logging Facade for Java (SLF4J) ===
@@ -27,11 +27,11 @@ The Simple Logging Facade for Java (SLF4J) serves as a simple facade for various
 
 ==== Subset of Features ====
 
-* The separation of the client API from the logging backend reduces the coupling between an application and any logging framework. This can make it easier to integrate with existing logging frameworks or to integrate functionality into applications projects that have already made a choice of logging backend.
+* The separation of the client API from the logging backend reduces the coupling between an application and any logging framework. This can make it easier to integrate with existing logging frameworks or to integrate functionality into application projects that have already made a choice of logging backend.
 
 === Apache Log4j 2 ===
 
-Apache Log4j 2 is an upgrade to Log4j and provides significant improvements over its predecessor plus it provides many of the improvements available in Logback while fixing some inherent problems in Logback’s architecture.
+Apache Log4j 2 is an upgrade to Log4j and provides significant improvements over its predecessor it provides many of the improvements available in Logback while fixing some inherent problems in Logback’s architecture.
 
 ==== Subset of Features ====
 
@@ -45,17 +45,17 @@ Log4j 2 contains next-generation Asynchronous Loggers based on the LMAX Disrupto
 
 === Logback ===
 
-Logback is intended as a successor to the popular log4j project, picking up where log4j leaves off and is conceptually very similar to log4j as both projects were created by the same developer.
+Logback is a successor to the popular log4j project, log4j and is conceptually similar to log4j
 
-==== Subset of Features ====
+Subset of Features
 
 * Faster implementation
 
-Based on the previous work on log4j, Logback internals have been re-written to perform faster on certain critical execution paths. Not only are Logback components faster, they have a smaller memory footprint as well.
+Based on the previous work on log4j, Logback internals have been re-written to perform on certain critical execution paths. Logback components faster, they have a smaller memory footprint.
 
 * Logback-classic “speaks” SLF4J natively
 
-Since the '''''Logger''''' class in Logback-classic implements the SLF4J API natively, there is zero overhead when invoking a SLF4J logger with Logback classic as the underlying implementation. Additionally, since Logback-classic strongly encourages the use of SLF4J as its client API, if the need arises the switch to log4j or to java.util.logging.
+Since the '''''Logger''''' class in Logback-classic implements the SLF4J API natively, there is overhead when invoking a SLF4J logger with Logback classic as the underlying implementation. Additionally, since Logback-classic strongly encourages the use of SLF4J as its client API, if the need arises the switch to log4j or to java.util.logging.
 
 === java.util.logging (jul) ===
 
@@ -63,13 +63,11 @@ The Java Runtime Java provides a default framework in the java.util.logging pack
 
 ==== Subset of Features ====
 
-java.util.logging in included in the Java Runtime so third-party integration (i.e. jar files) is not required.
+java.util.logging in included in the Java Runtime so third-party integration jar files is not required.
 
-== Logging with .Net supported API implementations ==
+== Logging with .N supported API implementations ==
 
 === Overview of .NET Framework and .NET Core ===
-
-.NET Core is essentially a fork of the NET Framework whose implementation is also optimized around factoring concerns raised by the .NET framework siloed architecture. This section will focus on internal and external logging functionality supplied by .NET Core.
 
 The following is a very high level over view of the two logging platforms:
 
@@ -85,7 +83,7 @@ The following is a very high level over view of the two logging platforms:
 
 ASP.NET Core supports a logging API that works with a variety of logging providers. Built-in providers facilitate the sending logs to one or more destinations plus plug in capability to a third-party logging framework.
 
-.NET Core ships with the following built-in logging providers:
+.NET Core the following built-in logging providers:
 
 * Console
 
@@ -113,7 +111,7 @@ The '''''Microsoft.Extensions.Logging.AzureAppServices''''' provider package wri
 
 == JSON Format for Logged API Messages ==
 
-This section details a '''proposed''' standardized layout that will facilitate the creation of a JSON logging item. The following UML API Logging Class Diagram is used to define the data elements that will be logged, in a JSON format, by the appropriate logging infrastructure.
+This section a '''proposed''' standardized layout that will facilitate the creation of a JSON logging item. The following UML API Logging Class Diagram is used to define the data elements that will be logged, in a JSON format, by the appropriate logging infrastructure.
 
 === API Logging Model ===
 

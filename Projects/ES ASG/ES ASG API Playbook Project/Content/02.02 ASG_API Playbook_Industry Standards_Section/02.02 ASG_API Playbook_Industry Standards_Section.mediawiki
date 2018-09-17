@@ -1,16 +1,20 @@
-﻿<p>This page was generated from <b>ASG_API_Playbook_02.02 Industry Standards_Section_01.02_Iniitial Draft {Frank Burgos}.docx</b> on <b>Mon 09/17/2018</b> at <b>11:23:26.28 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API_Playbook_02.03_IndustryStandards_Section_01.02_Braunstein_Tech Review.docx</b> on <b>Mon 09/17/2018</b> at <b>16:47:32.19 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API_Playbook_02.02 Industry Standards_Section_01.02_Iniitial Draft {Frank Burgos}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API_Playbook_02.03_IndustryStandards_Section_01.02_Braunstein_Tech Review">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/02.02 ASG_API Playbook_Industry Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = Industry Standards =
 
+An Industry Standard is a model, framework, patterns, or templates, created by a working group with expertise in a business domain. The Industry Standard is often produced so that industry customers can leverage the standard to accelerate their solution projects or align with industry practices that help such customers avoid pitfalls or mistakes.
+
 == HL7 ==
 
-Health Level-7 or HL7 refers to a set of international standards for transfer of clinical and administrative data between software applications used by various healthcare providers. These standards focus on Layer 7 which is the application layer in the Open Systems Interconnection (OSI) model. The HL7 standards are produced by Health Level Seven International, an international standards organization, and are adopted by other standards issuing bodies such as American National Standards Institute and International Organization for Standardization.
+Health Level-7 or HL7 refers to a set of international industry standards for the healthcare industry. HL7 focuses on the transfer of clinical and administrative data between software applications used by various healthcare providers. These standards focus on Layer 7, which is the application layer in the Open Systems Interconnection (OSI) model. The HL7 standards are produced by Health Level Seven International, an international standards organization, and are adopted by other standards issuing bodies such as American National Standards Institute and International Organization for Standardization.
 
-Hospitals and other healthcare provider organizations typically have many disparate computer systems used for capabilities ranging from as billing records to patient tracking. These systems should have the capability to communicate with defined interfaces when new information is received, or when the retrieval of information is desired. Currently this data sharing capability doesn’t exist universally for all providers.
+Hospitals and other healthcare provider organizations typically have many disparate computer systems used for capabilities ranging from as billing records to patient tracking. These systems should have the capability to communicate with defined interfaces when additional information is received, or when the retrieval of information is desired. Currently this data sharing capability doesn’t exist universally for all providers.
+
+Because HL7 is focused on the sharing of health record data amongst systems, API’s can be built on these systems to expose and consume HL7 data across the VA, external non-VA facilities and systems, and other business processes where required.
 
 === Health Level Seven International ===
 
@@ -22,9 +26,11 @@ Fast Healthcare Interoperability Resources (FHIR) is an interoperability standar
 
 === FHIR Overview ===
 
-Healthcare records are increasingly becoming digitized. As patients traverse the healthcare ecosystem, their electronic health records must be available, discoverable, and understandable. HL7 has, for years, been addressing these challenges by producing healthcare data exchange and information modeling standards. FHIR is a new specification based on emerging industry technologies plus lessons learned through the successes and challenges gained through defining and implementing various versions of the HL7 Reference Information Model (RIM), and Clinical Document Architecture (CDA). FHIR can be used as a stand-alone data exchange standard, but can and will also be used in partnership with existing widely used standards.
+Healthcare records are increasingly becoming digitized. As patients traverse the healthcare ecosystem, their electronic health records must be available, discoverable, and understandable. HL7 has, for years, been addressing these challenges by producing healthcare data exchange and information modeling standards. FHIR is a new specification based on emerging industry technologies plus lessons learned through the successes and challenges gained through defining and implementing various versions of the HL7 Reference Information Model (RIM), and Clinical Document Architecture (CDA). FHIR can be used as a stand-alone data exchange standard but can also be used in partnership with existing widely used standards.
 
-FHIR has built-in mechanisms for traceability to the HL7 RIM and other important content models. This ensures alignment to HL7's previously defined patterns and best practices without requiring the implementer to have intimate knowledge of the RIM or any of the latest HL7 version’s (v3) derivations
+FHIR has built-in mechanisms for traceability to the HL7 RIM and other important content models. This ensures alignment to HL7's previously defined patterns and best practices without requiring the implementer to have intimate knowledge of the RIM or any of the latest HL7 version’s (v3) derivations.
+
+FHIR is relevant to API’s because it defines standard structure for exchanging health records that includes data models, business rules, and business processes.
 
 === FHIR Release 3 Web Site Content ===
 
@@ -55,13 +61,13 @@ The following FHR related sections contains content that was obtained by inspect
 
 -&gt; [https://www.hl7.org/fhir/operations.html%232.22.0 https://www.hl7.org/fhir/operations.html#2.22.0]
 
-Some section content was modified to fit within the look and feel of the rest of this document’s sections. Other section content was extracted as is but this approach was used it was annotated appropriately.
+Some section content was modified to fit within the look and feel of the rest of this document’s sections. Other section content was extracted AS-IS, but this approach was used it was annotated appropriately.
 
 It is important to note that the FHIR Release 3 Web site contains a tremendous of content. Only the content that was deemed necessary and appropriate was included in this document.
 
 === FHIR RESTful API ===
 
-The content in this section is an excerpt with some modifications from Section 2.21.0 RESTful AP of the FHIR Release 3 Web Site (https://www.hl7.org/fhir/http.html).
+The content in this section is an excerpt with some modifications from Section 2.21.0 RESTful API of the FHIR Release 3 Web Site (https://www.hl7.org/fhir/http.html).
 
 FHIR is described as a 'RESTful' specification based on common industry level use of the term REST. In practice, FHIR only supports Level 2 of the REST Maturity model (a 3-level model of restful maturity that was developed by Leonard Richardson) as part of the core specification.
 
@@ -79,7 +85,7 @@ The Service Base URL is the address where all the resources defined by this inte
 
 * http(s)://server{/path}
 
-The path portion is optional, and does not include a trailing slash. Each resource type defined in this specification has a manager (or &quot;entity set&quot;) that lives at the address /[type] where the [type] is the name of the resource type:
+The path portion is optional and does not include a trailing slash. Each resource type defined in this specification has a manager (or &quot;entity set&quot;) that lives at the address /[type] where the [type] is the name of the resource type:
 
 * http(s)://server{/path}/[type]
 
@@ -89,7 +95,7 @@ For example, the resource manager for the type Patient will live at:
 
 All the logical interactions are defined relative to the service root URL. This means that if the address of any one FHIR resource on a system is known, the address of other resources may be determined.
 
-The followings table are a combination of various tables detailed in Section 2.21.0 RESTful AP (https://www.hl7.org/fhir/http.html). The tables define instance level, type level and whole system interaction verbs (read, update etc.) along with their corresponding interaction descriptions, URL Path and the HTTP verb.
+The followings table are a combination of various tables detailed in Section 2.21.0 RESTful AP (https://www.hl7.org/fhir/http.html). The tables define instance level, type level and entire system interaction verbs (read, update etc.) along with their corresponding interaction descriptions, URL Path and the HTTP verb.
 
 '''Table''' '''1: Instance Level Interactions Table'''
 
@@ -106,7 +112,7 @@ The followings table are a combination of various tables detailed in Section 2.2
 | /[type]/[id]
 | GET
 |-
-| vread
+| read
 | Read the state of a specific version of the resource identified by vid
 | /[type]/[id]/_history/[vid]
 | GET
@@ -127,7 +133,7 @@ The followings table are a combination of various tables detailed in Section 2.2
 | DELETE
 |-
 | history
-| Retrieve the change history for a particular resource
+| Retrieve the change history for a resource
 | /[type]/[id]/_history
 | GET
 |}
@@ -164,7 +170,7 @@ GET
 POST
 |-
 | history
-| Retrieve the change history for a particular resource type
+| Retrieve the change history for a resource type
 | /[type]/[id]/_history
 | GET
 |}
