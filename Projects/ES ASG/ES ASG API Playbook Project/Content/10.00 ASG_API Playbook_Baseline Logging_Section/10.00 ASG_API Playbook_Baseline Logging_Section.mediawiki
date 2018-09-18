@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/17/2018</b> at <b>17:01:42.29 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Tue 09/18/2018</b> at <b>13:17:24.43 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.05_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/10.00 ASG_API Playbook_Baseline Logging_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -116,6 +116,8 @@ This section a '''proposed''' standardized layout that will facilitate the creat
 === API Logging Model ===
 
 Figure 1 API Logging Model
+
+
 
 Table 1: API Logging Description Table
 
@@ -332,7 +334,7 @@ API Logging Text element.
 
 == API Audit Level Logging ==
 
-Logging in general is a process of recording data about events that take place in an application. As such it focuses on things that are of interest at the development environment level.
+Logging is a process of recording data about events that application.
 
 Auditing Logging focuses on recording business domain-level events: a transaction is created, a user is performing an action, etc. In certain types of application, there is a legal obligation to record such events. The audit log retains events that are persisted to an audit logging infrastructure. Auditing is used to typically answer questions like who did what, why and when.
 
