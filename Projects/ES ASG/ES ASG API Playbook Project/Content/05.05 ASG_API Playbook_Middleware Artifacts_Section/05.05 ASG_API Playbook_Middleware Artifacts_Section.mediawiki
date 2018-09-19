@@ -1,30 +1,12 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.03_SME Review Resolved.docx</b> on <b>Tue 09/18/2018</b> at <b>13:17:05.12 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.04_Standards Review {Marshall}.docx</b> on <b>Wed 09/19/2018</b> at <b>14:01:17.85 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.05 Middleware Artifacts_Section_01.03_SME Review Resolved">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.05 Middleware Artifacts_Section_01.04_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section/05.05 ASG_API Playbook_Middleware Artifacts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
-[[#api-middleware-overview|API Middleware Overview 2]]
-
-[[#an-api-artifact-is-not|An API Artifact is Not 2]]
-
-[[#api-artifacts|API Artifacts 2]]
-
-[[#types-of-artifacts-produced-by-an-api|Types of Artifacts produced by an API 3]]
-
-[[#api-naming-conventions|API Naming Conventions 3]]
-
-[[#for-the-va-we-are-providing-vendor-agnostic-and-mulesoft-specific-naming-conventions.|For the VA we are providing Vendor agnostic and Mulesoft specific naming conventions. 3]]
-
-[[#vendor-agnostic-api-naming-convention|Vendor Agnostic API Naming Convention 3]]
-
-[[#middleware-artifacts-naming-convention|Middleware Artifacts Naming Convention 3]]
-
-[[#mulesoft-specific-api-naming-convention|MuleSoft-specific API Naming Convention 4]]
-
-[[#middleware-artifacts-naming-convention-1|Middleware Artifacts Naming Convention 4]]
-
 = API Middleware Overview =
+
+(Editor’s Note: This section appears to be very specific to MuleSoft. Is that true?)
 
 Middleware is software that's assembled into an API’s ‘app pipeline’ to handle requests and responses. Each component chooses whether to pass the request to the next component in the pipeline and can perform work before and after the next component in the pipeline is invoked.
 
@@ -34,31 +16,31 @@ Request delegates are configured using Run, Map, and Use extension methods. An i
 
 API Middleware delegates various connection tasks as data traverses the API. This allows a single thread the handle multiple in-line middleware or reusable classes.
 
-API Middleware is a mainstay of ASP.NET modules and HTTP handlers, but is also found in other API tools and in links between “non-.Net” services and ASP.Net services.
+API Middleware is a mainstay of ASP.NET modules and HTTP handlers, but is also found in other API tools and in links between non-.Net services and ASP.Net services.
 
-ASP.NET Core Middleware examples are UseMVC, UseStaticFiles, UseIdentity etc. Public APIs like Twitter, Google, Facebook etc. provide developers with some sort of application key; naming them as “app-key”, “user-key”, “api-key” and so on.
+ASP.NET Core Middleware examples include UseMVC, UseStaticFiles, and UseIdentity. Public APIs like Twitter, Google, and Facebook provide developers with an application key; naming them as “app-key”, “user-key”, “api-key” and so on.
 
-HTTP and Managed Files Transfer are the most common API Middleware tools.
+HTTP and Managed File Transfer are the most common API Middleware tools.
 
 == An API Artifact is Not ==
 
-An artifact in the context of an API Middleware function is NOT the supporting documentation, workflow, security verification or any manmade file. It is solely the resulting text or binary object produced by an API function, that stored or moved as a result of that function.
+An artifact in the context of an API Middleware function is not the supporting documentation, workflow, security verification or any manmade file. It is solely the resulting text or binary object produced by an API function, that is stored or moved as a result of that function.
 
 = API Artifacts =
 
-“Artifact&quot; is merely a word for something that is produced; in this context as a byproduct when running a software function. So the runnables/libs are the artifact(s) produced when compiling source, and the image is the artifact produced by the whole &quot;build&quot;- step, which is basically an artifact containing one or more other artifact(s)
+“API Artifact&quot; is the term used to describe something tangible (i.e. a file) that is produced; in this context as a byproduct when running a software function. Thus, the runnables/libs are the artifacts produced when compiling source, and the image is the artifact produced by the whole &quot;build&quot; step, which is an artifact containing one or more other artifacts
 
-An API Artifact can be anything created during a process of running an API, or one of its middleware subcomponents.
+An API Artifact can be anything created during the process of running an API, or one of its middleware subcomponents.
 
-An API Artifact can be as big as an entire system image, libraries, runnables, etc. created by as a Docker Container when moving a system, to as small as a URL referencing the pathway to a file, or as simple as a text string containing a few numbers that unlock a function or store an IP address.
+An API Artifact can be as big as an entire system image, libraries, or executables created as a Docker Container when moving a system, or as small as a URL referencing the pathway to a file, or as simple as a text string containing a few numbers that unlock a function or store an IP address.
 
-An artifact may be encrypted, plain text or binary file.
+An artifact may be encrypted, plain text or a binary file.
 
 = Types of Artifacts produced by an API =
 
-An API function usually produces a fixed set of artifacts based on set of API functions approved and developed for use between systems.
+An API function usually produces an expectedset of artifacts based on set of API functions approved and developed for use between systems.
 
-For instance, an API whose function is to do file transfers with the Managed File Transfer tool will create an artifact that is a binary image of the file being transferred. If that file is encrypted, it will have a separate artifact that contain the PKI key or other key to decrypt the file. Encrypted artifacts and their keys typically reside in separate locations, with separate paths.
+For instance, an API whose function is to do file transfers with the Managed File Transfer tool will create an artifact that is a binary image of the file being transferred. If that file is encrypted, it will have a separate artifact that contains the PKI key or other key to decrypt the file. Encrypted artifacts and their keys typically reside in separate locations, with separate paths.
 
 The most common API artifacts are:
 
@@ -85,6 +67,8 @@ The most common API artifacts are:
 
 = API Naming Conventions =
 
+=== (Editors Note: Who is “we”) ===
+
 === For the VA we are providing Vendor agnostic and Mulesoft specific naming conventions. ===
 
 == Vendor Agnostic API Naming Convention ==
@@ -103,11 +87,11 @@ Connectors are platform-provided or custom integrations to third-party platforms
 
 Flows and sub-flows are groupings of connectors and tasks in a logical workflow. A flow name should indicate the purpose and type of a flow. If this is an API-based flow, it is recommended to have the word “api” in the flow name. The word “flow” should be at the end of the flow name. Typically, flow names are all lower-cased, with words concatenated with a dash character. For example, “customer-api-flow” or “address-sub-flow”. Batch mode flows and routines should have the word “batch” in the name to indicate that this flow or sub-flow is not triggered via a REST or SOAP API, but rather is a scheduled batch process. For example, “account-sync-batch-flow”.
 
-Tasks and routines should contain the key operation in the name. For example, if the task is to call a web service, the name should contain callWebService or similar. Task or operation names are usually lower-cased, following Hungarian notation, similar to how we define Java methods.
+Tasks and routines should contain the key operation in the name. For example, if the task is to call a web service, the name should contain callWebService or similar. Task or operation names are usually lower-cased, following Hungarian notation, similar to how Java methods are typically named.
 
-Custom objects and methods should follow objects and methods naming convention as described in the previous section of this document.
+Custom objects and methods should follow the objects and methods naming convention as described in the previous section of this document. (Editor’s Note: Needs a reference link)
 
-Finally, configuration files follow the naming convention based on the main programming language used within a particular middleware platform. As most of the middleware platforms are built on Java programming language except for Microsoft BizTalk, the configuration files and folders should be named following Java file naming conventions.
+Finally, configuration files follow the naming convention based on the main programming language used within a specific middleware platform. As most of the middleware platforms are built on Java programming language, except for Microsoft BizTalk, the configuration files and folders should be named following Java file naming conventions.
 
 == MuleSoft-specific API Naming Convention ==
 
@@ -122,7 +106,7 @@ Mulesoft middleware artifacts are separated into the following:
 
 Mule flow and sub-flow names should be all lower-cased, with words separated by dashes. API-based flows should contain the word “api”. All flow names should end with the word “flow”. All sub-flow names should end with a word “sub-flow”. Batch flows should contain the word “batch” in the name of the flow or sub-flow. For example, “customer-apiFlow” or “account-sync-batchFlow”.
 
-In addition, the flows and sub-flows that are tied to a specific platform such as Anypoint MQ, should have “mq” next to the word “flow”. For example, “account-sync-mqFlow”.
+In addition, the flows and sub-flows that are tied to a specific platform, such as Anypoint MQ, should have “mq” next to the word “flow”. For example, “account-sync-mqFlow”.
 
 The Mule connectors, as they are named in the flows, should indicate the source system that they are used to connect to. For example, a Mulesoft Salesforce Connector should have the target Salesforce instance in the name of the connector.
 
