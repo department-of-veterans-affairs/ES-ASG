@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_07.00 Unit Testing_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/24/2018</b> at <b>15:32:02.77 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_07.00 Unit Testing_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/24/2018</b> at <b>15:35:10.91 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_07.00 Unit Testing_Section_01.05_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/07.00 ASG_API Playbook_Unit Testing_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -26,7 +26,7 @@ The above steps are performed before starting actual API operation implementatio
 
 What if the Planning Sprint is started and the actual API implementation to expose a relational database using CRUD operations via REST API operations has begun and a new requirement appears? If the change is approved for inclusion, the API contract coding changes would be made, unit tests updated, and the new contract tested. Executing unit tests is relatively quick and efficient using TDD.
 
-Additionally, the above process of making API changes and running regression tests of any API contract changes can be automated. That is, provided the API developer has created a full suite of unit test cases to cover their API code, these unit tests can be executed automatically. Typically, there is a trigger on code check-in to a source code repository, such as GitHub or Subversion, to automatically execute unit tests. Furthermore, functional regression test cases can also be automatically executed once the full API source code is ready for deployment into an integration, Qa or Production environment.
+Additionally, the above process of making API changes and running regression tests of any API contract changes can be automated. That is, provided the API developer has created a full suite of unit test cases to cover their API code, these unit tests can be executed automatically. Typically, there is a trigger on code check-in to a source code repository, such as GitHub or Subversion, to automatically execute unit tests. Furthermore, functional regression test cases can also be automatically executed once the full API source code is ready for deployment into an Integration, Qa or Production environment.
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image1.png|473x259px]]
 
@@ -68,7 +68,7 @@ A screenshot below shows example Jenkins pipeline stages that execute unit tests
 
 A developer needs to be aware whether or not their API is fully covered by the unit tests that they have developed. One recommended approach is to develop a series of unit tests and run the test coverage report, to determine which class, component, or function requires more unit tests to be added to fully cover that piece of code. When using Eclipse or JetBrains, code coverage reports are built into the IDE. With NodeJS, a developer can leverage code coverage Node modules such as “istanbul”.
 
-Defect Types
+== Defect Types ==
 
 There are various types of defects that can be identified during unit test executions. Unit tests should aimed at detecting bugs within the logical routines, data type discrepancies, formatting issues (e.g. with dates and numbers), and unexpected results returned from functions and routines. Unit test assertions defined inside unit tests should trigger alerts and failures when a defect is detected. For example, an assertion to expect a date returned in a specific format such as MM/DD/YY should be present in a unit test to detect when a date returned from a function call or database is anincorrect format.
 
