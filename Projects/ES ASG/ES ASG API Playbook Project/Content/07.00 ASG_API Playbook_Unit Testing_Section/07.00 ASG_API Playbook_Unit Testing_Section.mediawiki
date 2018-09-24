@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_07.00 Unit Testing_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/24/2018</b> at <b>13:31:13.58 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_07.00 Unit Testing_Section_01.05_Standards Review {Marshall}.docx</b> on <b>Mon 09/24/2018</b> at <b>15:32:02.77 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_07.00 Unit Testing_Section_01.05_Standards Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/07.00 ASG_API Playbook_Unit Testing_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -66,15 +66,15 @@ A screenshot below shows example Jenkins pipeline stages that execute unit tests
 
 
 
-A developer needs to be aware whether their API is fully covered by the unit tests that they have developed. Recommended solution is to develop a series of unit tests and run the test coverage report, to determine which class, component, or function requires more unit tests to be added to fully cover that piece of code. With Java, if using Eclipse or JetBrains, code coverage reports are built into the IDE. With NodeJS, a developer can leverage code coverage Node modules such as “istanbul”.
+A developer needs to be aware whether or not their API is fully covered by the unit tests that they have developed. One recommended approach is to develop a series of unit tests and run the test coverage report, to determine which class, component, or function requires more unit tests to be added to fully cover that piece of code. When using Eclipse or JetBrains, code coverage reports are built into the IDE. With NodeJS, a developer can leverage code coverage Node modules such as “istanbul”.
 
 Defect Types
 
-There are various types of defects that can and should be identified during unit test executions. Unit tests should be detecting bugs within the logical routines, data type discrepancies, formatting issues (e.g., with dates and numbers), and incorrect results returned from functions and routines. Unit test assertions defined inside unit tests should trigger alerts and failures when a code bug or defect is detected. For example, an assertion to expect a date returned in a specific format such as MM/DD/YY should be present in a unit test to detect whether a date returned back from a function call or database comes back in incorrect format.
+There are various types of defects that can be identified during unit test executions. Unit tests should aimed at detecting bugs within the logical routines, data type discrepancies, formatting issues (e.g. with dates and numbers), and unexpected results returned from functions and routines. Unit test assertions defined inside unit tests should trigger alerts and failures when a defect is detected. For example, an assertion to expect a date returned in a specific format such as MM/DD/YY should be present in a unit test to detect when a date returned from a function call or database is anincorrect format.
 
 == Unit Test Execution Summary ==
 
-When a series of unit tests are executed in Eclipse, WebStorm or via command line (or in Jenkins), the test result summary should always show each unit test, whether that test passed or failed, and the assertion that failed if a given unit test failed. An example unit test execution summary is provided below. As a general practice, a CI/CD pipeline responsible for executing unit tests should also show such test execution summary in the management console of the CI stage.
+When a series of unit tests are executed in Eclipse, WebStorm or via command line (or in Jenkins), the test result summary should always show each unit test, whether that test passed or failed, and the assertion in the case of failure. An example unit test execution summary is provided below. As a general practice, a CI/CD pipeline responsible for executing unit tests should also show such test execution summary in the management console of the CI stage.
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image5.png|624x360px|Image result for jenkins unit test summary]]
 
@@ -86,15 +86,15 @@ To ensure the requirements traceability, a spreadsheet is typically created that
 
 == MuleSoft MUnit ==
 
-Prior to deploying your Mule applications and APIs, conduct unit and functional tests using MUnit, a native testing framework for Mule. As a developer, you would create the MUnit tests to be executed in your local environment, or in your continuous integration and continuous delivery (CI/CD) settings.
+Prior to deploying Mule applications and APIs, unit and functional tests are conducted using MUnit, a native testing framework for Mule. A developer creates the MUnit tests to be executed in the local environment, or in the continuous integration and continuous delivery (CI/CD) settings.
 
 Mule 4.x reorganizes the MUnit assertions into two groupings, but majority of assertions remain the same as in MUnit 3.x. Instead of having separate assertions for True, False, Equals, etc, MUnit 4.x simplifies the assertions for equality or inequality into a single “Assert that” MUnit tool.
 
-“Mock when” MUnit tool becomes quite useful to mock a response or statement when a specific variable or parameter contains a given value. For example, as an MUnit developer you may want to mock the response when a passed-in parameter equals to a specific value.
+“Mock when” MUnit tool becomes quite useful to mock a response or statement when a specific variable or parameter contains a given value. For example, an MUnit developer may want to mock the response when a passed-in parameter equals to a specific value.
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image6.png|463x250px]]
 
-To create a new MUnit test, follow the Mule guidelines documented online for MUnit generation. There is a built-in utility within Anypoint Studio to generate MUnit tests. With previous versions of Anypoint Studio, you would had to manually download and install the MUnit Tools for Mule plugin:
+To create a new MUnit test, follow the Mule guidelines documented online for MUnit generation. There is a built-in utility within Anypoint Studio to generate MUnit tests. With previous versions of Anypoint Studio, the MUnit Tools for Mule plugin had to be manually downloaded:
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image7.png|401x273px]]
 
@@ -104,21 +104,21 @@ To generate the MUnit flows, simply select a given flow in your code, right-clic
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image8.png|525x194px|https://docs.mulesoft.com/munit/v/1.1/_images/right-click-flow.png]]
 
-This will generate a “skeleton” version of the MUnit flow. Next, you would add custom logic and assertions using MUnit tools such as “Assert that”, which is the most frequently using assertion type.
+This will generate a “skeleton” version of the MUnit flow. Next, custom logic and assertions are added using MUnit tools such as “Assert that”, which is the most frequently using assertion type.
 
-You can then run and debug your MUnit tests directly inside Anypoint Studio, with various test data and conditions.
+MUnit tests can then be run and debugged directly inside Anypoint Studio, with various test data and conditions.
 
 === Mocking Features ===
 
-# As per best practices outlined in the previous section, mocking backend system responses from a downstream service or platform is recommended. Remember that as a developer, your goal with MUnit is not to test your backend platform, but to test your own Mule flows and sub-flows. Therefore, when your Mule flow is making an HTTP Request or a JDBC call to the database, you would want to mock the response from that HTTP service or database, instead of making the actual call.
+# As per best practices outlined in the previous section, mocking backend system responses from a downstream service or platform is recommended. The goal with MUnit is not to test the backend platform, but to test Mule flows and sub-flows. Therefore, when a Mule flow is making an HTTP Request or a JDBC call to the database, the response from that HTTP service or database is mocked, instead of making the actual call.
 
-To mock a response in MUnit, you would use the Mock Message Processor. The Mock feature provided by MUnit allows you to define mocked behavior for a message processor. In this case, MUnit replaces the normal behavior of the message processor with the behavior you define. Therefore you can modify how a specific message processor responds when it is called with a particular set of attributes. You would use “Mock when” MUnit tool to enable the mock message processor:
+To mock a response in MUnit, use the Mock Message Processor. The Mock feature provided by MUnit allows for defined mocked behavior for a message processor. In this case, MUnit replaces the normal behavior of the message processor with the defined behavior. Therefore, how a specific message processor responds when it is called can be modified with a particular set of attributes. Use “Mock when” MUnit tool to enable the mock message processor:
 
 &lt;mock:when messageProcessor=&quot;mule:set-payload&quot;&gt;
 
 &lt;/mock:when&gt;
 
-A mock definition is based on '''''matchers''''', that is, parameters that match features of the desired message processor. Defining a mock solely on the name of the message processor largely limits your scope and actions regarding the mock. For this reason, MUnit allows you to define a mock by defining matchers over the value of a message processor’s attributes.
+A mock definition is based on '''''matchers''''', that is, parameters that match features of the desired message processor. Defining a mock solely on the name of the message processor largely limits your scope and actions regarding the mock. For this reason, MUnit allows defining a mock by defining matchers over the value of a message processor’s attributes.
 
 &lt;mock:when messageProcessor=&quot;mule:set-payload&quot;&gt;
 
@@ -130,7 +130,7 @@ A mock definition is based on '''''matchers''''', that is, parameters that matc
 
 &lt;/mock:when&gt;
 
-You can define as many attributes as you deem necessary to make the mock as representative as possible. When defining an attribute, you do so by defining these two parameters in the “with-attribute” XML tag of the message processor:
+As many attributes as are deemed necessary are defined to make the mock as representative as possible. When defining an attribute, do so by defining these two parameters in the “with-attribute” XML tag of the message processor:
 
 * '''name''' – the name of the attribute
 * '''whereValue''' – the value of the attribute
@@ -141,13 +141,13 @@ The key here is automation - irrespective of various techniques employed by QA t
 
 * There are tools available to continuously run unit tests whenever a code file is saved on disk.
 * There are continuous integration systems to run unit and integration tests when code is committed to local branch or to central repo.
-* Test script can be scheduled to run every XX minutes continuously to check for certain conditions 24x7.
+* Test scripts can be scheduled to run every XX minutes continuously to check for certain conditions 24x7.
 
-Unit test harness is typically executed as part of the CI pipeline stage called “Commit Stage”, which is triggered after the code is pulled automatically from a source code repository (e.g., Git or GitHub or SVN) onto a build server and compiled.
+Unit test harness is typically executed as part of the CI pipeline stage called “Commit Stage”, which is triggered after the code is pulled automatically from a source code repository (e.g. Git or GitHub or SVN) onto a build server and compiled.
 
 It is important to note that to properly integrate a CI platform such as Jenkins, TeamCity, or Bamboo with the unit test automated execution, there needs to be significant configuration work performed on the CI platform side to leverage the Maven plugin. Maven is the best practice framework used within Mule projects to automate project builds. A Maven pom.xml file is created by each API developer owning their Mule project. Inside that pom.xml file, there are instructions on what dependencies to include during the project build, as well as whether unit test coverage is required on build and deploy of the code. One instruction in pom.xml can define the percentage threshold required for the code coverage before the project can be successfully built. Jenkins or a similar CI/CD platform can then use a built-in Maven plugin to execute the pom.xml on a given target project as part of its automated build and deploy stages.
 
-After the source code is pulled and compiled on the CI build server, the next stage in the CI pipeline is to execute the unit tests that you have developed as part of your API development lifecycle.
+After the source code is pulled and compiled on the CI build server, the next stage in the CI pipeline is to execute the unit tests that have been developed as part of your API development lifecycle.
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/07.00%20ASG_API%20Playbook_Unit%20Testing_Section/media/image9.png|502x183px]]
 
