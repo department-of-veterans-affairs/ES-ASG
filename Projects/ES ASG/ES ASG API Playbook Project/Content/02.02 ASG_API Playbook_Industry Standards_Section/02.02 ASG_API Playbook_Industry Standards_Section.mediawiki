@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API_Playbook_02.02_IndustryStandards_Section_01.05_Publication Review {Marshall}.docx</b> on <b>Thu 09/27/2018</b> at <b>16:40:51.31 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API_Playbook_02.02_IndustryStandards_Section_01.05_Publication Review {Marshall}.docx</b> on <b>Thu 09/27/2018</b> at <b>16:46:45.90 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API_Playbook_02.02_IndustryStandards_Section_01.05_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/02.02 ASG_API Playbook_Industry Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -388,7 +388,7 @@ The Argonaut Data Query Implementation Guide is based upon the core FHIR Draft S
 
 The URL for the Data Query Implementation Guide Version 1.00 is:
 
-[[file:///C:\Users\VHAISPBURGOF\Documents\Backup\ASG%20Stuff\API%20Management\API%20Development%20Playbook%20Burgos\Industry%20Standards\ASG_API_Playbook_Industry%20Standards_Section%20_01.00.01_DRAFT_2018.07.23.a_DRAFT.docx|http://www.fhir.org/guides/argonaut/r2]]/
+http://www.fhir.org/guides/argonaut/r2/
 
 ==== Argonaut Provider Directory Guide ====
 
