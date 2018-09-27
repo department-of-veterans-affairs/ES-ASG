@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_11.00_Baseline Security_Section_01.01 VA Sensitive.docx</b> on <b>Thu 09/27/2018</b> at <b>15:14:10.96 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_11.00_Baseline Security_Section_01.01 VA Sensitive.docx</b> on <b>Thu 09/27/2018</b> at <b>16:51:10.64 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_11.00_Baseline Security_Section_01.01 VA Sensitive">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/11.00%20ASG_API%20Playbook_Baseline%20API%20Security_Section/11.00 ASG_API Playbook_Baseline API Security_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
