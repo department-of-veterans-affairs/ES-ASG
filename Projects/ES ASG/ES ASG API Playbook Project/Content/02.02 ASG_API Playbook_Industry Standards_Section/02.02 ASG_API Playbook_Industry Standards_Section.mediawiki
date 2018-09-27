@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API_Playbook_02.02_IndustryStandards_Section_01.05_Publication Review {Marshall}.docx</b> on <b>Thu 09/27/2018</b> at <b>16:46:45.90 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API_Playbook_02.02_IndustryStandards_Section_01.05_Publication Review {Marshall}.docx</b> on <b>Thu 09/27/2018</b> at <b>16:48:33.04 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API_Playbook_02.02_IndustryStandards_Section_01.05_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/02.02%20ASG_API%20Playbook_Industry%20Standards_Section/02.02 ASG_API Playbook_Industry Standards_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -386,16 +386,14 @@ The Argonaut Data Query Implementation Guide is based upon the core FHIR Draft S
 * Data element query of the Office of the National Coordinator for Health Information Technology (ONC) Common Clinical Data Set
 * Document query of static documents
 
-The URL for the Data Query Implementation Guide Version 1.00 is:
-
+The URL for the Data Query Implementation Guide Version 1.00 is:<br />
 http://www.fhir.org/guides/argonaut/r2/
 
 ==== Argonaut Provider Directory Guide ====
 
 The Argonaut project Provider Directory Guide is based upon the core FHIR STU3 API and contains the foundation for a robust provider directory. It describes the use cases and search expectations for finding a practitioner or organization. It outlines the key data elements for any provider directory and basic query guidance.
 
-The URL for the Provider Directory Guide Version 1.0.0 is:
-
+The URL for the Provider Directory Guide Version 1.0.0 is:<br />
 http://www.fhir.org/guides/argonaut/pd/
 
 
