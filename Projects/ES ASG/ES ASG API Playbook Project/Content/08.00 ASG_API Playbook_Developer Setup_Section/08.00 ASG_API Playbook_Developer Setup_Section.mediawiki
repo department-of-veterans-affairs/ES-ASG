@@ -1,29 +1,28 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_01.05_Publication Review {Marshall}.docx</b> on <b>Fri 09/28/2018</b> at <b> 9:09:29.68 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_01.06_Publication Review {Marshall}.docx</b> on <b>Fri 09/28/2018</b> at <b> 9:13:00.22 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_01.05_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/08.00 ASG_API Playbook_Developer Setup_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = Developer Setup =
 
-This detail steps for the setting up of a development environment a perspectivea Mulesoftspecific perspective. The generic tools selected for discussion have a wide acceptance throughout the development comnity the Mulesoft tools are part of the development philosophy.
+This section details steps for the setting up of a development environment from a non-vendor perspective, and then from a Mulesoft-specific perspective. The generic tools selected for discussion have a wide acceptance throughout the development community; in addition the Mulesoft tools are part of their development philosophy.
 
 = Tools for API Development =
 
 For API development, commonly used tools include the following:
 
-* An Integrated Development Environment (IDE), installed and configured on a developer workstation and used for designing, developing, unit testing, and publishing the APIs to target Development and Integration environments. Widely used IDE tools include JetBrains IDEA or Eclipse for Java-based API development, Webstorm or Visual Studio Code for NodeJS API development, Visual Studio .NET for Microsoft .NET Web APIs.
-* A source control and versioning platform used to check in the development artifacts, check out existing developed code, branch development, and merge changes into existing code base. Widely used source control and versioning platforms are GitHub or Bitbucket (hosted cloud-based source control repositories), Git (on-premise source control), Subversion, or Microsoft Team Foundation Server.
-* Dependency management and versioning platform to manage in-house developed and third-party dependencies required for Java,.NET, NodeJS API development. Like with the source control and versioning platforms, hosted cloud solutions and on-premise platforms. Commonly used dependency management platforms are JFrog Artifactory, Maven private and public repositories, and NuGet Package Management for Microsoft .NET development.
-* ther API development tools commonly used for peer code reviews defect management, work task organization
+* An Integrated Development Environment (IDE), installed and configured on a developer’s workstation and used for designing, developing, unit testing, and publishing the APIs to target Development and Integration environments. Widely used IDE tools include JetBrains IDEA or Eclipse for Java-based API development, Webstorm or Visual Studio Code for NodeJS API development, Visual Studio .NET for Microsoft .NET Web APIs, and Mulesoft Anypoint Studio for Mulesoft development.
+* A source control and versioning platform used to check in the development artifacts, check out existing developed code, branch development, and merge changes into existing an code base. Widely used source control and versioning platforms are GitHub or Bitbucket (hosted cloud-based source control repositories), Git (on-premise source control), Subversion, or Microsoft Team Foundation Server.
+* Dependency management and versioning platform to manage in-house developed and third-party dependencies required for Java,.NET, NodeJS API, and Mulesoft development. Like with the source control and versioning platforms, both hosted cloud solutions and on-premise platforms are available. Commonly used dependency management platforms are JFrog Artifactory, Maven private and public repositories, and NuGet Package Management for Microsoft .NET development.
+* Other API development tools commonly used for peer code reviews include defect management, work task organization, and more.
 
-core development tools covered in this section include:
+The core development tools covered in this section include:
 
 * Eclipse Integrated Development Environment
-* 
 * Maven
 * Git and GitHub
-* 
+* Mulesoft AnyPoint Studio version build on the Eclipse platform
 
 = Generic Developer Setup =
 
