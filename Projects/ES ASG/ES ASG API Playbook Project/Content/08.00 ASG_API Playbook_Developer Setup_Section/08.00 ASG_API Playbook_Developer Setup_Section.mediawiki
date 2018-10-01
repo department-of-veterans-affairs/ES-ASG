@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_01.06_Publication Review {Marshall}.docx</b> on <b>Mon 10/01/2018</b> at <b>10:39:11.01 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_08.00 Developer Setup Section_01.07_Published Draft.docx</b> on <b>Mon 10/01/2018</b> at <b>13:33:13.57 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_08.00 Developer Setup Section_01.07_Published Draft">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section/08.00 ASG_API Playbook_Developer Setup_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/08.00%20ASG_API%20Playbook_Developer%20Setup_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
