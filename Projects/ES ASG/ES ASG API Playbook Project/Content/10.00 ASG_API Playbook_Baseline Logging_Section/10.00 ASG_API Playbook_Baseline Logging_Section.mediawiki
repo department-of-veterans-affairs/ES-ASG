@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.06_Publication Review {Marshall}.docx</b> on <b>Thu 09/27/2018</b> at <b>16:51:07.67 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.06_Publication Review {Marshall}.docx</b> on <b>Mon 10/01/2018</b> at <b>10:13:15.10 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/10.00 ASG_API Playbook_Baseline Logging_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
