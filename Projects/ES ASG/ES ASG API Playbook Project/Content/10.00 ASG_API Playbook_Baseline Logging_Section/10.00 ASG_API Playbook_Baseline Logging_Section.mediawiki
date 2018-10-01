@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.06_Publication Review {Marshall}.docx</b> on <b>Mon 10/01/2018</b> at <b>10:13:15.10 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_10.00 Baseline Logging_Section_01.07_Publication Review {Marshall}.docx</b> on <b>Mon 10/01/2018</b> at <b>13:13:27.98 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.06_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_10.00 Baseline Logging_Section_01.07_Publication Review {Marshall}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section/10.00 ASG_API Playbook_Baseline Logging_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/10.00%20ASG_API%20Playbook_Baseline%20Logging_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -8,7 +8,7 @@
 
 == Logging Overview ==
 
-This detail guidelines and components that facilitate the creation of an API logging philosophy although non-API type applications can be implemented using these logging concepts as well.
+This section details guidelines and components that facilitate the creation of an API logging philosophy, although non-API type applications can be implemented using these logging concepts as well.
 
 == Logging Framework Used within Each API ==
 
@@ -16,9 +16,9 @@ This section will discuss logging framework capabilities for two of the more pre
 
 == Logging with Java supported API implementations ==
 
-This discusses the most popular java logging frameworks:
+This section discusses the most popular java logging frameworks:
 
-* '''Simple Logging Facade for Java''' (SLF4J) which is a logging facade that provides a common interface for different logging frameworks
+* '''Simple Logging Facade for Java''' (SLF4J) which is a logging facade that provides a common interface for different logging frameworks.
 * '''Log4j 2''' and its predecessor Log4J and Logback.
 
 === Simple Logging Facade for Java (SLF4J) ===
@@ -31,7 +31,7 @@ The Simple Logging Facade for Java (SLF4J) serves as a simple facade for various
 
 === Apache Log4j 2 ===
 
-Apache Log4j 2 is an upgrade to Log4j and provides significant improvements over its predecessor it provides many of the improvements available in Logback while fixing some inherent problems in Logback’s architecture.
+Apache Log4j 2 is an upgrade to Log4j and provides significant improvements over its predecessor, in addition it provides many of the improvements available in Logback while fixing some inherent problems in Logback’s architecture.
 
 ==== Subset of Features ====
 
@@ -45,17 +45,15 @@ Log4j 2 contains next-generation Asynchronous Loggers based on the LMAX Disrupto
 
 === Logback ===
 
-Logback is a successor to the popular log4j project, log4j and is conceptually similar to log4j
-
-Subset of Features
+Logback is a successor to the popular log4j project, adding additional features from log4j and is conceptually similar to log4j. Subset of Features
 
 * Faster implementation
 
-Based on the previous work on log4j, Logback internals have been re-written to perform on certain critical execution paths. Logback components faster, they have a smaller memory footprint.
+Based on the previous work on log4j, Logback internals have been re-written to perform more efficiently on certain critical execution paths. Logback components are both faster, and they have a smaller memory footprint.
 
 * Logback-classic “speaks” SLF4J natively
 
-Since the '''''Logger''''' class in Logback-classic implements the SLF4J API natively, there is overhead when invoking a SLF4J logger with Logback classic as the underlying implementation. Additionally, since Logback-classic strongly encourages the use of SLF4J as its client API, if the need arises the switch to log4j or to java.util.logging.
+Since the '''''Logger''''' class in Logback-classic implements the SLF4J API natively, there is virtually no overhead when invoking a SLF4J logger with Logback classic as the underlying implementation. Additionally, since Logback-classic strongly encourages the use of SLF4J as its client API, if the need arises the switch to log4j or to java.util.logging.
 
 === java.util.logging (jul) ===
 
@@ -63,11 +61,13 @@ The Java Runtime Java provides a default framework in the java.util.logging pack
 
 ==== Subset of Features ====
 
-java.util.logging in included in the Java Runtime so third-party integration jar files is not required.
+java.util.logging in included in the Java Runtime so third-party integration through jar files is not required.
 
-== Logging with .N supported API implementations ==
+== Logging with .NET supported API implementations ==
 
 === Overview of .NET Framework and .NET Core ===
+
+.NET Core is a cross platform, open source re-implementation of the .NET Framework. It is actively maintained by Microsoft and a huge community of developers over on GitHub. This section focuses on internal and external logging functionality supplied by .NET Core.
 
 The following is a very high level over view of the two logging platforms:
 
@@ -83,7 +83,7 @@ The following is a very high level over view of the two logging platforms:
 
 ASP.NET Core supports a logging API that works with a variety of logging providers. Built-in providers facilitate the sending logs to one or more destinations plus plug in capability to a third-party logging framework.
 
-.NET Core the following built-in logging providers:
+.NET Core contains the following built-in logging providers:
 
 * Console
 
@@ -111,13 +111,13 @@ The '''''Microsoft.Extensions.Logging.AzureAppServices''''' provider package wri
 
 == JSON Format for Logged API Messages ==
 
-This section a '''proposed''' standardized layout that will facilitate the creation of a JSON logging item. The following UML API Logging Class Diagram is used to define the data elements that will be logged, in a JSON format, by the appropriate logging infrastructure.
+This section presents a '''proposed''' standardized layout that will facilitate the creation of a JSON logging item. The following UML API Logging Class Diagram is used to define the data elements that will be logged, in a JSON format, by the appropriate logging infrastructure.
 
 === API Logging Model ===
 
 Figure 1 API Logging Model
 
-
+(Editor’s Note: This table does not transform).
 
 Table 1: API Logging Description Table
 
@@ -289,7 +289,7 @@ Figure 2 Logging Example
 
 == API Logging Policy Guidelines ==
 
-The following table is a modified version of the Appendix C Extracted Policy Assertions table contained in the Enterprise Shared Services (ESS) Exception Handling Guidelines document. The content has been modified to be consistent with an API/Restful Service implementation
+The following table is a modified version of the Appendix C Extracted Policy Assertions table contained in the (Editor’s Note: Needs a reference) Enterprise Shared Services (ESS) Exception Handling Guidelines document. The content has been modified to be consistent with an API/Restful Service implementation
 
 Refer to '''Figure 1 API Logging Model''' which defines the response logging model.
 
@@ -334,7 +334,7 @@ API Logging Text element.
 
 == API Audit Level Logging ==
 
-Logging is a process of recording data about events that application.
+Logging is a process of recording data about events that occur during the execution of an application. Many logging events are most certain to be of interest to developers.
 
 Auditing Logging focuses on recording business domain-level events: a transaction is created, a user is performing an action, etc. In certain types of application, there is a legal obligation to record such events. The audit log retains events that are persisted to an audit logging infrastructure. Auditing is used to typically answer questions like who did what, why and when.
 
