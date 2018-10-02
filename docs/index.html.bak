@@ -89,6 +89,11 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Additional Resources</h2>
+<p></p>
+<ul>
+<li><a href="https://department-of-veterans-affairs.github.io/ES-ASG/API_Portal-Gateway_Context_Diagram_v20181001a/API_Portal-Gateway_Context_Diagram_v20181001a.html" target="_blank">API Portal / Gateway Context Diagram</a>
+</ul>
+<p></p>
 <ul>
 <li><a href="https://github.com/department-of-veterans-affairs/ES-ASG/wiki" target="_blank">ES-ASG API Playbook for Developers Wiki</a>
 <li><a href="https://github.com/department-of-veterans-affairs/ES-ASG/projects/1" target="_blank">ES-ASG API Playbook Kanban</a>
