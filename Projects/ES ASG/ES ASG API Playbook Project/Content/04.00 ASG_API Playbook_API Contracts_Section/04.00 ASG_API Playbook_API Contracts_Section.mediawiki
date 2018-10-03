@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.08_Published Draft.docx</b> on <b>Wed 10/03/2018</b> at <b> 9:35:38.70 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_04.00 API Contracts_Section_01.08_Published Draft.docx</b> on <b>Wed 10/03/2018</b> at <b> 9:36:46.88 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_04.00 API Contracts_Section_01.08_Published Draft">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/04.00%20ASG_API%20Playbook_API%20Contracts_Section/04.00 ASG_API Playbook_API Contracts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
@@ -81,16 +81,6 @@ Below are some API Contract standards widely used in the development community:
 <ol style="list-style-type: lower-alpha;">
 <li><p>SOAP 1.1</p></li>
 <li><p>SOAP 1.2</p></li></ol>
-</li>
-<li><p>REST API Contract Standards:</p>
-<ol start="3" style="list-style-type: lower-alpha;">
-<li><p>OpenAPI Specification</p></li>
-<li><p>RESTful API Modelling Language (RAML)</p></li></ol>
-</li>
-<li><p>SOAP API Contract Standards:</p>
-<ol start="5" style="list-style-type: lower-alpha;">
-<li><p>SOAP 1.1</p></li>
-<li><p>SOAP 1.2</p></li></ol>
 </li></ol>
 
 OpenAPI Specification
@@ -104,8 +94,6 @@ While Mulesoft has recently joined OAS and now actively supports Swagger, Muleso
 SOAP
 
 SOAP contracts are expressed in a form of Web Service Definition Language (WSDL), an XML-based contract that describes a SOAP service, its operations and custom entities. Original SOAP 1.1 places restriction on all serializations to follow the XML 1.0 serialization standard. Version 1.2 places no such restriction, allowing serialization to either follow XML 1.0 serialization or HTTP, for example.
-
-===  ===
 
 === API Specifications  ===
 
