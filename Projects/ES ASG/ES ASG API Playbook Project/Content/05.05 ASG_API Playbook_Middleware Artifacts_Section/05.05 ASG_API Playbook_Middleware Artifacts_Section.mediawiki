@@ -1,12 +1,10 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.05_Published Draft.docx</b> on <b>Mon 10/01/2018</b> at <b>13:33:03.80 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_05.05 Middleware Artifacts_Section_01.05_Published Draft.docx</b> on <b>Wed 10/03/2018</b> at <b> 9:46:20.32 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_05.05 Middleware Artifacts_Section_01.05_Published Draft">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section/05.05 ASG_API Playbook_Middleware Artifacts_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/05.05%20ASG_API%20Playbook_Middleware%20Artifacts_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
 = API Middleware Overview =
-
-(Editor’s Note: This section appears to be very specific to MuleSoft. Is that true?)
 
 Middleware is software that's assembled into an API’s ‘app pipeline’ to handle requests and responses. Each component chooses whether to pass the request to the next component in the pipeline and can perform work before and after the next component in the pipeline is invoked.
 
@@ -67,8 +65,6 @@ The most common API artifacts are:
 
 = API Naming Conventions =
 
-=== (Editors Note: Who is “we”) ===
-
 === For the VA we are providing Vendor agnostic and Mulesoft specific naming conventions. ===
 
 == Vendor Agnostic API Naming Convention ==
@@ -89,7 +85,7 @@ Flows and sub-flows are groupings of connectors and tasks in a logical workflow.
 
 Tasks and routines should contain the key operation in the name. For example, if the task is to call a web service, the name should contain callWebService or similar. Task or operation names are usually lower-cased, following Hungarian notation, similar to how Java methods are typically named.
 
-Custom objects and methods should follow the objects and methods naming convention as described in the previous section of this document. (Editor’s Note: Needs a reference link)
+Custom objects and methods should follow the objects and methods naming convention as described in the previous section of this document.
 
 Finally, configuration files follow the naming convention based on the main programming language used within a specific middleware platform. As most of the middleware platforms are built on Java programming language, except for Microsoft BizTalk, the configuration files and folders should be named following Java file naming conventions.
 
