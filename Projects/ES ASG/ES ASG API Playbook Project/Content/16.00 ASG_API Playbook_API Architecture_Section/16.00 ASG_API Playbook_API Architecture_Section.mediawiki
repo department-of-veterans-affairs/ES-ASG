@@ -1,6 +1,6 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_16.00 API Architecture_01.02_Standards Review {Paul Marshall}.docx</b> on <b>Thu 11/08/2018</b> at <b> 7:50:08.84 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_16.00 API Architecture_01.03_SME Review Resolved {max.girin}.docx</b> on <b>Wed 11/21/2018</b> at <b> 8:16:41.60 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
-<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_16.00 API Architecture_01.02_Standards Review {Paul Marshall}">Send Feedback to this page Via Email</a></p>
+<p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_16.00 API Architecture_01.03_SME Review Resolved {max.girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/16.00%20ASG_API%20Playbook_API%20Architecture_Section/16.00 ASG_API Playbook_API Architecture_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
 <p><a href=https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/16.00%20ASG_API%20Playbook_API%20Architecture_Section>Wiki source content can be found here.</a></p>
 <p>__TOC__</p>
@@ -8,7 +8,9 @@
 
 Logical API Platform Architecture
 
-API Platforms consist of core logical components that are common across most of the API Management solutions:
+Application Programming Interfaces (APIs) provide VA customers with fast, reliable, digital experiences, beyond integration-only point-to-point solutions. To enrich customer experience and provide reliable and scalable solutions to its customers, organizations such as VA is targeting an [https://apigee.com/about/cp/api-centric-platform API-centric architecture], where applications use APIs to connect with other APIs as well as backend data and services. Such an API-centric architecture provides increased flexibility and agility to meet increasing VA customer demands and changing market needs.
+
+An API-centric Architecture consists of three core components that are part of the many best-of-breed API Platforms:
 
 * '''API Gateway'''
 * '''API Portal'''
@@ -68,6 +70,12 @@ To achieve better scalability, growth, and performance, it is critical to design
 With on-premise API deployments, there is a need to stand up and configure one or more Load Balancers such as Netscale, F5, or Apache. The load balancers have pre-configured Virtual IP addresses that point to clusters of API Gateways / Runtimes. An example below shows two physical or virtual machines configured with a single Virtual IP address on the Load Balancer, which routes traffic to the first or second machine. Within each machine there are two API Gateway instances installed and running the APIs.
 
 [[https://github.com/department-of-veterans-affairs/ES-ASG/raw/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/16.00%20ASG_API%20Playbook_API%20Architecture_Section/media/image6.png|624x320px]]
+
+Summary
+
+In conclusion, integration architectures in the past assumed that applications were to be developed without considering whether to enable other applications to access their internal data and processes. Before the wide-spread adoption of an API-centric architecture, this was a prudent strategy. Trying to support application-to-application integration was an undue burden for the developer and was usually left as a project for another team, who used to build point-to-point custom integrations.
+
+The widespread adoption of the basic conventions of API design, RESTful or structured XML data with versioning, logging, common exception handling, and token or assertion-based security, means that developers can easily build APIs into their applications and support their usage without undue distraction from their central mission of application delivery. With the introduction of API-centric architecture, covering both logical and physical application layers, developers can now focus on the business logic development and use API Platform tools such as the Gateway, the Management Console, and the API Portal, to easily design, build and deploy the APIs for customers to consume.
 
 
 
