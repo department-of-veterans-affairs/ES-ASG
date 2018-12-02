@@ -98,6 +98,9 @@
 <li><a href="https://github.com/department-of-veterans-affairs/ES-ASG/wiki" target="_blank">ES-ASG API Playbook for Developers Wiki</a>
 <li><a href="https://github.com/department-of-veterans-affairs/ES-ASG/projects/1" target="_blank">ES-ASG API Playbook Kanban</a>
 <li><a href="https://github.com/department-of-veterans-affairs/ES-ASG" target="_blank">ES-ASG API Playbook Repo</a>
+</ul>
+<p></p>
+<ul>
 <li><a href="https://www.oit.va.gov/developer/pledge.cfm" target="_blank">VA Open API Pledge</a>
 <li><a href="https://department-of-veterans-affairs.github.io/vets-contrib/#/" target="_blank">Put VA Data to Work</a>
 <li><a href="https://www.data.va.gov/" target="_blank">VA's Open Data Portal</a>
@@ -122,7 +125,7 @@
           <div class="col-lg-8 mx-auto">
             <h2>API Playbook Table of Contents</h2>
 <!-- Index Start -->
-<h4>Last Generated: [Mon 10/01/2018, 13:32:32.61] Eastern Time Zone</h4>
+<h4>Last Generated: [Wed 11/21/2018,  8:17:24.65] Eastern Time Zone</h4>
 <ul>
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/01.00-ASG_API-Playbook_Introduction_Section' target='_blank'>01.00 ASG_API Playbook_Introduction_Section</a>
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/02.01-ASG_API-Playbook_Development-Lifecycle_Section' target='_blank'>02.01 ASG_API Playbook_Development Lifecycle_Section</a>
@@ -144,6 +147,10 @@
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/12.03-ASG_API-Playbook_Reuse-Guidelines_Section' target='_blank'>12.03 ASG_API Playbook_Reuse Guidelines_Section</a>
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/12.04-ASG_API-Playbook_Deploying-Shared-Components_Section' target='_blank'>12.04 ASG_API Playbook_Deploying Shared Components_Section</a>
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/13.00-ASG_API-Playbook_API-Documentation-Blueprint_Section' target='_blank'>13.00 ASG_API Playbook_API Documentation Blueprint_Section</a>
+<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/14.00-ASG_API-Playbook_API-Policy-Management_Section' target='_blank'>14.00 ASG_API Playbook_API Policy Management_Section</a>
+<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/15.00-ASG_API-Playbook_Monitoring-APIs_Section' target='_blank'>15.00 ASG_API Playbook_Monitoring APIs_Section</a>
+<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/16.00-ASG_API-Playbook_API-Architecture_Section' target='_blank'>16.00 ASG_API Playbook_API Architecture_Section</a>
+<li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/17.00-ASG_API-Playbook_Identity-Management_Section' target='_blank'>17.00 ASG_API Playbook_Identity Management_Section</a>
 <li><a href='https://github.com/department-of-veterans-affairs/ES-ASG/wiki/Addendum' target='_blank'>Addendum</a>
 </ul>
 <!-- Index Stop --><!-- Index Stop2 -->
