@@ -1,4 +1,4 @@
-﻿<p>This page was generated from <b>ASG_API Playbook_14.00 API Policy Management_01.01_Initial Draft {max.girin}.docx</b> on <b>Tue 01/22/2019</b> at <b>16:55:02.26 Eastern Time Zone</b>.</p>
+﻿<p>This page was generated from <b>ASG_API Playbook_14.00 API Policy Management_01.01_Initial Draft {max.girin}.docx</b> on <b>Thu 03/21/2019</b> at <b> 8:55:47.54 Eastern Time Zone</b>.</p>
 <p>Refer to the three ways to provide feedback on the Wiki Home page.</p>
 <p><a href="mailto:ronald.opperman@va.gov;paul.marshall4@va.gov?subject=ASG_API Playbook_14.00 API Policy Management_01.01_Initial Draft {max.girin}">Send Feedback to this page Via Email</a></p>
 <p><a href="https://github.com/department-of-veterans-affairs/ES-ASG/tree/master/Projects/ES%20ASG/ES%20ASG%20API%20Playbook%20Project/Content/14.00%20ASG_API%20Playbook_API%20Policy%20Management_Section/14.00 ASG_API Playbook_API Policy Management_Section.mediawiki">Edit the Wiki .mediawiki file here.</a></p>
