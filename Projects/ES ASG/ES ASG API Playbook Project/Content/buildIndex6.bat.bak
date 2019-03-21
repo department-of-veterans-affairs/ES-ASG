@@ -55,5 +55,3 @@ cd "C:\GitHub\ES-ASG.wiki"
 git add -f --all
 git commit -m "Publish"
 git push --all
-
-pause
