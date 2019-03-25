@@ -42,7 +42,7 @@ echo "</ul>">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Cont
 echo "<^!-- Index Stop -->">>"C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\TOCHome.txt"
 
 rem Trigger AutoHotKey
-c:\GitHub\AutoHotkeyU64.exe "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\ReplaceText6.ahk"
+c:\GitHub\ES-ASG\AutoHotkeyU64.exe "C:\GitHub\ES-ASG\Projects\ES ASG\ES ASG API Playbook Project\Content\ReplaceText6.ahk"
 
 rem push to GitHub Repo
 
